@@ -170,8 +170,8 @@ Zapis $A_1 v_1 = A_2 v_2$ vrijedi samo za stacionaran tok jednoga fluida stalne 
 **Provjeri i protumači.** Nakon suženja prijeđi na nestacionarni spremnik. Mijenjaj vremenski korak te zasebno usporedi bilancu mase i točnost tijeka razine.
 
 <div class="mf1-interaktivno-akcija">
-<a class="mf1-interaktivno-veza" href="https://martibasic.github.io/MF1_udzbenik/jlite/lab/index.html?path=u08_kontinuitet_suzenje.ipynb">Pokreni u pregledniku</a>
-<a class="mf1-interaktivno-veza" href="https://colab.research.google.com/github/martibasic/MF1_udzbenik/blob/main/notebooks/u08_kontinuitet_suzenje.ipynb" target="_blank" rel="noopener">Pričuvno: otvori u Colabu</a>
+<a class="mf1-interaktivno-veza" href="https://martibasic.github.io/mehanika-fluida-prirucnik/jlite/lab/index.html?path=u08_kontinuitet_suzenje.ipynb">Pokreni u pregledniku</a>
+<a class="mf1-interaktivno-veza" href="https://colab.research.google.com/github/martibasic/mehanika-fluida-prirucnik/blob/main/notebooks/u08_kontinuitet_suzenje.ipynb" target="_blank" rel="noopener">Pričuvno: otvori u Colabu</a>
 <img class="mf1-interaktivno-qr" src="../assets/qr/u08_kontinuitet_suzenje.svg" alt="QR kod za numerički pokus o kontinuitetu u suženju cijevi"/>
 </div>
 

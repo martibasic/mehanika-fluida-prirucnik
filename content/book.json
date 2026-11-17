@@ -8,8 +8,8 @@
     "description": "Sveučilišni priručnik iz mehanike fluida s riješenim primjerima, zadatcima za vježbu i numeričkim pokusima u pregledniku, uz primjene u brodogradnji i strojarstvu.",
     "output-file": "mehanika-fluida-1"
   },
-  "site_url": "https://martibasic.github.io/MF1_udzbenik/",
-  "repo_url": "https://github.com/martibasic/MF1_udzbenik",
+  "site_url": "https://martibasic.github.io/mehanika-fluida-prirucnik/",
+  "repo_url": "https://github.com/martibasic/mehanika-fluida-prirucnik",
   "frontmatter": [
     "u00"
   ],
@@ -71,8 +71,8 @@
   "documents": {
     "u00": {
       "title": "Kako koristiti priručnik",
-      "source": "source/u00_kako_koristiti_udzbenik.md",
-      "path": "chapters/u00_kako_koristiti_udzbenik.qmd",
+      "source": "source/u00_kako_koristiti_prirucnik.md",
+      "path": "chapters/u00_kako_koristiti_prirucnik.qmd",
       "catalog_title": "Kako koristiti priručnik",
       "description": "Odakle početi, kako vježbati i gdje pronaći rezultate."
     },

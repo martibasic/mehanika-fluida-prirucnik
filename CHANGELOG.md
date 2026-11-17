@@ -3,6 +3,17 @@
 Ovaj dokument prati sadržajne i tehničke promjene javnih izdanja. Potvrđene
 pogreške pojedinih izdanja dodatno se vode u [errati](docs/errata.md).
 
+## Novo ime repozitorija i mrežne adrese — 17. studenoga 2026.
+
+- Repozitorij `MF1_udzbenik` preimenovan je u `mehanika-fluida-prirucnik` jer je
+  djelo priručnik. Nova mrežna adresa je
+  <https://martibasic.github.io/mehanika-fluida-prirucnik/>; stara adresa na
+  `github.io` više ne vrijedi.
+- Usklađene su poveznice na JupyterLite i Colab u svim poglavljima, svih 17 QR
+  kodova, `CITATION.cff`, Quarto konfiguracija i provjere. Uvodno poglavlje i
+  status izrade preimenovani su u `u00_kako_koristiti_prirucnik.md` i
+  `status_izrade_prirucnika.md`, a sidro uvoda u `#o-prirucniku`.
+
 ## Ispravci prema recenziji — 8. studenoga 2026.
 
 - **P1**: pog. 4 Z2 (kruto vođen spremnik), pog. 6 (pretpostavka uz slobodnu površinu),
@@ -133,7 +144,7 @@ Ispravci prema `RECENZIJA_ZAVRSNA.md`; izvještaji po područjima u `docs/radno/
 ## Unreleased — radno izdanje
 
 Aktualno stanje i potvrđeni prolazi vode se u
-[statusu izrade](status_izrade_udzbenika.md). Donji datirani zapisi opisuju
+[statusu izrade](status_izrade_prirucnika.md). Donji datirani zapisi opisuju
 stanje pojedine revizije; stare brojke i navodi o objavi nisu aktualni status.
 
 ### Recenzentska revizija cijele knjige — 12.–13. listopada 2026.

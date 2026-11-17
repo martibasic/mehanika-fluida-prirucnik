@@ -541,8 +541,8 @@ Brzina u grlu iznosi $v_2=7{,}424\ \text{m/s}$, a HGL je ondje za $\Delta p/(\rh
 **Provjeri i protumači.** Usporedi račun i predviđanje, zatim povećaj nesigurnost promjera grla. Objasni treba li poboljšati mjerenje promjera ili tlaka. Bilježnica odvaja uljni primjer iz knjige od zasebnoga kalibracijskog slučaja s vodom.
 
 <div class="mf1-interaktivno-akcija">
-<a class="mf1-interaktivno-veza" href="https://martibasic.github.io/MF1_udzbenik/jlite/lab/index.html?path=u09_venturi.ipynb">Pokreni u pregledniku</a>
-<a class="mf1-interaktivno-veza" href="https://colab.research.google.com/github/martibasic/MF1_udzbenik/blob/main/notebooks/u09_venturi.ipynb" target="_blank" rel="noopener">Pričuvno: otvori u Colabu</a>
+<a class="mf1-interaktivno-veza" href="https://martibasic.github.io/mehanika-fluida-prirucnik/jlite/lab/index.html?path=u09_venturi.ipynb">Pokreni u pregledniku</a>
+<a class="mf1-interaktivno-veza" href="https://colab.research.google.com/github/martibasic/mehanika-fluida-prirucnik/blob/main/notebooks/u09_venturi.ipynb" target="_blank" rel="noopener">Pričuvno: otvori u Colabu</a>
 <img class="mf1-interaktivno-qr" src="../assets/qr/u09_venturi.svg" alt="QR kod za interaktivni prikaz Venturijeve cijevi"/>
 </div>
 

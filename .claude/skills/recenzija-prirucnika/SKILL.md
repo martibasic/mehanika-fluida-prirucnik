@@ -1,6 +1,6 @@
 ---
 name: recenzija-prirucnika
-description: Recenzija, pregled i jezična ili sadržajna prerada sveučilišnog priručnika „Mehanika fluida – modeli, problemi i rješenja” (MF1_udzbenik). Koristi za svaki zahtjev da se pregleda, recenzira, ocijeni ili lektorira poglavlje, dodatak ili cijela knjiga, za pripremu predaje Povjerenstvu FESB-a, probnu recenziju, upute ili obrazac za recenzente te odgovor na recenziju. Projektni AGENTS.md i docs/konvencije_pisanja.md čitaju se prvi i imaju prednost.
+description: Recenzija, pregled i jezična ili sadržajna prerada sveučilišnog priručnika „Mehanika fluida – modeli, problemi i rješenja” (mehanika-fluida-prirucnik). Koristi za svaki zahtjev da se pregleda, recenzira, ocijeni ili lektorira poglavlje, dodatak ili cijela knjiga, za pripremu predaje Povjerenstvu FESB-a, probnu recenziju, upute ili obrazac za recenzente te odgovor na recenziju. Projektni AGENTS.md i docs/konvencije_pisanja.md čitaju se prvi i imaju prednost.
 ---
 
 # Recenzija priručnika

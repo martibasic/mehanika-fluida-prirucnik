@@ -1,4 +1,4 @@
-"""SVG strukturni normalizator za MF1_udzbenik.
+"""SVG strukturni normalizator za mehanika-fluida-prirucnik.
 
 Walks assets/print/*.svg and applies canonical structural fixes:
 - Prefixes every id="..." with a deterministic per-file prefix

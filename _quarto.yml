@@ -4,7 +4,7 @@ project:
   output-dir: _site
   render:
     - index.qmd
-    - chapters/u00_kako_koristiti_udzbenik.qmd
+    - chapters/u00_kako_koristiti_prirucnik.qmd
     - chapters/u01_osnove_fluida_i_pascalov_zakon.qmd
     - chapters/u02_viskoznost_povrsinska_napetost_i_kapilarnost.qmd
     - chapters/u03_hidrostaticka_raspodjela_tlaka_i_manometrija.qmd
@@ -46,12 +46,12 @@ book:
     pokusima u pregledniku, uz primjene u brodogradnji i strojarstvu.
   output-file: mehanika-fluida-1
   open-graph: true
-  site-url: https://martibasic.github.io/MF1_udzbenik/
-  repo-url: https://github.com/martibasic/MF1_udzbenik
+  site-url: https://martibasic.github.io/mehanika-fluida-prirucnik/
+  repo-url: https://github.com/martibasic/mehanika-fluida-prirucnik
   date: last-modified
   chapters:
     - index.qmd
-    - chapters/u00_kako_koristiti_udzbenik.qmd
+    - chapters/u00_kako_koristiti_prirucnik.qmd
     - part: Temelji
       chapters:
         - chapters/u01_osnove_fluida_i_pascalov_zakon.qmd

@@ -48,7 +48,7 @@ JupyterLite umjesto Colab-a, korisno za studente koji ne žele
 prijavu na Google:
 
 ```html
-<a class="mf1-interaktivno-veza" href="https://martibasic.github.io/MF1_udzbenik/jlite/lab/index.html?path=u09_venturi.ipynb">
+<a class="mf1-interaktivno-veza" href="https://martibasic.github.io/mehanika-fluida-prirucnik/jlite/lab/index.html?path=u09_venturi.ipynb">
   Otvori u pregledniku (bez prijave)
 </a>
 ```

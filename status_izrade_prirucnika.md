@@ -28,7 +28,7 @@ izvještaju čuvaju povijest; njihovi brojevi nisu aktualni inventar.
 samostalan rad s numeričkim pokusima i primjenama u brodogradnji i strojarstvu*
 
 Prethodni commit `8e05312b4b70eb1c96b9b14d3585ea853c609149` prošao je puni
-lokalni objavni CI i [GitHub Action](https://github.com/martibasic/MF1_udzbenik/actions/runs/36302967616)
+lokalni objavni CI i [GitHub Action](https://github.com/martibasic/mehanika-fluida-prirucnik/actions/runs/36302967616)
 (završen uspješno 27. rujna). Današnje dopune još nisu poslane na GitHub.
 Prolaz prethodnog commita nije dokaz provjere tih dopuna.
 

@@ -14,7 +14,7 @@ from qrcode.constants import ERROR_CORRECT_M
 
 ROOT = Path(__file__).resolve().parents[1]
 QR_DIR = ROOT / "assets" / "qr"
-SITE_ROOT = "https://martibasic.github.io/MF1_udzbenik/jlite/lab/index.html?path="
+SITE_ROOT = "https://martibasic.github.io/mehanika-fluida-prirucnik/jlite/lab/index.html?path="
 
 ASSETS = {
     "u01_hidraulicna_presa.svg": (

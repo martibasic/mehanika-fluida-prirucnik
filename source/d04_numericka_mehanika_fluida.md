@@ -153,7 +153,7 @@ Osjetljivost na hrapavost, ulazni profil ili model turbulencije ispituje se zase
 
 ## Pripremljeni paketi za verifikaciju i validaciju (V&V) {#sec-cfd-vv-paketi}
 
-Pakete preuzimaš iz [repozitorija priručnika](https://github.com/martibasic/MF1_udzbenik/tree/main/data/cfd) i rezultate obrađuješ bez instaliranja rješavača; svaki paket ima vlastiti opis podataka i podrijetla. Provjere se nadovezuju na poznato: analitičko rješenje daje referencu, kontinuitet bilancu, profinjenje numeričku procjenu, a eksperiment podatke za validaciju.[]{#tri-pripremljena-vv-paketa}
+Pakete preuzimaš iz [repozitorija priručnika](https://github.com/martibasic/mehanika-fluida-prirucnik/tree/main/data/cfd) i rezultate obrađuješ bez instaliranja rješavača; svaki paket ima vlastiti opis podataka i podrijetla. Provjere se nadovezuju na poznato: analitičko rješenje daje referencu, kontinuitet bilancu, profinjenje numeričku procjenu, a eksperiment podatke za validaciju.[]{#tri-pripremljena-vv-paketa}
 
 | Paket | Dostupni podatci | Dopušten zaključak |
 |---|---|---|

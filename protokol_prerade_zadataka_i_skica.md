@@ -1,8 +1,8 @@
-# Protokol prerade zadataka i skica za MF1_udzbenik
+# Protokol prerade zadataka i skica za mehanika-fluida-prirucnik
 
 ## Svrha dokumenta
 
-Ovaj dokument ostaje aktivni operativni protokol za svaku novu ozbiljnu preradu zadatka ili skice u `MF1_udzbenik`. Ne sluzi vise za masovni migracijski val, nego za selektivne buduce dopune i za kvalitetno preoblikovanje pojedinih jacih zadataka.
+Ovaj dokument ostaje aktivni operativni protokol za svaku novu ozbiljnu preradu zadatka ili skice u `mehanika-fluida-prirucnik`. Ne sluzi vise za masovni migracijski val, nego za selektivne buduce dopune i za kvalitetno preoblikovanje pojedinih jacih zadataka.
 
 ## Sustavna didaktička revizija bez promjene strukture
 
@@ -326,20 +326,20 @@ Ako je odgovor svugdje "ne", skica je obicno samo `preporucena` ili `nije_potreb
 
 ## Trenutna prakticna uporaba protokola
 
-U danasnjoj fazi knjige ovaj protokol koristi se samo za selektivne buduce dopune `MF1_udzbenik`, za jacanje reprezentativnih zadataka i za eventualnu zamjenu slabijih skica. Ne koristi se kao izgovor za ponovno otvaranje cijelog prijenosnog backlog-a.
+U danasnjoj fazi knjige ovaj protokol koristi se samo za selektivne buduce dopune `mehanika-fluida-prirucnik`, za jacanje reprezentativnih zadataka i za eventualnu zamjenu slabijih skica. Ne koristi se kao izgovor za ponovno otvaranje cijelog prijenosnog backlog-a.
 
 ---
 
 ## SVG standard za skice i ilustracije
 
-Ovaj odjeljak je kanonski i autoritativan. Svi novi i rerađeni SVG-ovi u `MF1_udzbenik` moraju ga poštovati u potpunosti.
+Ovaj odjeljak je kanonski i autoritativan. Svi novi i rerađeni SVG-ovi u `mehanika-fluida-prirucnik` moraju ga poštovati u potpunosti.
 
 ### Kanonski format i pohrana
 
 Sve skice i ilustracije pohranuju se kao statičke SVG datoteke u:
 
 ```
-MF1_udzbenik/assets/print/uXX_*.svg
+mehanika-fluida-prirucnik/assets/print/uXX_*.svg
 ```
 
 Matplotlib/Python kod za generiranje figura **zabranjeno** je koristiti u finalnim Quarto izvorima. Referenca iz `source/uXX_naziv.md`:

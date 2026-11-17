@@ -36,7 +36,7 @@ TASK_ANCHOR_RE = re.compile(
 COLAB_LINK_RE = re.compile(
     r'<a class="mf1-interaktivno-veza" '
     r'href="https://colab\.research\.google\.com/github/martibasic/'
-    r'MF1_udzbenik/blob/main/notebooks/(?P<notebook>[^"]+\.ipynb)" '
+    r'mehanika-fluida-prirucnik/blob/main/notebooks/(?P<notebook>[^"]+\.ipynb)" '
     r'target="_blank" rel="noopener">Otvori interaktivni prikaz</a>'
 )
 LEGACY_TASK_RE = re.compile(
@@ -83,7 +83,7 @@ IMAGE_BLOCK_SPACING_RE = re.compile(
     r"(?=[^\r\n])"
 )
 JUPYTERLITE_ROOT = (
-    "https://martibasic.github.io/MF1_udzbenik/jlite/lab/index.html?path="
+    "https://martibasic.github.io/mehanika-fluida-prirucnik/jlite/lab/index.html?path="
 )
 
 # Naziv svakog kanonskog izvora počinje brojem njegova javnog poglavlja.

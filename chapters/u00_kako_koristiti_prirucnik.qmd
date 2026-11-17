@@ -8,4 +8,4 @@ mf1-document-number: "0"
 # 0. Kako koristiti priručnik {.unnumbered}
 
 <!-- Generated from content/book.json. Edit the canonical source below. -->
-{{< include ../source/u00_kako_koristiti_udzbenik.md >}}
+{{< include ../source/u00_kako_koristiti_prirucnik.md >}}

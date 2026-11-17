@@ -1,4 +1,4 @@
-# Projektne upute za MF1_udzbenik
+# Projektne upute za mehanika-fluida-prirucnik
 
 Ove upute vrijede za rad u cijelom repozitoriju, uključujući analizu i prijedloge
 u razgovoru. Izričite korisnikove upute imaju prednost; već dano odobrenje za

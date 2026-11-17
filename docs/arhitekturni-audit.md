@@ -1,7 +1,7 @@
 # Arhitekturni audit prije refaktora
 
 Datum: 23. rujna 2026. Opseg: cijeli lokalni projekt i izlazi web/PDF/print.
-Referentna javna adresa: https://martibasic.github.io/MF1_udzbenik/.
+Referentna javna adresa: https://martibasic.github.io/mehanika-fluida-prirucnik/.
 Lokalno izdanje uključuje još neobjavljene ispravke i sustav tiskovnih figura;
 ono je polazište refaktora. Prije izmjena spremljena je lokalna snimka datoteka,
 kontrolni hashovi i PDF u `tools/tmp/architecture-refactor/`.

@@ -34,7 +34,7 @@ Ako preglednik ili mrežna politika ne podržava JupyterLite, poveznica
 račun. Veze imaju oblik:
 
 ```text
-https://colab.research.google.com/github/martibasic/MF1_udzbenik/blob/main/notebooks/<ime>.ipynb
+https://colab.research.google.com/github/martibasic/mehanika-fluida-prirucnik/blob/main/notebooks/<ime>.ipynb
 ```
 
 ### Lokalno pokretanje

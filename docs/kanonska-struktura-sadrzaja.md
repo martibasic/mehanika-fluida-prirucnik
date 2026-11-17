@@ -9,7 +9,7 @@ premještanju. Pravila proširenja opisuje [arhitektura](arhitektura.md).
 
 | Oznaka | Kanonski omotač | Izvor |
 | --- | --- | --- |
-| 0 | `chapters/u00_kako_koristiti_udzbenik.qmd` | `source/u00_kako_koristiti_udzbenik.md` |
+| 0 | `chapters/u00_kako_koristiti_prirucnik.qmd` | `source/u00_kako_koristiti_prirucnik.md` |
 | 1 | `chapters/u01_osnove_fluida_i_pascalov_zakon.qmd` | `source/u01_osnove_fluida_i_pascalov_zakon.md` |
 | 2 | `chapters/u02_viskoznost_povrsinska_napetost_i_kapilarnost.qmd` | `source/u02_viskoznost_povrsinska_napetost_i_kapilarnost.md` |
 | 3 | `chapters/u03_hidrostaticka_raspodjela_tlaka_i_manometrija.qmd` | `source/u03_hidrostaticka_raspodjela_tlaka_i_manometrija.md` |

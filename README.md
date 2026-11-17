@@ -15,7 +15,7 @@ provjera izdanja i javna objava vode se odvojeno od stručne recenzije i
 studentskog pilota. Priručnik još nije poslan na recenziju; tehnički prolaz
 ne znači oznaku `v1.0` ni formalno odobrenje djela. Mjerodavan datirani
 presjek, s razlikom između lokalne dorade i poslanog commita, nalazi se u
-[statusu izrade](status_izrade_udzbenika.md).
+[statusu izrade](status_izrade_prirucnika.md).
 
 ## Sadržaj v2
 
@@ -108,7 +108,7 @@ GitHub Pages workflow izvršava numerički QA i notebookove, gradi HTML, nativni
 PDF i JupyterLite te provjerava javne artefakte. Isti build radi i na pull
 requestovima, ali je deploy ograničen na non-PR događaje. Potvrđeni lokalni RC
 rezultati i preostali ljudski kriteriji vode se u
-[statusu](status_izrade_udzbenika.md); sam tehnički prolaz nije odobrenje javne
+[statusu](status_izrade_prirucnika.md); sam tehnički prolaz nije odobrenje javne
 objave.
 
 ## Kako se čita QA izvještaj
@@ -123,7 +123,7 @@ rupa**. Odvojeni paket kritičnih fizikalnih regresija prolazi **22/22** provjer
 Proizvodni QA izvršava notebookove i provjerava slike, poveznice,
 preusmjerenja, PDF te prikaz na širinama 320, 768 i 1.440 px. Rezultate čitaj
 iz izlaza posljednje izgradnje; aktualni datirani presjek nalazi se u
-[statusu izrade](status_izrade_udzbenika.md).
+[statusu izrade](status_izrade_prirucnika.md).
 
 Automatizirane provjere ne ocjenjuju jasnoću objašnjenja niti mogu otkriti
 svaku pogrešku u pretpostavkama ili prijelomu. Uz njih treba pregledati
@@ -143,7 +143,7 @@ izmijenjene stranice i provesti stručnu recenziju te studentski pilot.
 ## Prijava pogreške
 
 Pogrešku u jednadžbi, rezultatu, zadatku, slici, poveznici ili pristupačnosti
-prijavite kroz [obrazac za erratu](https://github.com/martibasic/MF1_udzbenik/issues/new?template=errata.yml).
+prijavite kroz [obrazac za erratu](https://github.com/martibasic/mehanika-fluida-prirucnik/issues/new?template=errata.yml).
 U prijavi navedite stabilni ID sadržaja i inačicu izdanja. Potvrđene ispravke
 objavljuju se u [javnoj evidenciji errate](docs/errata.md) i
 [dnevniku promjena](CHANGELOG.md).

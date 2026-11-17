@@ -26,4 +26,4 @@ Od tlaka i hidrostatike do cjevovoda, turbostrojeva i otvorenih tokova — kroz 
 - **Licenca:** [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.hr)
 - **ISBN / DOI:** u pripremi
 
-Potvrđene znanstvene i numeričke pogreške te njihovi ispravci vode se uz stabilni ID sadržaja u [javnoj errati](https://github.com/martibasic/MF1_udzbenik/blob/main/docs/errata.md).
+Potvrđene znanstvene i numeričke pogreške te njihovi ispravci vode se uz stabilni ID sadržaja u [javnoj errati](https://github.com/martibasic/mehanika-fluida-prirucnik/blob/main/docs/errata.md).

@@ -56,8 +56,8 @@
   "documents": [
     {
       "title": "Kako koristiti priručnik",
-      "source": "source/u00_kako_koristiti_udzbenik.md",
-      "path": "chapters/u00_kako_koristiti_udzbenik.qmd",
+      "source": "source/u00_kako_koristiti_prirucnik.md",
+      "path": "chapters/u00_kako_koristiti_prirucnik.qmd",
       "catalog_title": "Kako koristiti priručnik",
       "description": "Odakle početi, kako vježbati i gdje pronaći rezultate.",
       "id": "u00",

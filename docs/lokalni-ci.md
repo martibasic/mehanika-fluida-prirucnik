@@ -71,7 +71,7 @@ Lokalni prolaz ne provjerava GitHubove ovlasti, dostupnost udaljenih servisa,
 upload artefakta ni Pages deploy. Poslije odobrenoga pusha treba provjeriti
 i udaljeni Action; lokalni prolaz nije tvrdnja da je deploy već uspio.
 
-Prethodni pad: [Action 35961612272](https://github.com/martibasic/MF1_udzbenik/actions/runs/35961612272),
+Prethodni pad: [Action 35961612272](https://github.com/martibasic/mehanika-fluida-prirucnik/actions/runs/35961612272),
 korak `Audit canonical SVGs and generated print compositions`, oznaka
 `0,55 m` u `u03_ch1_zatvoreni_spremnik_ulje_ziva.svg`. Zamjenski font
 prelazio je izrez širine 690 SVG jedinica. Izrez je proširen na 694; provjera
@@ -79,7 +79,7 @@ obaju fontova lokalno reproducira stari pad. Geometrija i tekst skice ostaju ist
 
 ## Zastoj rendera i dijagnostika
 
-[Action 35974645871, prvi pokušaj](https://github.com/martibasic/MF1_udzbenik/actions/runs/35974645871/attempts/1)
+[Action 35974645871, prvi pokušaj](https://github.com/martibasic/mehanika-fluida-prirucnik/actions/runs/35974645871/attempts/1)
 prekinut je nakon 45 minuta tijekom Typst rendera. Prethodne numeričke,
 SVG i notebook provjere te HTML render prošli su. Zapis ne sadrži interni
 uzrok zastoja Typsta; lokalni prolaz zato nije dokaz da je Ubuntu objava uspjela.
@@ -103,7 +103,7 @@ više ne mijenja nakon povratka iz gašenja. Zapis nastao tijekom gašenja nije
 dokaz preživjelog procesa. Granica od pet sekundi za timeout i gašenje ostaje
 ista, a test dodatno potvrđuje da se potomak doista pokrenuo.
 
-U [Actionu 35981808104](https://github.com/martibasic/MF1_udzbenik/actions/runs/35981808104)
+U [Actionu 35981808104](https://github.com/martibasic/mehanika-fluida-prirucnik/actions/runs/35981808104)
 PDF je prošao za 28,7 s, zajedno s oba PDF audita. Završni viewport audit
 otkrio je zasebno prelijevanje od 4 px u D06 i zbirnom ispisu pri 320 px.
 Lokalno je reproducirano promjenom MathJaxove veličine na 117 %: skriveni
@@ -112,7 +112,7 @@ jednadžbe i ograničava ga na 1 px, zadržavajući MathML za čitače zaslona.
 Viewport audit provjerava isti rubni slučaj na obje stranice i čuva izvorni
 prag dopuštenog prelijevanja.
 
-[Action 35986240967](https://github.com/martibasic/MF1_udzbenik/actions/runs/35986240967)
+[Action 35986240967](https://github.com/martibasic/mehanika-fluida-prirucnik/actions/runs/35986240967)
 prošao je te provjere prelijevanja, ali je pao na testu tipkovnice za U13
 pri 768 px. Test je između tipki čekao fiksnih 250 ms; Bootstrap ignorira
 novi toggle dok prethodni prijelaz još traje. Provjera sada čeka završetak

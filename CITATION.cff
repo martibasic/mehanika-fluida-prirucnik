@@ -8,8 +8,8 @@ license: CC-BY-4.0
 authors:
   - family-names: "Bašić"
     given-names: "Martina"
-repository-code: "https://github.com/martibasic/MF1_udzbenik"
-url: "https://martibasic.github.io/MF1_udzbenik/"
+repository-code: "https://github.com/martibasic/mehanika-fluida-prirucnik"
+url: "https://martibasic.github.io/mehanika-fluida-prirucnik/"
 abstract: >-
   Sveučilišni priručnik mehanike fluida s primjenama u brodogradnji i strojarstvu,
   petnaest poglavlja, izvedenim

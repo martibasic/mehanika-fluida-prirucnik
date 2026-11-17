@@ -21,7 +21,7 @@ Za pripremljen prijelom stranica, sadržaj i bibliografiju preuzmi [PDF priručn
 
 # Kako koristiti priručnik {#print-u00 .mf1-collection-chapter .unnumbered data-document="u00"}
 
-{{< include ../source/u00_kako_koristiti_udzbenik.md >}}
+{{< include ../source/u00_kako_koristiti_prirucnik.md >}}
 
 # Osnove fluida i Pascalov zakon {#print-u01 .mf1-collection-chapter .unnumbered data-document="u01"}
 

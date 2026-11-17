@@ -3,7 +3,7 @@ project:
   output-dir: _book
   render:
     - index.qmd
-    - chapters/u00_kako_koristiti_udzbenik.qmd
+    - chapters/u00_kako_koristiti_prirucnik.qmd
     - chapters/u01_osnove_fluida_i_pascalov_zakon.qmd
     - chapters/u02_viskoznost_povrsinska_napetost_i_kapilarnost.qmd
     - chapters/u03_hidrostaticka_raspodjela_tlaka_i_manometrija.qmd

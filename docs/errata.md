@@ -2,12 +2,12 @@
 
 Ovo je javna evidencija potvrđenih pogrešaka u objavljenim release candidate i
 stabilnim izdanjima. Otvoreni razvojni dug prije objave vodi se u
-[statusu izrade](../status_izrade_udzbenika.md), a ne prikazuje se kao errata
+[statusu izrade](../status_izrade_prirucnika.md), a ne prikazuje se kao errata
 izdanja koje još nije objavljeno.
 
 ## Kako prijaviti pogrešku
 
-Upotrijebite [GitHub obrazac za erratu](https://github.com/martibasic/MF1_udzbenik/issues/new?template=errata.yml).
+Upotrijebite [GitHub obrazac za erratu](https://github.com/martibasic/mehanika-fluida-prirucnik/issues/new?template=errata.yml).
 Za jednu pogrešku otvorite jednu prijavu i navedite:
 
 - inačicu iz impresuma ili datum pristupa mrežnom izdanju;

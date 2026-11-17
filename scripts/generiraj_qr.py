@@ -27,7 +27,7 @@ except ImportError:
 
 # Korijen javnog JupyterLite izdanja. Colab poveznice u tekstu ostaju pričuva.
 GITHUB_KORISNIK = "martibasic"
-GITHUB_REPOZITORIJ = "MF1_udzbenik"
+GITHUB_REPOZITORIJ = "mehanika-fluida-prirucnik"
 GITHUB_GRANA = "main"
 
 COLAB_PREDLOZAK = (

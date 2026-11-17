@@ -1,4 +1,4 @@
-## O priručniku {#o-udžbeniku}
+## O priručniku {#o-prirucniku}
 
 Sveučilišni priručnik namijenjen je studentima druge godine strojarstva i brodogradnje. Povezuje fizikalno objašnjenje, matematički izvod i rješavanje zadataka: u petnaest poglavlja upoznat ćeš svojstva fluida, hidrostatiku te strujanje u cijevima, turbostrojevima i otvorenim kanalima.
 

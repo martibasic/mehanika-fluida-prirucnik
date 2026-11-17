@@ -50,7 +50,7 @@ CITATION_RE = re.compile(r"(?<![\w@])@([A-Za-z][A-Za-z0-9_.:-]*)")
 BIB_KEY_RE = re.compile(r"^\s*@\w+\s*\{\s*([^,\s]+)\s*,", re.M)
 INTERNAL_ALT_RE = re.compile(r"\b(?:Val|CH)\s*\d+\b|\b(?:val|ch)[-_]?\d+\b")
 JUPYTERLITE_RE = re.compile(
-    r"https://martibasic\.github\.io/MF1_udzbenik/jlite/lab/index\.html\?path="
+    r"https://martibasic\.github\.io/mehanika-fluida-prirucnik/jlite/lab/index\.html\?path="
     r"([A-Za-z0-9_.-]+\.ipynb)"
 )
 DISPLAY_EQUATION_RE = re.compile(
@@ -123,7 +123,7 @@ def _audit_quarto_contract() -> tuple[dict[str, object], list[str]]:
         issues.append("_quarto.yml nema čitljiv project.render popis")
     expected_inputs = [
         "index.qmd",
-        "chapters/u00_kako_koristiti_udzbenik.qmd",
+        "chapters/u00_kako_koristiti_prirucnik.qmd",
         *(f"chapters/{name}" for name in CANONICAL_WRAPPERS),
         *(f"chapters/{name}" for name in APPENDIX_WRAPPERS),
         "chapters/za_ispis.qmd",
@@ -469,7 +469,7 @@ def audit() -> tuple[dict[str, object], list[str]]:
                 f"kurikularna matrica zbraja {sum(matrix_rows.values())}, ne 145 sati"
             )
 
-    introduction = SOURCE_DIR / "u00_kako_koristiti_udzbenik.md"
+    introduction = SOURCE_DIR / "u00_kako_koristiti_prirucnik.md"
     if not introduction.is_file() or not re.search(
         r"\b145\s+sati rada uz priručnik\b",
         introduction.read_text(encoding="utf-8") if introduction.is_file() else "",
