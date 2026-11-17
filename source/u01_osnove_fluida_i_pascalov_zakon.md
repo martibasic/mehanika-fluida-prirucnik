@@ -1,12 +1,12 @@
-Tekućine i plinovi zajedno se nazivaju fluidima. Od krutina se razlikuju po tome što se pod djelovanjem tangencijalnog naprezanja neprekidno deformiraju, odnosno teku. Fluid koji miruje zato ne može preuzeti smično naprezanje: na svaku plohu s kojom je u dodiru djeluje samo okomito, tlakom. To jednostavno svojstvo polazište je cijele hidrostatike, a u ovom poglavlju vodi do Pascalova zakona i hidrauličkog prijenosa sile.
+Tekućine i plinovi zajedno se nazivaju fluidima. Od krutina se razlikuju po tome što se pod djelovanjem smičnog (tangencijalnog) naprezanja neprekidno deformiraju, odnosno teku. Fluid koji miruje zato ne može preuzeti smično naprezanje: na svaku plohu s kojom je u dodiru djeluje samo okomito, tlakom. To jednostavno svojstvo polazište je cijele hidrostatike, a u ovom poglavlju vodi do Pascalova zakona i hidrauličkog prijenosa sile.
 
 Iako je fluid građen od molekula, u tehničkim proračunima promatramo ga kao neprekidnu sredinu, kontinuum. U takvom modelu gustoća, tlak i brzina imaju određenu vrijednost u svakoj točki prostora. Gustoća $\rho=m/V$ kazuje koliko mase sadrži jedinica volumena, specifična težina $\gamma=\rho g$ koliko ta masa teži, a relativna gustoća $s_r=\rho/\rho_v$ uspoređuje fluid s vodom. Litra ulja gustoće $860\ \text{kg/m}^3$ tako je za približno $1{,}37\ \text{N}$ lakša od litre vode.
 
 Tlak je okomita sila po jedinici površine, $p=F_n/A$. Porast tlaka s dubinom obrađuje se u []{.mf1-chapter-ref target="u03"}.
 
-Pascalov zakon kaže da se promjena tlaka nametnuta na jednom mjestu zatvorenog mirujućeg fluida prenosi neumanjena u sve njegove točke. Porast tlaka zbog opterećenja klipa zato je isti u cijelom sustavu. U hidrauličkim sustavima tlak koji stvaraju klipovi mnogo je veći od razlika tlaka zbog visine, pa ravnoteža sila na klipovima daje $\Delta p=F_1/A_1=F_2/A_2$. Mala sila $F_1$ na malom klipu zato daje veliku silu $F_2=(A_2/A_1)F_1$ na velikom klipu. Energija se pritom ne stvara. Ulje je praktički nestlačivo, pa su istisnuti volumeni jednaki, $A_1s_1=A_2s_2$: veliki klip prijeđe proporcionalno kraći put, a u idealnom modelu bez gubitaka vrijedi $F_1s_1=F_2s_2$.
+Pascalov zakon kaže da se promjena tlaka nametnuta na jednom mjestu zatvorenog mirujućeg fluida prenosi neumanjena u sve njegove točke. Porast tlaka zbog opterećenja klipa zato je isti u cijelom sustavu. U hidrauličkim sustavima tlak koji stvaraju klipovi mnogo je veći od razlika tlaka zbog visine, pa ravnoteža sila na klipovima daje $\Delta p=F_1/A_1=F_2/A_2$. Mala sila $F_1$ na malom klipu zato daje veliku silu $F_2=(A_2/A_1)F_1$ na velikom klipu. Energija se pritom ne stvara. Ulje je praktički nestlačivo, pa su istisnuti volumeni jednaki, $A_1s_1=A_2s_2$: veliki klip prijeđe razmjerno kraći put, a u idealnom modelu bez gubitaka vrijedi $F_1s_1=F_2s_2$.
 
-Na tom se načelu temelje hidrauličke dizalice i preše, kočnice vozila te brodski kormilarski strojevi. Poglavlje redom obrađuje kontinuumski model i tlak, osnovne veličine fluida i Pascalov zakon, a zatim ih primjenjuje na hidraulički prijenos sile. Pritom pokazuje i granice idealnog modela: gubitke, stlačivost, propuštanje i visinske razlike.
+Na tom se načelu temelje hidrauličke dizalice i preše, kočnice vozila te brodski kormilarski strojevi. Poglavlje redom obrađuje kontinuumski model i tlak, osnovne veličine fluida i Pascalov zakon, a zatim ih primjenjuje na hidraulički prijenos sile. Pokazuje i granice idealnog modela: gubitke, stlačivost, propuštanje i visinske razlike.
 
 Slika [-@fig-uvod-u01] sažima te tri ideje. Lijevo okolni fluid tlačnim silama sabija mali element sa svih strana. U sredini jednaki volumeni ulja i vode imaju različite gustoće, a time i različite mase i težine. Desno je Pascalov prijenos: sila $F_1$ djeluje na mali klip, a $F_2$ je sila ulja na veliki klip, uz zanemarene visinske razlike, gubitke i stlačivost.
 
@@ -18,17 +18,17 @@ Slika [-@fig-uvod-u01] sažima te tri ideje. Lijevo okolni fluid tlačnim silama
 
 ### Kontinuumski model
 
-Fluid je tvar koja se pod djelovanjem bilo kakva, pa i vrlo malog, tangencijalnog naprezanja neprekidno deformira. U inženjerskoj se analizi njegova molekularna građa obično ne promatra izravno. Umjesto toga primjenjujemo kontinuumski model, u kojem su veličine poput gustoće, tlaka i brzine definirane u svakoj točki prostora i u svakom trenutku.
+Fluid je tvar koja se pod djelovanjem bilo kakva, pa i vrlo malog, smičnog naprezanja neprekidno deformira. U inženjerskoj se analizi njegova molekularna građa obično ne promatra izravno. Umjesto toga primjenjujemo kontinuumski model, u kojem su veličine poput gustoće, tlaka i brzine definirane u svakoj točki prostora i u svakom trenutku.
 
 Polja $p(x,y,z)$ i $\rho(x,y,z)$ matematički opisuju prostornu raspodjelu tlaka i gustoće te omogućuju određivanje sila i gibanja fluida na razini prikladnoj za tehnički proračun.
 
 ::: {#cfd-rashladni-krug-model .mf1-cfd title="Računalna dinamika fluida"}
 
-**Rashladni krug: od uređaja do modela.** Zamislimo tekućinsko hlađenje baterije: crpka šalje rashladnu tekućinu kroz razdjelnik u uske kanale hladne ploče. Želimo saznati prima li svaki kanal dovoljno tekućine. Računalna dinamika fluida (CFD, engl. *Computational Fluid Dynamics*) iz zakona očuvanja računa približna polja brzine i tlaka. Najprije izdvajamo prostor unutar razdjelnika i kanala; u metodi konačnih volumena taj prostor dijelimo na male ćelije, povezane protocima i silama.
+**Rashladni krug: od uređaja do modela.** Zamislimo tekućinsko hlađenje baterije: crpka šalje rashladnu tekućinu kroz razdjelnik u uske kanale rashladne ploče. Želimo saznati prima li svaki kanal dovoljno tekućine. Računalna dinamika fluida (CFD, engl. *Computational Fluid Dynamics*) iz zakona očuvanja računa približna polja brzine i tlaka. Najprije izdvajamo prostor unutar razdjelnika i kanala; u metodi konačnih volumena taj prostor dijelimo na male ćelije, povezane protocima i silama.
 
-Za prvi model pretpostavimo potpuno napunjen sustav i stalnu temperaturu. Stijenke, ulaz i izlazi čine granice na kojima zadajemo ponašanje fluida. Takav model može pokazati nejednoliku podjelu toka, a temperaturu baterije dobit ćemo tek kada uključimo i prijenos topline. Ćelija je dio kontinuuma, a ne molekula.
+Za prvi model pretpostavimo potpuno napunjen sustav i stalnu temperaturu. Stijenke, ulaz i izlazi čine granice na kojima zadajemo ponašanje fluida. Takav model može pokazati nejednoliku podjelu protoka, a temperaturu baterije dobit ćemo tek kada uključimo i prijenos topline. Ćelija je dio kontinuuma, a ne molekula.
 
-Svojstva rashladne tekućine (vode ili smjese vode i glikola) ulazni su podatci modela: gustoću zadajemo u $\mathrm{kg/m^3}$ pri radnoj temperaturi, a za otpor strujanju i odvođenje topline trebaju još viskoznost i toplinska svojstva. Drukčije obojeno polje u prikazu ne ispravlja pogrešno zadana svojstva; pojmove CFD modela sabire @sec-cfd-mapa. Taj krug u nastavku proširujemo svojstvima fluida, gubitcima i crpkom.
+Svojstva rashladne tekućine (vode ili smjese vode i glikola) ulazni su podatci modela: gustoću zadajemo u $\mathrm{kg/m^3}$ pri radnoj temperaturi, a za otpor strujanju i odvođenje topline potrebni su još viskoznost i toplinska svojstva. Drukčije obojeno polje u prikazu ne ispravlja pogrešno zadana svojstva; pojmove CFD modela sabire @sec-cfd-mapa. Taj krug u nastavku proširujemo svojstvima fluida, gubitcima i crpkom.
 :::
 
 ### Tlak
@@ -41,7 +41,7 @@ $$ {#eq-svojstva-tlak-fizikalni-uvod-i-matematicki-izvod-01}
 
 Ako tlak po plohi nije jednolik, omjer $F_n/A$ daje srednji tlak. Lokalno se tlak definira kao $p=dF_n/dA$, a rezultantna sila dobiva integriranjem po plohi.
 
-Tlak nije sila, nego normalna sila po jedinici površine. Ista normalna sila raspodijeljena na veću površinu daje manji tlak. U mirujućem fluidu nema tangencijalnih naprezanja, a tlak u pojedinoj točki djeluje jednako u svim smjerovima. Tlak je stoga skalarna veličina.
+Tlak nije sila, nego normalna sila po jedinici površine. Ista normalna sila raspodijeljena na veću površinu daje manji tlak. U mirujućem fluidu nema smičnih naprezanja, a tlak u pojedinoj točki djeluje jednako u svim smjerovima. Tlak je stoga skalarna veličina.
 
 ## Osnovne veličine
 
@@ -85,7 +85,7 @@ $$ {#eq-svojstva-tlak-kratki-primjer-gustoca-specificna-tezina-i-relat-02}
 
 ![Usporedba gustoće, mase i težine jednakih volumena ulja i vode.](../assets/print/u01_fig_gustoca_sr.svg){#fig-u01-gustoca-sr fig-align="center" fig-alt="Lijevo posuda s uljem i strelicom težine u težištu ulja, desno dvije jednako napunjene posude s uljem i vodom i strelicama težina u omjeru gustoća."}
 
-**Uz skicu.** Lijevo je ulje u posudi: težina $F_G$ odnosi se samo na ulje, bez posude, i djeluje u njegovu težištu. Desno su jednaki volumeni ulja i vode u posudama napunjenima do iste razine. Strelice njihovih težina, $F_G$ i $F_{G,v}$, nacrtane su u omjeru gustoća, pa je njihov omjer upravo relativna gustoća $s_r=\rho/\rho_v$.
+**Uz skicu.** Lijevo je ulje u posudi: težina $F_G$ odnosi se samo na ulje, bez posude, i djeluje u njegovu težištu. Desno su jednaki volumeni ulja i vode u posudama napunjenima do iste razine. Strelice njihovih težina, $F_G$ i $F_{G,v}$, nacrtane su u omjeru gustoća, pa je njihov omjer jednak relativnoj gustoći $s_r=\rho/\rho_v$.
 
 **Rješenje**
 
@@ -164,11 +164,11 @@ Mala promjena gustoće može biti važna kada je istisnuti volumen malen.
 
 ::: {.mf1-cfd title="Računalna dinamika fluida"}
 
-**Hidraulička preša: sila i odziv nisu isto pitanje.** Ručna dizalica iz primjera [-@ex-u01-servisna-hidraulicna-dizalica-t2] pretpostavlja sporo podizanje bez gubitaka: Pascalov zakon povezuje sile, a očuvanje volumena hodove. Ako želimo znati koliko brzo klip reagira nakon otvaranja ventila, model mora obuhvatiti dovod, ventil i promjenu volumena komore. Možemo zadati pogon i opterećenje pa računati tlakove i gibanje ili zadati gibanje klipa pa odrediti potrebnu silu. CFD prikaz lokalnog strujanja kroz ventil otkriva gdje nastaje dodatni pad tlaka.
+**Hidraulička preša: sila i odziv nisu isto pitanje.** Za ručnu dizalicu u primjeru [-@ex-u01-servisna-hidraulicna-dizalica-t2] pretpostavili smo sporo podizanje bez gubitaka: Pascalov zakon povezuje sile, a očuvanje volumena hodove. Ako želimo znati koliko brzo klip reagira nakon otvaranja ventila, model mora obuhvatiti dovod, ventil i promjenu volumena komore. Možemo zadati pogon i opterećenje pa računati tlakove i gibanje ili zadati gibanje klipa pa odrediti potrebnu silu. CFD prikaz lokalnog strujanja kroz ventil pokazuje gdje nastaje dodatni pad tlaka.
 
 **Zastani i promisli.** Preša daje veću izlaznu silu. Student iz toga zaključuje da daje i veći izlazni rad. Koju veličinu još mora usporediti?
 
-Sama veća izlazna sila ne potvrđuje veći rad: usporedimo i hodove. U granici sporog gibanja, uz jednake visine i zanemarive gubitke, račun mora dati omjer sila $A_2/A_1$ i očuvanje istisnutoga volumena. Pri brzom odzivu treba razmotriti stlačivost tekućine preko modula $K$, podatljivost vodova i eventualni zarobljeni zrak. Za odziv cijele instalacije u početku je često dovoljan jednostavniji dinamički model, a CFD primjenjujemo na dio u kojem prostorna slika strujanja bitno utječe na odziv.
+Sama veća izlazna sila ne potvrđuje veći rad; treba usporediti i hodove. U granici sporog gibanja, uz jednake visine i zanemarive gubitke, račun mora dati omjer sila $A_2/A_1$ i očuvanje istisnutoga volumena. Pri brzom odzivu treba razmotriti stlačivost tekućine preko modula $K$, elastičnost vodova i eventualni zarobljeni zrak. Za odziv cijele instalacije u početku je često dovoljan jednostavniji dinamički model, a CFD primjenjujemo na dio u kojem prostorna slika strujanja bitno utječe na odziv.
 :::
 
 ::: {.mf1-izvod}
@@ -434,7 +434,7 @@ Zbroj hodova nije duljina jednoga crpnog cilindra.
 
 **Provjera i tumačenje**
 
-Bilanca rada: $F_ps_p=460\cdot1{,}5=690\ \mathrm{J}=F_G\,s_L=27\,600\cdot0{,}025$; veliku silu plaćamo dugim zbrojem hodova. Izračunanih $27{,}6\ \text{kN}$ nije dopuštena nosivost platforme jer u proračunu nedostaju vlastita težina, trenje, čvrstoća, stabilnost i mjerodavni propisi.
+Bilanca rada: $F_ps_p=460\cdot1{,}5=690\ \mathrm{J}=F_G\,s_L=27\,600\cdot0{,}025$; velika se sila postiže uz dug zbroj hodova. Izračunanih $27{,}6\ \text{kN}$ nije dopuštena nosivost platforme jer u proračunu nedostaju vlastita težina, trenje, čvrstoća, stabilnost i mjerodavni propisi.
 ::: 
 
 ::: {#ex-u01-hidraulicna-kocnica-vozila-s-razdiobom-na-vise .mf1-we}
@@ -512,7 +512,7 @@ $$ {#eq-svojstva-tlak-rijeseni-primjer-hidraulicna-kocnica-vozila-s-ra-09}
 
 **Provjera i tumačenje**
 
-1. Omjer $F_{pr}/F_{st}=(35/30)^2\approx1{,}36$ slijedi samo iz površina jer je tlak zajednički. Broj $k \approx 53$ omjer je zbroja sila četiriju paralelnih aktuatora i jedne ulazne sile, a ne pojačanje jedne sile; za kočni moment potrebni su još izvedba kliješta, trenje obloge i polumjer diska.
+1. Omjer $F_{pr}/F_{st}=(35/30)^2\approx1{,}36$ slijedi samo iz površina jer je tlak zajednički. Broj $k \approx 53$ omjer je zbroja sila četiriju paralelnih kočnih cilindara i jedne ulazne sile, a ne pojačanje jedne sile; za kočni moment potrebni su još izvedba kliješta, trenje obloge i polumjer diska.
 2. Volumenska bilanca $A_{gc} s_{gc} = 2 A_{pr} s_{pr} + 2 A_{st} s_{st}$ određuje hod papučice; „mekana” papučica upućuje na plin, propuštanje ili elastičnost vodova, što sam Pascalov model ne razlikuje.
 :::
 
@@ -549,7 +549,7 @@ $$
 A_s = \frac{\pi d_s^2}{4} = \frac{\pi \cdot 0{,}028^2}{4} \approx 6{,}158 \cdot 10^{-4}\ \text{m}^2.
 $$ {#eq-svojstva-tlak-rijeseni-primjer-hidraulicka-stezna-naprava-na-r-03}
 
-Uz pretpostavku jednakih visina Pascalov zakon prenosi $p_M$ neumanjen, pa je sila stezanja jednog cilindra
+Uz pretpostavku jednakih visina tlak $p_M$ prema Pascalovu se zakonu prenosi neumanjen, pa je sila stezanja jednog cilindra
 
 $$
 F_s = p_MA_s = F_p\left(\frac{d_s}{d_p}\right)^2 = 420\left(\frac{28}{14}\right)^2\ \text{N} = 1{,}680\ \text{kN}.
@@ -574,7 +574,7 @@ Obje su vrijednosti manje od zadane granice $F_{dop} = 3{,}5\ \text{kN}$.
 
 **Provjera i tumačenje**
 
-Omjer $F_s/F_p = 1680/420 = 4$ odgovara omjeru površina $(d_s/d_p)^2 = (28/14)^2$; za zajednički hod šest stega crpka mora isporučiti zbroj svih istisnutih volumena. Visinska razlika smanjuje silu za $\rho g\Delta z/p_M\approx0{,}8\,\%$, što je ovdje zanemarivo prema rezervi $F_{dop}/F_s' \approx 2{,}1$: pretpostavka jednakih visina opravdana je zato što je radni tlak u megapaskalima, a hidrostatički član u desetcima kilopaskala. Ista bi razlika visina u sustavu s radnim tlakom od $100\ \text{kPa}$ promijenila silu za petinu. Rezerva vrijedi samo ako jedna stega opterećuje točno jednu ćeliju bez preraspodjele; tolerancije, vršne sile i otkazni slučajevi traže zasebnu analizu sigurnosti.
+Omjer $F_s/F_p = 1680/420 = 4$ odgovara omjeru površina $(d_s/d_p)^2 = (28/14)^2$; za zajednički hod šest stega crpka mora isporučiti zbroj svih istisnutih volumena. Visinska razlika smanjuje silu za $\rho g\Delta z/p_M\approx0{,}8\,\%$, što je ovdje zanemarivo prema rezervi $F_{dop}/F_s' \approx 2{,}1$: pretpostavka jednakih visina opravdana je zato što je radni tlak u megapaskalima, a hidrostatički član u desetcima kilopaskala. Ista bi razlika visina u sustavu s radnim tlakom od $100\ \text{kPa}$ promijenila silu za petinu. Rezerva vrijedi samo ako jedna stega opterećuje točno jednu ćeliju bez preraspodjele; tolerancije, vršne sile i slučajevi kvara traže zasebnu analizu sigurnosti.
 :::
 
 
@@ -614,7 +614,7 @@ Same sile nisu dovoljne jer ovise i o površini na kojoj djeluju.
 
 ::::: {.mf1-vjezbe-list}
 
-U hidrauličkim zadatcima manometarski tlak $p_M$ označuje razliku tlakova preko radnog klipa. Pretpostavljaju se kvazistatički rad, približno jednake visine klipova i kruti vodovi. Zanemaruju se trenje, propuštanje i stlačivost tekućine, osim u dopunskom pokusu stlačivosti u Z4 i modelu učinkovitosti u Z6. Sile djeluju izravno na klipove, bez dodatnog prijenosa polugom; iznimka je rudo kormila u Z2. Svi su brojčani podatci nastavni; mjerni nizovi u Z1 i Z4 sintetički su podatci, a ne zapis stvarnog pokusa.
+U hidrauličkim zadatcima manometarski tlak $p_M$ označuje razliku tlakova na dvjema stranama radnog klipa. Pretpostavljaju se kvazistatički rad, približno jednake visine klipova i kruti vodovi. Zanemaruju se trenje, propuštanje i stlačivost tekućine, osim u dopunskom pokusu stlačivosti u Z4 i modelu iskoristivosti u Z6. Sile djeluju izravno na klipove, bez dodatnog prijenosa polugom; iznimka je rudo kormila u Z2. Svi su brojčani podatci nastavni; mjerni nizovi u Z1 i Z4 sintetički su podatci, a ne zapis stvarnog pokusa.
 
 <span id="task-u01-na-kruzni-klip-promjera-djeluje-sila-odredi"></span>
 
@@ -708,7 +708,7 @@ $A_2/A_1=9$, $F_2=900\ \text{N}$, $s_2=10\ \text{mm}$; $W_1=W_2=9\ \text{J}$. Po
 
 **Tekst zadatka**
 
-Laboratorijski cilindar prije mjerenja potpuno je napunjen tekućinom i odzračen. Dovedeni dodatni volumeni, mjereni od istoga početnog položaja, i pomaci klipa pri malom opterećenju prikazani su u tablici. U zasebnom pokusu s blokiranim klipom razlika tlakova preko klipa iznosi $\Delta p = 0{,}40\ \text{MPa}$.
+Laboratorijski cilindar prije mjerenja potpuno je napunjen tekućinom i odzračen. Dovedeni dodatni volumeni, mjereni od istoga početnog položaja, i pomaci klipa pri malom opterećenju prikazani su u tablici. U zasebnom pokusu s blokiranim klipom razlika tlakova na dvjema stranama klipa iznosi $\Delta p = 0{,}40\ \text{MPa}$.
 
 | Dodatni volumen $\Delta V$ (cm³) | Pomak $s$ (mm) |
 | ---: | ---: |
@@ -737,7 +737,7 @@ Usporedi omjere volumena i pomaka, zatim izračunaj promjer i silu. U trećem po
 :::: {.content-visible .mf1-answer-online when-format="html"}
 ::: {.callout-tip collapse="true" data-answer-key="true"}
 ### Kontrolni rezultat
-Sva tri para daju $A=500\ \mathrm{mm^2}$ i $d\approx25{,}23\ \mathrm{mm}$; blokirani klip daje $F=200\ \mathrm{N}$. U trećem pokusu $\Delta V_c\approx0{,}100\ \mathrm{cm^3}$, $s\approx9{,}80\ \mathrm{mm}$ umjesto $s_0=10{,}0\ \mathrm{mm}$. Odstupanje je $2{,}0\,\%>1{,}0\,\%$: nestlačivi model ne prolazi. Početna tablica ne potvrđuje model pri svim tlakovima, a samo izmjereno odstupanje ne razlikuje stlačivost, elastičnost i propuštanje.
+Sva tri para daju $A=500\ \mathrm{mm^2}$ i $d\approx25{,}23\ \mathrm{mm}$; blokirani klip daje $F=200\ \mathrm{N}$. U trećem pokusu $\Delta V_c\approx0{,}100\ \mathrm{cm^3}$, $s\approx9{,}80\ \mathrm{mm}$ umjesto $s_0=10{,}0\ \mathrm{mm}$. Odstupanje je $2{,}0\,\%>1{,}0\,\%$: nestlačivi model ne zadovoljava kriterij. Početna tablica ne potvrđuje model pri svim tlakovima, a samo izmjereno odstupanje ne razlikuje stlačivost, elastičnost i propuštanje.
 :::
 ::::
 
@@ -772,13 +772,13 @@ $p_M=2{,}00\ \text{MPa}$. Za promjere 8, 9 i 10 mm parovi $(F_p;\,s_p)$ iznose p
 
 [Razina: T3]{.mf1-task-level}
 
-### Nosivost stola uz nesigurnu učinkovitost {#task-u01-hidraulicni-radni-stol-podupiru-tri-jednaka-cilindra .unnumbered .unlisted}
+### Nosivost stola uz nesigurnu iskoristivost {#task-u01-hidraulicni-radni-stol-podupiru-tri-jednaka-cilindra .unnumbered .unlisted}
 
 **Tekst zadatka**
 
 Hidraulički radni stol podupiru tri jednaka cilindra, svaki površine $A_L = 95\ \text{cm}^2$. Ulje dovodi crpni klip promjera $d = 22\ \text{mm}$ na koji djeluje sila $F_p = 360\ \text{N}$. Potreban je podizaj stola $\Delta z = 18\ \text{mm}$.
 
-Zadani su faktor prijenosa sile $\eta_F=0{,}86\pm0{,}04$ i volumetrijska učinkovitost $\eta_V=0{,}90\pm0{,}03$. Intervali ± zajamčene su granice, a ne standardne nesigurnosti; dopuštene su sve kombinacije.
+Zadani su faktor prijenosa sile $\eta_F=0{,}86\pm0{,}04$ i volumetrijska iskoristivost $\eta_V=0{,}90\pm0{,}03$. Intervali ± zajamčene su granice, a ne standardne nesigurnosti; dopuštene su sve kombinacije.
 
 Faktori redom označuju omjer korisnog i idealnog opterećenja te omjer dobavljenog i istisnutog volumena. Jednako opterećeni cilindri mehanički su vođeni na isti pomak.
 
@@ -787,19 +787,19 @@ Stol mora nositi najmanje $22{,}0\ \text{kN}$, a raspoloživi zbroj tlačnih hod
 **Traži se**
 
 1. Odredi manometarski tlak $p_M$ u ulju, ukupno idealno opterećenje koje stol može nositi i ukupan idealni hod crpnog klipa za taj podizaj.
-2. Izračunaj nominalno i konzervativno korisno opterećenje i potreban hod te obrazloži zadovoljava li sustav oba zahtjeva u cijelom zadanom rasponu učinkovitosti.
+2. Izračunaj korisno opterećenje i potreban hod, nominalno i na strani sigurnosti, te obrazloži zadovoljava li sustav oba zahtjeva u cijelom zadanom rasponu iskoristivosti.
 
 :::: {.content-visible .mf1-hint-online when-format="html"}
 ::: {.callout-note collapse="true" data-hint-key="true"}
 ### Naputak
-Površina $A_p$ i tlak određuju se iz $p_M = F_p/A_p$, idealno opterećenje iz $F_G = 3p_MA_L$, a idealni hod crpke iz volumenske bilance $A_p s_p = 3A_L \Delta z$. Za stvarni sustav vrijedi $F_{G,kor}=\eta_F F_G$ i $s_{p,st}=s_p/\eta_V$. Konzervativna se odluka temelji na vrijednostima $\eta_{F,min}$ i $\eta_{V,min}$, a ne na srednjim vrijednostima.
+Površina $A_p$ i tlak određuju se iz $p_M = F_p/A_p$, idealno opterećenje iz $F_G = 3p_MA_L$, a idealni hod crpke iz volumenske bilance $A_p s_p = 3A_L \Delta z$. Za stvarni sustav vrijedi $F_{G,kor}=\eta_F F_G$ i $s_{p,st}=s_p/\eta_V$. Odluka na strani sigurnosti temelji se na vrijednostima $\eta_{F,min}$ i $\eta_{V,min}$, a ne na srednjim vrijednostima.
 :::
 ::::
 :::: {.content-visible .mf1-answer-online when-format="html"}
 ::: {.callout-tip collapse="true" data-answer-key="true"}
 ### Kontrolni rezultat
 
-$p_M \approx 947\ \text{kPa}$; $F_G \approx 27{,}0\ \text{kN}$; $s_p \approx 1{,}35\ \text{m}$. Nominalno je $F_{G,kor}\approx23{,}2\ \text{kN}$ i $s_{p,st}\approx1{,}50\ \text{m}$, a konzervativno $F_{G,kor,min}\approx22{,}1\ \text{kN}$ i $s_{p,st,max}\approx1{,}55\ \text{m}$. Oba su zadana brojčana kriterija zadovoljena, ali s malim rezervama, približno $0{,}1\ \text{kN}$ i $0{,}05\ \text{m}$; to nije potpuna provjera stroja ni odobrenje za puštanje u rad.
+$p_M \approx 947\ \text{kPa}$; $F_G \approx 27{,}0\ \text{kN}$; $s_p \approx 1{,}35\ \text{m}$. Nominalno je $F_{G,kor}\approx23{,}2\ \text{kN}$ i $s_{p,st}\approx1{,}50\ \text{m}$, a na strani sigurnosti $F_{G,kor,min}\approx22{,}1\ \text{kN}$ i $s_{p,st,max}\approx1{,}55\ \text{m}$. Oba su zadana brojčana kriterija zadovoljena, ali s malim rezervama, približno $0{,}1\ \text{kN}$ i $0{,}05\ \text{m}$; to nije potpuna provjera stroja ni odobrenje za puštanje u rad.
 :::
 ::::
 

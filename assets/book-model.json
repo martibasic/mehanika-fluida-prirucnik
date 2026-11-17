@@ -37,7 +37,7 @@
     },
     {
       "id": "part-4",
-      "title": "Sličnost i realni tok",
+      "title": "Sličnost i realno strujanje",
       "chapters": [
         "u11",
         "u12"
@@ -240,10 +240,10 @@
       "part": "part-3"
     },
     {
-      "title": "Kompresibilni idealni tok",
+      "title": "Stlačivo idealno strujanje",
       "source": "source/u09_kompresibilni_idealni_tok.md",
       "path": "chapters/u09_kompresibilni_idealni_tok.qmd",
-      "catalog_title": "Kompresibilni tok",
+      "catalog_title": "Stlačivo strujanje",
       "description": "Brzina zvuka, Machov broj, izentropska sapnica, prigušenje i udarni val.",
       "title_aliases": [],
       "verification": {
@@ -304,10 +304,10 @@
       "part": "part-4"
     },
     {
-      "title": "Diferencijalni opis realnog toka",
+      "title": "Diferencijalni opis realnog strujanja",
       "source": "source/u12_diferencijalni_opis_realnog_toka.md",
       "path": "chapters/u12_diferencijalni_opis_realnog_toka.qmd",
-      "catalog_title": "Diferencijalni realni tok",
+      "catalog_title": "Realno strujanje",
       "description": "Navier–Stokes, Poiseuille, granični sloj, odvajanje i turbulencija.",
       "title_aliases": [],
       "verification": {
@@ -373,10 +373,10 @@
       "part": "part-5"
     },
     {
-      "title": "Otvoreni tokovi",
+      "title": "Strujanje sa slobodnom površinom",
       "source": "source/u15_otvoreni_tokovi.md",
       "path": "chapters/u15_otvoreni_tokovi.qmd",
-      "catalog_title": "Otvoreni tokovi",
+      "catalog_title": "Strujanje sa slobodnom površinom",
       "description": "Froudeov broj, kritična dubina i hidraulički skok.",
       "title_aliases": [],
       "verification": {

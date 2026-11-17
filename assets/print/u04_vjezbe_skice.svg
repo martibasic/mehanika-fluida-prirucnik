@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 936 789" role="img" aria-labelledby="u04vs_title u04vs_desc" preserveAspectRatio="xMidYMid meet" style="display:block;width:100%;max-width:936px;height:auto;">
   <title id="u04vs_title">Skice uz zadatke Z1–Z6 iz relativnog mirovanja</title>
-  <desc id="u04vs_desc">Z1: ubrzanje udesno, voda viša lijevo; nagib je shematski, ne u mjerilu rezultata. Z2: otvoreni spremnik kruto ovješen o kolica dizalice; kolica ubrzavaju udesno (a_x), vitlo diže teret ubrzano (a_z prema gore); površina viša uz stražnju (lijevu) stijenku, isprekidana mirna razina, kota L; tražene dubine označene upitnikom. Z3: zatvoreni cilindar potpuno ispunjen uljem; brzina prema gore u oba zasebna stanja, ubrzanje prema gore u stanju I i prema dolje pri kočenju II. Z4: zatvorena posuda potpuno ispunjena vodom, točke A i B na istoj visini i različitim polumjerima; smjer vrtnje nije zadan. Z5: shematski ravni profil nakon smirivanja (ne u mjerilu rezultata), uz zaseban graf točkastih očitanja stražnje razine kroz vrijeme bez ucrtanog modela; graf ne predstavlja oblik prolaznog vala. Z6: shematska parabola radnog stanja (ne u mjerilu rezultata) i parabola granice prelijevanja, zatvoren usis u osi bez protoka. Svi vektori imaju istu boju; ubrzanja su crtkane strelice s punim vrhom, a brzina v u Z3 i kutna brzina omega u Z6 tanje pune strelice s otvorenim vrhom. Kote su sive, a tlak je skalar. Zadane visine H i h_0 unutar panela imaju zajedničko mjerilo; nagnute površine u Z1 i Z5 i radna parabola u Z6 shematske su; vodoravne širine su shematske, a duljine strelica nisu u mjerilu. U Z6 puna parabola je radni režim omega = 0,80 omega_max.</desc>
+  <desc id="u04vs_desc">Z1: ubrzanje udesno, voda viša lijevo; nagib je shematski, ne u mjerilu rezultata. Z2: otvoreni spremnik kruto ovješen o kolica dizalice; kolica ubrzavaju udesno (a_x), vitlo diže teret ubrzano (a_z prema gore); površina viša uz stražnju (lijevu) stijenku, isprekidana mirna razina, kota L; tražene dubine označene upitnikom. Z3: zatvoreni cilindar potpuno ispunjen uljem; brzina prema gore u oba zasebna stanja, ubrzanje prema gore u stanju 1 i prema dolje u stanju 2, kad cilindar usporava. Z4: zatvorena posuda potpuno ispunjena vodom, točke A i B na istoj visini i različitim polumjerima; smjer vrtnje nije zadan. Z5: shematski ravni profil nakon smirivanja (ne u mjerilu rezultata), uz zaseban graf točkastih očitanja stražnje razine kroz vrijeme bez ucrtanog modela; graf ne predstavlja oblik prolaznog vala. Z6: shematska parabola radnog stanja (ne u mjerilu rezultata) i parabola granice prelijevanja, zatvoren usis u osi bez protoka. Svi vektori imaju istu boju; ubrzanja su crtkane strelice s punim vrhom, a brzina v u Z3 i kutna brzina omega u Z6 tanje pune strelice s otvorenim vrhom. Kote su sive, a tlak je skalar. Zadane visine H i h_0 unutar panela imaju zajedničko mjerilo; nagnute površine u Z1 i Z5 i radna parabola u Z6 shematske su; vodoravne širine su shematske, a duljine strelica nisu u mjerilu. U Z6 puna parabola je radni režim omega = 0,80 omega_max.</desc>
   <defs>
     <pattern id="u04vs_hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
       <rect width="7" height="7" fill="#d7dee3" />
@@ -56,7 +56,6 @@
         <text x="276" y="48" font-size="12" fill="#263746" text-anchor="start"><tspan font-style="italic">h</tspan><tspan baseline-shift="sub" font-size="0.75em">0</tspan> = 0,34 m</text>
         <text x="276" y="68" font-size="12" fill="#263746" text-anchor="start"><tspan font-style="italic">H</tspan> = 0,46 m</text>
         <text x="276" y="88" font-size="12" fill="#263746" text-anchor="start"><tspan font-style="italic">a</tspan> = 1,20 m/s²</text>
-        <line x1="272" y1="102" x2="432" y2="102" stroke="#c5cdd3" stroke-width="1" />
         <text x="276" y="197" font-size="11" fill="#263746" text-anchor="start">– – početna razina <tspan font-style="italic">h</tspan><tspan baseline-shift="sub" font-size="0.75em">0</tspan></text>
       </g>
     </g>
@@ -68,8 +67,10 @@
         <text x="36" y="19" font-size="12" fill="#263746" text-anchor="start">Spremnik na dizalici: dva ubrzanja</text>
         <rect x="40" y="34" width="250" height="6" fill="url(#u04vs_hatch)" stroke="#3a4a56" stroke-width="1" />
         <rect x="125" y="40" width="60" height="14" fill="#d7dee3" stroke="#3a4a56" stroke-width="1.2" id="u04vs_z2_trolley" />
-        <line x1="135" y1="54" x2="70" y2="104" stroke="#3a4a56" stroke-width="1.2" />
-        <line x1="175" y1="54" x2="240" y2="104" stroke="#3a4a56" stroke-width="1.2" />
+        <line x1="135" y1="54" x2="70" y2="104" stroke="#3a4a56" stroke-width="4" id="u04vs_z2_strut-left" />
+        <line x1="175" y1="54" x2="240" y2="104" stroke="#3a4a56" stroke-width="4" id="u04vs_z2_strut-right" />
+        <line x1="103.2" y1="78.5" x2="206.8" y2="78.5" stroke="#3a4a56" stroke-width="3" id="u04vs_z2_brace" />
+        <text x="155" y="93" font-size="10" fill="#263746" text-anchor="middle">krute spojnice</text>
         <path d="M70 120 L240 146 V188 H70 Z" fill="#dcebf1" stroke="none" id="u04vs_z2_water" />
         <path d="M62 104 H70 V188 H240 V104 H248 V196 H62 Z" fill="url(#u04vs_hatch)" stroke="#3a4a56" stroke-width="1.2" />
         <line x1="70" y1="120" x2="240" y2="146" stroke="#356b83" stroke-width="2" id="u04vs_z2_surface" />
@@ -116,12 +117,12 @@
         <text x="63" y="207" font-size="11" fill="#263746" text-anchor="middle"><tspan font-style="italic">v</tspan> prema gore</text>
         <text x="268" y="48" font-size="12" fill="#263746" text-anchor="start"><tspan font-style="italic">ρ</tspan><tspan baseline-shift="sub" font-size="0.75em">u</tspan> = 870 kg/m³</text>
         <text x="268" y="67" font-size="12" fill="#263746" text-anchor="start"><tspan font-style="italic">h</tspan> = 0,75 m</text>
-        <text x="291" y="101" font-size="12" fill="#263746" text-anchor="middle">I</text>
-        <text x="376" y="101" font-size="12" fill="#263746" text-anchor="middle">II</text>
+        <text x="291" y="101" font-size="11" fill="#263746" text-anchor="middle">stanje 1</text>
+        <text x="376" y="101" font-size="11" fill="#263746" text-anchor="middle">stanje 2</text>
         <line x1="291" y1="162" x2="291" y2="118" stroke="#356b83" stroke-width="2" marker-end="url(#u04vs_aR)" stroke-dasharray="6 3" data-mf1-vector="acceleration" />
         <line x1="376" y1="118" x2="376" y2="162" stroke="#356b83" stroke-width="2" marker-end="url(#u04vs_aR)" stroke-dasharray="6 3" data-mf1-vector="acceleration" />
         <text x="313" y="138" font-size="12" fill="#263746" text-anchor="start"><tspan font-weight="700" font-style="italic">a</tspan><tspan baseline-shift="sub" font-size="0.75em">z</tspan></text>
-        <text x="335" y="208" font-size="11" fill="#263746" text-anchor="middle">I: ubrzavanje · II: kočenje</text>
+        <text x="335" y="208" font-size="11" fill="#263746" text-anchor="middle">1: ubrzava · 2: usporava</text>
       </g>
     </g>
   </g>

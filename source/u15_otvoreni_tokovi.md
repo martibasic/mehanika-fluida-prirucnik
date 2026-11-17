@@ -1,24 +1,24 @@
-Rijeka, odvodni kanal i preljev brane prenose vodu čija je gornja granica izložena atmosferi. Takav tok pokreće gravitacija, a dubina nije zadana geometrijom, nego se prilagođuje protoku, nagibu i otporu dna te nizvodnim uvjetima. Pri istom protoku voda može teći duboko i polagano ili plitko i brzo, a povratak iz brzog u spori tok redovito je nagao. O tim stanjima ovise kapacitet kanala, razina vode uzvodno od građevine i zaštita dna od erozije.
+Rijeka, odvodni kanal i preljev brane prenose vodu čija je gornja granica izložena atmosferi. Takvo strujanje pokreće gravitacija, a dubina nije zadana geometrijom, nego se prilagođuje protoku, nagibu i otporu dna te nizvodnim uvjetima. Pri istom protoku voda može teći duboko i polagano ili plitko i brzo, a povratak iz brzog u sporo strujanje redovito je nagao. O tim stanjima ovise kapacitet kanala, razina vode uzvodno od građevine i zaštita dna od erozije.
 
-Režim toka određuje Froudeov broj $Fr=v/\sqrt{gy_h}$, omjer srednje brzine i brzine dugoga gravitacijskog vala $c=\sqrt{gy_h}$. Pri $Fr<1$ tok je miran i poremećaj putuje i uzvodno, pri $Fr>1$ siloviti tok odnosi poremećaje nizvodno, a kritični tok ($Fr=1$) razdvaja ta dva režima. Za pravokutni kanal s protokom po jedinici širine $q=vy$ specifična energija $E=y+q^2/(2gy^2)$ najmanja je pri kritičnoj dubini $y_c=(q^2/g)^{1/3}$, uz $E_{min}=\tfrac32y_c$. Nagli prijelaz iz silovitog u mirni tok jest hidraulički skok: impulsna funkcija prije i poslije njega jednaka je, $I_1=I_2$, a specifična energija opada, $E_2<E_1$. Zato se skok računa bilancom količine gibanja, a ne Bernoullijevom jednadžbom.
+Režim strujanja određuje Froudeov broj $Fr=v/\sqrt{gy_h}$, omjer srednje brzine i brzine dugoga gravitacijskog vala $c=\sqrt{gy_h}$. Pri $Fr<1$ strujanje je mirno i poremećaj putuje i uzvodno, pri $Fr>1$ silovito strujanje odnosi poremećaje nizvodno, a kritično strujanje ($Fr=1$) razdvaja ta dva režima. Za pravokutni kanal s protokom po jedinici širine $q=vy$ specifična energija $E=y+q^2/(2gy^2)$ najmanja je pri kritičnoj dubini $y_c=(q^2/g)^{1/3}$, uz $E_{min}=\tfrac32y_c$. Nagli prijelaz iz silovitog u mirno strujanje jest hidraulički skok: impulsna funkcija prije i poslije njega jednaka je, $I_1=I_2$, a specifična energija opada, $E_2<E_1$. Zato se skok računa bilancom količine gibanja, a ne Bernoullijevom jednadžbom.
 
 Energijska bilanca s gubitkom visine $h_g$ nastavlja se na []{.mf1-chapter-ref target="u08"} i []{.mf1-chapter-ref target="u13"}, a bilanca skoka primjenjuje zakon količine gibanja iz []{.mf1-chapter-ref target="u10"}. Froudeov broj broda iz []{.mf1-chapter-ref target="u11"} na isti način uspoređuje brzinu s brzinom gravitacijskog vala, a ustava čije se opterećenje računa u []{.mf1-chapter-ref target="u05"} ovdje postaje kontrolna građevina. Primjene su odvodni i oborinski kanali, preljevi i umirni bazeni iza ustava, vučni bazeni te plovidba u plitkoj vodi.
 
-Poglavlje redom obrađuje geometriju presjeka, Froudeov broj i širenje poremećaja, specifičnu energiju i kritičnu dubinu s ustavom i širokim preljevom, postupno promjenjiv tok, hidraulički skok te uniformni tok s Manningovom jednadžbom. Jednodimenzijski model sa srednjom brzinom pretpostavlja blag nagib i približno hidrostatičku raspodjelu tlaka; on ne opisuje unutrašnjost skoka ni tok preko kratkoga zakrivljenog praga.
+Poglavlje redom obrađuje geometriju presjeka, Froudeov broj i širenje poremećaja, specifičnu energiju i kritičnu dubinu s ustavom i širokim preljevom, postupno promjenjivo strujanje, hidraulički skok te jednoliko strujanje s Manningovom jednadžbom. Jednodimenzijski model sa srednjom brzinom pretpostavlja blag nagib i približno hidrostatičku raspodjelu tlaka; on ne opisuje unutrašnjost skoka ni strujanje preko kratkoga zakrivljenog praga.
 
-Slika [-@fig-otvoreni-tok-pregled] prikazuje ilustrativni tok s $q=1{,}40\,\mathrm{m^2/s}$ preko blagog praga. Lijevo je mirni tok početne (uzvodne) dubine $y_0=1{,}30\,\mathrm{m}$ i brzine $v_0$. Na tjemenu praga tok prolazi kritičnim presjekom s kritičnom brzinom $v_c$, a niz nizvodnu stranu praga ubrzava se u siloviti tok. Visina dna $z$ mijenja se duž praga, a do skoka vrijedi $z+E=\text{konst.}$ Indeksi 1 i 2 označuju, kao u izvodu hidrauličkog skoka, siloviti presjek neposredno ispred skoka ($y_1$, $v_1$) i mirni presjek iza njega ($y_2$, $v_2$); isprekidane crte omeđuju kontrolni volumen skoka. Duljina skoka nacrtana je shematski.
+Slika [-@fig-otvoreni-tok-pregled] prikazuje ilustrativno strujanje s $q=1{,}40\,\mathrm{m^2/s}$ preko blagog praga. Lijevo je mirno strujanje početne (uzvodne) dubine $y_0=1{,}30\,\mathrm{m}$ i brzine $v_0$. Na tjemenu praga voda prolazi kritičnim presjekom s kritičnom brzinom $v_c$, a niz nizvodnu stranu praga ubrzava se u silovito strujanje. Visina dna $z$ mijenja se duž praga, a do skoka vrijedi $z+E=\text{konst.}$ Indeksi 1 i 2 označuju, kao u izvodu hidrauličkog skoka, siloviti presjek neposredno ispred skoka ($y_1$, $v_1$) i mirni presjek iza njega ($y_2$, $v_2$); isprekidane crte omeđuju kontrolni volumen skoka. Duljina skoka nacrtana je shematski.
 
-![Otvoreni tok prelazi iz mirnog u kritični i siloviti režim te kroz hidraulički skok ponovno u dublji tok.](../assets/print/u15_fig_uvod_otvoreni_tok.svg){#fig-otvoreni-tok-pregled fig-align="center" fig-alt="Uzdužni presjek kanala: mirni tok ispred blagog praga, kritični presjek na tjemenu, siloviti tok niz prag i hidraulički skok s isprekidanim kontrolnim volumenom."}
+![Strujanje sa slobodnom površinom prelazi iz mirnog u kritični i siloviti režim te kroz hidraulički skok ponovno u dublje strujanje.](../assets/print/u15_fig_uvod_otvoreni_tok.svg){#fig-otvoreni-tok-pregled fig-align="center" fig-alt="Uzdužni presjek kanala: mirno strujanje ispred blagog praga, kritični presjek na tjemenu, silovito strujanje niz prag i hidraulički skok s isprekidanim kontrolnim volumenom."}
 
 **Procijenjeno vrijeme rada uz priručnik:** 9 sati.
 
-## Slobodna površina kao granica toka {#sec-otvoreni-tok-motivacija}
+## Slobodna površina kao granica strujanja {#sec-otvoreni-tok-motivacija}
 
-U punoj cijevi geometrija presjeka zadaje cijelu granicu toka. U otvorenom kanalu gornja je granica slobodna površina, čiji položaj treba odrediti zajedno s brzinom. Gravitacija tada nije samo izvor potencijalne energije: ona određuje brzinu površinskih valova i razdvaja dva bitno različita režima [@chow1959].
+U punoj cijevi geometrija presjeka zadaje cijelu granicu strujanja. U otvorenom kanalu gornja je granica slobodna površina, čiji položaj treba odrediti zajedno s brzinom. Gravitacija tada nije samo izvor potencijalne energije, nego određuje i brzinu površinskih valova te razdvaja dva bitno različita režima [@chow1959].
 
 ## Geometrija presjeka i hidraulička dubina {#sec-geometrija-kanala}
 
-Za poprečni presjek toka definiramo površinu $A$, širinu slobodne površine $T$ (širinu vodnog lica, ne gaz), oplakani opseg $P$ (dio ruba presjeka u dodiru sa stijenkama i dnom, bez slobodne površine) i hidraulički radijus
+Za poprečni presjek strujanja definiramo površinu $A$, širinu slobodne površine $T$ (širinu vodnog lica, ne gaz), oplakani opseg $P$ (dio ruba presjeka u dodiru sa stijenkama i dnom, bez slobodne površine) i hidraulički radijus
 
 $$
 R_h=\frac{A}{P}.
@@ -32,11 +32,11 @@ $$ {#eq-otvoreni-tokovi-geometrija-presjeka-i-hidraulicka-dubina-sec-geo-02}
 
 nije isto što i hidraulički promjer pune cijevi $D_h=4A/P$. To je karakteristična dubina koja povezuje promjenu površine s promjenom razine i ulazi u brzinu dugoga gravitacijskog vala u odnosu na vodu, $c=\sqrt{gy_h}$. Oznaka $c$ u ovom poglavlju znači isključivo tu brzinu vala.
 
-Kontinuitet za stacionarni tok glasi $Q=Av$. Za pravokutni kanal širine $b$ i dubine $y$ vrijedi $A=by$, $T=b$, $y_h=y$, a protok po jedinici širine jest $q=Q/b=vy$ (oznaka $q$ u tom značenju koristi se samo u ovom poglavlju).
+Kontinuitet za stacionarno strujanje glasi $Q=Av$. Za pravokutni kanal širine $b$ i dubine $y$ vrijedi $A=by$, $T=b$, $y_h=y$, a protok po jedinici širine jest $q=Q/b=vy$ (oznaka $q$ u tom značenju koristi se samo u ovom poglavlju).
 
 ## Froudeov broj i prijenos informacije {#sec-froude-kanal}
 
-Froudeov broj otvorenog toka definiramo kao
+Froudeov broj strujanja sa slobodnom površinom definiramo kao
 
 $$
 Fr=\frac{v}{\sqrt{gy_h}}.
@@ -44,16 +44,16 @@ $$ {#eq-froude-otvoreni}
 
 U jednodimenzijskom modelu plitke vode, uz približno hidrostatičku raspodjelu tlaka i pozitivni smjer nizvodno, vrijedi sljedeće tumačenje karakterističnih valova [@chow1959]:
 
-- $Fr<1$: **mirni** ili potkritični tok; gravitacijski poremećaj može putovati i uzvodno i nizvodno.
-- $Fr=1$: **kritični** tok; uzvodno širenje vala upravo je zaustavljeno.
-- $Fr>1$: **siloviti** ili natkritični tok; tok odnosi oba karakteristična vala nizvodno.
+- $Fr<1$: **mirno** ili potkritično strujanje; gravitacijski poremećaj može putovati i uzvodno i nizvodno.
+- $Fr=1$: **kritično** strujanje; uzvodno širenje vala upravo je zaustavljeno.
+- $Fr>1$: **silovito** ili natkritično strujanje; voda odnosi oba karakteristična vala nizvodno.
 
-Takvo je tumačenje preciznije od tvrdnje da je $Fr$ sam po sebi omjer sila: $Fr$ je omjer brzine toka i karakteristične brzine gravitacijskog vala, dok je $Fr^2$ omjer inercijske i gravitacijske skale.
+Takvo je tumačenje preciznije od tvrdnje da je $Fr$ sam po sebi omjer sila: $Fr$ je omjer brzine strujanja i karakteristične brzine gravitacijskog vala, dok je $Fr^2$ omjer inercijske i gravitacijske skale.
 
 ::: {.mf1-fizikalno-znacenje}
 <p class="mf1-box-label">Fizikalno značenje — Isti Froudeov broj u kanalu i uz brod</p>
 
-Za kanal je $Fr=v/\sqrt{gy_h}$, s dubinom kao referentnom duljinom, a za brod iz []{.mf1-chapter-ref target="u11"} $Fr=v_s/\sqrt{gL}$, s duljinom broda. Oba broja uspoređuju brzinu s brzinom gravitacijskog vala; razlikuje se samo referentna duljina. Čim brod plovi u plitkoj vodi dubine $y$, mjerodavna postaje i dubinska inačica $Fr_y=v_s/\sqrt{gy}$: pri $Fr_y\to1$ brod se približava brzini dugog vala, valni otpor naglo raste, a pad tlaka pod trupom povećava gaz i trim (engl. *squat*). Zato u vučnom bazenu konačna dubina i širina (blokada presjeka) ograničavaju brzine pri kojima ispitivanje modela još odgovara dubokoj vodi. Kritični tok u kanalu i kritična brzina u plitkoj vodi ista su fizikalna pojava: tok, odnosno brod, sustiže vlastiti val.
+Za kanal je $Fr=v/\sqrt{gy_h}$, s dubinom kao referentnom duljinom, a za brod iz []{.mf1-chapter-ref target="u11"} $Fr=v_s/\sqrt{gL}$, s duljinom broda. Oba broja uspoređuju brzinu s brzinom gravitacijskog vala; razlikuje se samo referentna duljina. Kad brod plovi u plitkoj vodi dubine $y$, mjerodavna postaje i dubinska inačica $Fr_y=v_s/\sqrt{gy}$: pri $Fr_y\to1$ brod se približava brzini dugog vala, valni otpor naglo raste, a pad tlaka pod trupom povećava gaz i trim (engl. *squat*). Zato u vučnom bazenu konačna dubina i širina (blokada presjeka) ograničavaju brzine pri kojima ispitivanje modela još odgovara dubokoj vodi. Kritično strujanje u kanalu i kritična brzina u plitkoj vodi ista su fizikalna pojava: voda, odnosno brod, sustiže vlastiti val.
 :::
 
 ::: {#ex-rezim-retencijski-kanal .mf1-we}
@@ -65,7 +65,7 @@ Pravokutni kanal širine $b=2{,}0\ \text{m}$ vodi protok $Q=3{,}0\ \text{m}^3/\t
 
 **Traži se**
 
-Odredi srednju brzinu i Froudeov broj te klasificiraj režim toka.
+Odredi srednju brzinu i Froudeov broj te klasificiraj režim strujanja.
 
 **Rješenje**
 
@@ -79,15 +79,15 @@ $$ {#eq-otvoreni-tokovi-rijeseni-primjer-rezim-u-retencijskom-kanalu-t1-02}
 
 **Provjera i tumačenje**
 
-Tok je miran jer je $v<c=2{,}80\ \text{m/s}$, pa promjena nizvodnog vodostaja može djelovati i uzvodno.
+Strujanje je mirno jer je $v<c=2{,}80\ \text{m/s}$, pa promjena nizvodnog vodostaja može djelovati i uzvodno.
 :::
 
 
 ::: {#cfd-kanal-vodostaji .mf1-cfd title="Računalna dinamika fluida"}
 
-**Povišena razina rijeke na izlazu gradskoga kanala.** Za odvodni kanal zanima nas podiže li nizvodni vodostaj razinu uzvodno i približava li se voda rubu obale. U dubinski integriranom modelu zadajemo geometriju i otpor dna, a za potkritični tok obično i ulazni protok te izlaznu razinu. Brzine dugih valova $v\pm\sqrt{gy_h}$ objašnjavaju kako nizvodni poremećaj može putovati uzvodno.
+**Povišena razina rijeke na izlazu gradskoga kanala.** Za odvodni kanal zanima nas podiže li nizvodni vodostaj razinu uzvodno i približava li se voda rubu obale. U dubinski integriranom modelu zadajemo geometriju i otpor dna, a za potkritično strujanje obično i ulazni protok te izlaznu razinu. Brzine dugih valova $v\pm\sqrt{gy_h}$ objašnjavaju kako nizvodni poremećaj može putovati uzvodno.
 
-Uspoređujemo profile razine za više nizvodnih vodostaja pri istom dotoku. U natkritičnom režimu oba rubna podatka dolaze s uzvodne strane, pa se mijenja i način zadavanja rubnih uvjeta. Za oborinski događaj dodajemo vremenski promjenjive dotoke. Model opisuje dulju dionicu, a lokalni tok oko ustave iz []{.mf1-chapter-ref target="u05"} po potrebi izdvajamo za detaljniji CFD.
+Uspoređujemo profile razine za više nizvodnih vodostaja pri istom dotoku. U natkritičnom režimu oba rubna podatka dolaze s uzvodne strane, pa se mijenja i način zadavanja rubnih uvjeta. Za oborinski događaj dodajemo vremenski promjenjive dotoke. Model opisuje dulju dionicu, a lokalno strujanje oko ustave iz []{.mf1-chapter-ref target="u05"} po potrebi izdvajamo za detaljniji CFD.
 :::
 
 ## Specifična energija i kritična dubina {#sec-specificna-energija}
@@ -174,15 +174,15 @@ Q=C_d\,b\,a\sqrt{2gy_0},
 \qquad C_d\approx0{,}55\text{–}0{,}60,
 $$ {#eq-istjecanje-ispod-ustave}
 
-gdje $C_d$ obuhvaća kontrakciju, brzinu dolaska i gubitke, a njegova vrijednost mora potjecati iz ispitivanja za konkretnu geometriju. Navedeni raspon nastavna je procjena za nepotopljeno istjecanje kroz otvor malen prema uzvodnoj dubini; s porastom omjera $a/y_0$ koeficijent $C_d$ opada. Preko širokog preljeva tok prolazi kritičnim presjekom. Ako je $H$ energijska visina iznad krune (u ovom poglavlju $H$ označuje samo tu visinu), iz $y_c=\tfrac23H$ dobiva se
+gdje $C_d$ obuhvaća kontrakciju, brzinu dolaska i gubitke, a njegova vrijednost mora potjecati iz ispitivanja za konkretnu geometriju. Navedeni raspon nastavna je procjena za nepotopljeno istjecanje kroz otvor malen prema uzvodnoj dubini; s porastom omjera $a/y_0$ koeficijent $C_d$ opada. Preko širokog preljeva voda prolazi kritičnim presjekom. Ako je $H$ energijska visina iznad krune (u ovom poglavlju $H$ označuje samo tu visinu), iz $y_c=\tfrac23H$ dobiva se
 
 $$
 Q=C_{pr}\,b\,\sqrt{g}\left(\tfrac23H\right)^{3/2}\approx1{,}70\,C_{pr}\,b\,H^{3/2},
 $$ {#eq-preljev-siroki}
 
-pri čemu je empirijski $C_{pr}$ za dobro zaobljen prag, prema nastavnoj procjeni, blizu jedinice. Obje relacije za zadani protok daju uzvodnu razinu. Dubinu suženog mlaza $y_1$ primjer [-@ex-hidraulicki-skok-bazen] uzima kao izmjerenu silovitu dubinu ispred skoka. Koeficijenti su empirijski i vrijede samo u ispitanom rasponu.
+pri čemu je empirijski $C_{pr}$ za dobro zaobljen prag, prema nastavnoj procjeni, blizu jedinice. Obje relacije za zadani protok daju uzvodnu razinu. U primjeru [-@ex-hidraulicki-skok-bazen] dubina suženog mlaza $y_1$ uzima se kao izmjerena silovita dubina ispred skoka. Koeficijenti su empirijski i vrijede samo u ispitanom rasponu.
 
-## Postupno promjenjiv tok i kontrolni presjek {#sec-postupno-promjenjiv-tok}
+## Postupno promjenjivo strujanje i kontrolni presjek {#sec-postupno-promjenjiv-tok}
 
 Energijsku bilancu između dvaju presjeka možemo zapisati kao
 
@@ -191,7 +191,7 @@ z_1+y_1+\alpha_1\frac{v_1^2}{2g}
 =z_2+y_2+\alpha_2\frac{v_2^2}{2g}+h_g.
 $$ {#eq-otvoreni-tokovi-postupno-promjenjiv-tok-i-kontrolni-presjek-sec-01}
 
-Ovdje je $z$ visina dna iznad referentne razine, a $h_g$ ukupni gubitak visine između presjeka (linijski gubitak zbog trenja i eventualni lokalni gubitci). U postupno promjenjivom toku dubina se mijenja na duljini mnogo većoj od same dubine, pa je raspodjela tlaka približno hidrostatička. Za prizmatični kanal diferencijalni oblik bilance glasi
+Ovdje je $z$ visina dna iznad referentne razine, a $h_g$ ukupni gubitak visine između presjeka (linijski gubitak zbog trenja i eventualni lokalni gubitci). U postupno promjenjivom strujanju dubina se mijenja na duljini mnogo većoj od same dubine, pa je raspodjela tlaka približno hidrostatička. Za prizmatični kanal diferencijalni oblik bilance glasi
 
 $$
 \frac{dy}{dx}=\frac{S_0-S_f}{1-Fr^2},
@@ -208,7 +208,7 @@ U pravokutnom kanalu jedinični protok iznosi $q=1{,}5\ \text{m}^2/\text{s}$, a 
 
 **Traži se**
 
-Odredi obje pozitivne dubine koje odgovaraju zadanoj specifičnoj energiji te pripadne režime toka.
+Odredi obje pozitivne dubine koje odgovaraju zadanoj specifičnoj energiji te pripadne režime strujanja.
 
 **Rješenje**
 
@@ -227,21 +227,21 @@ Oba korijena zadovoljavaju istu idealiziranu specifičnu energiju, ali rubni uvj
 
 ::: {.mf1-cfd title="Računalna dinamika fluida"}
 
-**Hoće li prag uzvodno podići vodu?** U isti kanal dodamo blagi prag i usporedimo tok s izvedbom bez praga. Model mora odabrati granu rješenja spojivu s protokom i nizvodnim uvjetima. Specifična energija i kritična dubina služe za ručnu provjeru: približavanje vrijednosti $Fr=1$ upozorava na kontrolni presjek i na osjetljivost uzvodne razine.
+**Hoće li prag uzvodno podići vodu?** U isti kanal dodamo blagi prag i usporedimo strujanje s izvedbom bez praga. Model mora odabrati granu rješenja spojivu s protokom i nizvodnim uvjetima. Specifična energija i kritična dubina služe za ručnu provjeru: približavanje vrijednosti $Fr=1$ upozorava na kontrolni presjek i na osjetljivost uzvodne razine.
 
-Za blage promjene često su dovoljne jednadžbe plitke vode. Ako nas zanimaju okomito ubrzanje preko kratkoga praga, odvajanje toka ili lokalni tlakovi na konstrukciji, prelazimo na prostorni CFD vode i zraka. Uspoređujemo uzvodni vodostaj, protok i položaj prijelaza režima. Rezultate prostornog modela ne uspoređujemo s hidrostatičkim ondje gdje izrazita zakrivljenost toka ruši njegovu osnovnu pretpostavku.
+Za blage promjene često su dovoljne jednadžbe plitke vode. Ako nas zanimaju okomito ubrzanje preko kratkoga praga, odvajanje strujanja ili lokalni tlakovi na konstrukciji, prelazimo na prostorni CFD vode i zraka. Uspoređujemo uzvodni vodostaj, protok i položaj prijelaza režima. Rezultate prostornog modela ne uspoređujemo s hidrostatičkim ondje gdje zbog izrazite zakrivljenosti strujnica osnovna pretpostavka hidrostatičkog modela ne vrijedi.
 :::
 
 ## Hidraulički skok: energija se gubi, količina gibanja zatvara prijelaz {#sec-hidraulicki-skok}
 
-Hidraulički skok nagao je prijelaz iz silovitog u mirni tok. Dovoljno daleko ispred i iza skoka raspodjela tlaka približno je hidrostatička, ali je unutar skoka tok izrazito trodimenzijski i disipativan. Zato između rubnih presjeka primjenjujemo bilancu količine gibanja, a ne Bernoullijevu jednadžbu bez gubitaka.
+Hidraulički skok nagao je prijelaz iz silovitog u mirno strujanje. Dovoljno daleko ispred i iza skoka raspodjela tlaka približno je hidrostatička, ali je unutar skoka strujanje izrazito trodimenzijsko i disipativno. Zato između rubnih presjeka primjenjujemo bilancu količine gibanja, a ne Bernoullijevu jednadžbu bez gubitaka.
 
 ::: {.mf1-izvod}
 <p class="mf1-box-label">Matematički izvod — Spregnute dubine iz bilance količine gibanja</p>
 
-**Fizikalno pitanje.** Ako je uzvodna dubina silovitog toka poznata, kolika je dubina iza skoka i koliko se energije u njemu izgubi?
+**Fizikalno pitanje.** Ako je uzvodna dubina silovitog strujanja poznata, kolika je dubina iza skoka i koliko se energije u njemu izgubi?
 
-**Bilanca.** Kontrolni volumen obuhvaća kratak odsječak približno vodoravnog pravokutnog kanala širine $b$, s rubnim presjecima 1 i 2 izvan valjka, vrtložnog područja povratnog toka na površini skoka, gdje je raspodjela tlaka hidrostatička. Trenje o dno i stijenke te uzdužnu komponentu težine zanemarujemo. Vanjske sile na fluid jesu hidrostatičke tlačne sile $\rho g b y_1^2/2$ (na uzvodnom presjeku, u smjeru toka) i $\rho g b y_2^2/2$ (na nizvodnom presjeku, protiv toka), a tok količine gibanja kroz presjek iznosi $\rho Q v=\rho b q^2/y$ uz korekcijski faktor količine gibanja (Boussinesqov koeficijent) $\beta\approx1$. Zakon količine gibanja u smjeru toka glasi
+**Bilanca.** Kontrolni volumen obuhvaća kratak odsječak približno vodoravnog pravokutnog kanala širine $b$, s rubnim presjecima 1 i 2 u kojima je raspodjela tlaka hidrostatička. Ti presjeci leže izvan valjka, vrtložnog područja povratnog strujanja na površini skoka. Trenje o dno i stijenke te uzdužnu komponentu težine zanemarujemo. Vanjske sile na fluid jesu hidrostatičke tlačne sile $\rho g b y_1^2/2$ (na uzvodnom presjeku, u smjeru strujanja) i $\rho g b y_2^2/2$ (na nizvodnom presjeku, protiv njega), a tok količine gibanja kroz presjek iznosi $\rho Q v=\rho b q^2/y$ uz korekcijski faktor količine gibanja (Boussinesqov koeficijent) $\beta\approx1$. Zakon količine gibanja u smjeru strujanja glasi
 
 $$
 \rho g b\frac{y_1^2}{2}-\rho g b\frac{y_2^2}{2}=\rho b\frac{q^2}{y_2}-\rho b\frac{q^2}{y_1}.
@@ -275,13 +275,13 @@ $$
 \Delta E=E_1-E_2=\frac{(y_2-y_1)^3}{4y_1y_2}.
 $$ {#eq-gubitak-skoka}
 
-**Provjera.** Za $Fr_1\to1$ korijen daje $y_2/y_1\to1$ i $\Delta E\to0$: skok iščezava u kritičnom presjeku. Za $Fr_1<1$ formula daje $y_2<y_1$ i negativan $\Delta E$, što bi značilo stvaranje mehaničke energije, pa skok iz mirnog u siloviti tok nije moguć. Energija u skoku ne nestaje: $\Delta E$ se u valjku pretvara u toplinu. Bilanca količine gibanja ipak ostaje zatvorena jer sile i tokovi na rubnim presjecima ne ovise o tome što se događa unutar valjka.
+**Provjera.** Za $Fr_1\to1$ korijen daje $y_2/y_1\to1$ i $\Delta E\to0$: skok iščezava u kritičnom presjeku. Za $Fr_1<1$ formula daje $y_2<y_1$ i negativan $\Delta E$, što bi značilo stvaranje mehaničke energije, pa skok iz mirnog u silovito strujanje nije moguć. Energija u skoku ne nestaje: $\Delta E$ se u valjku pretvara u toplinu. Bilanca količine gibanja ipak ostaje zatvorena jer sile i tokovi na rubnim presjecima ne ovise o tome što se događa unutar valjka.
 :::
 
 ::: {.mf1-granica-modela}
 <p class="mf1-box-label">Granica modela — Hidraulički skok i plitkovodni opis</p>
 
-Relacija spregnutih dubina vrijedi za približno vodoravno dno, pravokutni presjek, hidrostatičke rubne presjeke i $\beta\approx1$. Na strmom dnu u bilancu ulaze uzdužna komponenta težine i trenje, u nepravokutnom presjeku mijenja se tlačni član, a zrak uvučen u valjak mijenja gustoću i debljinu mješavine. Duljina skoka, oblik valjka, pulsacije tlaka na dnu i erozija nizvodno nisu dio 1D modela: za njih su potrebne empirijske korelacije, modelna ispitivanja ili trodimenzijski dvofazni CFD validiran za taj režim. Jednadžbe plitke vode same po sebi ne opisuju presjeke s izrazitom zakrivljenošću strujnica, poput tjemena praga ili neposrednog podnožja ustave.
+Relacija spregnutih dubina vrijedi za približno vodoravno dno, pravokutni presjek, hidrostatičke rubne presjeke i $\beta\approx1$. Na strmom dnu u bilancu ulaze uzdužna komponenta težine i trenje, u nepravokutnom presjeku mijenja se tlačni član, a zrak uvučen u valjak mijenja gustoću i debljinu mješavine. Duljina skoka, oblik valjka, pulsacije tlaka na dnu i erozija nizvodno nisu dio 1D modela: za njih su potrebne empirijske korelacije, modelska ispitivanja ili trodimenzijski dvofazni CFD validiran za taj režim. Jednadžbe plitke vode same po sebi ne opisuju presjeke s izrazitom zakrivljenošću strujnica, poput tjemena praga ili neposrednog podnožja ustave.
 :::
 
 ::: {#ex-hidraulicki-skok-bazen .mf1-we}
@@ -312,11 +312,11 @@ $$ {#eq-otvoreni-tokovi-rijeseni-primjer-disipacijski-bazen-iza-ustave-t-03}
 
 U posljednjem računu zadržana je puna točnost dubine $y_2=1{,}235326\ldots\ \text{m}$; ranije zaokruživanje na $1{,}24\ \text{m}$ dalo bi gubitak od oko $0{,}7825\ \text{m}$.
 
-Odluka o položaju skoka slijedi iz usporedbe nizvodnog vodostaja sa spregnutom dubinom. Pri $y_{nv}=1{,}00\ \text{m}<y_2$ nizvodna impulsna funkcija premala je da zaustavi siloviti tok, pa se skok pomiče nizvodno (ili ga tok „odnese”) sve dok trenje ne poveća silovitu dubinu do one koja je spregnuta s $y_{nv}$. Bazen tada treba spušteno dno ili završni prag koji podiže lokalnu razinu. Pri $y_{nv}=1{,}40\ \text{m}>y_2$ skok je potopljen uz ustavu: mlaz ulazi ispod mirne vode i položaj je stabilan, ali se disipacija raspodjeljuje na dulji put, a tlačno je opterećenje dna drukčije.
+Odluka o položaju skoka slijedi iz usporedbe nizvodnog vodostaja sa spregnutom dubinom. Pri $y_{nv}=1{,}00\ \text{m}<y_2$ nizvodna impulsna funkcija premala je da zaustavi silovito strujanje, pa se skok pomiče nizvodno (ili ga voda „odnese”) sve dok trenje ne poveća silovitu dubinu do one koja je spregnuta s $y_{nv}$. Bazen tada treba spušteno dno ili završni prag koji podiže lokalnu razinu. Pri $y_{nv}=1{,}40\ \text{m}>y_2$ skok je potopljen uz ustavu: mlaz ulazi ispod mirne vode i položaj je stabilan, ali se disipacija raspodjeljuje na dulji put, a tlačno je opterećenje dna drukčije.
 
 **Provjera i tumačenje**
 
-Nizvodna je dubina veća, a specifična energija manja, kako to zahtijeva disipacija. Duljina bazena ne slijedi iz 1D računa, nego iz empirijskih korelacija [@chow1959], modelnih ispitivanja ili validiranog CFD-a, čija se vjerodostojnost dokazuje postupkom verifikacije i validacije [@nasa-cfd-vv; @asme-vv20-2009].
+Nizvodna je dubina veća, a specifična energija manja, kako to zahtijeva disipacija. Duljina bazena ne slijedi iz 1D računa, nego iz empirijskih korelacija [@chow1959], modelskih ispitivanja ili validiranog CFD-a, čija se vjerodostojnost dokazuje postupkom verifikacije i validacije [@nasa-cfd-vv; @asme-vv20-2009].
 :::
 
 ::: {#cfd-ustava-hidraulicki-skok .mf1-cfd title="Računalna dinamika fluida"}
@@ -325,12 +325,12 @@ Nizvodna je dubina veća, a specifična energija manja, kako to zahtijeva disipa
 
 **Zastani i promisli.** Model hidrauličkog skoka daje pad mehaničke energije, a bilanca količine gibanja pritom se zatvara. Jesu li ti rezultati nespojivi?
 
-Nisu: pad mehaničke energije uz zatvorenu bilancu količine gibanja očekivana je posljedica disipacije u skoku. Ručni račun u primjeru [-@ex-hidraulicki-skok-bazen] daje spregnutu dubinu i gubitak uz hidrostatičke presjeke izvan valjka. U CFD-u provjeravamo te veličine, očuvanje vode i utjecaj prostornog i vremenskog profinjenja. Metoda volumena fluida (engl. *Volume of Fluid*, VOF) pritom prati volumenski udio vode u ćeliji: 1 znači vodu, 0 zrak, a međuvrijednost označuje ćeliju kroz koju prolazi granica faza. Mjehurići koje mreža ne razlučuje traže dodatni opis. Za predviđanje erozije iza bazena potreban je i model dna i pronosa sedimenta; sama velika brzina tek upozorava na mjesto koje treba dalje analizirati.
+Nisu: pad mehaničke energije uz zatvorenu bilancu količine gibanja očekivana je posljedica disipacije u skoku. Ručni račun u primjeru [-@ex-hidraulicki-skok-bazen] daje spregnutu dubinu i gubitak uz hidrostatičke presjeke izvan valjka. U CFD-u provjeravamo te veličine, očuvanje vode i utjecaj progušćivanja mreže (engl. *mesh refinement*) i smanjenja vremenskog koraka. Metoda volumena fluida (engl. *Volume of Fluid*, VOF) prati volumenski udio vode u ćeliji: 1 znači vodu, 0 zrak, a međuvrijednost označuje ćeliju kroz koju prolazi granica faza. Mjehurići koje mreža ne razlučuje traže dodatni opis. Za predviđanje erozije iza bazena potreban je i model dna i pronosa sedimenta; sama velika brzina tek upozorava na mjesto koje treba dalje analizirati.
 :::
 
-## Uniformni tok i Manningova jednadžba {#sec-uniformni-tok}
+## Jednoliko strujanje i Manningova jednadžba {#sec-uniformni-tok}
 
-U dugom prizmatičnom kanalu može se uspostaviti približno uniformni tok, u kojem su dubina i srednja brzina stalne, a nagib energijske crte jednak je nagibu dna. U sustavu SI za takav se tok često rabi empirijska Manningova relacija
+U dugom prizmatičnom kanalu može se uspostaviti približno jednoliko strujanje, u kojem su dubina i srednja brzina stalne, a nagib energijske crte jednak je nagibu dna. U sustavu SI za takvo se strujanje često rabi empirijska Manningova relacija
 
 $$
 Q=\frac{1}{n}A R_h^{2/3}S_f^{1/2}.
@@ -343,7 +343,7 @@ U ovom zapisu Manningov koeficijent $n$ ima jedinicu $\text{s}/\text{m}^{1/3}$ i
 
 **Tekst zadatka**
 
-U pravokutnom kanalu širine $b=3{,}0\ \text{m}$ i dubine $y=1{,}0\ \text{m}$ tok je uniforman, pa je nagib energijske crte jednak nagibu dna, $S_f=S_0=0{,}001$. Manningov koeficijent čistog kanala iznosi $n=0{,}015$, a obraslog $n=0{,}025$.
+U pravokutnom kanalu širine $b=3{,}0\ \text{m}$ i dubine $y=1{,}0\ \text{m}$ strujanje je jednoliko, pa je nagib energijske crte jednak nagibu dna, $S_f=S_0=0{,}001$. Manningov koeficijent čistog kanala iznosi $n=0{,}015$, a obraslog $n=0{,}025$.
 
 **Traži se**
 
@@ -370,12 +370,12 @@ Budući da je $Q\propto1/n$, omjer protoka točno je jednak omjeru $0{,}015/0{,}
 
 **Cijeli kanal i detalj oko ustave.** Dug gradski kanal možemo opisati dubinski integriranim modelom s Manningovim koeficijentom otpora, a okolinu ustave izdvojiti za 3D CFD. Prvi model daje dotok i nizvodne vodostaje za lokalni račun, a lokalni rezultat može pomoći u određivanju veze između protoka, otvora i razlike razina za model cijele dionice.
 
-Oba modela moraju imati usklađenu ukupnu bilancu vode i isti raspon radnih uvjeta. Manningov $n$ opisuje otpor bez razlučivanja profila brzine po dubini, dok 3D model računa naprezanje na stijenci uz odabrani način modeliranja stijenke; $n$ nije molekularna viskoznost ni izravna visina hrapavosti. Uniformni tok omogućuje jednostavnu provjeru ekvivalentnog otpora. Istu logiku povezivanja lokalnoga CFD-a s modelom sustava primijenili smo u []{.mf1-chapter-ref target="u13"} na razdjelnik rashladnog kruga, čiji je CFD rezultat postao koeficijent lokalnog gubitka u proračunu cjevovoda.
+Oba modela moraju imati usklađenu ukupnu bilancu vode i isti raspon radnih uvjeta. Manningov $n$ opisuje otpor bez razlučivanja profila brzine po dubini, dok 3D model računa naprezanje na stijenci uz odabrani način modeliranja stijenke; $n$ nije molekularna viskoznost ni izravna visina hrapavosti. Jednoliko strujanje omogućuje jednostavnu provjeru ekvivalentnog otpora. Istu logiku povezivanja lokalnoga CFD-a s modelom sustava primijenili smo u []{.mf1-chapter-ref target="u13"} na razdjelnik rashladnog kruga, čiji je CFD rezultat postao koeficijent lokalnog gubitka u proračunu cjevovoda.
 :::
 
-## Postupak analize otvorenog toka {#sec-otvoreni-tok-ritual}
+## Postupak analize strujanja sa slobodnom površinom {#sec-otvoreni-tok-ritual}
 
-1. Skiciraj dno, slobodnu površinu, presjek i smjer toka.
+1. Skiciraj dno, slobodnu površinu, presjek i smjer strujanja.
 2. Odredi $A$, $T$, $P$, $y_h$ i $R_h$ i razlikuj njihove fizikalne uloge.
 3. Odredi srednju brzinu $v$ i $Fr$ prije nego što odabereš uzvodni ili nizvodni rubni uvjet.
 4. Za glatku promjenu primijeni energijsku bilancu, a za hidraulički skok bilancu količine gibanja i gubitak energije.
@@ -388,7 +388,7 @@ Oba modela moraju imati usklađenu ukupnu bilancu vode i isti raspon radnih uvje
 
 ::: {.callout-note collapse="true"}
 ### Odgovor
-Brzina uzvodnog gravitacijskog vala u odnosu na vodu tada je veća od srednje brzine toka.
+Brzina uzvodnog gravitacijskog vala u odnosu na vodu tada je veća od srednje brzine strujanja.
 :::
 
 2. Zašto kritična dubina minimizira specifičnu energiju pri zadanom $q$?
@@ -398,11 +398,11 @@ Brzina uzvodnog gravitacijskog vala u odnosu na vodu tada je veća od srednje br
 U minimumu je $dE/dy=0$, što vodi na $Fr=1$.
 :::
 
-3. Nizvodni vodostaj manji je od spregnute dubine izračunane za siloviti tok ispod ustave. Gdje će se skok uspostaviti?
+3. Nizvodni vodostaj manji je od spregnute dubine izračunane za silovito strujanje ispod ustave. Gdje će se skok uspostaviti?
 
 ::: {.callout-note collapse="true"}
 ### Odgovor
-Ne uz ustavu: nizvodna impulsna funkcija premala je da zaustavi siloviti tok, pa se skok pomiče nizvodno, do mjesta gdje silovita dubina, povećana trenjem, postane spregnuta s nizvodnim vodostajem. Stabilan položaj u bazenu zahtijeva prag ili spušteno dno.
+Ne uz ustavu: nizvodna impulsna funkcija premala je da zaustavi silovito strujanje, pa se skok pomiče nizvodno, do mjesta gdje silovita dubina, povećana trenjem, postane spregnuta s nizvodnim vodostajem. Stabilan položaj u bazenu zahtijeva prag ili spušteno dno.
 :::
 
 4. Je li Manningov $n$ univerzalno svojstvo betona?
@@ -416,9 +416,9 @@ Nije; $n$ empirijski opisuje cjelokupno stanje kanala i njegova vrijednost mora 
 
 ## Zadatci za vježbu {#sec-otvoreni-tok-zadaci}
 
-![Skice uz Z1–Z6: valovi, istjecanje ispod ustave, trapezni presjek, povišeno dno, kontrolni volumen skoka i provjera oborinskog kanala.](../assets/print/u15_vjezbe_skice.svg){#fig-otvoreni-tok-vjezbe fig-align="center" fig-alt="Šest panela s presjecima pravokutnog i trapeznog kanala, bočnim presjekom ustave sa suženim mlazom, tokom preko praga, kontrolnim volumenom skoka s tlačnim silama i bazenom iza kanala."}
+![Skice uz Z1–Z6: valovi, istjecanje ispod ustave, trapezni presjek, povišeno dno, kontrolni volumen skoka i provjera oborinskog kanala.](../assets/print/u15_vjezbe_skice.svg){#fig-otvoreni-tok-vjezbe fig-align="center" fig-alt="Šest panela s presjecima pravokutnog i trapeznog kanala, bočnim presjekom ustave sa suženim mlazom, strujanjem preko praga, kontrolnim volumenom skoka s tlačnim silama i bazenom iza kanala."}
 
-**Napomene uz skice.** Točka u poprečnom presjeku Z1 označuje tok prema promatraču. U Z2 dubina suženog mlaza nacrtana je shematski. U Z4 samo su $y_1$ i $\Delta z$ nacrtani u mjerilu. Sile u Z5 djeluju na fluid u kontrolnom volumenu, a valjak skoka je shematski. U Z6 dubina $y_2$ nacrtana je shematski, a $y_{2,dop}$ je samo podatak.
+**Napomene uz skice.** Točka u poprečnom presjeku Z1 označuje strujanje prema promatraču. U Z2 dubina suženog mlaza nacrtana je shematski. U Z4 samo su $y_0$ i $\Delta z$ nacrtani u mjerilu. Sile u Z5 djeluju na fluid u kontrolnom volumenu, a valjak skoka je shematski. U Z6 dubina $y_2$ nacrtana je shematski, a $y_{2,dop}$ je samo podatak.
 
 U svim vježbama koristi $g=9{,}81\ \mathrm{m/s^2}$.
 
@@ -478,22 +478,22 @@ Napiši $y_0+q^2/(2gy_0^2)=y_1+q^2/(2gy_1^2)$ i riješi po $q$: $q=y_1\sqrt{2g(y
 ::: {.callout-tip collapse="true" data-answer-key="true" data-key-full="true"}
 ### Kontrolni rezultat
 
-$y_1=0{,}244\ \mathrm{m}$, $q\approx1{,}443\ \mathrm{m^2/s}$, $Q\approx2{,}886\ \mathrm{m^3/s}$ i $C_d\approx0{,}576$, unutar raspona 0,55–0,60. $Fr_0\approx0{,}163$ (mirni tok) i $Fr_1\approx3{,}82$ (siloviti tok): tok prolazi kroz kritično stanje ispod ustave, pa uzvodna razina ovisi samo o protoku i otvoru, a ne o nizvodnom stanju. Pri $a=0{,}800\ \mathrm{m}$ je $y_1=0{,}488\ \mathrm{m}$, $q\approx2{,}741\ \mathrm{m^2/s}$, dakle $1{,}90$ puta više: $C_d$ pada na $0{,}547$ jer veći otvor daje dublji suženi mlaz, pa se razlika $y_0-y_1$ relativno smanjuje; veća brzina dolaska taj pad samo djelomično nadoknađuje.
+$y_1=0{,}244\ \mathrm{m}$, $q\approx1{,}443\ \mathrm{m^2/s}$, $Q\approx2{,}886\ \mathrm{m^3/s}$ i $C_d\approx0{,}576$, unutar raspona 0,55–0,60. $Fr_0\approx0{,}163$ (mirno strujanje) i $Fr_1\approx3{,}82$ (silovito strujanje): voda prolazi kroz kritično stanje ispod ustave, pa uzvodna razina ovisi samo o protoku i otvoru, a ne o nizvodnom stanju. Pri $a=0{,}800\ \mathrm{m}$ je $y_1=0{,}488\ \mathrm{m}$, $q\approx2{,}741\ \mathrm{m^2/s}$, dakle $1{,}90$ puta više: $C_d$ pada na $0{,}547$ jer veći otvor daje dublji suženi mlaz, pa se razlika $y_0-y_1$ relativno smanjuje; veća brzina dolaska taj pad samo djelomično nadoknađuje.
 :::
 ::::
 
 [Razina: T1]{.mf1-task-level}
 
-### Geometrija i tok trapeznog kanala {#task-trapezni-presjek .unnumbered .unlisted}
+### Geometrija i strujanje u trapeznom kanalu {#task-trapezni-presjek .unnumbered .unlisted}
 
 **Tekst zadatka**
 
-Simetrični trapezni kanal ima širinu dna $b=2{,}40\ \mathrm{m}$, koeficijent pokosa $m_{pok}=1{,}50$ (vodoravno na jedan okomito; $z$ ostaje visina dna), dubinu $y=0{,}900\ \mathrm{m}$ i protok $Q=3{,}60\ \mathrm{m^3/s}$. Tok je jednodimenzijski, s približno hidrostatičkim tlakom. Slobodna površina nije dio oplakanog opsega.
+Simetrični trapezni kanal ima širinu dna $b=2{,}40\ \mathrm{m}$, koeficijent pokosa $m_{pok}=1{,}50$ (vodoravno na jedan okomito; $z$ ostaje visina dna), dubinu $y=0{,}900\ \mathrm{m}$ i protok $Q=3{,}60\ \mathrm{m^3/s}$. Strujanje je jednodimenzijsko, s približno hidrostatičkim tlakom. Slobodna površina nije dio oplakanog opsega.
 
 **Traži se**
 
-1. Izračunaj $A$, $T$, $P$, $y_h$, $R_h$, srednju brzinu i $Fr$. U trapeznom kanalu razlikuj površinu poprečnog presjeka toka, širinu slobodne površine i oplakani opseg.
-2. Klasificiraj tok. Obrazloži koja duljina ulazi u brzinu gravitacijskog vala i zašto je ne smiješ zamijeniti duljinom mjerodavnom za otpor strujanju.
+1. Izračunaj $A$, $T$, $P$, $y_h$, $R_h$, srednju brzinu i $Fr$. U trapeznom kanalu razlikuj površinu poprečnog presjeka strujanja, širinu slobodne površine i oplakani opseg.
+2. Klasificiraj strujanje. Obrazloži koja duljina ulazi u brzinu gravitacijskog vala i zašto je ne smiješ zamijeniti duljinom mjerodavnom za otpor strujanju.
 
 :::: {.content-visible .mf1-hint-online when-format="html"}
 ::: {.callout-note collapse="true" data-hint-key="true"}
@@ -507,7 +507,7 @@ Za pokos $m_{pok}{:}1$ vrijedi $A=y(b+m_{pok}y)$, $T=b+2m_{pok}y$ i $P=b+2y\sqrt
 ::: {.callout-tip collapse="true" data-answer-key="true"}
 ### Kontrolni rezultat
 
-$A=3{,}375\ \mathrm{m^2}$, $T=5{,}100\ \mathrm{m}$, $P\approx5{,}645\ \mathrm{m}$, $y_h\approx0{,}6618\ \mathrm{m}$, $R_h\approx0{,}5979\ \mathrm{m}$, $v\approx1{,}0667\ \mathrm{m/s}$ i $Fr\approx0{,}4186$ (mirni tok).
+$A=3{,}375\ \mathrm{m^2}$, $T=5{,}100\ \mathrm{m}$, $P\approx5{,}645\ \mathrm{m}$, $y_h\approx0{,}6618\ \mathrm{m}$, $R_h\approx0{,}5979\ \mathrm{m}$, $v\approx1{,}0667\ \mathrm{m/s}$ i $Fr\approx0{,}4186$ (mirno strujanje).
 :::
 ::::
 
@@ -519,7 +519,7 @@ $A=3{,}375\ \mathrm{m^2}$, $T=5{,}100\ \mathrm{m}$, $P\approx5{,}645\ \mathrm{m}
 
 **Tekst zadatka**
 
-Povišenje dna smanjuje raspoloživu specifičnu energiju toka. Pravokutni kanal stalne širine vodi $q=2{,}20\ \mathrm{m^2/s}$ pri potkritičnoj uzvodnoj dubini $y_0=1{,}200\ \mathrm{m}$. Dno na tjemenu praga više je za $\Delta z=0{,}120\ \mathrm{m}$. Zanemari gubitke; tlak je približno hidrostatički, a $\alpha=1$. Nizvodni uvjet dopušta glatki potkritični nastavak. Promatraj presjeke daleko od lokalne zakrivljenosti prijelaza. Za odabrani korijen zahtijevaj energijski rezidual manji od $\varepsilon_E=10^{-6}\ \mathrm{m}$.
+Povišenje dna smanjuje raspoloživu specifičnu energiju strujanja. Pravokutni kanal stalne širine vodi $q=2{,}20\ \mathrm{m^2/s}$ pri potkritičnoj uzvodnoj dubini $y_0=1{,}200\ \mathrm{m}$. Dno na tjemenu praga više je za $\Delta z=0{,}120\ \mathrm{m}$. Zanemari gubitke; tlak je približno hidrostatički, a $\alpha=1$. Nizvodni uvjet dopušta glatki potkritični nastavak. Promatraj presjeke daleko od lokalne zakrivljenosti prijelaza. Za odabrani korijen zahtijevaj energijski ostatak (engl. *residual*) manji od $\varepsilon_E=10^{-6}\ \mathrm{m}$.
 
 **Traži se**
 
@@ -549,12 +549,12 @@ $y_c\approx0{,}790179\ \mathrm{m}$, $E_{min}\approx1{,}185268\ \mathrm{m}$ i $\D
 
 **Tekst zadatka**
 
-Zadano je $Q=1{,}800\pm0{,}018\ \mathrm{m^3/s}$, $b=1{,}200\pm0{,}003\ \mathrm{m}$, $y_1=0{,}250\pm0{,}003\ \mathrm{m}$ i $y_2=1{,}220\pm0{,}008\ \mathrm{m}$; navedene su neovisne standardne nesigurnosti ($k=1$). Kanal je vodoravan i pravokutan. Na kratkom kontrolnom volumenu zanemari uzdužnu silu dna i stijenki; tlak u rubnim presjecima je hidrostatički, a $\beta_1=\beta_2=1$. U oba presjeka koristi se isti izračunani $q=Q/b$, pa njihove doprinose nesigurnosti ne smiješ tretirati kao dva neovisna protoka.
+Zadano je $Q=1{,}800\pm0{,}018\ \mathrm{m^3/s}$, $b=1{,}200\pm0{,}003\ \mathrm{m}$, $y_1=0{,}250\pm0{,}003\ \mathrm{m}$ i $y_2=1{,}220\pm0{,}008\ \mathrm{m}$; navedene su neovisne standardne nesigurnosti ($k=1$). Kanal je vodoravan i pravokutan. Na kratkom kontrolnom volumenu zanemari uzdužnu silu dna i stijenki; tlak u rubnim presjecima je hidrostatički, a $\beta_1=\beta_2=1$. U oba presjeka koristi se isti izračunani $q=Q/b$, pa doprinose nesigurnosti u tim presjecima ne smiješ računati kao da potječu od dvaju neovisnih protoka.
 
 **Traži se**
 
 1. Odaberi kontrolni volumen s rubnim presjecima izvan valjka skoka i prikaži vanjske sile.
-2. Izvedi rezidual $\Delta_I=(I_2-I_1)/(\rho gb)$, linearno propagiraj nesigurnost svih četiriju mjerenja i primijeni kriterij $|\Delta_I|\le2s_{\Delta}$, gdje je $s_{\Delta}$ standardna nesigurnost reziduala.
+2. Izvedi ostatak $\Delta_I=(I_2-I_1)/(\rho gb)$, linearno propagiraj nesigurnost svih četiriju mjerenja i primijeni kriterij $|\Delta_I|\le2s_{\Delta}$, gdje je $s_{\Delta}$ standardna nesigurnost ostatka.
 3. Odredi i teorijsku spregnutu dubinu iz srednjih vrijednosti uzvodnih ulaznih podataka. Zaključak ograniči na zadani model i kriterij slaganja mjerenja.
 
 :::: {.content-visible .mf1-hint-online when-format="html"}
@@ -579,11 +579,11 @@ $q=1{,}5000\ \mathrm{m^2/s}$, $s_q\approx0{,}01546\ \mathrm{m^2/s}$, $\Delta_I\a
 
 **Tekst zadatka**
 
-Simetrični trapezni kanal ima $b=3{,}00\ \mathrm{m}$, koeficijent pokosa $m_{pok}=2{,}00$ (vodoravno na jedan okomito), konstrukcijsku dubinu $y_{kon}=1{,}50\ \mathrm{m}$ i nagib dna $S_0=0{,}00150$. Kanal mora provesti projektni protok $Q_d=8{,}00\ \mathrm{m^3/s}$ uz slobodni rub od najmanje $f_{min}=0{,}300\ \mathrm{m}$. Primijeni uniformni Manningov model sa $S_f=S_0$.
+Simetrični trapezni kanal ima $b=3{,}00\ \mathrm{m}$, koeficijent pokosa $m_{pok}=2{,}00$ (vodoravno na jedan okomito), konstrukcijsku dubinu $y_{kon}=1{,}50\ \mathrm{m}$ i nagib dna $S_0=0{,}00150$. Kanal mora provesti projektni protok $Q_d=8{,}00\ \mathrm{m^3/s}$ uz slobodni rub od najmanje $f_{min}=0{,}300\ \mathrm{m}$. Primijeni Manningov model jednolikog strujanja sa $S_f=S_0$.
 
 Nastavne procjene hrapavosti za tri stanja održavanja jesu A: $n_A=0{,}018\pm0{,}001\ \mathrm{s/m^{1/3}}$, B: $n_B=0{,}026\pm0{,}002\ \mathrm{s/m^{1/3}}$ i C: $n_C=0{,}035\pm0{,}004\ \mathrm{s/m^{1/3}}$. Navedene standardne nesigurnosti u ovom zadatku ne ulaze u račun; nastavak s nepovoljnijom procjenom nalazi se u bilježnici.
 
-Bazen je zaseban vodoravni pravokutni kontrolni volumen širine $b_{baz}=5{,}00\ \mathrm{m}$. Zadana je ulazna dubina $y_1=0{,}350\ \mathrm{m}$, koju daje brzotok ili pad dna između kanala i bazena; taj prijelaz ovdje se ne računa. Nizvodni vodostaj u bazenu može održati dubinu do $y_{2,dop}=1{,}40\ \mathrm{m}$: skok ostaje u bazenu ako potrebna spregnuta dubina nije veća od te vrijednosti. Ulazni tok je natkritičan, rubni tlakovi su hidrostatički, $\beta=1$, a uzdužne sile trenja zanemarive.
+Bazen je zaseban vodoravni pravokutni kontrolni volumen širine $b_{baz}=5{,}00\ \mathrm{m}$. Zadana je ulazna dubina $y_1=0{,}350\ \mathrm{m}$, koju daje brzotok ili pad dna između kanala i bazena; taj prijelaz ovdje se ne računa. Nizvodni vodostaj u bazenu može održati dubinu do $y_{2,dop}=1{,}40\ \mathrm{m}$: skok ostaje u bazenu ako potrebna spregnuta dubina nije veća od te vrijednosti. Ulazno strujanje je natkritično, rubni tlakovi su hidrostatički, $\beta=1$, a uzdužne sile trenja zanemarive.
 
 **Traži se**
 
@@ -620,7 +620,7 @@ Redom A/B/C (protoci u m³/s, dubine i rubovi u m): $Q_{cap}=(11{,}759;8{,}141;6
 <div class="mf1-interaktivno-akcija">
 <a class="mf1-interaktivno-veza" href="https://martibasic.github.io/mehanika-fluida-prirucnik/jlite/lab/index.html?path=u15_otvoreni_tokovi.ipynb">Pokreni u pregledniku</a>
 <a class="mf1-interaktivno-veza" href="https://colab.research.google.com/github/martibasic/mehanika-fluida-prirucnik/blob/main/notebooks/u15_otvoreni_tokovi.ipynb" target="_blank" rel="noopener">Pričuvno: otvori u Colabu</a>
-<img class="mf1-interaktivno-qr" src="../assets/qr/u15_otvoreni_tokovi_jlite.svg" alt="QR kod za pokus otvorenih tokova u pregledniku"/>
+<img class="mf1-interaktivno-qr" src="../assets/qr/u15_otvoreni_tokovi_jlite.svg" alt="QR kod za pokus strujanja sa slobodnom površinom u pregledniku"/>
 </div>
 :::
 
@@ -633,7 +633,7 @@ Redom A/B/C (protoci u m³/s, dubine i rubovi u m): $Q_{cap}=(11{,}759;8{,}141;6
 - Ustava i preljev kontrolne su građevine: nameću vezu protoka i uzvodne razine, a njihovi koeficijenti $C_d$ i $C_{pr}$ empirijski su.
 - Hidraulički skok opisuje se bilancom količine gibanja (jednakošću impulsne funkcije $I$ u rubnim presjecima), a u njemu se disipira mehanička energija; položaj skoka ovisi o nizvodnom vodostaju.
 - Manningov $n$ empirijski sažima stanje kanala i mora imati izvor, raspon i analizu osjetljivosti.
-- Jednodimenzijski model ne opisuje unutrašnjost skoka, duljinu umirnog bazena ni tok preko kratkoga zakrivljenog praga.
+- Jednodimenzijski model ne opisuje unutrašnjost skoka, duljinu umirnog bazena ni strujanje preko kratkoga zakrivljenog praga.
 
 **Najčešća pogreška.** Bernoullijeva jednadžba bez gubitaka primijenjena kroz hidraulički skok, umjesto bilance količine gibanja s impulsnom funkcijom.
 

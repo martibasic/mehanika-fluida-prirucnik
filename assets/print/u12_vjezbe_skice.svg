@@ -40,8 +40,8 @@
         <line id="u14ex_z1disk" x1="220" y1="120" x2="220" y2="200" stroke="#356b83" stroke-width="2.5" stroke-dasharray="6 4" />
         <path id="u14ex_z1vA" d="M60 160 L105 160" fill="none" stroke="#356b83" stroke-width="1.6" marker-end="url(#u14ex_vopen)" data-mf1-vector="velocity" />
         <text x="94" y="151" font-size="12" fill="#263746" text-anchor="middle"><tspan font-weight="700" font-style="italic">v<tspan baseline-shift="sub" font-size="0.75em" font-style="normal">A</tspan></tspan> = 5 m/s</text>
-        <path id="u14ex_z1vd" d="M232 160 L272 160" fill="none" stroke="#356b83" stroke-width="1.6" marker-end="url(#u14ex_vopen)" data-mf1-vector="velocity" />
-        <text x="252" y="151" font-size="12" fill="#263746" text-anchor="middle"><tspan font-weight="700" font-style="italic">v<tspan baseline-shift="sub" font-size="0.75em" font-style="normal">d</tspan></tspan> = ?</text>
+        <path id="u14ex_z1vd" d="M230 160 L282 160" fill="none" stroke="#356b83" stroke-width="1.6" marker-end="url(#u14ex_vopen)" data-mf1-vector="velocity" />
+        <text x="256" y="151" font-size="12" fill="#263746" text-anchor="middle"><tspan font-weight="700" font-style="italic">v<tspan baseline-shift="sub" font-size="0.75em" font-style="normal">d</tspan></tspan> = ?</text>
         <path id="u14ex_z1vj" d="M320 160 L380 160" fill="none" stroke="#356b83" stroke-width="1.6" marker-end="url(#u14ex_vopen)" data-mf1-vector="velocity" />
         <text x="350" y="151" font-size="12" fill="#263746" text-anchor="middle"><tspan font-weight="700" font-style="italic">v<tspan baseline-shift="sub" font-size="0.75em" font-style="normal">j</tspan></tspan> = ?</text>
         <path id="u14ex_z1thrust" d="M250 84 L190 84" fill="none" stroke="#356b83" stroke-width="2.8" marker-end="url(#u14ex_forceMarker)" data-mf1-vector="force" />

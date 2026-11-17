@@ -2,13 +2,13 @@
 
 Sveučilišni priručnik namijenjen je studentima druge godine strojarstva i brodogradnje. Povezuje fizikalno objašnjenje, matematički izvod i rješavanje zadataka: u petnaest poglavlja upoznat ćeš svojstva fluida, hidrostatiku te strujanje u cijevima, turbostrojevima i otvorenim kanalima.
 
-Primjene u brodogradnji obuhvaćaju hidrostatička opterećenja, uzgon i početni stabilitet, sličnost pri modelskim ispitivanjima te propulziju. Primjeri iz građevinarstva, energetike, zaštite okoliša, biomedicine i procesne tehnike uključeni su kad prenose isti model i pomažu prepoznati njegovu opću strukturu.
+Primjene u brodogradnji obuhvaćaju hidrostatička opterećenja, uzgon i početni stabilitet, sličnost pri modelskim ispitivanjima te propulziju. Primjeri iz građevinarstva, energetike, zaštite okoliša, biomedicine i procesne tehnike uključeni su kad se u njima primjenjuje isti model i kad pomažu prepoznati njegovu opću strukturu.
 
 Rješavanje tehničkog zadatka počinje skicom sustava i popisom pretpostavki; zatim slijede odgovarajuća bilanca, proračun i provjera rezultata. Pri prvom čitanju drži se glavnog teksta, riješenih primjera i zadataka. Blokovi *Dublje* i odlomci *Računalna dinamika fluida* (engl. *Computational Fluid Dynamics*, CFD) dodatno su štivo: osnovno gradivo priručnika možeš pratiti i bez učenja CFD postupaka.
 
 ## Predznanje
 
-Potrebne su osnove mehanike, rada i energije te računanje s jedinicama i vektorima. Diferencijalni i integralni račun primjenjuju se u izvodima, a vektorska analiza osobito je važna za diferencijalni opis toka. Ako preskačeš poglavlja, provjeri poznaješ li veličine i bilance na koje se novo gradivo poziva.
+Potrebne su osnove mehanike, rada i energije te računanje s jedinicama i vektorima. Diferencijalni i integralni račun primjenjuju se u izvodima, a vektorska analiza osobito je važna za diferencijalni opis strujanja. Ako preskačeš poglavlja, provjeri poznaješ li veličine i bilance na koje se novo gradivo poziva.
 
 Procijenjeno vrijeme navedeno uz poglavlja pomaže ti planirati samostalan rad. Ukupno je predviđeno približno **145 sati rada uz priručnik**, uključujući zadatke i numeričke pokuse; to nije cjelokupno ECTS opterećenje kolegija.
 
@@ -28,7 +28,7 @@ Okviri *Fizikalno značenje* tumače rezultat, dok okvir *Granica modela* objaš
 
 **Kako čitati CFD primjere.** Polazište je konkretno pitanje: dobivaju li svi rashladni kanali dovoljno tekućine, koliki val nastaje pri kočenju cisterne ili kako ustava mijenja razinu vode? Odlomak povezuje to pitanje s modelom, podatcima koje zadajemo i veličinama koje dobivamo iz računa. Uz rezultat pratimo provjeru i odluku koju on omogućuje.
 
-Neki se sustavi u knjizi pojavljuju više puta. Rashladnom krugu postupno dodajemo viskoznost, podjelu protoka, gubitke i crpku; plutanje pontona proširujemo na njihanje, a opterećenje ustave na tok nizvodno. Takvi primjeri pokazuju zašto novo pitanje traži dodatnu fiziku. Pregled poveznica i cjelovit postupak daje [dodatak o numeričkoj mehanici fluida](d04_numericka_mehanika_fluida.qmd).
+Neki se sustavi u knjizi pojavljuju više puta. Rashladnom krugu postupno dodajemo viskoznost, podjelu protoka, gubitke i crpku; plutanje pontona proširujemo na njihanje, a opterećenje ustave na strujanje nizvodno. Takvi primjeri pokazuju zašto novo pitanje zahtijeva uključivanje dodatnih fizikalnih pojava. Pregled poveznica i cjelovit postupak daje [dodatak o numeričkoj mehanici fluida](d04_numericka_mehanika_fluida.qmd).
 :::
 
 ## Oznake i razine zadataka
@@ -64,7 +64,7 @@ Oznake vektora uz strelice pisane su podebljano, a oznake skalara (kote, tlakovi
 
 ## Numerički pokusi i izdanja
 
-Numerički pokusi istražuju osjetljivost, bilance i pogrešku jednostavnih modela i nisu sami po sebi CFD simulacije. Bilježnice (*Jupyter notebooks*) otvaraju se preko poveznica ili QR kodova u JupyterLiteu, bez prijave; pričuvna je mogućnost Google Colab. Prvo pokretanje traži mrežnu vezu i može potrajati minutu ili dvije. Blok *Interaktivni prikaz* otvara laboratorij s klizačima, a blok *Numerički pokus* bilježnicu u kojoj se model provjerava računom.
+U numeričkim pokusima istražuju se osjetljivost, bilance i pogreška jednostavnih modela; ti pokusi sami po sebi nisu CFD simulacije. Bilježnice (engl. *Jupyter notebooks*) otvaraju se preko poveznica ili QR kodova u JupyterLiteu, bez prijave; pričuvna je mogućnost Google Colab. Prvo pokretanje traži mrežnu vezu i može potrajati minutu ili dvije. Blok *Interaktivni prikaz* otvara laboratorij s klizačima, a blok *Numerički pokus* bilježnicu u kojoj se model provjerava računom.
 
 **Za čitanje i rješavanje zadataka dovoljan je tekst priručnika.** Mrežno izdanje i PDF sadrže isto gradivo, a bilježnice ga nadopunjuju. Izdanje u PDF-u namijenjeno je ispisu i radu bez mrežne veze.
 

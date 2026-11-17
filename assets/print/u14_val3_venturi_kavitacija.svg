@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 31 840 452" role="img" aria-labelledby="u14vent_title u14vent_desc" preserveAspectRatio="xMidYMid meet" style="display:block;width:100%;max-width:840px;height:auto;">
-  <title id="u14vent_title">Venturi: geometrija i granica jednofaznog modela</title>
+  <title id="u14vent_title">Venturijeva cijev: geometrija i granica jednofaznog modela</title>
   <desc id="u14vent_desc">Otvoreno osnosimetrično suženje s promjerima u omjeru tri prema jedan. Apsolutni tlak prema Bernoulliju bez gubitaka za zadani protok prikazan je na numeričkoj osi ispod geometrije; najniži je u grlu. Dio ispod tlaka pare je isprekidan i nije fizički tlak jednofazne vode. Strelice brzina čuvaju poredak v_2 > v_1, ne i omjer 9 : 1.</desc>
   <defs>
     <pattern id="u14vent_hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">

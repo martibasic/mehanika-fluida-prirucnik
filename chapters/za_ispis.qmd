@@ -55,7 +55,7 @@ Za pripremljen prijelom stranica, sadržaj i bibliografiju preuzmi [PDF priručn
 
 {{< include ../source/u08_energijska_jednadzba_i_bernoulli.md >}}
 
-# Kompresibilni idealni tok {#print-u09 .mf1-collection-chapter .unnumbered data-document="u09"}
+# Stlačivo idealno strujanje {#print-u09 .mf1-collection-chapter .unnumbered data-document="u09"}
 
 {{< include ../source/u09_kompresibilni_idealni_tok.md >}}
 
@@ -67,7 +67,7 @@ Za pripremljen prijelom stranica, sadržaj i bibliografiju preuzmi [PDF priručn
 
 {{< include ../source/u11_dimenzijska_analiza_i_slicnost.md >}}
 
-# Diferencijalni opis realnog toka {#print-u12 .mf1-collection-chapter .unnumbered data-document="u12"}
+# Diferencijalni opis realnog strujanja {#print-u12 .mf1-collection-chapter .unnumbered data-document="u12"}
 
 {{< include ../source/u12_diferencijalni_opis_realnog_toka.md >}}
 
@@ -79,7 +79,7 @@ Za pripremljen prijelom stranica, sadržaj i bibliografiju preuzmi [PDF priručn
 
 {{< include ../source/u14_turbostrojevi_i_propulzija.md >}}
 
-# Otvoreni tokovi {#print-u15 .mf1-collection-chapter .unnumbered data-document="u15"}
+# Strujanje sa slobodnom površinom {#print-u15 .mf1-collection-chapter .unnumbered data-document="u15"}
 
 {{< include ../source/u15_otvoreni_tokovi.md >}}
 

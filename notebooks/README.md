@@ -14,7 +14,7 @@ Svaka bilježnica prati istu akademsku strukturu:
 3. **Izračunaj** — ponovljiv račun u Pythonu s knjižnicama dostupnima u pregledniku.
 4. **Provjeri** — najmanje dvije neovisne izvršive tvrdnje.
 5. **Numerička kvaliteta** — analiza pogreške, konvergencije, osjetljivosti,
-   reziduala ili nesigurnosti.
+   ostatka (engl. *residual*) ili nesigurnosti.
 6. **Protumači** — pitanja o fizikalnom značenju i granici modela.
 
 ## Pokretanje
@@ -56,7 +56,7 @@ instalirane pakete i preskače taj korak.
 
 ## Ogledni interaktivni laboratoriji
 
-Rotirajući spremnik, Venturi i Poiseuille imaju kartice **Istraži**,
+Rotirajući spremnik, Venturijeva cijev i Poiseuille imaju kartice **Istraži**,
 **Provjeri** i **Pogledaj kod**. Najprije odaberi **Run → Run All Cells**
 (u Colabu **Runtime → Run all**). Potom mijenjaj klizače ili klikni prikazani
 broj za točan unos. **Spremi A** pamti ulaze za usporedbu; **Početno stanje**
@@ -66,13 +66,13 @@ kao nastavni pokusi. Izvorne programske ćelije ostaju dostupne za uređivanje.
 - **Rotacija:** presjek, razine i volumen vrijede do prve granice modela.
   Nakon prelijevanja ili dodira dna oblik fluida nije nacrtan kao da model
   još vrijedi. Visina stijenke dodatni je ulaz pokusa.
-- **Venturi:** uljni primjer i zasebni vodeni slučaj čuvaju različite podatke.
+- **Venturijeva cijev:** uljni primjer i zasebni vodeni slučaj čuvaju različite podatke.
   Kontrole nesigurnosti pokrivaju D₂, Δp i Cd uz ostale točne ulaze; potpuni
   budžet pet ulaza i ponovljivo uzorkovanje ostaju ispod laboratorija.
-- **Poiseuille:** novi rješavač konačnih volumena računa brzinu iz bilance,
-  zatim protok, rezidual i silu stijenke. Odvojen je od integracije poznatog
+- **Poiseuille:** novi rješavač (engl. *solver*) konačnih volumena računa brzinu iz bilance,
+  zatim protok, ostatak i silu stijenke. Odvojen je od integracije poznatog
   profila i od sintetičkih podataka Z6. Izravni rješavač nema iteracijsku
-  povijest; mali rezidual nije dokaz male pogreške mreže.
+  povijest; mali ostatak nije dokaz male pogreške mreže.
 
 Priprema, model, zajedničko sučelje i prikaz označeni su ćelijskim oznakama
 `mf1-lab-bootstrap`, `mf1-lab-model`, `mf1-lab-common` i `mf1-lab-ui`. Uređuju se u aktualnim
@@ -106,14 +106,14 @@ i standardnim widgetima, a prijavljenu Colab sesiju treba zasebno isprobati.
 | `u07_gaz_plivajuceg_tijela.ipynb` | Gaz plivajućeg tijela | U06 |
 | `u08_kontinuitet_suzenje.ipynb` | Kontinuitet u suženju cijevi | U07 |
 | `u09_venturi.ipynb` | Venturijeva cijev — utjecaj geometrije na tlak i brzinu | U08 |
-| `u09_kompresibilna_sapnica.ipynb` | Kompresibilna sapnica i prigušenje protoka | U09 |
+| `u09_kompresibilna_sapnica.ipynb` | Sapnica u stlačivom strujanju i prigušenje protoka | U09 |
 | `u11_sila_na_koljeno.ipynb` | Sila na koljeno — promjena smjera strujanja | U10 |
 | `u14_cd_re_kugla.ipynb` | Ovisnost koeficijenta otpora kugle o Reynoldsovu broju | U11 |
 | `u12_poiseuille_konvergencija.ipynb` | Poiseuilleov profil i numerička konvergencija | U12 |
 | `u10_moody_dijagram.ipynb` | Colebrookova jednadžba i koeficijent trenja | U13 |
 | `u13_paralelne_grane.ipynb` | Paralelne grane cjevovoda — raspodjela protoka | U13 |
 | `u12_pelton_lopatica.ipynb` | Trokuti brzina i snaga na Peltonovoj lopatici | U14 |
-| `u15_otvoreni_tokovi.ipynb` | Režimi otvorenog toka i kritična dubina | U15 |
+| `u15_otvoreni_tokovi.ipynb` | Režimi strujanja sa slobodnom površinom i kritična dubina | U15 |
 
 ## Automatska provjera
 

@@ -54,7 +54,7 @@ TOC_MARKERS = (
     "Sadržaj",
     "Osnove fluida i Pascalov zakon",
     "Energijska jednadžba i Bernoulli",
-    "Otvoreni tokovi",
+    "Strujanje sa slobodnom površinom",
     "Dodaci",
 )
 RASTER_CHAPTERS = (

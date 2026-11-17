@@ -1,8 +1,8 @@
 Kad voda prolazi kroz suženje vodoravne cijevi, ubrzava se, a tlak na stijenci pada. Kad se ista voda uspinje kroz cijev stalnog presjeka, brzina joj se ne mijenja, a tlak ipak pada. Obje pojave posljedica su iste bilance: mehanička energija fluida premješta se između tlaka, brzine i geodetske visine. U ovom poglavlju tu bilancu zapisujemo kao Bernoullijevu jednadžbu i kao opću energijsku jednadžbu kontrolnog volumena, iz koje Bernoullijeva jednadžba slijedi kao poseban slučaj.
 
-Za stacionaran nestlačiv tok duž iste strujnice, bez gubitaka i strojnog rada između presjeka, vrijedi $p/(\rho g)+v^2/(2g)+z=\text{konst.}$ Svaki je član visina u metrima fluida: tlačna, brzinska i geodetska. Iz tih članova grade se piezometarska crta (HGL) i energijska crta (EGL). Bernoullijeva jednadžba izvodi se iz Eulerove jednadžbe duž strujnice, a njezini se članovi tumače kao rad i energija po jedinici težine. Opća energijska jednadžba, izvedena iz Reynoldsova transportnog teorema, dodaje joj visinu dobave crpke $H_p$, visinu turbine $H_t$, gubitak visine $h_g$ i korekcijski faktor kinetičke energije $\alpha$.
+Za stacionarno nestlačivo strujanje duž iste strujnice, bez gubitaka i strojnog rada između presjeka, vrijedi $p/(\rho g)+v^2/(2g)+z=\text{konst.}$ Svaki je član visina u metrima fluida: tlačna, brzinska i geodetska. Iz tih članova grade se piezometarska crta (HGL) i energijska crta (EGL). Bernoullijeva jednadžba izvodi se iz Eulerove jednadžbe duž strujnice, a njezini se članovi tumače kao rad i energija po jedinici težine. Opća energijska jednadžba, izvedena iz Reynoldsova transportnog teorema, dodaje joj visinu dobave crpke $H_p$, visinu turbine $H_t$, gubitak visine $h_g$ i korekcijski faktor kinetičke energije $\alpha$.
 
-Zajedno s bilancom mase iz []{.mf1-chapter-ref target="u07"} Bernoullijeva jednadžba objašnjava rad Venturijeve cijevi, Pitotove sonde, slobodnog mlaza i sifona. Na brodu se njome procjenjuje tlak na ulazu u rashladnu crpku morske vode i rezerva prema tlaku pare, a u strojarstvu se njome mjere protok ulja i brzina zraka. Poglavlje redom obrađuje mehaničku energiju idealnog toka i crte HGL i EGL, izvod Bernoullijeve jednadžbe iz Eulerove jednadžbe te opću energijsku jednadžbu, a zatim ih primjenjuje u riješenim primjerima.
+Zajedno s bilancom mase iz []{.mf1-chapter-ref target="u07"} Bernoullijeva jednadžba objašnjava rad Venturijeve cijevi, Pitotove sonde, slobodnog mlaza i sifona. Na brodu se njome procjenjuje tlak na ulazu u rashladnu crpku morske vode i rezerva prema tlaku pare, a u strojarstvu se njome mjere protok ulja i brzina zraka. Poglavlje redom obrađuje mehaničku energiju idealnog strujanja i crte HGL i EGL, izvod Bernoullijeve jednadžbe iz Eulerove jednadžbe te opću energijsku jednadžbu, a zatim ih primjenjuje u riješenim primjerima.
 
 Gubitci i rad crpke brojčano se obrađuju u []{.mf1-chapter-ref target="u13"}, a stlačivost plina pri Machovu broju iznad oko 0,3 opisuje se u []{.mf1-chapter-ref target="u09"}.
 
@@ -12,9 +12,9 @@ Slika [-@fig-uvod-u09] prikazuje obje pojave. Lijevo su energijski stupci za pre
 
 **Procijenjeno vrijeme rada uz priručnik:** 10 sati.
 
-## Mehanička energija idealnoga toka
+## Mehanička energija idealnoga strujanja {#mehanička-energija-idealnoga-toka}
 
-Bernoullijeva jednadžba bilanca je mehaničke energije po jedinici težine u idealiziranom strujanju, sa zbrojem tlačne visine $p/(\rho g)$, brzinske visine $v^2/(2g)$ i geodetske visine $z$:
+Bernoullijeva jednadžba bilanca je mehaničke energije po jedinici težine u idealiziranom strujanju. Zbroj tlačne visine $p/(\rho g)$, brzinske visine $v^2/(2g)$ i geodetske visine $z$ stalan je:
 
 $$
 \frac{p}{\rho g} + \frac{v^2}{2g} + z = \text{konst.}
@@ -27,7 +27,7 @@ $$
 $$ {#eq-energijska-bilanca-fizikalni-uvod-i-matematicki-izvod-02}
 
 
-Ako jedan član raste, barem jedan od preostala dva mora pasti; to je fizikalna srž Venturijeve cijevi, Pitotove sonde, mlaza i sifona bez gubitaka. Iz istih članova proizlaze dvije crte za prikaz energije toka. Piezometarska visina zbroj je tlačne i geodetske visine; nanesena duž toka daje piezometarsku crtu (HGL),
+Ako jedan član raste, barem jedan od preostala dva mora pasti; na tome se temelji rad Venturijeve cijevi, Pitotove sonde, mlaza i sifona bez gubitaka. Iz istih članova proizlaze dvije crte za prikaz energije strujanja. Piezometarska visina zbroj je tlačne i geodetske visine; nanesena duž strujanja daje piezometarsku crtu (HGL),
 
 $$
 HGL = \frac{p}{\rho g} + z,
@@ -41,7 +41,7 @@ $$ {#eq-energijska-bilanca-interaktivni-prikaz-venturijeva-cijev-02}
 
 ::: {.mf1-fizikalno-znacenje}
 <p class="mf1-box-label">Fizikalno značenje</p>
-EGL leži iznad HGL-a za brzinsku visinu $v^2/(2g)$. Pri crtanju otvorenih vodnih sustava obično se koristi **manometarski tlak**, pa slobodna površina otvorenog spremnika leži na HGL-u. U idealnom toku EGL je vodoravna, a HGL pada ondje gdje se fluid ubrzava i raste ondje gdje se usporava. U silaznom suženju tlak može i rasti (Z3): pada HGL, ne nužno tlak. Ako je HGL ispod osi cijevi, manometarski je tlak negativan, ali apsolutni tlak i dalje može biti daleko iznad tlaka zasićene pare. Kavitacija je moguća tek kad lokalni **apsolutni** tlak dosegne tlak zasićene pare pri promatranoj temperaturi.
+EGL leži iznad HGL-a za brzinsku visinu $v^2/(2g)$. Pri crtanju otvorenih vodnih sustava obično se koristi **manometarski tlak**, pa slobodna površina otvorenog spremnika leži na HGL-u. U idealnom strujanju EGL je vodoravna, a HGL pada ondje gdje se fluid ubrzava i raste ondje gdje se usporava. U silaznom suženju tlak može i rasti (Z3): pada HGL, ne nužno tlak. Ako je HGL ispod osi cijevi, manometarski je tlak negativan, ali apsolutni tlak i dalje može biti daleko iznad tlaka zasićene pare. Kavitacija je moguća tek kad lokalni **apsolutni** tlak dosegne tlak zasićene pare pri promatranoj temperaturi.
 :::
 
 Tlak zadan u paskalima ili kilopaskalima u Bernoullijevoj se jednadžbi izražava tlačnom visinom $p/(\rho g)$ u metrima fluida; umnožak $\rho g$ specifična je težina $\gamma$ iz []{.mf1-chapter-ref target="u01"}, ali u ovom priručniku Bernoullijeve članove pišemo s $\rho g$:
@@ -61,7 +61,7 @@ Bernoullijeva jednadžba nije zaseban zakon, nego integrirani oblik Eulerove jed
 Promatramo element strujne cijevi duljine $ds$ i poprečnog presjeka $A$ koji se giba duž strujnice brzinom $v$ u smjeru $s$. Masa elementa je $dm = \rho A\,ds$. Na njega djeluju tri vrste sila u smjeru osi $s$:
 
 - sila tlaka na ulaznoj plohi: $p A$ u smjeru $+s$;
-- sila tlaka na izlaznoj plohi: $-(p + dp) A$ u smjeru $+s$ (predznak: tlak gura natrag);
+- sila tlaka na izlaznoj plohi: $-(p + dp) A$ u smjeru $+s$ (predznak je negativan jer ta sila djeluje suprotno smjeru $s$);
 - komponenta težine duž osi $s$: $-\rho g A\,ds \cdot \sin\theta$, gdje je $\theta$ kut između strujnice i vodoravne ravnine. Uz $\sin\theta = dz/ds$ (porast visine po duljini strujnice) tu komponentu zapisujemo kao $-\rho g A\,ds \cdot dz/ds$.
 
 Ako se presjek duž elementa mijenja za $dA$, bočni tlak na plaštu daje u smjeru $s$ doprinos $p\,dA$, koji se do prvog reda poništava s dodatnim članom $-p\,dA$ iz izlazne plohe $(p+dp)(A+dA)$; zato element smijemo promatrati uz stalan $A$.
@@ -124,15 +124,15 @@ Dijeljenjem s $g$ nastaje klasični Bernoullijev oblik u metrima fluida, jednad�
 
 ::: {.mf1-fizikalno-znacenje}
 <p class="mf1-box-label">Fizikalno značenje</p>
-Ova jednadžba kaže da mehanička energija po jedinici težine ostaje konstantna duž strujnice idealnog fluida — ona se samo premješta između tlačne visine, brzinske visine i geodetske visine. Tlačni član ne opisuje komprimiranje nestlačivoga fluida, nego mehanički doprinos **tlačnog rada** okolnog fluida. Kad se cijev sužava i brzina raste, energija dolazi od pada tlaka; kad se tok uspori, dio kinetičke energije može se vratiti u tlak. Bernoullijeva je jednadžba zakon o preraspodjeli, a ne o stvaranju energije.
+Prema ovoj jednadžbi mehanička energija po jedinici težine ostaje konstantna duž strujnice idealnog fluida — ona se samo premješta između tlačne visine, brzinske visine i geodetske visine. Tlačni član ne opisuje komprimiranje nestlačivoga fluida, nego mehanički doprinos **tlačnog rada** okolnog fluida. Kad se cijev sužava i brzina raste, energija dolazi od pada tlaka; kad se fluid uspori, dio kinetičke energije može se vratiti u tlak. Bernoullijeva jednadžba opisuje preraspodjelu mehaničke energije, a ne njezino stvaranje.
 
-Isti diferencijalni oblik daje i teorem rada i energije primijenjen na element fluida, pa se članovi mogu čitati kao energija po jedinici težine: $p/(\rho g)$ je tlačni rad okolnog fluida, $v^2/(2g)$ kinetička, a $z$ gravitacijska potencijalna energija. Opća energijska jednadžba koja slijedi dodaje toj bilanci rad crpke i turbine te gubitak $h_g$.
+Isti diferencijalni oblik daje i teorem rada i energije primijenjen na element fluida, pa se članovi mogu tumačiti kao energija po jedinici težine: $p/(\rho g)$ je tlačni rad okolnog fluida, $v^2/(2g)$ kinetička, a $z$ gravitacijska potencijalna energija. Opća energijska jednadžba koja slijedi dodaje toj bilanci rad crpke i turbine te gubitak $h_g$.
 :::
 :::
 
 ## Energijska jednadžba s gubitcima i strojevima
 
-Eulerove jednadžbe opisuju tok bez viskoznih sila. Dovoljne su za tlak i brzinu u glatkom suženju s malim gubitcima, ali ne i za otpor duge cijevi ili silu trenja na stijenci: izostavile bi upravo pojavu koju želimo izračunati. Trenje se smije zanemariti kad je gubitak visine $h_g$ između promatranih presjeka malen prema promjeni brzinske visine $v^2/(2g)$ koju račun treba odrediti.
+Eulerove jednadžbe opisuju strujanje bez viskoznih sila. Dovoljne su za tlak i brzinu u glatkom suženju s malim gubitcima, ali ne i za otpor duge cijevi ili silu trenja na stijenci: izostavile bi upravo pojavu koju želimo izračunati. Trenje se smije zanemariti kad je gubitak visine $h_g$ između promatranih presjeka malen prema promjeni brzinske visine $v^2/(2g)$ koju račun treba odrediti.
 
 ::: {.mf1-izvod}
 <p class="mf1-box-label">Matematički izvod — Energijska jednadžba iz Reynoldsova transportnog teorema</p>
@@ -147,13 +147,13 @@ $$ {#eq-energijska-jednadzba-rtt}
 
 Rad $\dot W$ ima dva dijela: rad vratila $\dot W_s$ (crpka ga dovodi fluidu, turbina odvodi) i rad tlačnih sila kojim fluid na kontrolnoj plohi gura okolni fluid ili okolni fluid gura njega, $\dot W_p = \int_{KP} p\,(\vec v\cdot\vec n)\,dA$. Viskozni rad na stijenkama iščezava zbog prianjanja, a na ulaznom i izlaznom presjeku ga zanemarujemo.
 
-**Koraci.** U stacionarnom toku akumulacija je nula. Tlačni rad prebacimo na desnu stranu i spojimo ga s $e$ pod isti integral:
+**Koraci.** U stacionarnom strujanju akumulacija je nula. Tlačni rad prebacimo na desnu stranu i spojimo ga s $e$ pod isti integral:
 
 $$
 \dot Q - \dot W_s = \int_{KP}\rho\left(\frac{p}{\rho} + e_u + \frac{v^2}{2} + gz\right)(\vec v\cdot\vec n)\,dA .
 $$ {#eq-energijska-jednadzba-tok}
 
-Za jedan ulazni presjek 1 i jedan izlazni presjek 2 s jednolikim $p$, $e_u$ i $z$ integral prelazi u razliku izlaz − ulaz pomnoženu s masenim protokom $\dot m$. Samo kinetički član zahtijeva pozornost: stvarni profil brzine nije jednolik, pa tok kinetičke energije nije jednak $\dot m\,\bar v^2/2$. Razliku pokriva **korekcijski faktor kinetičke energije** (Coriolisov koeficijent)
+Za jedan ulazni presjek 1 i jedan izlazni presjek 2 s jednolikim $p$, $e_u$ i $z$ integral prelazi u razliku izlaz − ulaz pomnoženu s masenim protokom $\dot m$. Samo kinetički član zahtijeva pozornost: stvarni profil brzine nije jednolik, pa tok kinetičke energije nije jednak $\dot m\,\bar v^2/2$. Razliku obuhvaća **korekcijski faktor kinetičke energije** (Coriolisov koeficijent)
 
 $$
 \alpha = \frac{1}{A\,\bar v^{3}}\int_A v^3\,dA ,
@@ -161,7 +161,7 @@ $$
 \int_A \rho\,\frac{v^2}{2}\,v\,dA = \alpha\,\dot m\,\frac{\bar v^2}{2}.
 $$ {#eq-korekcijski-faktor-kineticke-energije}
 
-Za jednolik profil $\alpha = 1$, za razvijeni laminarni parabolični profil $\alpha = 2$, a u turbulentnim cijevnim tokovima, kao orijentacija, obično $1{,}03$–$1{,}1$. Rad vratila rastavljamo na rad turbine i rad crpke, oba kao pozitivne iznose: $\dot W_s=\dot W_{turbina}-\dot W_{crpka}$. Dijeljenjem s $\dot m g$ i uvođenjem visina
+Za jednolik profil $\alpha = 1$, za razvijeni laminarni parabolični profil $\alpha = 2$, a u turbulentnom strujanju u cijevima, kao orijentacija, obično $1{,}03$–$1{,}1$. Rad vratila rastavljamo na rad turbine i rad crpke, oba kao pozitivne iznose: $\dot W_s=\dot W_{turbina}-\dot W_{crpka}$. Dijeljenjem s $\dot m g$ i uvođenjem visina
 
 $$
 H_p = \frac{\dot W_{crpka}}{\dot m g},\qquad
@@ -178,30 +178,30 @@ $$ {#eq-energijska-jednadzba-kv}
 
 Član $h_g$ je **gubitak visine**: mehanička energija koju trenje nepovratno pretvara u unutarnju energiju i toplinu, pa je prema drugom zakonu termodinamike $h_g \ge 0$.
 
-**Rezultat.** Bernoullijeva jednadžba poseban je slučaj jednadžbe [-@eq-energijska-jednadzba-kv] za $H_p = H_t = h_g = 0$ i $\alpha_1 = \alpha_2 = 1$. U ovom se poglavlju računa upravo tako; brojčana uporaba $\alpha \ne 1$, gubitaka i rada crpke pripada []{.mf1-chapter-ref target="u13"}, a @ex-usisni-vod-rashladne-crpke-morske-vode i Z6 koriste zadani $h_g$ kao prvi korak prema njemu.
+**Rezultat.** Bernoullijeva jednadžba poseban je slučaj jednadžbe [-@eq-energijska-jednadzba-kv] za $H_p = H_t = h_g = 0$ i $\alpha_1 = \alpha_2 = 1$. U ovom se poglavlju računa tako; brojčana uporaba $\alpha \ne 1$, gubitaka i rada crpke pripada []{.mf1-chapter-ref target="u13"}, a @ex-usisni-vod-rashladne-crpke-morske-vode i Z6 koriste zadani $h_g$ kao prvi korak prema njemu.
 
-**Provjera.** Svi članovi imaju dimenziju duljine. Za $h_g > 0$ energijska crta (EGL) pada u smjeru toka; crpka je podiže za $H_p$, a turbina spušta za $H_t$. Za nejednolik profil $\alpha > 1$, pa zanemarivanje korekcije podcjenjuje kinetičku energiju toka.
+**Provjera.** Svi članovi imaju dimenziju duljine. Za $h_g > 0$ energijska crta (EGL) pada u smjeru strujanja; crpka je podiže za $H_p$, a turbina spušta za $H_t$. Za nejednolik profil $\alpha > 1$, pa zanemarivanje korekcije podcjenjuje kinetičku energiju strujanja.
 :::
 
-Uz izvod treba jasno navesti i pretpostavke modela. U ovom poglavlju Bernoullijeva jednadžba vrijedi samo kad su dovoljno dobro opravdane sljedeće pretpostavke:
+U ovom poglavlju Bernoullijeva jednadžba vrijedi samo kad su dovoljno dobro opravdane sljedeće pretpostavke:
 
-- strujanje je stacionarno
-- fluid se može uzeti nestlačivim
-- viskozni gubitci su zanemarivi
-- između promatranih točaka nema strojnog rada ni druge vanjske mehaničke dobave energije
-- dvije točke leže na istoj strujnici
+- strujanje je stacionarno;
+- fluid se može uzeti nestlačivim;
+- viskozni gubitci su zanemarivi;
+- između promatranih točaka nema strojnog rada ni druge vanjske mehaničke dobave energije;
+- dvije točke leže na istoj strujnici.
 
 Posljednja pretpostavka često se primjenjuje šire nego što se čini. Kad jedna točka leži na mirnoj površini velikog spremnika, sve strujnice koje iz njega izlaze nose istu ukupnu visinu $p_{atm}/(\rho g) + z_A$. Zato smijemo spojiti površinu s bilo kojim presjekom cijevi ili mlaza, iako ne znamo koja strujnica vodi do koje točke presjeka. Isto vrijedi za bezvrtložno strujanje, u kojem je Bernoullijeva konstanta jednaka u cijelom polju.
 
 ::: {.mf1-granica-modela}
 <p class="mf1-box-label">Granica modela — Što Bernoullijeva jednadžba ne opisuje</p>
 
-Bernoullijeva jednadžba ne sadrži trenje, rad strojeva ni nestacionarne članove. Jednadžbu [-@eq-energijska-jednadzba-kv] ili modele iz []{.mf1-chapter-ref target="u13"} treba primijeniti čim gubitci mjerljivo smanjuju tlak (dugi vodovi, ventili, nagla proširenja), čim je u sustavu crpka ili turbina ili čim se protok mijenja u vremenu. Jednadžba daje srednji tlak u presjeku, ne lokalni minimum na unutarnjem radijusu koljena ili na lopatici. Ako je srednji apsolutni tlak iznad tlaka pare, kavitacija zato nije isključena: lokalni minimum može biti niži. Pri Machovu broju iznad oko 0,3 stlačivost više nije zanemariva ([]{.mf1-chapter-ref target="u09"}).
+Bernoullijeva jednadžba ne sadrži trenje, rad strojeva ni nestacionarne članove. Jednadžbu [-@eq-energijska-jednadzba-kv] ili modele iz []{.mf1-chapter-ref target="u13"} treba primijeniti čim gubitci mjerljivo smanjuju tlak (dugi vodovi, ventili, nagla proširenja), čim je u sustavu crpka ili turbina ili čim se protok mijenja u vremenu. Jednadžba daje srednji tlak u presjeku, ne lokalni minimum na unutarnjem polumjeru koljena ili na lopatici. Kavitacija zato nije isključena ni kad je srednji apsolutni tlak iznad tlaka pare: lokalni minimum može biti niži. Pri Machovu broju iznad oko 0,3 stlačivost više nije zanemariva ([]{.mf1-chapter-ref target="u09"}).
 :::
 
 ::: {.mf1-cfd title="Računalna dinamika fluida"}
 
-**Ručna provjera CFD-a i ono što CFD dodaje.** *Pitanje:* koliko difuzor iza Venturijeva grla troši mehaničke energije i je li kratko naglo proširenje prihvatljivo umjesto duljeg postupnog. *Model:* najprije idealni (neviskozni) tok; u njemu odnos tlaka i brzine duž strujnice i očuvanje protoka moraju reproducirati Bernoullijevu relaciju, što povezuje lokalne jednadžbe s ovim poglavljem. Zatim uključimo viskoznost i prianjanje na stijenci: pojavljuju se trenje i mogući povratni tok u difuzoru. *Podatci:* geometrija obiju izvedbi, protok, svojstva fluida i tlak na izlazu. *Izlazi:* polja brzine i tlaka, iz njih tok mehaničke energije kroz ulazni i izlazni presjek (prosjek ukupnog tlaka ponderiran masenim protokom, ne obični površinski prosjek) te gubitak $h_g$ između njih; za nejednolik izlazni profil izračunani $\alpha$. *Provjera:* razlika prema idealnom rješenju je promjena fizikalnog modela, a numeričku pogrešku procjenjujemo zasebno sustavnim profinjenjem mreže uz iste pretpostavke. *Odluka:* kraći uređaj biramo samo ako ušteda prostora vrijedi više od crpne snage potrebne za dodatni gubitak. Odvajanje toka podrobnije opisuje []{.mf1-chapter-ref target="u12"}, a cijeli postupak od granica domene do usporedbe s mjerenjem @sec-cfd-venturi.
+**Ručna provjera CFD-a i ono što CFD dodaje.** *Pitanje:* koliko difuzor iza grla Venturijeve cijevi troši mehaničke energije i je li kratko naglo proširenje prihvatljivo umjesto duljeg postupnog. *Model:* najprije idealno (neviskozno) strujanje; u njemu odnos tlaka i brzine duž strujnice i očuvanje protoka moraju reproducirati Bernoullijevu relaciju, što povezuje lokalne jednadžbe s ovim poglavljem. Zatim uključimo viskoznost i prianjanje na stijenci: pojavljuju se trenje i moguće povratno strujanje u difuzoru. *Podatci:* geometrija obiju izvedbi, protok, svojstva fluida i tlak na izlazu. *Izlazi:* polja brzine i tlaka, iz njih tok mehaničke energije kroz ulazni i izlazni presjek (prosjek ukupnog tlaka ponderiran masenim protokom, ne obični površinski prosjek) te gubitak $h_g$ između njih; za nejednolik izlazni profil izračunani $\alpha$. *Provjera:* razlika prema idealnom rješenju posljedica je promjene fizikalnog modela, a numeričku pogrešku procjenjujemo zasebno sustavnim progušćivanjem mreže (engl. *mesh refinement*) uz iste pretpostavke. *Odluka:* kraći uređaj biramo samo ako ušteda prostora vrijedi više od crpne snage potrebne za dodatni gubitak. Odvajanje strujanja podrobnije opisuje []{.mf1-chapter-ref target="u12"}, a cijeli postupak od granica područja proračuna (engl. *computational domain*) do usporedbe s mjerenjem @sec-cfd-venturi.
 
 []{#provjera-cfd-a-analitickim-rjesenjem}
 :::
@@ -304,7 +304,7 @@ $$
 x_3 = 2\sqrt{3{,}0(4{,}0 - 3{,}0)} = 2\sqrt{3} \approx 3{,}46\ \text{m}.
 $$ {#eq-energijska-bilanca-rijeseni-primjer-domet-slobodnog-mlaza-iz-veliko-04}
 
-Vidimo da je domet najveći kad je otvor postavljen na polovicu visine slobodne površine iznad tla, odnosno za $h = H/2$. Tada vrijedi $x_{max} = H$, pa je u ovom primjeru maksimalni domet jednak
+Domet je najveći kad je otvor postavljen na polovicu visine slobodne površine iznad tla, odnosno za $h = H/2$. Tada vrijedi $x_{max} = H$, pa je u ovom primjeru maksimalni domet jednak
 
 $$
 x_{max} = 4{,}0\ \text{m}.
@@ -312,7 +312,7 @@ $$ {#eq-energijska-bilanca-rijeseni-primjer-domet-slobodnog-mlaza-iz-veliko-05}
 
 **Provjera i tumačenje**
 
-Nizak otvor daje veliku brzinu, ali kratko vrijeme leta; visok otvor upravo obrnuto. Položaji $h$ i $H-h$ daju isti domet jer u izrazu stoji njihov umnožak, što potvrđuju jednaki dometi $x_1 = x_3$ za 1 m i 3 m.
+Nizak otvor daje veliku brzinu, ali kratko vrijeme leta; visok otvor obrnuto. Položaji $h$ i $H-h$ daju isti domet jer u izrazu stoji njihov umnožak, što potvrđuju jednaki dometi $x_1 = x_3$ za 1 m i 3 m.
 :::
 
 ::: {#ex-u09-privremeni-sifon-za-praznjenje-servisnog-bazena-t2 .mf1-we}
@@ -352,7 +352,7 @@ $$
 A = \frac{\pi D^2}{4} = \frac{\pi \cdot 0{,}08^2}{4} \approx 5{,}03 \cdot 10^{-3}\ \text{m}^2,
 $$ {#eq-energijska-bilanca-rijeseni-primjer-privremeni-sifon-za-praznjenje-03}
 
-zato je volumenski protok
+pa je volumenski protok
 
 $$
 Q = Av = 5{,}03 \cdot 10^{-3} \cdot 8{,}40 \approx 4{,}22 \cdot 10^{-2}\ \text{m}^3/\text{s} \approx 42{,}2\ \text{L/s}.
@@ -372,7 +372,7 @@ $$ {#eq-energijska-bilanca-rijeseni-primjer-privremeni-sifon-za-praznjenje-06}
 
 Manometarska tlačna visina u $C$ iznosi $-5{,}8\ \text{m}$. Piezometarska crta uključuje i geodetsku visinu: $HGL_C=z_C+p_{M,C}/(\rho g)=2{,}2-5{,}8=-3{,}6\ \text{m}$, pa leži 3,6 m ispod slobodne površine bazena. Tlačna visina mjeri se od osi cijevi, a HGL od odabrane referentne ravnine.
 
-To znači da je apsolutna tlačna visina u točki $C$
+Apsolutna tlačna visina u točki $C$ stoga iznosi
 
 $$
 \frac{p_{aps,C}}{\rho g} = 10{,}2 - 5{,}8 = 4{,}4\ \text{m}.
@@ -402,7 +402,7 @@ Provjera energije u $C$: $z_C + p_{M,C}/(\rho g) + v^2/(2g) = 2{,}2 - 5{,}8 + 3{
 
 **Tekst zadatka**
 
-Crpka rashladne morske vode pomoćnih strojeva smještena je na platformi strojarnice tako da je os njezina usisnog priključka $z_P = 2{,}0\ \text{m}$ iznad vodne linije. Voda ulazi kroz usisni koš (engl. *sea chest*) u boku broda, čiji je otvor $z_u = 3{,}0\ \text{m}$ ispod vodne linije, i uspinje se usisnim vodom promjera $D = 150\ \text{mm}$. Crpka daje protok $Q = 180\ \text{m}^3/\text{h}$ morske vode gustoće $\rho = 1025\ \text{kg/m}^3$ i tlaka pare $p_v = 2{,}3\ \text{kPa}$; atmosferski tlak je $p_{atm} = 101{,}3\ \text{kPa}$. Gubitak visine usisnog voda (rešetka, ventil, filtar, koljena i cijev) zadan je kao $h_g = 1{,}2\ \text{m}$ pri tom protoku. More je mirno i brod ne plovi; tok je stacionaran, brzine su srednje po presjeku. Crpka je samousisne izvedbe ili ima sustav za zalijevanje, pa je usisni vod pri radu ispunjen vodom; smještaj iznad vodne linije ovdje pokazuje granicu usisa.
+Crpka rashladne morske vode pomoćnih strojeva smještena je na platformi strojarnice tako da je os njezina usisnog priključka $z_P = 2{,}0\ \text{m}$ iznad vodne linije. Voda ulazi kroz usisni koš (engl. *sea chest*) u boku broda, čiji je otvor $z_u = 3{,}0\ \text{m}$ ispod vodne linije, i uspinje se usisnim vodom promjera $D = 150\ \text{mm}$. Crpka daje protok $Q = 180\ \text{m}^3/\text{h}$ morske vode gustoće $\rho = 1025\ \text{kg/m}^3$ i tlaka pare $p_v = 2{,}3\ \text{kPa}$; atmosferski tlak je $p_{atm} = 101{,}3\ \text{kPa}$. Gubitak visine usisnog voda (rešetka, ventil, filtar, koljena i cijev) zadan je kao $h_g = 1{,}2\ \text{m}$ pri tom protoku. More je mirno i brod ne plovi; strujanje je stacionarno, brzine su srednje po presjeku. Crpka je samousisne izvedbe ili ima sustav za zalijevanje, pa je usisni vod pri radu ispunjen vodom; smještaj iznad vodne linije ovdje pokazuje granicu usisa.
 
 **Traži se**
 
@@ -456,7 +456,7 @@ $$
 \frac{p_{aps,P} - p_v}{\rho g} + \frac{v^2}{2g} = 6{,}47 - 0{,}229 + 0{,}408 = 6{,}65\ \text{m}.
 $$ {#eq-usisni-vod-npsh}
 
-Upravo tu veličinu []{.mf1-chapter-ref target="u13"} naziva raspoloživom neto pozitivnom usisnom visinom $NPSH_a$ i uspoređuje je s potrebnom $NPSH_r$ iz karakteristike crpke. Tlak na ulazu pao bi na tlak pare pri visini crpke
+Ta se veličina u []{.mf1-chapter-ref target="u13"} naziva raspoloživom neto pozitivnom usisnom visinom $NPSH_a$ i uspoređuje s potrebnom $NPSH_r$ iz karakteristike crpke. Tlak na ulazu pao bi na tlak pare pri visini crpke
 
 $$
 z_{P,max} = \frac{p_{atm} - p_v}{\rho g} - \frac{v^2}{2g} - h_g = 10{,}07 - 0{,}229 - 0{,}408 - 1{,}2 = 8{,}24\ \text{m}.
@@ -528,7 +528,7 @@ Brzina u grlu iznosi $v_2=7{,}424\ \text{m/s}$, a HGL je ondje za $\Delta p/(\rh
 
 ::: {.mf1-cfd title="Računalna dinamika fluida"}
 
-**Nastavak istog mjernog problema.** Ovaj primjer pretpostavlja tok bez gubitaka; zato služi kao referenca za idealni odnos tlaka i brzine, a ne kao procjena stvarnog otpora uređaja. U odjeljku [-@sec-cfd-venturi] dodaju se geometrija difuzora, polja brzine i tlaka te provjere gubitka. Isti uređaj tako povezuje očitanje manometra, bilancu mase i energijsku cijenu mjerenja.
+**Nastavak istog mjernog problema.** Ovaj primjer pretpostavlja strujanje bez gubitaka; zato služi kao referenca za idealni odnos tlaka i brzine, a ne kao procjena stvarnog otpora uređaja. U odjeljku [-@sec-cfd-venturi] dodaju se geometrija difuzora, polja brzine i tlaka te provjere gubitka. Na istom se uređaju tako povezuju očitanje manometra, bilanca mase i gubitak energije koji mjerenje uzrokuje.
 :::
 
 :::
@@ -550,9 +550,9 @@ Brzina u grlu iznosi $v_2=7{,}424\ \text{m/s}$, a HGL je ondje za $\Delta p/(\rh
 
 ::: {#cfd-venturi-mjerenje-gubitak .mf1-cfd title="Računalna dinamika fluida"}
 
-**Venturi u rashladnom vodu: mjerenje i gubitak.** Venturijev mjerač iz primjera [-@ex-u09-venturijeva-cijev-za-mjerenje-protoka-ulja-t2] sužava tok i tako povećava brzinu u grlu. CFD daje statički tlak na priključcima i brzinu u presjecima. Za nestlačiv tok, koji ovdje pretpostavljamo, ukupni je tlak $p_t=p+\rho v^2/2$; na različitim kotama u mehaničku energiju ulazi i gravitacijski član. Bočni priključak i idealna Pitotova sonda zato ne očitavaju istu veličinu.
+**Venturijeva cijev u rashladnom vodu: mjerenje i gubitak.** Venturijev mjerač iz primjera [-@ex-u09-venturijeva-cijev-za-mjerenje-protoka-ulja-t2] sužava struju i tako povećava brzinu u grlu. CFD daje statički tlak na priključcima i brzinu u presjecima. Za nestlačivo strujanje, koje ovdje pretpostavljamo, ukupni je tlak $p_t=p+\rho v^2/2$; na različitim kotama u mehaničku energiju ulazi i gravitacijski član. Bočni priključak i idealna Pitotova sonda zato ne očitavaju istu veličinu.
 
-**Zastani i promisli.** Statički tlak pada prema grlu Venturija. Smijemo li cijeli pad proglasiti gubitkom energije?
+**Zastani i promisli.** Statički tlak pada prema grlu Venturijeve cijevi. Smijemo li cijeli pad proglasiti gubitkom energije?
 
 Pad statičkog tlaka do grla nije sam dokaz gubitka: dio tlačne energije prelazi u kinetičku i može se vratiti u difuzoru. Provjeravamo ukupnu mehaničku energiju prije cijelog mjerača i poslije njega. Tako odvajamo koristan mjerni signal od trajnog opterećenja crpke.
 :::
@@ -566,7 +566,7 @@ Pitotovom sondom brzina se određuje iz razlike zaustavnog (stagnacijskog) i sta
 
 Pitot-statička sonda na letjelici mjeri razliku zaustavnog i statičkog tlaka $\Delta p = p_0 - p_{\infty} = 380\ \text{Pa}$. Letjelica leti na visini oko $900\ \text{m}$, gdje su tlak $p = 91{,}3\ \text{kPa}$ i temperatura $12^\circ\text{C}$, pa je gustoća zraka iz jednadžbe stanja $\rho = p/(RT) = 1{,}115\ \text{kg/m}^3$, a kinematička viskoznost $\nu = 1{,}5 \cdot 10^{-5}\ \text{m}^2/\text{s}$. Otvor sonde ima promjer $D_s = 5\ \text{mm}$. Za usporedbu uzmi i gustoću $\rho = 1{,}25\ \text{kg/m}^3$ uz isti $\Delta p$.
 
-Os sonde poravnata je sa strujanjem. Pretpostavi stacionaran, nestlačiv tok na stalnoj visini, bez viskoznih učinaka na sondi; u čeonoj zaustavnoj točki brzina je nula.
+Os sonde poravnata je sa strujanjem. Pretpostavi stacionarno, nestlačivo strujanje na stalnoj visini, bez viskoznih učinaka na sondi; u čeonoj zaustavnoj točki brzina je nula.
 
 **Traži se**
 
@@ -600,7 +600,7 @@ $$
 v' = \sqrt{\frac{2 \cdot 380}{1{,}25}} = \sqrt{608} \approx 24{,}7\ \text{m/s}.
 $$ {#eq-energijska-bilanca-rijeseni-primjer-pitot-staticka-sonda-na-bespilo-04}
 
-Razlika u izračunanoj brzini iznosi približno $1{,}45\ \text{m/s}$ ili $5{,}5\,\%$ od $26{,}1\ \text{m/s}$ — znatna pogreška ako se ne primijeni korekcija prema lokalnoj gustoći zraka.
+Razlika u izračunanoj brzini iznosi približno $1{,}45\ \text{m/s}$ ili $5{,}5\,\%$ od $26{,}1\ \text{m/s}$, što je znatna pogreška ako se ne primijeni korekcija prema lokalnoj gustoći zraka.
 
 Reynoldsov broj sonde iznosi
 
@@ -734,7 +734,7 @@ Najprije iz protoka odredi obje brzine. U Bernoullijevoj jednadžbi zadrži razl
 ::: {.callout-tip collapse="true" data-answer-key="true"}
 ### Kontrolni rezultat
 
-$v_1\approx1{,}768\ \text{m/s}$; $v_2\approx5{,}197\ \text{m/s}$; $p_2-p_1\approx+7{,}680\ \text{kPa}$. Tlak raste jer doprinos spuštanja $19{,}620\ \text{kPa}$ nadmašuje doprinos ubrzanja $11{,}940\ \text{kPa}$. Tvrdnja nije općenito točna: u ovom idealnom toku pada HGL, dok statički tlak raste.
+$v_1\approx1{,}768\ \text{m/s}$; $v_2\approx5{,}197\ \text{m/s}$; $p_2-p_1\approx+7{,}680\ \text{kPa}$. Tlak raste jer doprinos spuštanja $19{,}620\ \text{kPa}$ nadmašuje doprinos ubrzanja $11{,}940\ \text{kPa}$. Tvrdnja nije općenito točna: u ovom idealnom strujanju pada HGL, dok statički tlak raste.
 :::
 ::::
 
@@ -795,7 +795,7 @@ Pomoću jednadžbe kontinuiteta izrazi brzinu u grlu i tako prijeđi s promjera 
 ::: {.callout-tip collapse="true" data-answer-key="true"}
 ### Kontrolni rezultat
 
-Dopušteno je $43{,}183\ \text{mm}\le d\le52{,}328\ \text{mm}$, pa odgovara uložak od $50\ \text{mm}$. Za promjere $40$, $50$ i $60\ \text{mm}$ apsolutni tlakovi u grlu redom su $26{,}591$, $101{,}366$ i $128{,}225\ \text{kPa}$, a padovi tlaka $123{,}409$, $48{,}634$ i $21{,}775\ \text{kPa}$. Uložak od 40 mm krši tlačni prag, a onaj od 60 mm nema dovoljan mjerni signal. Granice su zaokružene; odluka se provjerava izvornim nejednakostima.
+Dopušteno je $43{,}183\ \text{mm}\le d\le52{,}328\ \text{mm}$, pa odgovara uložak od $50\ \text{mm}$. Za promjere $40$, $50$ i $60\ \text{mm}$ apsolutni tlakovi u grlu redom su $26{,}591$, $101{,}366$ i $128{,}225\ \text{kPa}$, a padovi tlaka $123{,}409$, $48{,}634$ i $21{,}775\ \text{kPa}$. Uložak od 40 mm ne zadovoljava tlačni prag, a onaj od 60 mm nema dovoljan mjerni signal. Granice su zaokružene; odluka se provjerava izvornim nejednakostima.
 :::
 ::::
 
@@ -814,7 +814,7 @@ Sustav treba zajamčiti $Q\ge15{,}0\ \text{L/s}$ i apsolutni tlak $p_{aps,C}\ge3
 **Traži se**
 
 1. Najprije zanemari gubitke i odredi brzinu i volumenski protok u sifonu, apsolutni tlak u vrhu sifona te vodoravni domet mlaza nakon izlaza.
-2. Odredi nominalni protok prema modelu s gubitcima i konzervativne granice protoka i tlaka u vrhu.
+2. Odredi nominalni protok prema modelu s gubitcima i granice protoka i tlaka u vrhu na strani sigurnosti.
 3. Može li se zajamčiti ispunjenje obaju zadanih zahtjeva?
 
 :::: {.content-visible .mf1-hint-online when-format="html"}
@@ -827,7 +827,7 @@ Bernoullijevom jednadžbom između slobodne površine i izlaza odredi idealni $v
 ::: {.callout-tip collapse="true" data-answer-key="true"}
 ### Kontrolni rezultat
 
-Idealno: $v\approx7{,}14$ m/s, $Q\approx27{,}5$ L/s, $p_{aps,C}\approx59{,}1$ kPa, $x\approx3{,}53$ m. Uz gubitke nominalno je $Q\approx15{,}9$ L/s i $p_{aps,C}\approx65{,}9$ kPa; intervali su $Q\in[14{,}7;17{,}4]$ L/s i $p_{aps,C}\in[59{,}1;70{,}8]$ kPa. Tlačni zahtjev prolazi, ali protok od 15,0 L/s nije zajamčen. Treba smanjiti gubitke, povećati promjer ili mjerenjem suziti interval.
+Idealno: $v\approx7{,}14$ m/s, $Q\approx27{,}5$ L/s, $p_{aps,C}\approx59{,}1$ kPa, $x\approx3{,}53$ m. Uz gubitke nominalno je $Q\approx15{,}9$ L/s i $p_{aps,C}\approx65{,}9$ kPa; intervali su $Q\in[14{,}7;17{,}4]$ L/s i $p_{aps,C}\in[59{,}1;70{,}8]$ kPa. Tlačni je zahtjev ispunjen, ali protok od 15,0 L/s nije zajamčen. Treba smanjiti gubitke, povećati promjer ili mjerenjem suziti interval.
 :::
 ::::
 
@@ -843,8 +843,8 @@ Idealno: $v\approx7{,}14$ m/s, $Q\approx27{,}5$ L/s, $p_{aps,C}\approx59{,}1$ kP
 
 ::: {.mf1-zavrsni-okvir}
 - Bernoullijeva jednadžba bilanca je mehaničke energije po jedinici težine duž strujnice: tlačna, brzinska i geodetska visina samo se preraspodjeljuju.
-- Vrijedi za stacionaran nestlačiv tok bez gubitaka i strojnog rada između dviju točaka iste strujnice; mirna površina velikog spremnika smije se spojiti s bilo kojim presjekom.
-- Piezometarska crta (HGL) prikazuje $z+p/(\rho g)$ duž toka, a energijska crta (EGL) leži iznad nje za $v^2/(2g)$; u idealnom toku EGL je vodoravna, a HGL pada ondje gdje se fluid ubrzava.
+- Vrijedi za stacionarno nestlačivo strujanje bez gubitaka i strojnog rada između dviju točaka iste strujnice; mirna površina velikog spremnika smije se spojiti s bilo kojim presjekom.
+- Piezometarska crta (HGL) prikazuje $z+p/(\rho g)$ duž strujanja, a energijska crta (EGL) leži iznad nje za $v^2/(2g)$; u idealnom strujanju EGL je vodoravna, a HGL pada ondje gdje se fluid ubrzava.
 - Referentne točke biraju se ondje gdje su tlak i brzina poznati (mirna površina, slobodni mlaz); pri promjeni presjeka najprije se postavlja jednadžba kontinuiteta.
 - Opća energijska jednadžba kontrolnog volumena dodaje visinu crpke $H_p$, visinu turbine $H_t$, gubitak $h_g\ge 0$ i faktor $\alpha$; Bernoullijeva jednadžba njezin je poseban slučaj.
 - Tlak koji se uspoređuje s tlakom pare izražava se apsolutno; jednadžba daje srednji tlak u presjeku, pa srednji apsolutni tlak iznad tlaka pare ne isključuje kavitaciju: lokalni minimum može biti niži.
@@ -854,7 +854,7 @@ Idealno: $v\approx7{,}14$ m/s, $Q\approx27{,}5$ L/s, $p_{aps,C}\approx59{,}1$ kP
 **Nakon ovoga poglavlja mora biti moguće**
 
 1. odabrati referentne presjeke i referencu tlaka te provjeriti pretpostavke idealnog modela;
-2. čitati tlak, brzinu i visinu kao tri oblika iste mehaničke energije;
+2. tumačiti tlak, brzinu i visinu kao tri oblika iste mehaničke energije;
 3. povezati jednadžbu kontinuiteta i Bernoullijevu jednadžbu u problemu promjene presjeka;
 4. prepoznati kad zadatak traži energijsku jednadžbu s gubitcima.
 :::

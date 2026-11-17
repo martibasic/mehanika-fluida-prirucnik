@@ -98,7 +98,7 @@ Odredi referencu i sve visinske razlike, uključujući položaj granice fluida u
 ::: {.mf1-error-column}
 **Što provjeriti**
 
-Najprije odredi $\vec g_{eff}$ i provjeri očuvanje volumena. Pri vrtnji usporedi oba kritična praga (rub i dno); nakon dosezanja prvoga mijenja se domena ili volumen. Iz podataka odvojeno provjeri koliko su očitanja blizu referentnih razina i kako se mijenjaju u vremenu. Provjera dubine u ustaljenom stanju sa zatvorenim usisom nije provjera rada s protokom.
+Najprije odredi $\vec g_{eff}$ i provjeri očuvanje volumena. Pri vrtnji usporedi oba kritična praga (rub i dno); nakon dosezanja prvoga mijenja se područje ili volumen. Iz podataka odvojeno provjeri koliko su očitanja blizu referentnih razina i kako se mijenjaju u vremenu. Provjera dubine u ustaljenom stanju sa zatvorenim usisom nije provjera rada s protokom.
 :::
 ::::
 
@@ -122,7 +122,7 @@ Najprije odredi $\vec g_{eff}$ i provjeri očuvanje volumena. Pri vrtnji uspored
 ::: {.mf1-error-column}
 **Što provjeriti**
 
-Utvrdi orijentaciju plohe i referentni tlak, zasebno zatvori bilancu sila i bilancu momenata te za zakrivljenu plohu nacrtaj lokalnu normalu od stvarnoga fluida prema stijenci. Projekcija daje $F_H$, pomoćni volumen iznos $\lvert F_V\rvert$, a geometrija stvarnoga fluida njegov smjer. Kod zaklopke koja se sama otvara uvjet je položaj centra tlaka u osi vrtnje; s nadtlakom plina sila i hvatište računaju se iz cijele raspodjele $p_{pl}+\rho gh$. Na radijalnom poklopcu sve tlačne normale prolaze kroz središte kružnice; moment težine i kapacitet spojnice provjeri zasebno.
+Utvrdi orijentaciju plohe i referentni tlak, zasebno zatvori bilancu sila i bilancu momenata te za zakrivljenu plohu nacrtaj lokalnu normalu od stvarnoga fluida prema stijenci. Projekcija daje $F_H$, pomoćni volumen iznos $\lvert F_V\rvert$, a geometrija stvarnoga fluida njegov smjer. Kod zaklopke koja se sama otvara uvjet je položaj centra tlaka u osi vrtnje; s pretlakom plina sila i hvatište računaju se iz cijele raspodjele $p_{pl}+\rho gh$. Na radijalnom poklopcu sve tlačne normale prolaze kroz središte kružnice; moment težine i kapacitet spojnice provjeri zasebno.
 :::
 ::::
 
@@ -169,7 +169,7 @@ Računaj stvarnu istisninu i odvoji bilancu sila od bilance momenata. Pri pokusu
 ::: {.mf1-error-column}
 **Što provjeriti**
 
-Označi vanjsku normalu, ulaze, izlaze i akumulaciju. Za kosu plohu koristi normalnu komponentu $v\cos\theta$; kod pomičnoga klipa protok kroz otvor računaj brzinom relativnom prema otvoru i zasebno zatvori bilancu promjene volumena komore. Za izmjereni profil protok je $\int v\,2\pi r\,dr$: vanjski prstenovi nose najveći opseg, pa ih ne smiješ izostaviti. Nakon dosezanja ruba dodaj preljevni izlaz.
+Označi vanjsku normalu, ulaze, izlaze i akumulaciju. Za kosu plohu koristi normalnu komponentu $v\cos\theta$; kod pomičnoga klipa protok kroz otvor računaj brzinom relativnom prema otvoru i zasebno zatvori bilancu promjene volumena komore. Za izmjereni profil protok je $\int v\,2\pi r\,dr$: vanjski prstenovi imaju najveći opseg, pa ih ne smiješ izostaviti. Nakon dosezanja ruba dodaj preljevni izlaz.
 :::
 ::::
 
@@ -182,7 +182,7 @@ Označi vanjsku normalu, ulaze, izlaze i akumulaciju. Za kosu plohu koristi norm
 - Pisanje Bernoullijeve jednadžbe bez odabira presjeka i strujnice.
 - Poistovjećivanje brzine mirne površine s brzinom izlaznog mlaza.
 - Vrijeme pražnjenja spremnika iz početnog protoka kao da je stalan, iako protok pada sa $\sqrt h$ (Z2).
-- Uporaba $\alpha=1$ bez provjere profila (za razvijeni laminarni tok u kružnoj cijevi $\alpha=2$).
+- Uporaba $\alpha=1$ bez provjere profila (za razvijeno laminarno strujanje u kružnoj cijevi $\alpha=2$).
 - Miješanje tlačne visine $p/(\rho g)$ s piezometarskom visinom $z+p/(\rho g)$ (Z3).
 - Zanemarivanje hidrostatičke korekcije senzora smještenog na drugoj visini (Z4).
 - Provjera samo jednog od dvaju pogonskih zahtjeva pri izboru elementa (Z5).
@@ -196,7 +196,7 @@ Odvoji brzinu na površini od izlazne brzine; piezometarsku crtu računaj kao $z
 :::
 ::::
 
-### 9 · Kompresibilni idealni tok {#pogreske-kompresibilni-tok .unnumbered .unlisted}
+### 9 · Stlačivo idealno strujanje {#pogreske-kompresibilni-tok .unnumbered .unlisted}
 
 :::: {.mf1-error-pair}
 ::: {.mf1-error-column}
@@ -205,8 +205,8 @@ Odvoji brzinu na površini od izlazne brzine; piezometarsku crtu računaj kao $z
 - Miješanje brzine zvuka $a$ i brzine signala u odnosu na laboratorij $v\pm a$ (Z3).
 - Omjeri manometarskih umjesto apsolutnih tlakova.
 - Poistovjećivanje protutlaka $p_b$ s izlaznim tlakom zagušene sapnice (Z4).
-- Brkanje zagušenja (engl. *choking*; $Ma=1$ u najužem presjeku) s prigušenjem ventilom.
-- Izentropska relacija primijenjena kroz udarni val ili nekorigirano očitanje Pitotove sonde u nadzvučnom toku (Z6).
+- Miješanje zagušenja (engl. *choking*; $Ma=1$ u najužem presjeku) s prigušenjem ventilom.
+- Izentropska relacija primijenjena kroz udarni val ili nekorigirano očitanje Pitotove sonde u nadzvučnom strujanju (Z6).
 - Temperatura u °C uvrštena u $a=\sqrt{\kappa RT}$.
 - Kriterij zagušenja $p_b/p_0<0{,}528$ primijenjen s manometarskim tlakovima.
 - Izbor podzvučnog ili nadzvučnog korijena relacije $A/A^*$ bez provjere protutlaka.
@@ -267,7 +267,7 @@ Najprije provjeri dimenzijsku homogenost i jedinicu svakog empirijskog koeficije
 :::
 ::::
 
-### 12 · Diferencijalni opis realnog toka {#pogreske-realni-tok .unnumbered .unlisted}
+### 12 · Diferencijalni opis realnog strujanja {#pogreske-realni-tok .unnumbered .unlisted}
 
 :::: {.mf1-error-pair}
 ::: {.mf1-error-column}
@@ -277,9 +277,9 @@ Najprije provjeri dimenzijsku homogenost i jedinicu svakog empirijskog koeficije
 - Miješanje strujnice i putanje čestice.
 - Rješavanje Navier–Stokesovih jednadžbi bez početnih i rubnih uvjeta.
 - Tumačenje vremenskog mjerila $H^2/\nu$ kao točnog vremena uspostave profila.
-- Hagen–Poiseuilleov izraz primijenjen na turbulentni tok ili bilanca sila $\tau_{st}=\Delta p\,D/(4L)$ pogrešno ograničena na laminarni režim (Z2).
+- Hagen–Poiseuilleov izraz primijenjen na turbulentno strujanje ili bilanca sila $\tau_{st}=\Delta p\,D/(4L)$ pogrešno ograničena na laminarni režim (Z2).
 - Visina prve ćelije odabrana bez brzine trenja (Z2).
-- Tumačenje lokalnog povratnog toka kao prolaza kroz stijenku (Z4).
+- Tumačenje lokalnog povratnog strujanja kao prolaza kroz stijenku (Z4).
 - Primjena Blasiusova rješenja uz gradijent tlaka ili hrapavost (Z5).
 - Poistovjećivanje numeričke konvergencije s validacijom (Z6).
 - Ulazna specifična disipacija $\omega$ proglašena „izmjerenom” iako senzor daje samo intenzitet $I_t$, a duljinska skala $\ell$ samo je pretpostavka.
@@ -298,7 +298,7 @@ Zadrži lokalno i konvektivno ubrzanje dok ih pretpostavke izričito ne uklone t
 ::: {.mf1-error-column}
 **Česta pogreška**
 
-- Uporaba $\lambda=64/Re$ bez provjere da je tok laminaran, ili turbulentne korelacije pri $Re<2300$ (Z2).
+- Uporaba $\lambda=64/Re$ bez provjere da je strujanje laminarno, ili turbulentne korelacije pri $Re<2300$ (Z2).
 - Zadržavanje istog $\lambda$ pri promjeni protoka (Z4) ili istog $\lambda$ za sve ponuđene promjere, iako se mijenjaju $Re$ i $k_s/D$.
 - Zbrajanje koeficijenata $\xi$ definiranih uz različite referentne brzine (proširenje, grananje) kao da vrijede za istu brzinu.
 - Prigušivanje već otpornijeg ogranka radi izjednačavanja protoka (Z3).
@@ -310,7 +310,7 @@ Zadrži lokalno i konvektivno ubrzanje dok ih pretpostavke izričito ne uklone t
 ::: {.mf1-error-column}
 **Što provjeriti**
 
-Najprije odredi $Re$ i režim, zatim $\lambda$; zatvori bilancu kontinuiteta i gubitaka po granama. Pri traženju radne točke ponovno računaj $Re$ i $\lambda$ te provjeri reziduale. Svaki $\xi$ veži uz svoju referentnu brzinu. Odvoji hidrauličku, vratilnu i električnu snagu; godišnju energiju računaj iz električne. Za provjeru usisa potrebni su $NPSH_a$ izračunan s apsolutnim tlakom, $NPSH_r$ pri odgovarajućem protoku i brzini vrtnje, kriterij rezerve i dopušteno radno područje.
+Najprije odredi $Re$ i režim, zatim $\lambda$; zatvori bilancu kontinuiteta i gubitaka po granama. Pri traženju radne točke ponovno računaj $Re$ i $\lambda$ te provjeri ostatke (engl. *residual*). Svaki $\xi$ veži uz svoju referentnu brzinu. Odvoji hidrauličku snagu, snagu na vratilu i električnu snagu; godišnju energiju računaj iz električne. Za provjeru usisa potrebni su $NPSH_a$ izračunan s apsolutnim tlakom, $NPSH_r$ pri odgovarajućem protoku i brzini vrtnje, kriterij rezerve i dopušteno radno područje.
 :::
 ::::
 
@@ -324,7 +324,7 @@ Najprije odredi $Re$ i režim, zatim $\lambda$; zatvori bilancu kontinuiteta i g
 - Prihvaćanje rekonstruiranog izlaza bez provjere gubitka i pasivnosti lopatice (Z3).
 - Isti polumjer u oba člana Eulerove jednadžbe (Z4).
 - Izostavljen ulazni tok količine gibanja $\dot mv_s$ u bilanci potiska (Z5).
-- Poistovjećivanje učinkovitosti pogona s propulzijskom učinkovitošću.
+- Poistovjećivanje iskoristivosti pogona s propulzijskom iskoristivošću.
 - Kut lopatice $\beta_2$ zamijenjen korekcijskim faktorom $\beta$.
 - Snaga Peltonova kola računana s protokom jedne lopatice $\rho A(c_1-u)$ umjesto cijelog sapničkog protoka $\rho Ac_1$.
 - Relativna umjesto apsolutne brzine u energijskoj ili momentnoj provjeri rotora.
@@ -337,7 +337,7 @@ Odaberi kontrolni volumen i tijelo na koje sila djeluje. Provjeri $\vec c=\vec u
 :::
 ::::
 
-### 15 · Otvoreni tokovi {#pogreske-otvoreni-tokovi .unnumbered .unlisted}
+### 15 · Strujanje sa slobodnom površinom {#pogreske-otvoreni-tokovi .unnumbered .unlisted}
 
 :::: {.mf1-error-pair}
 ::: {.mf1-error-column}
@@ -348,7 +348,7 @@ Odaberi kontrolni volumen i tijelo na koje sila djeluje. Provjeri $\vec c=\vec u
 - Izostavljanje povišenja dna ili proizvoljan izbor korijena energijske jednadžbe (Z4).
 - Primjena Bernoullijeve jednadžbe bez gubitaka kroz skok (Z5).
 - $\alpha=1$ i $\beta=1$ bez navođenja te pretpostavke.
-- Tretiranje istog izmjerenog protoka u oba presjeka kao dviju neovisnih veličina.
+- Uzimanje istog izmjerenog protoka u oba presjeka kao dviju neovisnih veličina.
 - Poistovjećivanje kapaciteta kanala sa stvarnim dotokom u bazen (Z6).
 :::
 
@@ -367,7 +367,7 @@ Razdvoji $A$, širinu slobodne površine $T$ i oplakani opseg $P$. Ispod ustave 
 
 <p class="mf1-box-label">Model i pretpostavke</p>
 
-Hidrostatika nije Bernoullijeva jednadžba, a cjevovod nije samo jedan Darcy–Weisbachov izraz bez geometrije i režima strujanja.
+Zadatak iz hidrostatike ne rješava se Bernoullijevom jednadžbom, a cjevovod se ne opisuje samo jednim Darcy–Weisbachovim izrazom, bez geometrije i režima strujanja.
 :::
 
 ::: {.mf1-decision-step}
@@ -391,6 +391,6 @@ Provjeri predznake, projekcije, vektorske komponente, istisnuti volumen i polož
 
 <p class="mf1-box-label">Fizikalni smisao rezultata</p>
 
-Ako broj nema fizikalni smisao, uredna algebra ne spašava pogrešan model: vrati se skici, geometriji, referentnim veličinama i pretpostavkama.
+Ako rezultat nema fizikalnog smisla, ni uredan račun ne ispravlja pogrešan model; vrati se skici, geometriji, referentnim veličinama i pretpostavkama.
 :::
 :::

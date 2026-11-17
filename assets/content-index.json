@@ -11,7 +11,7 @@
       "kind": "frontmatter",
       "number": "0",
       "part": null,
-      "source_sha256": "9c3e9825eba4c88f75824448bd1f44c572345a2543467f2112800a10db339bf4",
+      "source_sha256": "79c8cbd908079f352a8a4e7c52bfb52276dbadbe9c329593a9f55a9135cd419b",
       "sections": [
         {
           "id": "o-prirucniku",
@@ -77,7 +77,7 @@
       "kind": "chapter",
       "number": "1",
       "part": "part-1",
-      "source_sha256": "b02e344899ecffb953f1b808f5a611c0f70f0070f730facd45284f77b64589ea",
+      "source_sha256": "62296e43f6e4975e67465c1033b4894aaca8084cbd228006659e4a632f151afc",
       "sections": [
         {
           "id": "fluid-kao-kontinuum",
@@ -221,7 +221,7 @@
       "kind": "chapter",
       "number": "2",
       "part": "part-1",
-      "source_sha256": "524b1415bcc0644fe272f899442188f55b6837ddb36191f93dea6c9a600b085f",
+      "source_sha256": "d3b4f474b49dfc13af8ed98d752c7d85a561c838be3d315ad5828d550909a547",
       "sections": [
         {
           "id": "viskoznost",
@@ -354,7 +354,7 @@
       "kind": "chapter",
       "number": "3",
       "part": "part-2",
-      "source_sha256": "dbe718df431e1acb714bf7cff972fb358d72cd72203ca722a0570441c8a2eb76",
+      "source_sha256": "9a82d690fb96d352aae91fa0675c7fe41b1e0f299a4f4e52a59aaefd3b5ab613",
       "sections": [
         {
           "id": "diferencijalna-jednadžba-hidrostatike",
@@ -481,7 +481,7 @@
       "kind": "chapter",
       "number": "4",
       "part": "part-2",
-      "source_sha256": "e300f9385f6e3846de7f3c7897e8838478ead5c42f9b91e062c79c307e59df33",
+      "source_sha256": "299468b5199217783e78761c3535f6291fe4c56ba623eea854a3ea9f1b9e3c4d",
       "sections": [
         {
           "id": "translatorno-ubrzanje",
@@ -613,7 +613,7 @@
       "kind": "chapter",
       "number": "5",
       "part": "part-2",
-      "source_sha256": "404510c3329a6cf03891196a93b4c678c5323da05d827998655a72d6bb50319e",
+      "source_sha256": "0c253c58fa88810950de46ac4ae7985bc69d0859e34926b4fb4e3e6763a1240f",
       "sections": [
         {
           "id": "hidrostatske-sile-na-plohe",
@@ -787,7 +787,7 @@
       "kind": "chapter",
       "number": "6",
       "part": "part-2",
-      "source_sha256": "576532f71819e9e41ee006550d9c53d040e5b7a3473727f1162307b1bf3fcd11",
+      "source_sha256": "55e086e7b002e643c57ec6e2f19039c4202d1fca1acc75f8625f34f7ccaf39ae",
       "sections": [
         {
           "id": "sila-uzgona",
@@ -947,7 +947,7 @@
       "kind": "chapter",
       "number": "7",
       "part": "part-3",
-      "source_sha256": "638c58d2d2cad0f90b0fc877ef0a2e9bb61b4eb279de28a1ed39bc664b7d1485",
+      "source_sha256": "20f4f61f8877b179d029a6ea9d0af66c5d78b83ac1d15110897cbfe572212f1e",
       "sections": [
         {
           "id": "kinematika-strujanja",
@@ -1110,12 +1110,12 @@
       "kind": "chapter",
       "number": "8",
       "part": "part-3",
-      "source_sha256": "b3cfedfd73aec892aa0cf1faae977b1f5fe702010d4be77fdaad0e8b0512e864",
+      "source_sha256": "c6b16f43ce333840d7103c3a88155ec4723ce4eed0a04912ea6fb87bef763d54",
       "sections": [
         {
           "id": "mehanička-energija-idealnoga-toka",
           "level": 2,
-          "title": "Mehanička energija idealnoga toka",
+          "title": "Mehanička energija idealnoga strujanja",
           "number": "8.1"
         },
         {
@@ -1219,10 +1219,10 @@
       ]
     },
     "u09": {
-      "title": "Kompresibilni idealni tok",
+      "title": "Stlačivo idealno strujanje",
       "source": "source/u09_kompresibilni_idealni_tok.md",
       "path": "chapters/u09_kompresibilni_idealni_tok.qmd",
-      "catalog_title": "Kompresibilni tok",
+      "catalog_title": "Stlačivo strujanje",
       "description": "Brzina zvuka, Machov broj, izentropska sapnica, prigušenje i udarni val.",
       "title_aliases": [],
       "verification": {
@@ -1237,12 +1237,12 @@
       "kind": "chapter",
       "number": "9",
       "part": "part-3",
-      "source_sha256": "34197b08cc3667a6c5889156c3494f8a9c091067f98d3112bbcba37a7eef0314",
+      "source_sha256": "6e81417893d455a88a4180e23e242bc524423400cbe3c5ac297d1ec58314d2cb",
       "sections": [
         {
           "id": "sec-kompresibilni-motivacija",
           "level": 2,
-          "title": "Kompresibilnost fluida",
+          "title": "Stlačivost fluida",
           "number": "9.1"
         },
         {
@@ -1260,7 +1260,7 @@
         {
           "id": "sec-stagnacijske-velicine",
           "level": 2,
-          "title": "Zaustavne veličine u izentropskom toku",
+          "title": "Zaustavne veličine u izentropskom strujanju",
           "number": "9.4"
         },
         {
@@ -1278,7 +1278,7 @@
         {
           "id": "sec-kompresibilni-ritual",
           "level": 2,
-          "title": "Postupak analize kompresibilnoga toka",
+          "title": "Postupak analize stlačivoga strujanja",
           "number": "9.7"
         },
         {
@@ -1367,7 +1367,7 @@
       "kind": "chapter",
       "number": "10",
       "part": "part-3",
-      "source_sha256": "cf5d831bb688a6d1456ea4a727bfc409c675a1139a9e2a225cd3ce9b93672f5e",
+      "source_sha256": "db8fdc472755c2bf2a35d2665ec8b7297fdb35cb7065fb36172ae7e99d30d475",
       "sections": [
         {
           "id": "integralni-zakon-količine-gibanja",
@@ -1535,7 +1535,7 @@
       "kind": "chapter",
       "number": "11",
       "part": "part-4",
-      "source_sha256": "156f752c06bcd37d1cf8da29fadaa80ab0a054b681bd1bfe075b247be1e40bb7",
+      "source_sha256": "c8ebca04b3bf901946bf723ad73bba82d52cb2d4961d368e82c2ecf6c09b0b6b",
       "sections": [
         {
           "id": "svrha-bezdimenzijskog-opisa",
@@ -1672,10 +1672,10 @@
       ]
     },
     "u12": {
-      "title": "Diferencijalni opis realnog toka",
+      "title": "Diferencijalni opis realnog strujanja",
       "source": "source/u12_diferencijalni_opis_realnog_toka.md",
       "path": "chapters/u12_diferencijalni_opis_realnog_toka.qmd",
-      "catalog_title": "Diferencijalni realni tok",
+      "catalog_title": "Realno strujanje",
       "description": "Navier–Stokes, Poiseuille, granični sloj, odvajanje i turbulencija.",
       "title_aliases": [],
       "verification": {
@@ -1690,7 +1690,7 @@
       "kind": "chapter",
       "number": "12",
       "part": "part-4",
-      "source_sha256": "1c5fa942894f8fde96427fd6b3fae763497f4d5998fe995b33c994d479b9534d",
+      "source_sha256": "1f3c503f0dc1e060c4e96faf1b26800708e74bbd245f94b24348a5834e27c63b",
       "sections": [
         {
           "id": "sec-realni-tok-motivacija",
@@ -1719,13 +1719,13 @@
         {
           "id": "sec-couette-poiseuille",
           "level": 2,
-          "title": "Kanonsko rješenje: tok između paralelnih ploča",
+          "title": "Kanonsko rješenje: strujanje između paralelnih ploča",
           "number": "12.5"
         },
         {
           "id": "sec-hagen-poiseuille",
           "level": 2,
-          "title": "Hagen–Poiseuilleov tok i linearni gubitak",
+          "title": "Hagen–Poiseuilleovo strujanje i linearni gubitak",
           "number": "12.6"
         },
         {
@@ -1737,7 +1737,7 @@
         {
           "id": "sec-turbulencija",
           "level": 2,
-          "title": "Turbulentni tok: srednja vrijednost nije cijelo polje",
+          "title": "Turbulentno strujanje: srednja vrijednost nije cijelo polje",
           "number": "12.8"
         },
         {
@@ -1833,7 +1833,7 @@
       "kind": "chapter",
       "number": "13",
       "part": "part-5",
-      "source_sha256": "40c03d333c3a8dd89f171a035c235f6151ed205925fcc8f9ebae0537910abfe4",
+      "source_sha256": "2f4ef2e406d645782eaef69e264ba5742fdf013052857d53a1f293578bb04cad",
       "sections": [
         {
           "id": "sec-realna-energijska-bilanca",
@@ -1998,7 +1998,7 @@
       "kind": "chapter",
       "number": "14",
       "part": "part-5",
-      "source_sha256": "f80169f8501f6733c1d7eb4bdfeecbc081aa5d6695e7fa170581b9998770f642",
+      "source_sha256": "b01a00963f8a2264b700ed40ecee55f48cb347432123c2920d2fb30159973086",
       "sections": [
         {
           "id": "od-lopatice-do-turbostroja",
@@ -2116,10 +2116,10 @@
       ]
     },
     "u15": {
-      "title": "Otvoreni tokovi",
+      "title": "Strujanje sa slobodnom površinom",
       "source": "source/u15_otvoreni_tokovi.md",
       "path": "chapters/u15_otvoreni_tokovi.qmd",
-      "catalog_title": "Otvoreni tokovi",
+      "catalog_title": "Strujanje sa slobodnom površinom",
       "description": "Froudeov broj, kritična dubina i hidraulički skok.",
       "title_aliases": [],
       "verification": {
@@ -2134,12 +2134,12 @@
       "kind": "chapter",
       "number": "15",
       "part": "part-5",
-      "source_sha256": "dd5e2baec698b5ea58a4f4685421d24299eaba862f16f531bf5a9555f84e5a93",
+      "source_sha256": "6706fb212be4858ee9764a5c4dd1da129f44edcd2071e834f3d8d46e2b60f45b",
       "sections": [
         {
           "id": "sec-otvoreni-tok-motivacija",
           "level": 2,
-          "title": "Slobodna površina kao granica toka",
+          "title": "Slobodna površina kao granica strujanja",
           "number": "15.1"
         },
         {
@@ -2169,7 +2169,7 @@
         {
           "id": "sec-postupno-promjenjiv-tok",
           "level": 2,
-          "title": "Postupno promjenjiv tok i kontrolni presjek",
+          "title": "Postupno promjenjivo strujanje i kontrolni presjek",
           "number": "15.5"
         },
         {
@@ -2181,13 +2181,13 @@
         {
           "id": "sec-uniformni-tok",
           "level": 2,
-          "title": "Uniformni tok i Manningova jednadžba",
+          "title": "Jednoliko strujanje i Manningova jednadžba",
           "number": "15.7"
         },
         {
           "id": "sec-otvoreni-tok-ritual",
           "level": 2,
-          "title": "Postupak analize otvorenog toka",
+          "title": "Postupak analize strujanja sa slobodnom površinom",
           "number": "15.8"
         },
         {
@@ -2256,7 +2256,7 @@
       "kind": "appendix",
       "number": "A",
       "part": null,
-      "source_sha256": "9409c7554af84883ccca7de53f9836082f9f880344337f47f3d35d6a186f2a2a",
+      "source_sha256": "507d1efa7e19d354ccea9c696f321610174ae92e4c4d75c805981bb33d3f1948",
       "sections": [
         {
           "id": "najčešće-oznake",
@@ -2283,9 +2283,9 @@
           "number": "A.4"
         },
         {
-          "id": "pog.-9-kompresibilni-idealni-tok",
+          "id": "pog.-9-stlačivo-idealno-strujanje",
           "level": 2,
-          "title": "Pog. 9: Kompresibilni idealni tok",
+          "title": "Pog. 9: Stlačivo idealno strujanje",
           "number": "A.5"
         },
         {
@@ -2301,9 +2301,9 @@
           "number": "A.7"
         },
         {
-          "id": "pog.-12-diferencijalni-opis-realnog-toka",
+          "id": "pog.-12-diferencijalni-opis-realnog-strujanja",
           "level": 2,
-          "title": "Pog. 12: Diferencijalni opis realnog toka",
+          "title": "Pog. 12: Diferencijalni opis realnog strujanja",
           "number": "A.8"
         },
         {
@@ -2319,9 +2319,9 @@
           "number": "A.10"
         },
         {
-          "id": "pog.-15-otvoreni-tokovi",
+          "id": "pog.-15-strujanje-sa-slobodnom-površinom",
           "level": 2,
-          "title": "Pog. 15: Otvoreni tokovi",
+          "title": "Pog. 15: Strujanje sa slobodnom površinom",
           "number": "A.11"
         },
         {
@@ -2344,7 +2344,7 @@
       "kind": "appendix",
       "number": "B",
       "part": null,
-      "source_sha256": "5bea2f829716788f3b50a1ede713c436b2ae11817ec1100793b6fbae8da8d52e",
+      "source_sha256": "9a7b6999554348e4ea71acc409edb7dc35775bcff6eb8740aa313e1101d625ff",
       "sections": [
         {
           "id": "sec-pojmovi-a-z",
@@ -2366,7 +2366,7 @@
       "kind": "appendix",
       "number": "C",
       "part": null,
-      "source_sha256": "07282d4cc4bdd229c46761a0de2e46d6e24ff0fea9b006bf7fd4eea0bef80f88",
+      "source_sha256": "05e52b74f012ab50d2e8e301f8bb5b28e529f4627f55619d42d7198886f5c2a3",
       "sections": [
         {
           "id": "globalna-provjera-prije-računa",
@@ -2400,7 +2400,7 @@
       "kind": "appendix",
       "number": "D",
       "part": null,
-      "source_sha256": "fc27841c60008a1b1701183e00c04b169eb526219c3ae24f792fe348d3ef1b5c",
+      "source_sha256": "2b798e0a0386831d1dc88846c2a25c371162c860dc5897fd76953d69d27636de",
       "sections": [
         {
           "id": "dodatne-kratice-numeričkih-metoda",
@@ -2472,7 +2472,7 @@
       "kind": "appendix",
       "number": "E",
       "part": null,
-      "source_sha256": "3443f92aae45ef09b4d79d38eb64bf1798f9f7fc5d59b151dee61b3a7da5aecd",
+      "source_sha256": "95b277e154047aa00c9ba5f81a25a885e6606a8c57a66d686bc79bba8654f388",
       "sections": [
         {
           "id": "temelji-i-integralne-bilance",
@@ -2483,13 +2483,13 @@
         {
           "id": "kompresibilni-viskozni-i-turbulentni-tok",
           "level": 2,
-          "title": "Kompresibilni, viskozni i turbulentni tok",
+          "title": "Stlačivo, viskozno i turbulentno strujanje",
           "number": "E.2"
         },
         {
           "id": "cjevovodi-i-otvoreni-tokovi",
           "level": 2,
-          "title": "Cjevovodi i otvoreni tokovi",
+          "title": "Cjevovodi i strujanje sa slobodnom površinom",
           "number": "E.3"
         },
         {
@@ -2524,7 +2524,7 @@
       "kind": "appendix",
       "number": "F",
       "part": null,
-      "source_sha256": "c01c6448922a4e91f6b01ddc5ae3791479d45456970a99f75f1c6d85bf6afcc1",
+      "source_sha256": "9eab938c9bd528ad43ce348266cf8f568ee897dafd79731c5fffe704286d27c1",
       "sections": [
         {
           "id": "ključ-smjernica-i-kontrolnih-rezultata",
@@ -2581,9 +2581,9 @@
           "number": "F.9"
         },
         {
-          "id": "kompresibilni-idealni-tok",
+          "id": "stlačivo-idealno-strujanje",
           "level": 2,
-          "title": "Kompresibilni idealni tok",
+          "title": "Stlačivo idealno strujanje",
           "number": "F.10"
         },
         {
@@ -2599,9 +2599,9 @@
           "number": "F.12"
         },
         {
-          "id": "diferencijalni-opis-realnog-toka",
+          "id": "diferencijalni-opis-realnog-strujanja",
           "level": 2,
-          "title": "Diferencijalni opis realnog toka",
+          "title": "Diferencijalni opis realnog strujanja",
           "number": "F.13"
         },
         {
@@ -2617,9 +2617,9 @@
           "number": "F.15"
         },
         {
-          "id": "otvoreni-tokovi",
+          "id": "strujanje-sa-slobodnom-površinom",
           "level": 2,
-          "title": "Otvoreni tokovi",
+          "title": "Strujanje sa slobodnom površinom",
           "number": "F.16"
         }
       ],
@@ -3179,7 +3179,7 @@
       "kind": "Problem",
       "document": "u01",
       "number": "1.6",
-      "title": "Nosivost stola uz nesigurnu učinkovitost",
+      "title": "Nosivost stola uz nesigurnu iskoristivost",
       "level": "T4",
       "label": "Z6"
     },
@@ -3629,8 +3629,8 @@
       "kind": "Figure",
       "document": "u02",
       "number": "2.6",
-      "caption": "Isti klizni ležaj pri hladnom startu i zagrijanom ulju; ulje pruža otpor vrtnji osovine.",
-      "alt": "Dva razmotana uljna procjepa uz nepomičnu čahuru i osovinu koja se giba udesno, pri 10 °C i 50 °C, te poprečni presjek s promjerom osovine, smjerom vrtnje i momentom trenja.",
+      "caption": "Isti klizni ležaj pri hladnom pokretanju i zagrijanom ulju; ulje pruža otpor vrtnji vratila.",
+      "alt": "Dva razmotana uljna procjepa uz nepomičnu čahuru i vratilo koje se giba udesno, pri 10 °C i 50 °C, te poprečni presjek s promjerom vratila, smjerom vrtnje i momentom trenja.",
       "source": "../assets/print/u02_fig_lezaj_temperatura.svg",
       "type": "standard",
       "variants": {
@@ -5333,7 +5333,7 @@
       "document": "u05",
       "number": "5.6",
       "caption": "Četvrtcilindrični poklopac uz slobodnu površinu u zatvorenom spremniku s plinom iznad vode; okomita komponenta sile usmjerena je prema dolje.",
-      "alt": "Četvrtina kruga koja počinje na slobodnoj površini zatvorenog spremnika, plin s nadtlakom iznad vode, voda iznad luka ispunjava pomoćni volumen V*, zrak ispod, a komponenta FV usmjerena je prema dolje.",
+      "alt": "Četvrtina kruga koja počinje na slobodnoj površini zatvorenog spremnika, plin s pretlakom iznad vode, voda iznad luka ispunjava pomoćni volumen V*, zrak ispod, a komponenta FV usmjerena je prema dolje.",
       "source": "../assets/print/u06_val3_cetvrtcilindricni_poklopac.svg",
       "type": "standard",
       "variants": {
@@ -5410,7 +5410,7 @@
       "kind": "Example",
       "document": "u05",
       "number": "5.5",
-      "title": "Četvrtcilindrični poklopac u spremniku s nadtlakom plina",
+      "title": "Četvrtcilindrični poklopac u spremniku s pretlakom plina",
       "level": "T3",
       "label": "P5"
     },
@@ -6071,7 +6071,7 @@
       "document": "u06",
       "number": "6.1",
       "caption": "Uzgon kao razlika tlačnih sila na potpuno uronjeno tijelo i povratni par uzgona i težine na nagnutom plivajućem tijelu.",
-      "alt": "Dva panela: lijevo uronjeni blok s tlačnim silama na gornju i donju plohu, desno nagnuto plivajuće tijelo s točkama B, G i M.",
+      "alt": "Dva panela: prvi s uronjenim blokom s tlačnim silama na gornju i donju plohu, drugi s nagnutim plivajućim tijelom s točkama B, G i M.",
       "source": "../assets/print/u07_fig_uvod_pregled.svg",
       "type": "composite",
       "variants": {
@@ -7703,7 +7703,7 @@
       "kind": "Figure",
       "document": "u09",
       "number": "9.1",
-      "caption": "Kompresibilni tok povezuje širenje tlačnog vala, zagušenje u sapnici i skok veličina kroz udarni val.",
+      "caption": "Stlačivo strujanje povezuje širenje tlačnog vala, zagušenje u sapnici i skok veličina kroz udarni val.",
       "alt": "Tri panela: fronte tlačnog poremećaja iz izvora O u mirujućem plinu, osnosimetrična konvergentno-divergentna sapnica s grlom A* i izlazom Ae te normalni udarni val u ravnom kanalu.",
       "source": "../assets/print/u09_fig_uvod_kompresibilni_tok.svg",
       "type": "composite",
@@ -8463,7 +8463,7 @@
       "document": "u10",
       "number": "10.7",
       "caption": "Tlocrt hidroenergetskog koljena: izlaz skreće prema negativnoj osi y, a sila fluida na koljeno ima pozitivne komponente x i y.",
-      "alt": "Otvoreno koljeno stalnog promjera 200 mm skreće tok za 60 stupnjeva prema minus y, s tlačnim silama na presjecima, rezultantom sile fluida prema plus x i plus y i suprotnom reakcijom oslonca.",
+      "alt": "Otvoreno koljeno stalnog promjera 200 mm skreće strujanje za 60 stupnjeva prema minus y, s tlačnim silama na presjecima, rezultantom sile fluida prema plus x i plus y i suprotnom reakcijom oslonca.",
       "source": "../assets/print/u10_fig_hidroenergetsko_koljeno.svg",
       "type": "standard",
       "variants": {
@@ -9422,8 +9422,8 @@
       "kind": "Figure",
       "document": "u12",
       "number": "12.2",
-      "caption": "Skice uz Z1–Z6: lokalni tok, viskozni pogoni i profinjenje mreže.",
-      "alt": "Šest panela: polje brzine duž osi x, vodoravna cijev s izmjerenim padom tlaka i prvom ćelijom uz stijenku, vodoravna kapilara s dvama tlačnim priključcima, uljni film između mirne i pomične ploče, ploha s vanjskim tokom i tri mreže iste domene.",
+      "caption": "Skice uz Z1–Z6: lokalno strujanje, viskozni pogoni i progušćivanje mreže.",
+      "alt": "Šest panela: polje brzine duž osi x, vodoravna cijev s izmjerenim padom tlaka i prvom ćelijom uz stijenku, vodoravna kapilara s dvama tlačnim priključcima, uljni film između mirne i pomične ploče, ploha s vanjskim strujanjem i tri mreže istog područja proračuna.",
       "source": "../assets/print/u12_realni_tok_vjezbe_skice.svg",
       "type": "composite",
       "variants": {
@@ -9436,7 +9436,7 @@
       "kind": "Example",
       "document": "u12",
       "number": "12.1",
-      "title": "Ubrzanje u stacionarnom toku kroz suženje",
+      "title": "Ubrzanje u stacionarnom strujanju kroz suženje",
       "level": "T1",
       "label": "P1"
     },
@@ -9481,7 +9481,7 @@
       "kind": "Example",
       "document": "u12",
       "number": "12.6",
-      "title": "Ponovno priljubljivanje toka: mjerenje i CFD",
+      "title": "Ponovno priljubljivanje strujanja: mjerenje i CFD",
       "level": "T3",
       "label": "P6"
     },
@@ -9517,7 +9517,7 @@
       "kind": "Problem",
       "document": "u12",
       "number": "12.4",
-      "title": "Povratni tok između ploča",
+      "title": "Povratno strujanje između ploča",
       "level": "T2",
       "label": "Z4"
     },
@@ -9950,7 +9950,7 @@
       "kind": "Figure",
       "document": "u13",
       "number": "13.2",
-      "caption": "U realnom toku energijska crta pada zbog linijskih i lokalnih gubitaka; lokalni element daje nagliji pad.",
+      "caption": "U realnom strujanju energijska crta pada zbog linijskih i lokalnih gubitaka; lokalni element daje nagliji pad.",
       "alt": "Lijevo cijev od presjeka 1 do presjeka 2 s ventilom i padajućom energijskom i piezometarskom crtom, desno ravna dionica s profilom brzine i koljeno kao primjeri linijskoga i lokalnoga gubitka.",
       "source": "../assets/print/u10_fig_uvod_pregled.svg",
       "type": "composite",
@@ -10055,7 +10055,7 @@
       "kind": "Problem",
       "document": "u13",
       "number": "13.2",
-      "title": "Ulje pri toplom radu i hladnom startu",
+      "title": "Ulje pri toplom radu i hladnom pokretanju",
       "level": "T1",
       "label": "Z2"
     },
@@ -10626,7 +10626,7 @@
       "kind": "Example",
       "document": "u14",
       "number": "14.5",
-      "title": "Brodski propeler u napredovanju i idealna učinkovitost",
+      "title": "Brodski propeler u napredovanju i idealna iskoristivost",
       "level": "T3",
       "label": "P5"
     },
@@ -10635,7 +10635,7 @@
       "kind": "Example",
       "document": "u14",
       "number": "14.6",
-      "title": "Propeler dronskog kvadkoptera u stanju visa",
+      "title": "Propeler kvadrokoptera u stanju visa",
       "level": "T2",
       "label": "P6"
     },
@@ -10880,8 +10880,8 @@
       "kind": "Figure",
       "document": "u15",
       "number": "15.1",
-      "caption": "Otvoreni tok prelazi iz mirnog u kritični i siloviti režim te kroz hidraulički skok ponovno u dublji tok.",
-      "alt": "Uzdužni presjek kanala: mirni tok ispred blagog praga, kritični presjek na tjemenu, siloviti tok niz prag i hidraulički skok s isprekidanim kontrolnim volumenom.",
+      "caption": "Strujanje sa slobodnom površinom prelazi iz mirnog u kritični i siloviti režim te kroz hidraulički skok ponovno u dublje strujanje.",
+      "alt": "Uzdužni presjek kanala: mirno strujanje ispred blagog praga, kritični presjek na tjemenu, silovito strujanje niz prag i hidraulički skok s isprekidanim kontrolnim volumenom.",
       "source": "../assets/print/u15_fig_uvod_otvoreni_tok.svg",
       "type": "standard",
       "variants": {
@@ -10895,7 +10895,7 @@
       "document": "u15",
       "number": "15.2",
       "caption": "Skice uz Z1–Z6: valovi, istjecanje ispod ustave, trapezni presjek, povišeno dno, kontrolni volumen skoka i provjera oborinskog kanala.",
-      "alt": "Šest panela s presjecima pravokutnog i trapeznog kanala, bočnim presjekom ustave sa suženim mlazom, tokom preko praga, kontrolnim volumenom skoka s tlačnim silama i bazenom iza kanala.",
+      "alt": "Šest panela s presjecima pravokutnog i trapeznog kanala, bočnim presjekom ustave sa suženim mlazom, strujanjem preko praga, kontrolnim volumenom skoka s tlačnim silama i bazenom iza kanala.",
       "source": "../assets/print/u15_vjezbe_skice.svg",
       "type": "composite",
       "variants": {
@@ -10971,7 +10971,7 @@
       "kind": "Problem",
       "document": "u15",
       "number": "15.3",
-      "title": "Geometrija i tok trapeznog kanala",
+      "title": "Geometrija i strujanje u trapeznom kanalu",
       "level": "T2",
       "label": "Z3"
     },

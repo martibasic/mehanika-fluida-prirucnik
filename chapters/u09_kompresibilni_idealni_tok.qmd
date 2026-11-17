@@ -1,5 +1,5 @@
 ---
-title: "Kompresibilni idealni tok"
+title: "Stlačivo idealno strujanje"
 page-layout: article
 mf1-document-id: u09
 mf1-document-kind: chapter

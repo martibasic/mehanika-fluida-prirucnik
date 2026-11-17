@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="18 105 404 319" role="img" aria-labelledby="u14p2_title u14p2_desc" preserveAspectRatio="xMidYMid meet" style="display:block;width:100%;max-width:404px;height:auto;">
   <title id="u14p2_title">Aktuatorski disk propelera u napredovanju</title>
-  <desc id="u14p2_desc">Strujna cijev u okviru propelera sužava se od dalekog uzvodnog presjeka preko tankog propusnog diska do dalekog nizvodnog presjeka (traga); presjeci slijede iz kontinuiteta. Strelice brzina vA, vd i vj nacrtane su u zajedničkom mjerilu i rastu nizvodno. Potisak FT djeluje na disk, dakle na brod, suprotno ubrzanju vode. Kota D označuje promjer diska. Isprekidana granica je kontrolni volumen strujne cijevi.</desc>
+  <desc id="u14p2_desc">Strujna cijev u sustavu propelera sužava se od dalekog uzvodnog presjeka preko tankog propusnog diska do dalekog nizvodnog presjeka (traga); presjeci slijede iz kontinuiteta. Strelice brzina vA, vd i vj nacrtane su u zajedničkom mjerilu i rastu nizvodno. Potisak FT djeluje na disk, dakle na brod, suprotno ubrzanju vode. Kota D označuje promjer diska. Isprekidana granica je kontrolni volumen strujne cijevi.</desc>
   <defs>
     <marker id="u14p2_vopen" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M1,1 L9,5 L1,9" fill="none" stroke="#356b83" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></marker>
     <marker id="u14p2_v" markerWidth="7" markerHeight="6" refX="7" refY="3" orient="auto">

@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 513 453" role="img" aria-labelledby="u11v3_title u11v3_desc" preserveAspectRatio="xMidYMid meet" style="display:block;width:100%;max-width:513px;height:auto;">
   <title id="u11v3_title">Sila vode na sidreno koljeno</title>
-  <desc id="u11v3_desc">Tlocrt: ulazni tok ide u pozitivnom smjeru x i skreće prema pozitivnom y. Promjeri 180 i 120 milimetara nacrtani su u istom mjerilu. Tlak na izlazu djeluje prema unutra, suprotno izlaznoj brzini. Izdvojeni dijagram prikazuje komponente sile fluida na koljeno u omjeru 1402 : 665 i njihovu rezultantu, bez određivanja hvatišta. Izlazna brzina veća je od ulazne zbog manjeg presjeka. Isprekidana granica označuje odabrani kontrolni volumen fluida; uz krutu stijenku granice se podudaraju.</desc>
+  <desc id="u11v3_desc">Tlocrt: ulazno strujanje ide u pozitivnom smjeru x i skreće prema pozitivnom y. Promjeri 180 i 120 milimetara nacrtani su u istom mjerilu. Tlak na izlazu djeluje prema unutra, suprotno izlaznoj brzini. Izdvojeni dijagram prikazuje komponente sile fluida na koljeno u omjeru 1402 : 665 i njihovu rezultantu, bez određivanja hvatišta. Izlazna brzina veća je od ulazne zbog manjeg presjeka. Isprekidana granica označuje odabrani kontrolni volumen fluida; uz krutu stijenku granice se podudaraju.</desc>
   <defs>
     <pattern id="u11v3_hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
       <line x1="0" y1="0" x2="0" y2="7" stroke="#657781" stroke-width="1.8" />

@@ -1,12 +1,12 @@
 U statici je fluid mirovao, pa je bilo dovoljno poznavati raspodjelu tlaka. Čim fluid struji, najprije treba opisati kako se giba i koliko ga prolazi kroz pojedine presjeke; tek tada se mogu računati tlakovi, sile i energija. Kinematika strujanja to čini na dva načina: Lagrangeov opis prati pojedinu česticu fluida, a Eulerov opis zadaje polje brzine $\vec v(x,y,z,t)$ u nepomičnim točkama prostora. U inženjerskim se proračunima pretežno primjenjuje Eulerov opis jer daje stanje na odabranom mjestu, primjerice u presjeku cijevi ili na ulazu u crpku.
 
-Poglavlje najprije iz polja brzine izvodi strujnicu, trajektoriju i strujnu cijev, razlikuje stacionarno i nestacionarno strujanje te materijalnom derivacijom rastavlja ubrzanje čestice na lokalni i konvektivni član. Stvarni profil brzine u presjeku zatim zamjenjuje srednjom normalnom brzinom $\bar v_n=Q/A$, uz volumenski protok $Q=\int_A\vec v\cdot\vec n\,dA$. Na tom jednodimenzijskom modelu počiva integralna analiza u nastavku knjige.
+U poglavlju najprije iz polja brzine izvodimo strujnicu, trajektoriju i strujnu cijev, razlikujemo stacionarno i nestacionarno strujanje te materijalnom derivacijom rastavljamo ubrzanje čestice na lokalni i konvektivni član. Stvarni profil brzine u presjeku zatim zamjenjujemo srednjom normalnom brzinom $\bar v_n=Q/A$, uz volumenski protok $Q=\int_A\vec v\cdot\vec n\,dA$. Na tom jednodimenzijskom modelu počiva integralna analiza u nastavku knjige.
 
 Kontrolni volumen (KV) odabrani je dio prostora u kojem pratimo ulaz, izlaz i akumulaciju mase. Omeđuje ga kontrolna ploha (KP), zamišljena granica preko koje se računa tok mase, a $\vec n$ njezina je vanjska jedinična normala. Opća bilanca mase glasi $\sum\dot m_{ul}-\sum\dot m_{iz}=dm_{KV}/dt$, uz $\dot m=\rho Q$ i $Q=Av$. Zapis $A_1v_1=A_2v_2$ samo je poseban slučaj te bilance, odnosno jednadžbe kontinuiteta. Vezu između sustava i kontrolnog volumena uspostavlja Reynoldsov transportni teorem, iz kojeg slijedi i diferencijalni oblik kontinuiteta $\partial\rho/\partial t+\nabla\cdot(\rho\vec v)=0$.
 
 Takvom se bilancom analiziraju rashladni razdjelnici, ventilacijske komore strojarnice, balastni tankovi pri punjenju i pražnjenju te zahvatni usis broda u plovidbi, kroz čiju kontrolnu plohu fluid prolazi relativnom brzinom. Isti se teorem primjenjuje na energiju u []{.mf1-chapter-ref target="u08"} i na količinu gibanja u []{.mf1-chapter-ref target="u10"}.
 
-Slika [-@fig-uvod-u08] prikazuje kontrolni volumen u dva oblika. Lijevo je apstraktni uređaj koji predstavlja bilo koji proces, a ne krutu ovojnicu. U kontrolni volumen KV ulazi struja gustoće $\rho_1$, presjeka $A_1$ i brzine $v_1$ s masenim protokom $\dot m_{ul}$. Iz njega izlaze dvije struje $\dot m_{iz,1}$ i $\dot m_{iz,2}$, a unutar njega se masa akumulira brzinom $dm_{KV}/dt$. Isprekidana crta prikazuje kontrolnu plohu KP; kratke strelice $\vec n$ vanjske su jedinične normale, na ulazu suprotne toku, a na izlazima u smjeru toka. Strelice označuju tokove, a oznaka akumulacije nije brzina fluida. Desno gore je ventilirana komora: njezine krute stijenke imaju dva stvarno otvorena priključka, a zrak u komori i priključcima isti je fluid.
+Slika [-@fig-uvod-u08] prikazuje kontrolni volumen u dva oblika. Lijevo je apstraktni uređaj koji predstavlja bilo koji proces, a ne krutu ovojnicu. U kontrolni volumen KV ulazi struja gustoće $\rho_1$, presjeka $A_1$ i brzine $v_1$ s masenim protokom $\dot m_{ul}$. Iz njega izlaze dvije struje $\dot m_{iz,1}$ i $\dot m_{iz,2}$, a unutar njega se masa akumulira brzinom $dm_{KV}/dt$. Isprekidana crta prikazuje kontrolnu plohu KP; kratke strelice $\vec n$ vanjske su jedinične normale, na ulazu suprotne strujanju, a na izlazima u smjeru strujanja. Strelice označuju tokove, a oznaka akumulacije nije brzina fluida. Desno gore je ventilirana komora: njezine krute stijenke imaju dva stvarno otvorena priključka, a zrak u komori i priključcima isti je fluid.
 
 ![Kontrolni volumen s jednim ulazom, dvama izlazima i akumulacijom mase te ventilirana komora s dvama otvorenim priključcima.](../assets/print/u08_fig_uvod_pregled.svg){#fig-uvod-u08 fig-align="center" fig-alt="Isprekidana kontrolna ploha oko apstraktnog uređaja sa strelicama ulazne i dviju izlaznih struja, kratkim vanjskim normalama i oznakom akumulacije, a desno gore komora krutih stijenki s dvama priključcima."}
 
@@ -27,7 +27,7 @@ $$
 \vec{v} = \vec{v}(x, y, z, t).
 $$ {#eq-kinematika-kv-polje-brzine-01}
 
-To je središnja veličina cijele dinamike fluida: iz toga se polja određuje protok, a uz tlak i svojstva fluida računaju se sile i gubitci.
+Polje brzine središnja je veličina dinamike fluida: iz njega se određuje protok, a uz tlak i svojstva fluida računaju se sile i gubitci.
 
 ::: {.mf1-fizikalno-znacenje}
 <p class="mf1-box-label">Fizikalno značenje</p>
@@ -46,11 +46,11 @@ Iz polja brzine izvode se dvije krivulje koje se lako zamijene:
 U **stacionarnom** strujanju polje brzine ne mijenja se s vremenom, pa čestica koja krene po strujnici zauvijek ostaje na njoj — strujnica i trajektorija **podudaraju se**. U **nestacionarnom** strujanju polje se mijenja dok čestica putuje, pa njezina trajektorija općenito ne prati trenutnu strujnicu i dvije se krivulje ne moraju podudarati. U ovom priručniku gotovo uvijek radimo sa stacionarnim strujanjem, pa smijemo govoriti jednostavno o „strujnici”.
 :::
 
-Skup strujnica koje prolaze rubom neke male zatvorene krivulje tvori **strujnu cijev**. U stacionarnom strujanju fluid ne prolazi kroz njezin plašt jer je brzina na njega tangentna; tako dobivamo zamišljenu cijev omeđenu strujnicama. Upravo je strujna cijev geometrijska podloga za kontinuitet i za Bernoullijevu jednadžbu u []{.mf1-chapter-ref target="u08"}.
+Skup strujnica koje prolaze rubom neke male zatvorene krivulje tvori **strujnu cijev**. U stacionarnom strujanju fluid ne prolazi kroz njezin plašt jer je brzina na njega tangentna; tako dobivamo zamišljenu cijev omeđenu strujnicama. Strujna cijev geometrijska je podloga za kontinuitet i za Bernoullijevu jednadžbu u []{.mf1-chapter-ref target="u08"}.
 
 ::: {.mf1-cfd title="Računalna dinamika fluida"}
 
-**Zadržavanje tekućine u kutu razdjelnika.** Vraćamo se rashladnom krugu i promatramo ulaznu komoru hladne ploče. *Pitanje:* postoji li u kutu komore područje u kojem tekućina kruži i dugo se zadržava. *Model:* stacionarno nestlačivo strujanje; računalo daje Eulerov opis, polje brzine u čvorovima mreže. *Podatci:* geometrija komore, položaj ulaza, ukupni protok (reda desetaka litara u minuti) i svojstva tekućine. *Izlazi:* strujnice te putanje zamišljenih čestica koje puštamo s ulaza i pomičemo kroz izračunano polje; za svaku bilježimo vrijeme do izlaza, tj. vrijeme zadržavanja. *Provjera:* zbroj izlaznih protoka jednak je ulaznome, a u stacionarnom polju putanje se moraju poklopiti sa strujnicama. Pri pulsirajućem dotoku polje se mijenja, trenutna strujnica više nije putanja, pa vrijeme zadržavanja računamo isključivo iz putanja.
+**Zadržavanje tekućine u kutu razdjelnika.** Vraćamo se rashladnom krugu i promatramo ulaznu komoru rashladne ploče. *Pitanje:* postoji li u kutu komore područje u kojem tekućina kruži i dugo se zadržava. *Model:* stacionarno nestlačivo strujanje; računalo daje Eulerov opis, polje brzine u čvorovima mreže. *Podatci:* geometrija komore, položaj ulaza, ukupni protok (reda desetaka litara u minuti) i svojstva tekućine. *Izlazi:* strujnice te putanje zamišljenih čestica koje puštamo s ulaza i pomičemo kroz izračunano polje; za svaku bilježimo vrijeme do izlaza, tj. vrijeme zadržavanja. *Provjera:* zbroj izlaznih protoka jednak je ulaznome, a u stacionarnom polju putanje se moraju poklopiti sa strujnicama. Pri pulsirajućem dotoku polje se mijenja, trenutna strujnica više nije putanja, pa vrijeme zadržavanja računamo isključivo iz putanja.
 
 *Odluka:* usporedbom dvaju položaja ulaza biramo onaj s užom raspodjelom vremena zadržavanja. Dug boravak upozorava na slabu izmjenu tekućine; za zaključak o lokalnom pregrijavanju treba i toplinski model, pa ovdje biramo samo geometriju koja ga čini manje vjerojatnim.
 :::
@@ -63,7 +63,7 @@ $$
 \frac{\partial \vec{v}}{\partial t} = 0 \quad (\text{u svakoj točki prostora}).
 $$ {#eq-kinematika-kv-stacionarno-i-nestacionarno-strujanje-01}
 
-Pozor: stacionarno **ne znači** da se čestica ne ubrzava. Voda u suženju ustaljeno struji (slika se ne mijenja), ali se svaka čestica koja uđe u suženje ubrzava jer prelazi u područje veće brzine. Nestacionarno strujanje javlja se pri pokretanju i zaustavljanju crpke, zatvaranju ventila te pri punjenju i pražnjenju spremnika. Pri punjenju i pražnjenju spremnika usto član akumulacije $dm_{KV}/dt$ nije jednak nuli; u krutoj cijevi s nestlačivom tekućinom akumulacije nema ni kad je strujanje nestacionarno.
+Stacionarno strujanje **ne znači** da se čestica ne ubrzava. Voda u suženju ustaljeno struji (slika se ne mijenja), ali se svaka čestica koja uđe u suženje ubrzava jer prelazi u područje veće brzine. Nestacionarno strujanje javlja se pri pokretanju i zaustavljanju crpke, zatvaranju ventila te pri punjenju i pražnjenju spremnika. Pri punjenju i pražnjenju spremnika usto član akumulacije $dm_{KV}/dt$ nije jednak nuli; u krutoj cijevi s nestlačivom tekućinom akumulacije nema ni kad je strujanje nestacionarno.
 
 ### Od stvarnog profila do srednje brzine (1D model)
 
@@ -73,7 +73,7 @@ $$
 Q = \int_A \vec v\cdot\vec n\,dA = \int_A v_n\,dA .
 $$ {#eq-kinematika-kv-od-stvarnog-profila-do-srednje-brzine-1d-01}
 
-Da ne bismo u svakom zadatku integrirali cijeli profil, uvodi se **srednja (1D) brzina** — jedna brzina koja kroz isti presjek daje isti protok:
+Da ne bismo u svakom zadatku integrirali cijeli profil, uvodimo **srednju (1D) brzinu** — jednu brzinu koja kroz isti presjek daje isti protok:
 
 $$
 \bar v_n = \frac{Q}{A} = \frac{1}{A}\int_A \vec v\cdot\vec n\,dA .
@@ -128,7 +128,7 @@ $$ {#eq-kinematika-kv-materijalna-derivacija-ubrzanje-cestice-01}
 
 ::: {.mf1-fizikalno-znacenje}
 <p class="mf1-box-label">Fizikalno značenje</p>
-**Lokalni** član $\partial\vec{v}/\partial t$ opisuje ubrzanje zbog promjene brzine s vremenom u promatranoj točki (npr. pri pokretanju crpke). **Konvektivni** član $(\vec{v}\cdot\nabla)\vec{v}$ opisuje ubrzanje jer čestica putuje u područje druge brzine — točno ono što se događa u suženju u kojem je strujanje stacionarno ($\partial\vec{v}/\partial t = 0$), a čestica se ipak ubrzava. Zato se voda u mlaznici ubrzava iako je „slika” strujanja nepromjenjiva: sav doprinos dolazi iz konvektivnog člana.
+**Lokalni** član $\partial\vec{v}/\partial t$ opisuje ubrzanje zbog promjene brzine s vremenom u promatranoj točki (npr. pri pokretanju crpke). **Konvektivni** član $(\vec{v}\cdot\nabla)\vec{v}$ opisuje ubrzanje do kojeg dolazi zato što čestica putuje u područje druge brzine, kao u suženju u kojem je strujanje stacionarno ($\partial\vec{v}/\partial t = 0$), a čestica se ipak ubrzava. Zato se voda u mlaznici ubrzava iako je „slika” strujanja nepromjenjiva: sav doprinos dolazi iz konvektivnog člana.
 :::
 
 U ovom poglavlju materijalnu derivaciju uvodimo samo kao pojam. Eulerova jednadžba pojavljuje se u []{.mf1-chapter-ref target="u08"}, integralna bilanca količine gibanja u []{.mf1-chapter-ref target="u10"}, a puni lokalni izvod u []{.mf1-chapter-ref target="u12"}.
@@ -159,7 +159,7 @@ Tek kad je riječ o istom nestlačivom fluidu kroz sve presjeke i kad je gustoć
 ::: {.mf1-granica-modela}
 <p class="mf1-box-label">Granica modela — Kada kontinuitet prestaje biti jednostavan</p>
 
-Zapis $A_1 v_1 = A_2 v_2$ vrijedi samo za stacionaran tok jednoga fluida stalne gustoće kroz jedan ulaz i jedan izlaz, uz srednje normalne brzine. Promjena gustoće (zagrijani zrak u Z1), više grana, akumulacija u spremniku ili pomična kontrolna ploha (klip u Z5, brod u plovidbi u primjeru [-@ex-zahvatni-usis-morske-vode-u-plovidbi]) vraćaju punu masenu bilancu. Jednodimenzijska srednja brzina ne govori ništa o obliku profila, vrtloženju ni tlaku: za njih su potrebne bilance energije ([]{.mf1-chapter-ref target="u08"}) i količine gibanja ([]{.mf1-chapter-ref target="u10"}) ili lokalni opis ([]{.mf1-chapter-ref target="u12"}).
+Zapis $A_1 v_1 = A_2 v_2$ vrijedi samo za stacionarno strujanje jednoga fluida stalne gustoće kroz jedan ulaz i jedan izlaz, uz srednje normalne brzine. Promjena gustoće (zagrijani zrak u Z1), više grana, akumulacija u spremniku ili pomična kontrolna ploha (klip u Z5, brod u plovidbi u primjeru [-@ex-zahvatni-usis-morske-vode-u-plovidbi]) zahtijevaju punu masenu bilancu. Jednodimenzijska srednja brzina ne govori ništa o obliku profila, vrtloženju ni tlaku: za njih su potrebne bilance energije ([]{.mf1-chapter-ref target="u08"}) i količine gibanja ([]{.mf1-chapter-ref target="u10"}) ili lokalni opis ([]{.mf1-chapter-ref target="u12"}).
 :::
 
 ::: {.mf1-interaktivno}
@@ -221,7 +221,7 @@ $$
 + \int_{KP(t)} \rho\bigl[(\vec v-\vec v_{KP})\cdot\vec n\bigr]\,dA = 0.
 $$ {#eq-kinematika-kv-matematicki-izvod-bilanca-mase-u-kontrolnom-volu-01}
 
-Prvi je član brzina promjene mase unutar trenutačnoga kontrolnog volumena. Drugi je član neto tok mase **kroz njegovu granicu**, a predznak mu određuje skalarni produkt relativne brzine i vanjske normale. Za nepomičnu kontrolnu plohu vrijedi $\vec v_{KP}=0$, pa dobivamo oblik koji se primjenjuje na spremnike i nepomične cijevne elemente:
+Prvi je član brzina promjene mase unutar trenutačnoga kontrolnog volumena. Drugi je član neto tok mase **kroz njegovu granicu**, a predznak mu određuje skalarni umnožak relativne brzine i vanjske normale. Za nepomičnu kontrolnu plohu vrijedi $\vec v_{KP}=0$, pa dobivamo oblik koji se primjenjuje na spremnike i nepomične cijevne elemente:
 
 $$
 \frac{d}{dt}\int_{KV} \rho\,dV + \int_{KP} \rho(\vec v\cdot\vec n)\,dA=0.
@@ -241,7 +241,7 @@ $$ {#eq-kinematika-kv-matematicki-izvod-bilanca-mase-u-kontrolnom-volu-04}
 
 odnosno u poznatijem obliku, jednadžbi [-@eq-kinematika-kv-fizikalni-uvod-i-matematicki-izvod-01].
 
-Kad je tok stacionaran, član akumulacije nestaje pa slijedi
+Kad je strujanje stacionarno, član akumulacije nestaje pa slijedi
 
 $$
 \sum \dot m_{ul} = \sum \dot m_{iz}.
@@ -306,7 +306,7 @@ U primjerima koji slijede kontrolni volumen biramo prije bilo koje jednadžbe, a
 
 ::: {.mf1-cfd title="Računalna dinamika fluida"}
 
-**Ćelija mreže i spremnik: ista bilanca mase.** Bilanca „akumulacija + neto izlaz = 0” vrijedi za spremnik i za svaku malu ćeliju. **Diskretizacija** kontinuiranu domenu dijeli na konačan broj područja i aproksimira tokove kroz njihove plohe. U metodi konačnih volumena jedan mogući zapis za nepomičnu ćeliju $i$ bez izvora mase glasi
+**Ćelija mreže i spremnik: ista bilanca mase.** Bilanca „akumulacija + neto izlaz = 0” vrijedi za spremnik i za svaku malu ćeliju. **Diskretizacija** kontinuirano područje proračuna (engl. *computational domain*) dijeli na konačan broj dijelova i aproksimira tokove kroz njihove plohe. U metodi konačnih volumena jedan mogući zapis za nepomičnu ćeliju $i$ bez izvora mase glasi
 
 $$
 \frac{(\rho V)_i^{n+1}-(\rho V)_i^n}{\Delta t}
@@ -314,9 +314,9 @@ $$
 \qquad \dot m_f\approx\rho_f(\vec v_f\cdot\vec n_f)A_f.
 $$ {#eq-celijska-bilanca-mase}
 
-Indeks $n$ označuje vremensku razinu, a $f$ plohu s vanjskom normalom. Za stacionaran tok prvi član iščezava. Brzine na plohama povezuju susjedne nepoznanice: zajedno s bilancom količine gibanja dobiva se velik sustav algebarskih jednadžbi. Za Venturijevu cijev numerička je domena fluid unutar cijevi omeđen ulazom, izlazom i stijenkom, mreža je skup povezanih ćelija i ploha, a iz izračunanog polja brzine dobiva se protok kroz bilo koji presjek.
+Indeks $n$ označuje vremensku razinu, a $f$ plohu s vanjskom normalom. Za stacionarno strujanje prvi član iščezava. Brzine na plohama povezuju susjedne nepoznanice: zajedno s bilancom količine gibanja dobiva se velik sustav algebarskih jednadžbi. Za Venturijevu cijev područje je proračuna fluid unutar cijevi omeđen ulazom, izlazom i stijenkom, mreža je skup povezanih ćelija i ploha, a iz izračunanog polja brzine dobiva se protok kroz bilo koji presjek.
 
-**Provjera i primjena.** Isti tok kroz zajedničku plohu ulazi u dvije ćelije sa suprotnim predznacima. Zbrajanjem lokalnih bilanca unutarnji se tokovi poništavaju, pa ostaju samo tokovi kroz granice domene i ukupna akumulacija. Pri stacionarnom strujanju kroz Venturijevu cijev ulazni i izlazni maseni protok moraju biti jednaki. Tlak i energiju istoga problema povezuje []{.mf1-chapter-ref target="u08"}, a postupak rješavanja opisan je u odjeljku [-@sec-realni-tok-cfd].
+**Provjera i primjena.** Isti tok kroz zajedničku plohu ulazi u dvije ćelije sa suprotnim predznacima. Zbrajanjem lokalnih bilanca unutarnji se tokovi poništavaju, pa ostaju samo tokovi kroz granice područja proračuna i ukupna akumulacija. Pri stacionarnom strujanju kroz Venturijevu cijev ulazni i izlazni maseni protok moraju biti jednaki. Tlak i energiju istoga problema povezuje []{.mf1-chapter-ref target="u08"}, a postupak rješavanja opisan je u odjeljku [-@sec-realni-tok-cfd].
 :::
 
 ## Riješeni primjeri
@@ -340,7 +340,7 @@ Voda gustoće $\rho = 998\ \text{kg/m}^3$ stacionarno struji kroz difuzor ulazno
 
 **Rješenje**
 
-Za stacionarni tok nestlačivog fluida vrijedi $Q_1 = Q_2$, odnosno $A_1 v_1 = A_2 v_2$. Površine presjeka su
+Za stacionarno strujanje nestlačivog fluida vrijedi $Q_1 = Q_2$, odnosno $A_1 v_1 = A_2 v_2$. Površine presjeka su
 
 $$
 A_1 = \frac{\pi D_1^2}{4} = \frac{\pi \cdot 0{,}12^2}{4} \approx 0{,}01131\ \text{m}^2,
@@ -362,7 +362,7 @@ $$
 Q = A_2 v_2 = 0{,}02545 \cdot 1{,}6 \approx 0{,}0407\ \text{m}^3/\text{s} = 40{,}7\ \text{L/s}.
 $$ {#eq-kinematika-kv-rijeseni-primjer-voda-struji-kroz-difuzor-t2-04}
 
-Maseni protok zato iznosi
+Maseni protok iznosi
 
 $$
 \dot{m} = \rho Q = 998 \cdot 0{,}0407 \approx 40{,}6\ \text{kg/s}.
@@ -370,10 +370,10 @@ $$ {#eq-kinematika-kv-rijeseni-primjer-voda-struji-kroz-difuzor-t2-05}
 
 **Provjera i tumačenje**
 
-Omjer brzina jednak je kvadratu omjera promjera, $(180/120)^2 = 2{,}25$, pa je brzina veća u užem ulaznom presjeku; kao orijentacija, brzine od 1,6 do 3,6 m/s red su veličine za vodu u cijevima, a ne preporuka za usis crpke.
+Omjer brzina jednak je kvadratu omjera promjera, $(180/120)^2 = 2{,}25$, pa je brzina veća u užem ulaznom presjeku. Brzine od 1,6 do 3,6 m/s orijentacijski su uobičajenog reda veličine za vodu u cijevima, ali nisu preporuka za usis crpke.
 :::
 
-Sljedeći primjer veže kontrolni volumen uz brod koji plovi: kroz pomičnu kontrolnu plohu masu nosi samo relativna brzina.
+U sljedećem je primjeru kontrolni volumen vezan uz brod koji plovi, pa maseni tok kroz pomičnu kontrolnu plohu određuje samo relativna brzina.
 
 ::: {#ex-zahvatni-usis-morske-vode-u-plovidbi .mf1-we}
 <p class="mf1-box-label">Zahvatni usis morske vode na brodu u plovidbi&nbsp;<span class="mf1-level">T2</span></p>
@@ -387,7 +387,7 @@ Brod plovi stalnom brzinom $v_s = 18\ \text{čv}$ kroz mirno more gustoće $\rho
 1. Odaberi kontrolni volumen i napiši bilancu mase kroz pomičnu ulaznu plohu.
 2. Odredi maseni protok u rashladni sustav te srednju brzinu vode relativno prema brodu u otvoru usisa i u slobodnim otvorima rešetke.
 3. Odredi apsolutnu brzinu vode (u odnosu na more) u ravnini otvora i objasni zašto ona ne smije ući u bilancu mase.
-4. Što se od toga mijenja kad brod stoji na sidru, a ista crpka vuče isti protok?
+4. Što se od toga mijenja kad brod stoji na sidru, a ista crpka ostvaruje isti protok?
 
 ![Zahvatni usis morske vode: kontrolni volumen vezan uz brod u plovidbi.](../assets/print/u08_val3_izjednacni_spremnik.svg){#fig-zahvatni-usis-morske-vode fig-alt="Presjek dna trupa s otvorom zahvatnog usisa okrenutim prema pramcu, usisnim kanalom prema rashladnom sustavu i isprekidanim kontrolnim volumenom koji se giba s brodom; označene su brzina broda i relativna brzina vode u otvoru."}
 
@@ -405,7 +405,7 @@ $$
 \rho A_u w = \rho Q,
 $$ {#eq-zahvatni-usis-bilanca-mase}
 
-gdje je $w$ srednja brzina vode **relativno prema brodu**, usmjerena u usis. Protok koji crpka vuče određuje $w$; brzina plovidbe u bilancu mase ne ulazi.
+gdje je $w$ srednja brzina vode **relativno prema brodu**, usmjerena u usis. Protok koji crpka ostvaruje određuje $w$; brzina plovidbe u bilancu mase ne ulazi.
 
 ### 2. Maseni protok i relativne brzine {.mf1-step .unnumbered .unlisted}
 
@@ -429,7 +429,7 @@ $$
 \vec v = \vec v_{KP} - w\,\vec i = (9{,}26 - 1{,}25)\,\vec i = 8{,}01\ \text{m/s}\ \vec i .
 $$ {#eq-zahvatni-usis-apsolutna-brzina}
 
-Voda se u ravnini otvora giba prema pramcu gotovo brzinom broda jer ju je usis zahvatio i ubrzao. Da smo u bilancu uvrstili apsolutnu brzinu, dobili bismo $\rho A_u v = 1025 \cdot 0{,}040 \cdot 8{,}01 \approx 328\ \text{kg/s}$ „prema van”, šest puta više od stvarnog protoka i u suprotnom smjeru. Kroz pomičnu plohu masu nosi samo relativna brzina.
+Voda se u ravnini otvora giba prema pramcu gotovo brzinom broda jer ju je usis zahvatio i ubrzao. Da smo u bilancu uvrstili apsolutnu brzinu, dobili bismo $\rho A_u v = 1025 \cdot 0{,}040 \cdot 8{,}01 \approx 328\ \text{kg/s}$ „prema van”, šest puta više od stvarnog protoka i u suprotnom smjeru. Maseni tok kroz pomičnu plohu određuje samo relativna brzina.
 
 ### 4. Brod na sidru {.mf1-step .unnumbered .unlisted}
 
@@ -552,7 +552,7 @@ Slika [-@fig-u08-staticka-zamjena-za-kontrolni-volumen-i-kontinuitet] uspoređuj
 
 **Tekst zadatka**
 
-T-komad dijeli stacionarni tok ulja gustoće $\rho = 870\ \text{kg/m}^3$ iz ulazne cijevi promjera $D_1 = 32\ \text{mm}$, pri brzini $v_1 = 4{,}5\ \text{m/s}$. Ogranak radnog cilindra promjera $D_2 = 20\ \text{mm}$ prima $60\%$ protoka. Ogranak hladnjaka prima preostalih $40\%$ i treba imati brzinu $v_3 = 3{,}0\ \text{m/s}$. Ulje smatraj nestlačivim.
+T-komad dijeli stacionarnu struju ulja gustoće $\rho = 870\ \text{kg/m}^3$ iz ulazne cijevi promjera $D_1 = 32\ \text{mm}$, pri brzini $v_1 = 4{,}5\ \text{m/s}$. Ogranak radnog cilindra promjera $D_2 = 20\ \text{mm}$ prima $60\%$ protoka. Ogranak hladnjaka prima preostalih $40\%$ i treba imati brzinu $v_3 = 3{,}0\ \text{m/s}$. Ulje smatraj nestlačivim.
 
 **Traži se**
 
@@ -673,7 +673,7 @@ Točan zbroj izlaznih protoka još ne potvrđuje podjelu: odstupanja pojedinih g
 
 ::: {.callout-note collapse="true"}
 ### Odgovor
-Pojednostavljeni oblik vrijedi za stacionarno strujanje jednog nestlačivog fluida kroz jedan ulaz i jedan izlaz uz uporabu srednjih normalnih brzina po presjecima. U slučaju više ulaza i izlaza, akumulacije u kontrolnom volumenu ili miješanja fluida različitih gustoća, treba primijeniti opću masenu bilancu $\sum \dot{m}_{ul} = \sum \dot{m}_{iz} + dm_{KV}/dt$.
+Pojednostavljeni oblik vrijedi za stacionarno strujanje jednog nestlačivog fluida kroz jedan ulaz i jedan izlaz uz uporabu srednjih normalnih brzina po presjecima. U slučaju više ulaza i izlaza, akumulacije u kontrolnom volumenu ili miješanja fluida različitih gustoća treba primijeniti opću masenu bilancu $\sum \dot{m}_{ul} = \sum \dot{m}_{iz} + dm_{KV}/dt$.
 :::
 
 2. Po čemu se masena bilanca razlikuje od volumenske i kada ta razlika postaje važna?
@@ -694,13 +694,13 @@ To je brzina promjene ukupne mase fluida unutar kontrolnog volumena. Ako je čla
 
 ::: {.callout-note collapse="true"}
 ### Odgovor
-Normalna komponenta brzine relativne prema plohi, $(\vec v-\vec v_{KP})\cdot\vec n$. Apsolutna brzina broji i masu koju ploha svojim gibanjem „prebriše”, a ta masa ne prolazi kroz nju: u primjeru [-@ex-zahvatni-usis-morske-vode-u-plovidbi] dala bi šest puta prevelik protok pogrešnog smjera. Za nepomičnu plohu obje su brzine jednake.
+Normalna komponenta brzine relativne prema plohi, $(\vec v-\vec v_{KP})\cdot\vec n$. S apsolutnom brzinom uračunala bi se i masa koju ploha svojim gibanjem „prebriše”, a ta masa ne prolazi kroz nju: u primjeru [-@ex-zahvatni-usis-morske-vode-u-plovidbi] dala bi šest puta prevelik protok pogrešnog smjera. Za nepomičnu plohu obje su brzine jednake.
 :::
 :::
 
 ## Zadatci za vježbu {#sec-u07-zadatci}
 
-U nepomičnoj komori Z3 tok je stacionaran, voda nestlačiva i gustoće $\rho=998\ \text{kg/m}^3$, a brzine su srednje po presjeku. U Z1 se gustoća zraka mijenja, u Z4 se srednja brzina tek određuje iz izmjerenog profila, u Z5 se kontrolna ploha giba, a u Z6 je fluid mješavina.
+U nepomičnoj komori Z3 strujanje je stacionarno, voda nestlačiva i gustoće $\rho=998\ \text{kg/m}^3$, a brzine su srednje po presjeku. U Z1 se gustoća zraka mijenja, u Z4 se srednja brzina tek određuje iz izmjerenog profila, u Z5 se kontrolna ploha giba, a u Z6 je fluid mješavina.
 
 ::::: {.mf1-vjezbe-list}
 
@@ -738,7 +738,7 @@ $\dot m \approx 4{,}82\ \text{kg/s}$; $v_2 \approx 16{,}8\ \text{m/s}$; $Q_1 = 3
 
 **Tekst zadatka**
 
-U širokom toku vode odabrana je nepomična zamišljena ravna ploha površine $A=0{,}0040\ \text{m}^2$. Brzina vode jednolika je na toj plohi i iznosi $v=3{,}0\ \text{m/s}$. Kut između brzine i odabrane jedinične normale $\vec n$ iznosi $\theta=60^\circ$, a gustoća vode je $\rho=998\ \text{kg/m}^3$. Ploha nije kruta stijenka i ne ometa strujanje.
+U širokoj struji vode odabrana je nepomična zamišljena ravna ploha površine $A=0{,}0040\ \text{m}^2$. Brzina vode jednolika je na toj plohi i iznosi $v=3{,}0\ \text{m/s}$. Kut između brzine i odabrane jedinične normale $\vec n$ iznosi $\theta=60^\circ$, a gustoća vode je $\rho=998\ \text{kg/m}^3$. Ploha nije kruta stijenka i ne ometa strujanje.
 
 **Traži se**
 
@@ -755,7 +755,7 @@ Protok određuje normalna komponenta brzine: $Q=Av\cos\theta$. Kut je zadan prem
 ::: {.callout-tip collapse="true" data-answer-key="true"}
 ### Kontrolni rezultat
 
-$v_n=1{,}50\ \text{m/s}$; $Q=+6{,}00\ \text{L/s}$; $\dot m=+5{,}988\ \text{kg/s}$. Za suprotnu normalu protoci su $-6{,}00\ \text{L/s}$ i $-5{,}988\ \text{kg/s}$; fizikalni tok ostaje isti.
+$v_n=1{,}50\ \text{m/s}$; $Q=+6{,}00\ \text{L/s}$; $\dot m=+5{,}988\ \text{kg/s}$. Za suprotnu normalu protoci su $-6{,}00\ \text{L/s}$ i $-5{,}988\ \text{kg/s}$; fizikalno strujanje ostaje isto.
 :::
 ::::
 
@@ -863,24 +863,24 @@ $Q_{iz,rel}=0{,}4712\ \text{L/s}$; $u=0{,}06732\ \text{m/s}$ udesno; $v_{iz}=1{,
 
 Balastni tank dvodna ima stalnu tlocrtnu površinu $A_T = 36{,}0\ \text{m}^2$. Odzračna cijev počinje na visini $h_{max} = 1{,}60\ \text{m}$ iznad dna tanka, a početna razina je $h_0 = 0{,}30\ \text{m}$. Balastna crpka dovodi morsku vodu gustoće $\rho_{mv} = 1025\ \text{kg/m}^3$ protokom $Q_{mv} = 250\ \text{m}^3/\text{h}$, sustav za ispiranje slatku vodu gustoće $\rho_v = 1000\ \text{kg/m}^3$ protokom $Q_v = 40\ \text{m}^3/\text{h}$, a crpka za pretakanje istodobno odvodi homogenu mješavinu u susjedni tank protokom $Q_{iz} = 120\ \text{m}^3/\text{h}$.
 
-Volumeni su aditivni, miješanje savršeno, početni sadržaj ima sastav spojenih dotoka, a protoci su stalni. Mjerači protoka imaju zajamčene granice pogreške $\pm4\ \%$ za $Q_{mv}$, $\pm5\ \%$ za $Q_v$ i $\pm6\ \%$ za $Q_{iz}$; dopuštene su sve kombinacije. Operacija je planirana na $t = 15\ \text{min}$ bez nadzora razine. Kad razina dosegne odzračnu cijev, voda izlazi na palubu i linearni model prestaje vrijediti. Nastavni model ne zamjenjuje plan upravljanja balastom.
+Volumeni su aditivni, miješanje savršeno, početni sadržaj ima sastav spojenih dotoka, a protoci su stalni. Mjerači protoka imaju zajamčene granice pogreške $\pm4\ \%$ za $Q_{mv}$, $\pm5\ \%$ za $Q_v$ i $\pm6\ \%$ za $Q_{iz}$; dopuštene su sve kombinacije. Planirano je da operacija traje $t = 15\ \text{min}$ bez nadzora razine. Kad razina dosegne odzračnu cijev, voda izlazi na palubu i linearni model prestaje vrijediti. Nastavni model ne zamjenjuje plan upravljanja balastom.
 
 **Traži se**
 
 1. Odredi gustoću mješavine, brzinu porasta razine, razinu nakon 15 min i masu akumuliranu u tanku, sve za nominalne protoke.
-2. Konzervativno procijeni najveću razinu nakon 15 min i najdulje trajanje bez nadzora prije dosezanja odzračne cijevi. Smije li se planirana operacija provesti bez nadzora?
+2. Procijeni na strani sigurnosti najveću razinu nakon 15 min i najdulje trajanje bez nadzora prije dosezanja odzračne cijevi. Smije li se planirana operacija provesti bez nadzora?
 
 :::: {.content-visible .mf1-hint-online when-format="html"}
 ::: {.callout-note collapse="true" data-hint-key="true"}
 ### Naputak
-Masena bilanca ulaza daje gustoću mješavine; akumulaciju izrazi preko $Q_{mv} + Q_v - Q_{iz} = A_T\,dh/dt$. Kriterij: razina nakon 15 min mora ostati ispod $h_{max}$ za svaku dopuštenu kombinaciju protoka.
+Masena bilanca ulaza daje gustoću mješavine; akumulaciju izrazi preko $Q_{mv} + Q_v - Q_{iz} = A_T\,dh/dt$. Kriterij je da razina nakon 15 min ostane ispod $h_{max}$ za svaku dopuštenu kombinaciju protoka.
 :::
 ::::
 :::: {.content-visible .mf1-answer-online when-format="html"}
 ::: {.callout-tip collapse="true" data-answer-key="true"}
 ### Kontrolni rezultat
 
-$\rho_{mj} \approx 1021{,}6\ \text{kg/m}^3$; $dh/dt = 1{,}312\ \text{mm/s}$; nominalno $h(15\ \text{min}) \approx 1{,}48\ \text{m}$ i $\Delta m \approx 43{,}4\ \text{t}$. Konzervativno $dh/dt_{max} = 1{,}460\ \text{mm/s}$ i $h(15\ \text{min}) \approx 1{,}61\ \text{m} > 1{,}60\ \text{m}$; odzračnik se doseže za $890\ \text{s} \approx 14{,}8\ \text{min}$. Nominalni plan prolazi, ali ne uz zajamčene granice: treba skratiti operaciju, uvesti nadzor razine ili smanjiti nesigurnost mjerača.
+$\rho_{mj} \approx 1021{,}6\ \text{kg/m}^3$; $dh/dt = 1{,}312\ \text{mm/s}$; nominalno $h(15\ \text{min}) \approx 1{,}48\ \text{m}$ i $\Delta m \approx 43{,}4\ \text{t}$. Na strani sigurnosti $dh/dt_{max} = 1{,}460\ \text{mm/s}$ i $h(15\ \text{min}) \approx 1{,}61\ \text{m} > 1{,}60\ \text{m}$; odzračnik se doseže za $890\ \text{s} \approx 14{,}8\ \text{min}$. Plan zadovoljava uz nominalne protoke, ali ne i uz zajamčene granice pogreške: treba skratiti operaciju, uvesti nadzor razine ili smanjiti nesigurnost mjerača.
 :::
 ::::
 
@@ -899,7 +899,7 @@ $\rho_{mj} \approx 1021{,}6\ \text{kg/m}^3$; $dh/dt = 1{,}312\ \text{mm/s}$; nom
 - Stacionarno strujanje ne znači da se čestica ne ubrzava: u suženju sav doprinos daje konvektivni član materijalne derivacije.
 - Srednja normalna brzina $\bar v_n=Q/A$ zamjenjuje profil u 1D modelu, ali ne govori ništa o obliku profila, vrtloženju ni tlaku.
 - Opća bilanca mase glasi $\sum\dot m_{ul}-\sum\dot m_{iz}=dm_{KV}/dt$; maseni protok je osnovni zapis, a volumenski samo kad je gustoća ista.
-- Zapis $A_1v_1=A_2v_2$ vrijedi samo za stacionaran tok jednoga fluida stalne gustoće kroz jedan ulaz i jedan izlaz.
+- Zapis $A_1v_1=A_2v_2$ vrijedi samo za stacionarno strujanje jednoga fluida stalne gustoće kroz jedan ulaz i jedan izlaz.
 - Ako se kontrolna ploha giba (klip, brod u plovidbi), u tok mase ulazi samo brzina relativna prema plohi.
 
 **Najčešća pogreška.** Preskočiti izbor kontrolnog volumena i poseban slučaj jedne cijevi primijeniti na spremnik, komoru za miješanje ili višegranski sustav.

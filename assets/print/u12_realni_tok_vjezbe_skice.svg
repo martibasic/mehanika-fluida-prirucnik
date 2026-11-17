@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 881 900" role="img" aria-labelledby="u12vs_title u12vs_desc" preserveAspectRatio="xMidYMid meet" style="display:block;width:100%;max-width:881px;height:auto;">
-  <title id="u12vs_title">Skice šest vježbi realnog toka</title>
-  <desc id="u12vs_desc">Z1: kinematičko polje v(x, t) u trenutku t jednako 2 sekunde; promatrani položaj x jednako 1 metar označen je točkom, a strelice brzine u x = 0, 1 i 2 metra samo pokazuju smjer i porast brzine niz x; duljine su shematske, ne u mjerilu traženih brzina, a brzina u promatranom položaju označena je upitnikom. Z2: vodoravna cijev promjera D s dva otvorena tlačna priključka na razmaku L, strelica srednje brzine, naprezanje stijenke na fluid suprotno toku označeno upitnikom i crtkani pravokutnik prve ćelije uz donju stijenku, nije u mjerilu. Z3: otvorena kapilara s dva stvarno otvorena tlačna priključka na istoj visini, razmak L i unutarnji promjer D; promjer uvećan prema duljini. Z4: ulje između ploča, gornja vuče desno, tlak raste udesno i pokreće ulje ulijevo. Z5: vanjski tok iznad nepropusne ravne plohe; x je od početka plohe do promatranog presjeka, ekvivalentna hrapavost nije nacrtana kao visina zuba. Z6: tri shematske mreže iste domene s upola manjim korakom u oba smjera; mrežne crte nisu stijenke.</desc>
+  <title id="u12vs_title">Skice šest vježbi realnog strujanja</title>
+  <desc id="u12vs_desc">Z1: kinematičko polje v(x, t) u trenutku t jednako 2 sekunde; promatrani položaj x jednako 1 metar označen je točkom, a strelice brzine u x = 0, 1 i 2 metra samo pokazuju smjer i porast brzine niz x; duljine su shematske, ne u mjerilu traženih brzina, a brzina u promatranom položaju označena je upitnikom. Z2: vodoravna cijev promjera D s dva otvorena tlačna priključka na razmaku L, strelica srednje brzine, naprezanje stijenke na fluid suprotno strujanju označeno upitnikom i crtkani pravokutnik prve ćelije uz donju stijenku, nije u mjerilu. Z3: otvorena kapilara s dva stvarno otvorena tlačna priključka na istoj visini, razmak L i unutarnji promjer D; promjer uvećan prema duljini. Z4: ulje između ploča, gornja vuče desno, tlak raste udesno i pokreće ulje ulijevo. Z5: vanjsko strujanje iznad nepropusne ravne plohe; x je od početka plohe do promatranog presjeka, ekvivalentna hrapavost nije nacrtana kao visina zuba. Z6: tri shematske mreže istog područja proračuna s upola manjim korakom u oba smjera; mrežne crte nisu stijenke.</desc>
   <defs>
     <marker id="u12vs_vopen" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M1,1 L9,5 L1,9" fill="none" stroke="#356b83" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></marker>
     <marker id="u12vs_fhead" markerWidth="6" markerHeight="5" refX="6" refY="2.5" orient="auto"><path d="M0 0 L6 2.5 L0 5 Z" fill="#356b83" /></marker>
@@ -127,13 +127,13 @@
         <line x1="104" y1="208" x2="104" y2="218" stroke="#657781" stroke-width="1.2" />
         <line x1="324" y1="208" x2="324" y2="218" stroke="#657781" stroke-width="1.2" />
         <path id="u12vs_z3L" d="M104 213 L324 213" fill="none" stroke="#657781" stroke-width="1.4" marker-start="url(#u12vs_dim)" marker-end="url(#u12vs_dim)" data-mf1-role="dimension" />
-        <text x="214.0" y="230" font-size="11" fill="#263746" text-anchor="middle"><tspan font-style="italic">L</tspan> = 0,200 m</text>
+        <text x="214.0" y="230" font-size="11" fill="#263746" text-anchor="middle"><tspan font-style="italic">L</tspan> = 0,250 m</text>
         <line x1="402" y1="136" x2="412" y2="136" stroke="#657781" stroke-width="1.2" />
         <line x1="402" y1="180" x2="412" y2="180" stroke="#657781" stroke-width="1.2" />
         <path id="u12vs_z3D" d="M407 136 L407 180" fill="none" stroke="#657781" stroke-width="1.4" marker-start="url(#u12vs_dim)" marker-end="url(#u12vs_dim)" data-mf1-role="dimension" />
         <text x="394" y="199" font-size="12" fill="#263746" text-anchor="start" font-style="italic">D</text>
-        <text x="29" y="252" font-size="12" fill="#263746" text-anchor="start"><tspan font-style="italic">Q</tspan> = 0,300 mL/min; Δ<tspan font-style="italic">p</tspan> = 652 Pa</text>
-        <text x="29" y="270" font-size="11" fill="#263746" text-anchor="start"><tspan font-style="italic">D</tspan> = 0,500 mm</text>
+        <text x="29" y="252" font-size="12" fill="#263746" text-anchor="start"><tspan font-style="italic">Q</tspan> = 1,20 mL/min; Δ<tspan font-style="italic">p</tspan> = 1990 Pa</text>
+        <text x="29" y="270" font-size="11" fill="#263746" text-anchor="start"><tspan font-style="italic">D</tspan> = 0,800 mm</text>
       </g>
     </g>
   </g>
@@ -192,7 +192,7 @@
     <g font-family="Arial, Liberation Sans, sans-serif" fill="#3a4a56">
       <g id="u12vs_z6" transform="translate(486 618)">
         <text x="30.5" y="30" font-size="14" fill="#263746" text-anchor="middle" font-weight="700">Z6</text>
-        <text x="58" y="30" font-size="14" fill="#263746" text-anchor="start" font-weight="700">Tri mreže iste računske domene</text>
+        <text x="58" y="30" font-size="14" fill="#263746" text-anchor="start" font-weight="700">Tri mreže istog područja proračuna</text>
         <rect id="u12vs_z6domain0" x="31" y="100" width="112" height="56" rx="0" fill="#dcebf1" stroke="none" stroke-width="1.2" />
         <line id="u12vs_z6grid0v0" x1="31.0" y1="100" x2="31.0" y2="156" stroke="#3a4a56" stroke-width="0.7" stroke-dasharray="2 2" />
         <line id="u12vs_z6grid0v1" x1="59.0" y1="100" x2="59.0" y2="156" stroke="#3a4a56" stroke-width="0.7" stroke-dasharray="2 2" />

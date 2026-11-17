@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 907 971" role="img" aria-labelledby="u15ex_title u15ex_desc" preserveAspectRatio="xMidYMid meet" style="display:block;width:100%;max-width:907px;height:auto;">
-  <title id="u15ex_title">Skice šest vježbi otvorenih tokova</title>
-  <desc id="u15ex_desc">Šest panela prikazuje tok i tražene brzine valova prema obali (v − c = ?, v + c = ?, bez nacrtanih smjerova), bočni presjek pravokutnog kanala s oštrobridnom ustavom, otvorom a iznad dna i suženim mlazom nizvodno čija je dubina shematska (y1 = ?), uz zadanu uzvodnu dubinu, trapezni presjek, tok iznad povišenog dna sa shematskom površinom i dubinom na tjemenu (y_t = ?), kontrolni volumen skoka i dva odvojena modela kanala i bazena, s shematskom nizvodnom dubinom bazena (y2 = ?) i nizvodnim vodostajem y2,dop kao zadanim podatkom. Kote zadanih podataka mjere stvarne dubine i širine. Jedna prostorna ispuna povezuje vodu u svakom uzdužnom toku, dno je neprekinuto i ostaje izvan fluida. Kut i omjer pokosa odgovaraju zadanim podatcima.</desc>
+  <title id="u15ex_title">Skice šest vježbi strujanja sa slobodnom površinom</title>
+  <desc id="u15ex_desc">Šest panela prikazuje strujanje i tražene brzine valova prema obali (v − c = ?, v + c = ?, bez nacrtanih smjerova), bočni presjek pravokutnog kanala s oštrobridnom ustavom, otvorom a iznad dna i suženim mlazom nizvodno čija je dubina shematska (y1 = ?), uz zadanu uzvodnu dubinu, trapezni presjek, strujanje iznad povišenog dna sa shematskom površinom i dubinom na tjemenu (y_t = ?), kontrolni volumen skoka i dva odvojena modela kanala i bazena, s shematskom nizvodnom dubinom bazena (y2 = ?) i nizvodnim vodostajem y2,dop kao zadanim podatkom. Kote zadanih podataka mjere stvarne dubine i širine. Jedna prostorna ispuna povezuje vodu u svakom uzdužnom presjeku, dno je neprekinuto i ostaje izvan fluida. Kut i omjer pokosa odgovaraju zadanim podatcima.</desc>
   <defs>
     <marker id="u15ex_vopen" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M1,1 L9,5 L1,9" fill="none" stroke="#356b83" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></marker>
     <pattern id="u15ex_hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
@@ -35,7 +35,7 @@
     <g font-family="Arial, Liberation Sans, sans-serif" fill="#3a4a56">
       <g id="u15ex_z1" transform="translate(24 22)">
         <text x="16" y="20" font-size="14" fill="#263746" text-anchor="start" font-weight="700">Z1</text>
-        <text x="53" y="20" font-size="13" fill="#263746" text-anchor="start" font-weight="700">Tok i valovi u odnosu na obalu</text>
+        <text x="53" y="20" font-size="13" fill="#263746" text-anchor="start" font-weight="700">Strujanje i valovi u odnosu na obalu</text>
         <path id="u15ex_z1sectionouter9" d="M44.5000000 146.6000000 L44.5000000 224.0000000 L179.5000000 224.0000000 L179.5000000 146.6000000" fill="none" stroke="#3a4a56" stroke-width="9" stroke-linecap="butt" stroke-linejoin="round" />
         <path id="u15ex_z1sectionouter7" d="M44.5000000 146.6000000 L44.5000000 224.0000000 L179.5000000 224.0000000 L179.5000000 146.6000000" fill="none" stroke="url(#u15ex_hatch)" stroke-width="7" stroke-linecap="butt" stroke-linejoin="round" />
         <path id="u15ex_z1sectionfluid" d="M44.5000000 170.0000000 L179.5000000 170.0000000 L179.5000000 224.0000000 L44.5000000 224.0000000 Z" fill="#dcebf1" stroke="none" stroke-width="0" />

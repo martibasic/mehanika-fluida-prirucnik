@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 672 444" role="img" aria-labelledby="u13loss_title u13loss_desc" preserveAspectRatio="xMidYMid meet" style="display:block;width:100%;max-width:672px;height:auto;">
   <title id="u13loss_title">Gubitci i pad energijske crte</title>
-  <desc id="u13loss_desc">Lijevo otvoreni spremnik hrani vodoravnu cijev s otvorenim izlazom. Energijska crta lokalno pada na ulazu i na ventilu, a između njih i iza ventila pada jednakim nagibom jer su promjer i brzina stalni; završava za brzinsku visinu iznad osi izlaza. Piezometarska crta usporedna je s njom i završava na osi jer je izlazni manometarski tlak nula. Ventil je prikazan izdvojenim simbolom, ne krutom preprekom u fluidu. Desno laminarni parabolični profil zadovoljava prianjanje; sile stijenke na fluid su tangencijalne suprotno toku. Lokalno koljeno ima neprekinut otvor stalnog promjera, pa su ulazna i izlazna brzina jednake. Prikaz je shematski, bez brojčanog mjerila.</desc>
+  <desc id="u13loss_desc">Lijevo otvoreni spremnik hrani vodoravnu cijev s otvorenim izlazom. Energijska crta lokalno pada na ulazu i na ventilu, a između njih i iza ventila pada jednakim nagibom jer su promjer i brzina stalni; završava za brzinsku visinu iznad osi izlaza. Piezometarska crta usporedna je s njom i završava na osi jer je izlazni manometarski tlak nula. Ventil je prikazan izdvojenim simbolom, ne krutom preprekom u fluidu. Desno laminarni parabolični profil zadovoljava prianjanje; sile stijenke na fluid su tangencijalne, suprotno strujanju. Lokalno koljeno ima neprekinut otvor stalnog promjera, pa su ulazna i izlazna brzina jednake. Prikaz je shematski, bez brojčanog mjerila.</desc>
   <defs>
     <marker id="u13loss_vopen" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M1,1 L9,5 L1,9" fill="none" stroke="#356b83" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></marker>
     <marker id="u13loss_fhead" markerWidth="6" markerHeight="5" refX="6" refY="2.5" orient="auto"><path d="M0 0 L6 2.5 L0 5 Z" fill="#356b83" /></marker>
@@ -31,7 +31,7 @@
   </defs>
   <g id="u13loss_title-scene-1" transform="translate(-26.0000 -4.0000)">
     <g font-family="Arial, Liberation Sans, sans-serif" fill="#3a4a56">
-      <text x="187" y="42" font-size="14" fill="#263746" text-anchor="middle" font-weight="700">Pad energijske crte u realnom toku</text>
+      <text x="187" y="42" font-size="14" fill="#263746" text-anchor="middle" font-weight="700">Pad energijske crte u realnom strujanju</text>
       <path id="u13loss_pipeouter0" d="M50 89 V326 H108 V316 H340" fill="none" stroke="#3a4a56" stroke-width="9" stroke-linecap="butt" stroke-linejoin="round" />
       <path d="M50 89 V326 H108 V316 H340" fill="none" stroke="url(#u13loss_hatch)" stroke-width="7" stroke-linecap="butt" stroke-linejoin="round" />
       <path id="u13loss_pipeouter1" d="M108 89 V284 H340" fill="none" stroke="#3a4a56" stroke-width="9" stroke-linecap="butt" stroke-linejoin="round" />
@@ -62,11 +62,10 @@
       <line x1="275" y1="271.607143" x2="285" y2="271.607143" stroke="#657781" stroke-width="1.2" />
       <path id="u13loss_velocityHead" d="M280 231.607143 L280 271.607143" fill="none" stroke="#657781" stroke-width="1.4" marker-start="url(#u13loss_dim)" marker-end="url(#u13loss_dim)" data-mf1-role="dimension" />
       <text x="287" y="266" font-size="11" fill="#263746" text-anchor="start"><tspan font-style="italic">v</tspan>²/(2<tspan font-style="italic">g</tspan>)</text>
-      <path id="u13loss_valveSymbol" d="M169 256 L195 272 V256 L169 272 Z" fill="#ffffff" stroke="#3a4a56" stroke-width="1.3" />
-      <line x1="182" y1="256" x2="182" y2="244" stroke="#3a4a56" stroke-width="1.3" />
-      <line x1="174" y1="244" x2="190" y2="244" stroke="#3a4a56" stroke-width="1.3" />
-      <line x1="182" y1="272" x2="182" y2="282" stroke="#3a4a56" stroke-width="1" />
-      <text x="164" y="268" font-size="10" fill="#263746" text-anchor="end">ventil</text>
+      <path id="u13loss_valveSymbol" d="M171 286 L193 314 V286 L171 314 Z" fill="#ffffff" stroke="#3a4a56" stroke-width="1.3" />
+      <line x1="182" y1="300" x2="182" y2="262" stroke="#3a4a56" stroke-width="1.3" />
+      <line x1="174" y1="262" x2="190" y2="262" stroke="#3a4a56" stroke-width="1.3" />
+      <text x="168" y="266" font-size="10" fill="#263746" text-anchor="end">ventil</text>
     </g>
   </g>
   <g id="u13loss_title-scene-2" transform="translate(-303.3281 -4.0000)">

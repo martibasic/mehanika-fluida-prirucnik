@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 901 365" role="img" aria-labelledby="u14ma_title u14ma_desc" preserveAspectRatio="xMidYMid meet" style="display:block;width:100%;max-width:901px;height:auto;">
   <title id="u14ma_title">Machov broj u vodu i Strouhalov broj dimnjaka</title>
-  <desc id="u14ma_desc">Otvoren zračni vod (D = 80 mm, Q_1 i Q_2, a = 340 m/s) s brojevnim pravcem Machova broja i pragom 0,3 te tlocrt kružnog dimnjaka (D_d = 2,0 m, v = 12 m/s, St ≈ 0,2, f_n = 0,6 Hz). Promjer je normalan na tok. Vrtlozi iza dimnjaka imaju naizmjenične suprotne smjerove vrtnje (gornji u smjeru kazaljke na satu, donji suprotno); razmaci su shematski, a frekvencija slijedi iz zadanoga Strouhalova broja.</desc>
+  <desc id="u14ma_desc">Otvoren zračni vod (D = 80 mm, Q_1 i Q_2, a = 340 m/s) s brojevnim pravcem Machova broja i pragom 0,3 te tlocrt kružnog dimnjaka (D_d = 2,0 m, v = 12 m/s, St ≈ 0,2, f_n = 0,6 Hz). Promjer je okomit na strujanje. Vrtlozi iza dimnjaka imaju naizmjenične suprotne smjerove vrtnje (gornji u smjeru kazaljke na satu, donji suprotno); razmaci su shematski, a frekvencija slijedi iz zadanoga Strouhalova broja.</desc>
   <defs>
     <pattern id="u14ma_hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
       <line x1="0" y1="0" x2="0" y2="7" stroke="#657781" stroke-width="1.8" />

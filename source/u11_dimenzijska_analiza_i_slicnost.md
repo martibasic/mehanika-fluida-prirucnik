@@ -1,10 +1,10 @@
-Brod se prije gradnje ispituje kao model u vučnom bazenu, a automobil ili krilo u aerotunelu. Mjerenje na modelu korisno je samo ako znamo kako ga prenijeti na prototip, a za to treba znati koji fizikalni mehanizmi određuju tok i u kakvom su međusobnom omjeru. Dimenzijska analiza odgovara na to pitanje bez rješavanja jednadžbi gibanja: veličine problema slaže u bezdimenzijske grupe i tako smanjuje broj parametara koje treba ispitati ili izračunati.
+Brod se prije gradnje ispituje kao model u vučnom bazenu, a automobil ili krilo u aerotunelu. Mjerenje na modelu korisno je samo ako znamo kako ga prenijeti na prototip, a za to treba znati koji fizikalni mehanizmi određuju strujanje i u kakvom su međusobnom omjeru. Dimenzijska analiza odgovara na to pitanje bez rješavanja jednadžbi gibanja: veličine problema slaže u bezdimenzijske grupe i tako smanjuje broj parametara koje treba ispitati ili izračunati.
 
-Polazište su karakteristična mjerila sila. Inercija $F_i\sim\rho v^2L^2$ prisutna je u gotovo svakom strujanju, pa služi kao referenca: Reynoldsov broj $Re=\rho vL/\mu$ uspoređuje je s viskoznošću, kvadrat Froudeova broja $Fr=v/\sqrt{gL}$ s gravitacijom, a Weberov broj $We=\rho v^2L/\sigma$ s površinskom napetošću. Eulerov broj $Eu=\Delta p/(\rho v^2)$ i kavitacijski broj $\sigma_{kav}$ normiraju tlak, Strouhalov broj $St=fL/v$ uspoređuje vremenske skale, a Machov broj $Ma=v/a$ brzinu toka i brzinu zvuka. Koeficijenti $C_p$, $C_D$ i $\lambda$ normirani su odzivi koje mjerimo ili računamo. Koliko je neovisnih grupa, kaže Buckinghamov $\Pi$ teorem iz broja fizikalnih veličina i ranga dimenzijske matrice.
+Polazište su karakteristična mjerila sila. Inercija $F_i\sim\rho v^2L^2$ prisutna je u gotovo svakom strujanju, pa služi kao referenca: Reynoldsov broj $Re=\rho vL/\mu$ uspoređuje je s viskoznošću, kvadrat Froudeova broja $Fr=v/\sqrt{gL}$ s gravitacijom, a Weberov broj $We=\rho v^2L/\sigma$ s površinskom napetošću. Eulerov broj $Eu=\Delta p/(\rho v^2)$ i kavitacijski broj $\sigma_{kav}$ normiraju tlak, Strouhalov broj $St=fL/v$ uspoređuje vremenske skale, a Machov broj $Ma=v/a$ brzinu strujanja i brzinu zvuka. Koeficijenti $C_p$, $C_D$ i $\lambda$ normirani su odzivi koje mjerimo ili računamo. Broj neovisnih grupa određuje Buckinghamov $\Pi$ teorem iz broja fizikalnih veličina i ranga dimenzijske matrice.
 
-Model i prototip ponašaju se jednako u bezdimenzijskom smislu ako su geometrijski, kinematički i dinamički slični, odnosno ako su im jednaki svi mjerodavni bezdimenzijski brojevi. Aerotunel tako prenosi $C_D$ pri jednakom $Re$ samo ako su i ostali relevantni uvjeti isti, primjerice relativna hrapavost, $Ma$, slobodna turbulencija i blizina stijenke. U vučnom bazenu jednak $Fr$ i jednak $Re$ u istoj vodi nisu spojivi, pa se čuva Froudeova sličnost, a viskozni otpor ispravlja se prema Froudeovoj hipotezi.
+Model i prototip ponašaju se jednako u bezdimenzijskom smislu ako su geometrijski, kinematički i dinamički slični, odnosno ako su im jednaki svi mjerodavni bezdimenzijski brojevi. Aerotunel tako prenosi $C_D$ pri jednakom $Re$ samo ako su i ostali mjerodavni uvjeti isti, primjerice relativna hrapavost, $Ma$, slobodna turbulencija i blizina stijenke. U vučnom bazenu jednak $Fr$ i jednak $Re$ u istoj vodi nisu spojivi, pa se čuva Froudeova sličnost, a viskozni otpor ispravlja se prema Froudeovoj hipotezi.
 
-Poglavlje redom obrađuje dimenzije i mjerila sila, bezdimenzijske grupe kao omjere mehanizama, uvjete prijenosa rezultata, Buckinghamov teorem, sličnost i modelska ispitivanja te odluku o tome što bezdimenzionirati. Dimenzijska analiza pritom samo ograničava dopuštenu ovisnost; oblik funkcije daju teorija, pokus ili numerički račun. Poglavlje se oslanja na Bernoullijevu jednadžbu iz []{.mf1-chapter-ref target="u08"} i stlačivost iz []{.mf1-chapter-ref target="u09"}. Darcyjev koeficijent trenja $\lambda(Re,k_s/D)$ i kavitacija na usisu crpke nastavljaju se u []{.mf1-chapter-ref target="u13"}, propeler u []{.mf1-chapter-ref target="u14"}, a Froudeov broj i kritično strujanje u []{.mf1-chapter-ref target="u15"}.
+Poglavlje redom obrađuje dimenzije i mjerila sila, bezdimenzijske grupe kao omjere mehanizama, uvjete prijenosa rezultata, Buckinghamov teorem, sličnost i modelska ispitivanja te odluku o tome što bezdimenzionirati. Dimenzijska analiza samo ograničava dopuštenu ovisnost; oblik funkcije daju teorija, pokus ili numerički račun. Poglavlje se oslanja na Bernoullijevu jednadžbu iz []{.mf1-chapter-ref target="u08"} i stlačivost iz []{.mf1-chapter-ref target="u09"}. Darcyjev koeficijent trenja $\lambda(Re,k_s/D)$ i kavitacija na usisu crpke nastavljaju se u []{.mf1-chapter-ref target="u13"}, propeler u []{.mf1-chapter-ref target="u14"}, a Froudeov broj i kritično strujanje u []{.mf1-chapter-ref target="u15"}.
 
 Slika [-@fig-uvod-u14] prikazuje model automobila u aerotunelu s jednolikim dotokom, ispitan pri $Re_m=Re_p$, odnosno pri jednakom Reynoldsovu broju modela i prototipa.
 
@@ -18,9 +18,9 @@ Dimenzijska analiza povezuje tlačne, viskozne, gravitacijske, inercijske i međ
 
 ## Dimenzije, jedinice i sila inercije kao referenca
 
-Mehaničke veličine u ovom poglavlju izražavaju se preko tri **primarne dimenzije**: mase $\mathsf{M}$, duljine $\mathsf{L}$ i vremena $\mathsf{T}$. Tako brzina ima dimenziju $\mathsf{L}\,\mathsf{T}^{-1}$, gustoća $\mathsf{M}\,\mathsf{L}^{-3}$, a tlak i naprezanje $\mathsf{M}\,\mathsf{L}^{-1}\,\mathsf{T}^{-2}$. Kada problem uključuje toplinske veličine, potrebna je i dimenzija temperature $\Theta$. Načelo **dimenzijske homogenosti** kaže da obje strane svake ispravne fizikalne jednadžbe moraju imati istu dimenziju — to je ujedno jednostavna prva provjera svakog izraza.
+Mehaničke veličine u ovom poglavlju izražavaju se s pomoću triju **primarnih dimenzija**: mase $\mathsf{M}$, duljine $\mathsf{L}$ i vremena $\mathsf{T}$. Tako brzina ima dimenziju $\mathsf{L}\,\mathsf{T}^{-1}$, gustoća $\mathsf{M}\,\mathsf{L}^{-3}$, a tlak i naprezanje $\mathsf{M}\,\mathsf{L}^{-1}\,\mathsf{T}^{-2}$. Kada problem uključuje toplinske veličine, potrebna je i dimenzija temperature $\Theta$. Prema načelu **dimenzijske homogenosti** obje strane svake ispravne fizikalne jednadžbe moraju imati istu dimenziju, što je ujedno jednostavna prva provjera svakog izraza.
 
-Bezdimenzijski broj nastaje kombiniranjem veličina tako da se dimenzije pokrate. U mehanici fluida osobito su korisna karakteristična mjerila sila jer omogućuju usporedbu fizikalnih mehanizama. Za mnoge tokove polazi se od sljedećih mjerila:
+Bezdimenzijski broj nastaje kombiniranjem veličina tako da se dimenzije pokrate. U mehanici fluida osobito su korisna karakteristična mjerila sila jer omogućuju usporedbu fizikalnih mehanizama. Za mnoga strujanja polazi se od sljedećih mjerila:
 
 $$
 \begin{aligned}
@@ -35,7 +35,7 @@ F_{\Delta p} \sim \Delta p\, L^2 \quad(\text{tlak}), \qquad
 F_\sigma \sim \sigma L \quad(\text{površinska napetost}).
 $$ {#eq-slicnost-dimenzije-jedinice-i-sila-inercije-kao-referenca-02}
 
-Ovdje je $L$ karakteristična duljina problema (promjer cijevi, duljina trupa, promjer kapi), a $v$ karakteristična brzina. **Inercijska sila** $F_i \sim \rho v^2 L^2$ uzima se kao prirodna referenca jer je prisutna u gotovo svakom strujanju — čim se fluid giba, ima inerciju. Zato se većina važnih bezdimenzijskih brojeva može pročitati kao omjer inercijske sile prema nekoj drugoj sili.
+Ovdje je $L$ karakteristična duljina problema (promjer cijevi, duljina trupa, promjer kapi), a $v$ karakteristična brzina. **Inercijska sila** $F_i \sim \rho v^2 L^2$ uzima se kao prirodna referenca jer je prisutna u gotovo svakom strujanju: čim se fluid giba, ima inerciju. Zato se većina važnih bezdimenzijskih brojeva može protumačiti kao omjer inercijske sile i neke druge sile.
 
 ::: {.mf1-fizikalno-znacenje}
 <p class="mf1-box-label">Fizikalno značenje</p>
@@ -48,7 +48,7 @@ Omjeri mjerila sila daju $Re\sim F_i/F_\mu$, $Fr^2\sim F_i/F_g$, $Eu\sim F_{\Del
 
 []{#fig-u14-omjer-sila}
 
-Pritom je $F_i$ inercijsko mjerilo, a ne dodatna vanjska sila. Navedena mjerila ne čine jednadžbu ravnoteže pojedine čestice; $L$, $v$ i $\Delta p$ moraju imati ista referentna značenja u svim omjerima.
+Veličina $F_i$ inercijsko je mjerilo, a ne dodatna vanjska sila. Navedena mjerila ne čine jednadžbu ravnoteže pojedine čestice; $L$, $v$ i $\Delta p$ moraju imati ista referentna značenja u svim omjerima.
 
 **Reynoldsov broj** uspoređuje inerciju i viskoznost:
 
@@ -56,7 +56,7 @@ $$
 Re = \frac{F_i}{F_\mu} = \frac{\rho v L}{\mu} = \frac{v L}{\nu}.
 $$ {#eq-slicnost-bezdimenzijske-grupe-kao-omjeri-mehanizama-01}
 
-Mali $Re$ obično znači da viskoznost snažno prigušuje poremećaje. Veliki $Re$ znači da su inercijski učinci jaki, ali **ne jamči sam po sebi turbulenciju**: prijelaz ovisi o geometriji, stabilnosti osnovnog toka, hrapavosti i ulaznim poremećajima. Razvijeno strujanje u kružnoj cijevi pri $Re\lesssim2300$ obično je laminarno, približno između 2300 i 4000 prijelazno, a iznad toga u tehničkim uvjetima najčešće turbulentno [@white2011].
+Mali $Re$ obično znači da viskoznost snažno prigušuje poremećaje. Veliki $Re$ znači da su inercijski učinci jaki, ali **ne jamči sam po sebi turbulenciju**: prijelaz ovisi o geometriji, stabilnosti osnovnog strujanja, hrapavosti i ulaznim poremećajima. Razvijeno strujanje u kružnoj cijevi pri $Re\lesssim2300$ obično je laminarno, približno između 2300 i 4000 prijelazno, a iznad toga u tehničkim uvjetima najčešće turbulentno [@white2011].
 
 **Froudeov broj** uspoređuje inerciju i gravitaciju:
 
@@ -64,7 +64,7 @@ $$
 Fr = \frac{v}{\sqrt{gL}}, \qquad Fr^2 = \frac{F_i}{F_g}.
 $$ {#eq-slicnost-bezdimenzijske-grupe-kao-omjeri-mehanizama-02}
 
-Froudeov broj važan je kada dinamiku slobodne površine određuju gravitacijski valovi, primjerice pri plovidbi broda, u otvorenom kanalu ili na preljevu. U otvorenom kanalu, kada je za $L$ odabrana hidraulička dubina $y_h=A/T$ ($A$ je površina presjeka, a $T$ širina slobodne površine; []{.mf1-chapter-ref target="u15"}), $Fr=1$ označuje kritično strujanje: karakteristična brzina plitkovodnog vala jednaka je srednjoj brzini toka.
+Froudeov broj važan je kada dinamiku slobodne površine određuju gravitacijski valovi, primjerice pri plovidbi broda, u otvorenom kanalu ili na preljevu. U otvorenom kanalu, kada je za $L$ odabrana hidraulička dubina $y_h=A/T$ ($A$ je površina presjeka, a $T$ širina slobodne površine; []{.mf1-chapter-ref target="u15"}), $Fr=1$ označuje kritično strujanje: karakteristična brzina plitkovodnog vala jednaka je srednjoj brzini fluida.
 
 **Eulerov broj i koeficijent tlaka** uspoređuju tlačnu i inercijsku silu:
 
@@ -72,9 +72,9 @@ $$
 Eu = \frac{\Delta p}{\rho v^2}, \qquad C_p = \frac{p - p_\infty}{\tfrac{1}{2}\rho v^2}.
 $$ {#eq-slicnost-bezdimenzijske-grupe-kao-omjeri-mehanizama-03}
 
-Ovdje se $Eu$ zapisuje bez faktora $\tfrac12$, dok $C_p$ normira dinamičkim tlakom $\tfrac12\rho v^2$. U literaturi se javljaju obje konvencije, pa pri usporedbi treba navesti koja je upotrijebljena. U nestlačivom, neviskoznom toku s referentnim stanjem u neporemećenoj struji Bernoullijeva jednadžba daje $C_p=1$ u zaustavnoj (stagnacijskoj) točki. U realnom ili stlačivom toku, pri drukčijem izboru referentnog tlaka ili uz gubitke, ta vrijednost nije univerzalna. Negativan $C_p$ znači samo da je statički tlak manji od odabranoga referentnog tlaka.
+Ovdje se $Eu$ zapisuje bez faktora $\tfrac12$, dok se $C_p$ normira dinamičkim tlakom $\tfrac12\rho v^2$. U literaturi se javljaju obje konvencije, pa pri usporedbi treba navesti koja je upotrijebljena. U nestlačivom, neviskoznom strujanju s referentnim stanjem u neporemećenoj struji Bernoullijeva jednadžba daje $C_p=1$ u zaustavnoj točki. U realnom ili stlačivom strujanju, pri drukčijem izboru referentnog tlaka ili uz gubitke, ta vrijednost nije univerzalna. Negativan $C_p$ znači samo da je statički tlak manji od odabranoga referentnog tlaka.
 
-**Kavitacijski broj** poseban je Eulerov broj koji normira tlačnu rezervu referentnog toka iznad tlaka zasićene pare:
+**Kavitacijski broj** poseban je Eulerov broj koji normira tlačnu rezervu referentnog strujanja iznad tlaka zasićene pare:
 
 $$
 \sigma_{kav} = \frac{p_{ref} - p_v}{\tfrac{1}{2}\rho v_{ref}^2}.
@@ -108,7 +108,7 @@ gdje je $f$ frekvencija pojave. To je omjer konvektivne vremenske skale $L/v$ i 
 
 ::: {.mf1-cfd title="Računalna dinamika fluida"}
 
-**Vibrira li nosač zbog vrtloga?** Cilindrični stup u vodi može biti izložen promjenjivoj bočnoj sili zbog otpuštanja vrtloga. U nestacionarnoj CFD simulaciji najprije računamo tok oko nepomičnog stupa pri zadanoj brzini dotoka. Iz zapisa sile određujemo srednji otpor, amplitudu i dominantnu frekvenciju; $St=fL/v$ omogućuje usporedbu različitih dimenzija i brzina pri odgovarajućem režimu.
+**Vibrira li nosač zbog vrtloga?** Cilindrični stup u vodi može biti izložen promjenjivoj bočnoj sili zbog otpuštanja vrtloga. U nestacionarnoj CFD simulaciji najprije računamo strujanje oko nepomičnog stupa pri zadanoj brzini dotoka. Iz zapisa sile određujemo srednji otpor, amplitudu i dominantnu frekvenciju; $St=fL/v$ omogućuje usporedbu različitih dimenzija i brzina pri odgovarajućem režimu.
 
 Zapis mora obuhvatiti više perioda, a vremenski korak dovoljno razlučiti svaki period. Jednak srednji otpor ne potvrđuje točnu frekvenciju. Ako je frekvencija blizu vlastite frekvencije konstrukcije, za predviđanje vibracija treba uključiti i gibanje konstrukcije. Tako CFD daje pobudu za mehanički model, dok sama simulacija nepomičnog stupa još ne daje njegov pomak.
 :::
@@ -128,7 +128,7 @@ $$
 C_D = \frac{F_D}{\tfrac{1}{2}\rho v^2 A}.
 $$ {#eq-slicnost-bezdimenzijske-grupe-kao-omjeri-mehanizama-09}
 
-Darcyjev koeficijent trenja $\lambda$ i koeficijent otpora $C_D$ bezdimenzijski su odzivi. Jedna izmjerena krivulja smije se prenositi samo unutar iste bezdimenzijske geometrije, istih rubnih uvjeta i istog skupa relevantnih grupa; primjerice, $C_D$ osim o $Re$ može ovisiti i o hrapavosti, $Ma$, slobodnoj turbulenciji i blizini stijenke.
+Darcyjev koeficijent trenja $\lambda$ i koeficijent otpora $C_D$ bezdimenzijski su odzivi. Jedna izmjerena krivulja smije se prenositi samo unutar iste bezdimenzijske geometrije, istih rubnih uvjeta i istog skupa mjerodavnih grupa; primjerice, $C_D$ osim o $Re$ može ovisiti i o hrapavosti, $Ma$, slobodnoj turbulenciji i blizini stijenke.
 
 
 ::: {.mf1-cfd title="Računalna dinamika fluida"}
@@ -140,19 +140,19 @@ Jednake dimenzijske vrijednosti pada tlaka nisu uvjet sličnosti. Obrnuto, slaga
 
 ## Kada se rezultat može prenijeti na drugi sustav
 
-Za geometrijski slične cjevovode u nestlačivom toku jednak $Re$ uz jednaku relativnu hrapavost i jednak način ulaska omogućuje usporedbu bezdimenzijskih raspodjela brzine i tlaka; slobodna površina ili kapljice dodaju $Fr$ i $We$. Tablica [-@tbl-bezdimenzijski-brojevi] sažima sve brojeve iz ovog poglavlja; u skraćenom obliku nalazi se i u dodatku A.
+Za geometrijski slične cjevovode u nestlačivom strujanju jednak $Re$ uz jednaku relativnu hrapavost i jednak način ulaska omogućuje usporedbu bezdimenzijskih raspodjela brzine i tlaka; slobodna površina ili kapljice dodaju $Fr$ i $We$. Tablica [-@tbl-bezdimenzijski-brojevi] sažima sve brojeve iz ovog poglavlja; u skraćenom obliku nalazi se i u dodatku A.
 
 | Broj | Definicija | Fizikalno tumačenje | Prag ili uvjet | Gdje je važan |
 | --- | --- | --- | --- | --- |
 | $Re$ | $\rho vL/\mu=vL/\nu$ | inercija / viskoznost | granice ovise o geometriji; za cijev približno 2300–4000 | režim, otpor |
 | $Fr$ | $v/\sqrt{gL}$ | $Fr^2=$ inercija / gravitacija | $Fr=1$ za kritično strujanje u otvorenom kanalu | brod, kanal, preljev |
-| $Eu,\ C_p$ | $\Delta p/(\rho v^2)$; $(p-p_\infty)/(\tfrac12\rho v^2)$ | tlak / inercija; normirani tlak | $C_p=1$ samo za idealnu nestlačivu stagnaciju uz odgovarajuću referencu | raspodjela tlaka |
-| $\sigma_{kav}$ | $(p_{ref}-p_v)/(\tfrac12\rho v_{ref}^2)$ | normirana tlačna rezerva | usporedba s uređajno i konvencijski definiranim $\sigma_{kr}$ | propeler, crpka |
+| $Eu,\ C_p$ | $\Delta p/(\rho v^2)$; $(p-p_\infty)/(\tfrac12\rho v^2)$ | tlak / inercija; normirani tlak | $C_p=1$ samo u zaustavnoj točki idealnoga nestlačivog strujanja uz odgovarajuću referencu | raspodjela tlaka |
+| $\sigma_{kav}$ | $(p_{ref}-p_v)/(\tfrac12\rho v_{ref}^2)$ | normirana tlačna rezerva | usporedba s $\sigma_{kr}$ definiranim za uređaj i konvenciju | propeler, crpka |
 | $We$ | $\rho v^2L/\sigma$ | inercija / površinska napetost | prag raspada ovisi o režimu i drugim grupama | kap, mlaz, sprej |
 | $Bo$ | $\Delta\rho gL^2/\sigma$ | gravitacija / površinska napetost | $Bo\sim1$, $L_c=\sqrt{\sigma/(\Delta\rho g)}$ | oblik kapi i mjehura |
-| $\lambda,\ C_D$ | bezdimenzijski koeficijenti | normirani odzivi otpora | vrijede uz definiranu geometriju i relevantne grupe | unutarnji i vanjski otpor |
-| $St$ | $fL/v$ | omjer vremenskih skala | $St$ reda $0{,}2$ samo za određene tokove oko cilindra | vrtložno otpuštanje |
-| $Ma$ | $v/a$ | omjer brzine toka i brzine zvuka; $Ma^2$ povezan s inercijom/stlačivošću | $Ma<0{,}3$ čest je, ali uvjetan prag nestlačivosti | stlačivost |
+| $\lambda,\ C_D$ | bezdimenzijski koeficijenti | normirani odzivi otpora | vrijede uz definiranu geometriju i mjerodavne grupe | unutarnji i vanjski otpor |
+| $St$ | $fL/v$ | omjer vremenskih skala | $St$ reda $0{,}2$ samo za određena strujanja oko cilindra | vrtložno otpuštanje |
+| $Ma$ | $v/a$ | omjer brzine strujanja i brzine zvuka; $Ma^2$ povezan s inercijom/stlačivošću | $Ma<0{,}3$ čest je, ali uvjetan prag nestlačivosti | stlačivost |
 
 : Bezdimenzijski brojevi ovog poglavlja s definicijom, fizikalnim tumačenjem, pragom i područjem primjene. {#tbl-bezdimenzijski-brojevi}
 
@@ -167,7 +167,7 @@ $$ {#eq-slicnost-buckinghamov-teorem-01}
 gdje je $n$ broj fizikalnih veličina, a $k$ rang dimenzijske matrice (u mehanici fluida najčešće $k = 3$: $\mathsf{M}, \mathsf{L}, \mathsf{T}$). Postupak je uvijek isti:
 
 1. popiši sve fizikalne veličine koje ulaze u problem i njihove dimenzije;
-2. odredi $k$ — rang dimenzijske matrice;
+2. odredi rang $k$ dimenzijske matrice;
 3. izaberi $k$ **ponavljajućih varijabli** koje zajedno pokrivaju sve dimenzije i same ne tvore bezdimenzijsku grupu (tipično $\rho, v, L$);
 4. svaku preostalu varijablu kombiniraj s ponavljajućima u jednu $\Pi$-grupu i odredi eksponente tako da izraz bude bezdimenzijski;
 5. protumači dobivene grupe i, kada je moguće, poveži ih s poznatim brojevima (Re, Fr, …).
@@ -220,7 +220,7 @@ $$
 \Delta p = \lambda\,\frac{L}{D}\,\frac{\rho v^2}{2}, \qquad \lambda = \lambda\!\left(Re, \frac{k_s}{D}\right).
 $$ {#eq-slicnost-razrada-koraka-02}
 
-Dimenzijska analiza tako ograničava dopuštenu ovisnost, a pretpostavka potpuno razvijenoga toka izdvaja $L/D$. Sama funkcija $\lambda(Re,k_s/D)$ dobiva se analitički u laminarnom toku, a empirijski ili numerički u turbulentnom.
+Dimenzijska analiza tako ograničava dopuštenu ovisnost, a pretpostavka potpuno razvijenoga strujanja izdvaja $L/D$. Sama funkcija $\lambda(Re,k_s/D)$ dobiva se analitički u laminarnom strujanju, a empirijski ili numerički u turbulentnom.
 :::
 
 ::: {.mf1-izvod}
@@ -262,7 +262,7 @@ Da bi se rezultati ispitivanja modela mogli prenijeti na stvarni objekt (prototi
 - **kinematička sličnost** — polja brzina geometrijski su slična (slične strujnice, brzine u istom omjeru);
 - **dinamička sličnost** — sile na model i prototip u istom su omjeru, što znači da su **mjerodavni bezdimenzijski brojevi jednaki**.
 
-Ako su jednaki svi relevantni brojevi, izmjereni koeficijenti ($C_D$, $C_p$, $\lambda$) izravno se prenose. Veličine modela nose indeks $m$, a prototipa indeks $p$; kada je prototip brod, umjesto $p$ piše se indeks $s$ ($L_s$, $v_s$, $Re_s$, $C_{F,s}$).
+Ako su jednaki svi mjerodavni brojevi, izmjereni koeficijenti ($C_D$, $C_p$, $\lambda$) izravno se prenose. Veličine modela nose indeks $m$, a prototipa indeks $p$; kada je prototip brod, umjesto $p$ piše se indeks $s$ ($L_s$, $v_s$, $Re_s$, $C_{F,s}$).
 
 ::: {.mf1-fizikalno-znacenje}
 <p class="mf1-box-label">Fizikalno značenje</p>
@@ -291,7 +291,7 @@ $$
 C_F=\frac{0{,}075}{\left(\log_{10}Re-2\right)^2}
 $$ {#eq-ittc-1957}
 
-[@ittc]. Trodimenzijske učinke oblika trupa metoda ITTC 1978 obuhvaća faktorom oblika $1+k$; ovdje $k$ označuje samo dodatak otpora zbog oblika trupa, a ne hrapavost $k_s$ ni turbulentnu kinetičku energiju iz []{.mf1-chapter-ref target="u12"}. Postupak je: iz izmjerenog otpora modela odredi $C_{T,m}$, oduzmi $C_{F,m}$, prenesi $C_R$ na brod i dodaj $C_{F,s}$ pri brodskom $Re$. Omjer snaga slijedi iz $P=R_Tv$; za dio otpora koji se prenosi Froudeovom sličnošću vrijedi
+[@ittc]. Trodimenzijske učinke oblika trupa metoda ITTC 1978 obuhvaća faktorom oblika $1+k$; ovdje $k$ označuje samo dodatak otpora zbog oblika trupa, a ne hrapavost $k_s$ ni turbulentnu kinetičku energiju iz []{.mf1-chapter-ref target="u12"}. Postupak je sljedeći: iz izmjerenog otpora modela odredi se $C_{T,m}$, od njega se oduzme $C_{F,m}$, zatim se $C_R$ prenese na brod i doda $C_{F,s}$ pri brodskom $Re$. Omjer snaga slijedi iz $P=R_Tv$; za dio otpora koji se prenosi Froudeovom sličnošću vrijedi
 
 $$
 \frac{P_p}{P_m}=\frac{F_p\,v_p}{F_m\,v_m}=\frac{\rho_p}{\rho_m}\,\lambda_L^{7/2},
@@ -307,7 +307,7 @@ Rastavljanje $C_T=C_F(Re)+C_R(Fr)$ radna je hipoteza, a ne zakon: trodimenzijski
 
 ## Kako odlučiti što bezdimenzionirati
 
-Srž ovog poglavlja nije zapamtiti devet formula, nego prepoznati **skup** relevantnih grupa. Najprije se definiraju izlazna veličina, geometrija, fluid te početni i rubni uvjeti; zatim se iz jednadžbi ili Buckinghamovim postupkom izdvajaju mogući mehanizmi. Procjena reda veličine pokazuje koje se grupe mogu zanemariti, a koje treba očuvati. Ako dvije važne grupe nije moguće istodobno uskladiti, odabire se prioritetna sličnost, a mjerilna se pogreška procjenjuje.
+U ovom je poglavlju važnije prepoznati **skup** mjerodavnih grupa nego zapamtiti devet formula. Najprije se definiraju izlazna veličina, geometrija, fluid te početni i rubni uvjeti; zatim se iz jednadžbi ili Buckinghamovim postupkom izdvajaju mogući mehanizmi. Procjena reda veličine pokazuje koje se grupe mogu zanemariti, a koje treba očuvati. Ako dvije važne grupe nije moguće istodobno uskladiti, odabire se prioritetna sličnost, a mjerilna se pogreška procjenjuje.
 
 Pitanja u nastavku ne isključuju se: provjeravaju se sva, jer u istom problemu može biti aktivno više mehanizama.
 
@@ -325,7 +325,7 @@ Ako da, gravitacija može biti važna → mjerodavan je **Froudeov broj** $Fr$ (
 
 <p class="mf1-box-label">Je li bitan režim ili trenje uz stijenku?</p>
 
-Izračunaj **Reynoldsov broj** $Re$ (cijev, granični sloj, ležaj) i protumači ga za konkretnu geometriju. On mjeri relativnu važnost inercije i viskoznosti, ali sam ne određuje prijelaz bez podataka o stabilnosti toka i poremećajima.
+Izračunaj **Reynoldsov broj** $Re$ (cijev, granični sloj, ležaj) i protumači ga za konkretnu geometriju. On mjeri relativnu važnost inercije i viskoznosti, ali sam ne određuje prijelaz bez podataka o stabilnosti strujanja i poremećajima.
 :::
 
 ::: {.mf1-decision-step}
@@ -385,7 +385,7 @@ Ne: jednak Froudeov broj ne potvrđuje prijenos viskoznog otpora. CFD računi ob
 
 **Tekst zadatka**
 
-U ravnoj kružnoj cijevi promjera $D = 6\ \text{mm}$ tok je razvijen; u jednom slučaju teče voda brzinom $v_A = 1{,}2\ \text{m/s}$, s $\nu_v = 1{,}0 \cdot 10^{-6}\ \text{m}^2/\text{s}$, a u drugom ulje brzinom $v_B = 0{,}30\ \text{m/s}$, s $\nu_u = 4{,}0 \cdot 10^{-5}\ \text{m}^2/\text{s}$. Za procjenu početka prijelaznog područja uzmi orijentacijsku vrijednost $Re=2300$ [@white2011].
+U ravnoj kružnoj cijevi promjera $D = 6\ \text{mm}$ strujanje je razvijeno; u jednom slučaju teče voda brzinom $v_A = 1{,}2\ \text{m/s}$, s $\nu_v = 1{,}0 \cdot 10^{-6}\ \text{m}^2/\text{s}$, a u drugom ulje brzinom $v_B = 0{,}30\ \text{m/s}$, s $\nu_u = 4{,}0 \cdot 10^{-5}\ \text{m}^2/\text{s}$. Za procjenu početka prijelaznog područja uzmi orijentacijsku vrijednost $Re=2300$ [@white2011].
 
 **Traži se**
 
@@ -515,7 +515,7 @@ $$
 p_2 = p_1 + \tfrac{1}{2}\rho\,(v_1^2 - v_2^2) = 101\,300 + 500\,(2{,}12^2 - 19{,}10^2) \approx -78{,}8\ \text{kPa}.
 $$ {#eq-slicnost-rijeseni-primjer-kavitacija-u-venturijevom-suzen-03}
 
-Predviđeni apsolutni tlak negativan je, što je fizikalno nemoguće i jasan znak sloma jednofaznoga idealnog modela. Idealizirani granični protok prema uvjetu $p_2=p_v$ slijedi uz $v_1=(A_2/A_1)v_2$:
+Predviđeni apsolutni tlak negativan je, što je fizikalno nemoguće i pokazuje da jednofazni idealni model više ne vrijedi. Idealizirani granični protok prema uvjetu $p_2=p_v$ slijedi uz $v_1=(A_2/A_1)v_2$:
 
 $$
 \begin{aligned}
@@ -540,7 +540,7 @@ pa $\sigma_{kav}=0{,}543<\sigma_{kr}$ daje isti zaključak kao negativan $p_2$. 
 
 **Provjera i tumačenje**
 
-Kontrola: $Q/Q_{\max}=6{,}0/4{,}45=1{,}35$ i $(\sigma_{kr}/\sigma_{kav})^{1/2}=(0{,}988/0{,}543)^{1/2}=1{,}35$ — oba kriterija daju isto prekoračenje. Vrijednost $4{,}45\ \text{L/s}$ prag je idealiziranog kriterija, a ne dopušteni pogonski protok; za tu su provjeru potrebni gubitci, temperatura, karakteristika početka kavitacije i kavitacijska rezerva ($NPSH$, []{.mf1-chapter-ref target="u13"}).
+Omjeri $Q/Q_{\max}=6{,}0/4{,}45=1{,}35$ i $(\sigma_{kr}/\sigma_{kav})^{1/2}=(0{,}988/0{,}543)^{1/2}=1{,}35$ pokazuju da oba kriterija daju isto prekoračenje. Vrijednost $4{,}45\ \text{L/s}$ prag je idealiziranog kriterija, a ne dopušteni pogonski protok; za tu su provjeru potrebni gubitci, temperatura, karakteristika početka kavitacije i kavitacijska rezerva ($NPSH$, []{.mf1-chapter-ref target="u13"}).
 :::
 
 ::: {#ex-u14-weberov-i-bondov-broj-raspad-kapi-u .mf1-we}
@@ -586,7 +586,7 @@ $$ {#eq-slicnost-rijeseni-primjer-weberov-i-bondov-broj-raspad-03}
 
 **Provjera i tumačenje**
 
-Kontrola: $v/v_{kr}=25/15{,}5=1{,}61$ i $(We/We_{kr})^{1/2}=(31{,}3/12)^{1/2}=1{,}61$. Kriterij predviđa samo početak raspada, a ne veličinu nastalih kapljica; $Bo\approx1$ znači da gravitacija još utječe na statički oblik kapi te veličine.
+Omjeri $v/v_{kr}=25/15{,}5=1{,}61$ i $(We/We_{kr})^{1/2}=(31{,}3/12)^{1/2}=1{,}61$ međusobno se slažu. Kriterij predviđa samo početak raspada, a ne veličinu nastalih kapljica; $Bo\approx1$ znači da gravitacija još utječe na statički oblik kapi te veličine.
 :::
 
 ::: {#ex-u14-buckinghamova-analiza-otpora-kugle-i-krivulja-cd .mf1-ch}
@@ -594,7 +594,7 @@ Kontrola: $v/v_{kr}=25/15{,}5=1{,}61$ i $(We/We_{kr})^{1/2}=(31{,}3/12)^{1/2}=1{
 
 **Tekst zadatka**
 
-Glatka kugla promjera $D = 20\ \text{mm}$ nalazi se u jednolikoj ustaljenoj struji zraka brzine $v = 30\ \text{m/s}$, gustoće $\rho = 1{,}2\ \text{kg/m}^3$ i kinematičke viskoznosti $\nu = 1{,}5 \cdot 10^{-5}\ \text{m}^2/\text{s}$. Zadani izmjereni koeficijent otpora iznosi $C_D = 0{,}45$ u području $Re \sim 10^4$–$10^5$. Tok smatraj nestlačivim; ne uključuj hrapavost, blizinu stijenke ni slobodnu turbulenciju kao dodatne parametre.
+Glatka kugla promjera $D = 20\ \text{mm}$ nalazi se u jednolikoj ustaljenoj struji zraka brzine $v = 30\ \text{m/s}$, gustoće $\rho = 1{,}2\ \text{kg/m}^3$ i kinematičke viskoznosti $\nu = 1{,}5 \cdot 10^{-5}\ \text{m}^2/\text{s}$. Zadani izmjereni koeficijent otpora iznosi $C_D = 0{,}45$ u području $Re \sim 10^4$–$10^5$. Strujanje smatraj nestlačivim; ne uključuj hrapavost, blizinu stijenke ni slobodnu turbulenciju kao dodatne parametre.
 
 **Traži se**
 
@@ -638,7 +638,7 @@ $$ {#eq-slicnost-3-sila-otpora-i-grupa-1-02}
 
 **Provjera i tumačenje**
 
-1. Kontrola: $\Pi_1/C_D=0{,}177/0{,}45=0{,}393=\pi/8$, pa su $\Pi_1$ i $C_D$ ista informacija, različito normirana. Dimenzijska analiza daje oblik $C_D=\Phi(Re)$; samu krivulju daju mjerenja.
+1. Kontrolni račun daje $\Pi_1/C_D=0{,}177/0{,}45=0{,}393=\pi/8$, pa su $\Pi_1$ i $C_D$ ista informacija, različito normirana. Dimenzijska analiza daje oblik $C_D=\Phi(Re)$; samu krivulju daju mjerenja.
 2. Granica modela: za glatku kuglu u struji male slobodne turbulencije kriza otpora javlja se približno pri $Re$ reda nekoliko $10^5$, kada prijelaz graničnog sloja odgađa odvajanje i $C_D$ naglo pada. Položaj krize osjetljiv je na hrapavost i poremećaje, pa zadani konstantni $C_D=0{,}45$ vrijedi samo u radnom području zadatka.
 :::
 
@@ -796,7 +796,7 @@ $v=8{,}00\ \text{m/s}$, $D_h=0{,}2667\ \text{m}$, $Re=1{,}42\cdot10^5$: turbulen
 
 **Tekst zadatka**
 
-Za uniformni tok u dugom otvorenom kanalu u []{.mf1-chapter-ref target="u15"} rabi se empirijska Manningova jednadžba $v=\dfrac{1}{n}R_h^{2/3}S^{1/2}$. U njoj je $R_h=A/P$ hidraulički radijus (omjer površine presjeka toka i oplakanog opsega), a $S$ bezdimenzijski nagib dna. Manningov koeficijent $n$ zadan je brojčanom vrijednošću koja vrijedi u sustavu SI. Betonski pravokutni kanal ima širinu $b=2{,}00\ \text{m}$, dubinu vode $y=0{,}80\ \text{m}$, nagib dna $S=0{,}0005$ i $n=0{,}013$.
+Za jednoliko strujanje u dugom otvorenom kanalu u []{.mf1-chapter-ref target="u15"} rabi se empirijska Manningova jednadžba $v=\dfrac{1}{n}R_h^{2/3}S^{1/2}$. U njoj je $R_h=A/P$ hidraulički radijus (omjer površine protočnog presjeka i oplakanog opsega), a $S$ bezdimenzijski nagib dna. Manningov koeficijent $n$ zadan je brojčanom vrijednošću koja vrijedi u sustavu SI. Betonski pravokutni kanal ima širinu $b=2{,}00\ \text{m}$, dubinu vode $y=0{,}80\ \text{m}$, nagib dna $S=0{,}0005$ i $n=0{,}013$.
 
 **Traži se**
 
@@ -963,13 +963,13 @@ Redom za $\lambda_L=20;\ 30$: $v_m\approx(1{,}342;1{,}095)\ \text{m/s}$, $Q_m\ap
 
 ![Skice uz Z1–Z6: bezdimenzijski brojevi i modelska sličnost.](../assets/print/u14_vjezbe_skice.svg){#fig-u14-vjezbe fig-align="center" fig-alt="Šest malih skica: pravokutni presjek ventilacijskog kanala, presjek pravokutnog otvorenog kanala s vodom, usis crpke s tlačnim priključkom, dva slična profila, kružni cilindar s vrtlozima i presjeci dvaju modela preljeva."}
 
-**Napomene uz skice.** U Z1, Z2 i Z6 simbol $\odot$ označuje tok prema promatraču; u Z2 nagib dna $S$ nije vidljiv u poprečnom presjeku. U Z4 raspon $b$ okomit je na crtež. U Z5 razmak vrtloga shematski je i ne prikazuje traženu frekvenciju. U Z6 su $h_m$ i $L_{pr,m}$ dubina i širina referentnog presjeka modela; širina slijedi iz $Q=vhL_{pr}$, a oba su presjeka u istom mjerilu.
+**Napomene uz skice.** U Z1, Z2 i Z6 simbol $\odot$ označuje strujanje prema promatraču; u Z2 nagib dna $S$ nije vidljiv u poprečnom presjeku. U Z4 raspon $b$ okomit je na crtež. U Z5 razmak vrtloga shematski je i ne prikazuje traženu frekvenciju. U Z6 su $h_m$ i $L_{pr,m}$ dubina i širina referentnog presjeka modela; širina slijedi iz $Q=vhL_{pr}$, a oba su presjeka u istom mjerilu.
 
 ## Sažetak
 
 ::: {.mf1-zavrsni-okvir}
 - Prije računa definiraj izlaznu veličinu, geometriju, rubne uvjete te dosljedno izabrane $L$ i $v$.
-- Popiši sve relevantne grupe, procijeni im red veličine i obrazloži koje zanemaruješ.
+- Popiši sve mjerodavne grupe, procijeni im red veličine i obrazloži koje zanemaruješ.
 - $Re$ je omjer inercije i viskoznosti, ali sam ne određuje režim u svakoj geometriji; za plin provjeri i $Ma$ te toplinske i tlačne promjene.
 - Kad dvije važne grupe nije moguće očuvati (npr. $Re$ i $Fr$ za brod), bira se prioritetna sličnost, a neusklađeni se doprinos korigira (Froudeova hipoteza, ITTC 1957).
 - Krivulje poput $C_D(Re)$ i $\lambda(Re,k_s/D)$ prenose se samo uz jednaku bezdimenzijsku geometriju i jednake rubne uvjete.

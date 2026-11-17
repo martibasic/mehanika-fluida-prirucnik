@@ -286,6 +286,8 @@ def main():
     for id in ('u14ex_z1vA', 'u14ex_z1vd', 'u14ex_z1vj'):
         vector_kind(ex, id, 'velocity')
         direction(ex, id, 0)
+    lz1 = [math.dist(*line(node(ex, 'u14ex_z1' + k))) for k in ('vA', 'vd', 'vj')]
+    check(lz1[0] < lz1[1] < lz1[2], 'Z1: shematski poredak v_A < v_d < v_j')
     direction(ex, 'u14ex_z1thrust', 180)
     # Z2: pokretna ploča; mlaz i ploča gibaju se u +x, u < v po duljini strelica; kolo naznačeno crtkanim pločama.
     plate(ex, 'u14ex_z2')

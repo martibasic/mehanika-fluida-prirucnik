@@ -2,7 +2,7 @@ Tlak, opisan u []{.mf1-chapter-ref target="u01"}, nije jedino svojstvo koje odre
 
 Viskoznost se najjasnije vidi u stacionarnom Couetteovu sloju bez gradijenta tlaka. Fluid prianja uz obje stijenke, pa brzina fluida $v$ raste od nule na nepomičnoj donjoj stijenci do brzine ploče $u$ na gornjoj. Za newtonski fluid smično je naprezanje razmjerno gradijentu brzine, $\tau=\mu\,dv/dy$, gdje je $\mu$ dinamička viskoznost, a $\nu=\mu/\rho$ kinematička viskoznost. Taj je odnos konstitutivni model, a ne opći zakon. Viskoznost se snažno mijenja s temperaturom, pa svojstva fluida i valjanost newtonskog modela treba uspoređivati pri istoj temperaturi.
 
-Površinska napetost $\sigma$ djeluje na granici faza kao sila po jedinici duljine kontaktne linije. U uskoj kapilari tekućina koja kvasi stijenku penje se iznad razine u posudi. Kontaktni kut $\theta$ mjeri se kroz tekućinu, a okomita komponenta površinske sile po obodu uravnotežuje težinu podignutog stupca, što daje $h=4\sigma\cos\theta/(\rho g d)$. Zakrivljena površina kapljice ili mjehura uz to podrazumijeva tlačni skok, koji opisuje Young–Laplaceov zakon. Tako se smični otpor u volumenu fluida jasno razlikuje od površinskih sila na granici faza.
+Površinska napetost $\sigma$ djeluje na granici faza kao sila po jedinici duljine kontaktne linije. U uskoj kapilari tekućina koja kvasi stijenku penje se iznad razine u posudi. Kontaktni kut $\theta$ mjeri se kroz tekućinu, a okomita komponenta površinske sile po obodu uravnotežuje težinu podignutog stupca, što daje $h=4\sigma\cos\theta/(\rho g d)$. Zakrivljena površina kapljice ili mjehura uz to podrazumijeva tlačni skok, koji opisuje Young–Laplaceov zakon. Tako se smični otpor u volumenu fluida razlikuje od površinskih sila na granici faza.
 
 Viskoznost određuje podmazivanje ležajeva, primjerice ležaja statvene cijevi brodskog osovinskog voda, i radno područje motornih i hidrauličkih ulja. Kapilarnost je važna u uskim procjepima limova brodske konstrukcije, raspršivačima i premazima. Poglavlje redom obrađuje Newtonov zakon viskoznosti, dinamičku i kinematičku viskoznost, površinsku napetost i kontaktni kut, kapilarni uspon te tlačni skok na kapljici i mjehuru. Modeli vrijede za newtonski fluid, stacionaran linearni profil i statički meniskus. Odnos inercije i gravitacije prema površinskoj napetosti iskazuju Weberov i Bondov broj u []{.mf1-chapter-ref target="u11"}, a tenzorski oblik viskoznog naprezanja obrađen je u []{.mf1-chapter-ref target="u12"}.
 
@@ -27,7 +27,7 @@ U izrazu je $\tau$ smično naprezanje, $\mu$ dinamička viskoznost, a $dv/dy$ gr
 
 **Pitanje.** Kolika je sila potrebna da se gornja od dviju ravnih paralelnih ploča površine $A$ i razmaka $\delta$ giba stalnom brzinom $u$ dok donja miruje, ako je među njima newtonski fluid?
 
-**Pretpostavke.** Stacionarno laminarno strujanje, prianjanje fluida na obje ploče ($v(0)=0$, $v(\delta)=u$), zanemarivi rubni učinci i gradijent tlaka u smjeru gibanja jednak nuli. Brzina fluida $v$ ima samo komponentu u smjeru gibanja ploče i ovisi samo o koordinati $y$ okomitoj na ploče. Pokus pokazuje da je vučna sila razmjerna površini i brzini, a obrnuto razmjerna razmaku:
+**Pretpostavke.** Stacionarno laminarno strujanje, prianjanje fluida uz obje ploče ($v(0)=0$, $v(\delta)=u$), zanemarivi rubni učinci i gradijent tlaka u smjeru gibanja jednak nuli. Brzina fluida $v$ ima samo komponentu u smjeru gibanja ploče i ovisi samo o koordinati $y$ okomitoj na ploče. Pokus pokazuje da je vučna sila razmjerna površini i brzini, a obrnuto razmjerna razmaku:
 
 $$
 F \propto A\frac{u}{\delta}.
@@ -41,7 +41,7 @@ $$ {#eq-couette-bilanca-sloja}
 
 pa je smično naprezanje jednako na svakoj visini procjepa. Ta bilanca vrijedi za svaki fluid; o vrsti fluida ovisi tek to kako je naprezanje $\tau$ povezano s gibanjem.
 
-**Konstitutivni model.** Pokusno utvrđena proporcionalnost smičnoga naprezanja i gradijenta brzine jest **konstitutivni model** newtonskog fluida, a ne posljedica ravnoteže sila:
+**Konstitutivni model.** Pokusno utvrđena razmjernost smičnoga naprezanja i gradijenta brzine jest **konstitutivni model** newtonskog fluida, a ne posljedica ravnoteže sila:
 
 $$
 \tau = \mu\frac{dv}{dy}.
@@ -65,7 +65,7 @@ $$
 F = \tau A = \mu A\frac{u}{\delta}.
 $$ {#eq-reologija-konstitutivna-motivacija-newtonov-zakon-viskozno-02}
 
-**Rezultat i provjera.** Dobiveni izraz ima upravo pokusom utvrđen oblik, što određuje $\mu$ kao konstantu razmjernosti s jedinicom $\mathrm{Pa\,s}$. Za $u\to0$ sila nestaje, a tanji procjep uz istu brzinu daje veću silu. Linearan profil nije ulazna pretpostavka, nego posljedica bilance i newtonskog modela; za nenewtonski fluid u istom sloju $\tau$ je i dalje stalan po visini, pa je stalan i gradijent brzine ako naprezanje ovisi samo o lokalnom gradijentu. Newtonski je model tvrdnja da je njihov omjer isti pri svim brzinama. U zapisu $\tau$ označuje komponentu smičnoga naprezanja s unaprijed odabranim pozitivnim smjerovima: promijene li se orijentacija normale ili smjer brzine, mijenja se i predznak te komponente, a $|\tau|$ je njezin iznos.
+**Rezultat i provjera.** Dobiveni izraz ima oblik utvrđen pokusom, što određuje $\mu$ kao konstantu razmjernosti s jedinicom $\mathrm{Pa\,s}$. Za $u\to0$ sila nestaje, a tanji procjep uz istu brzinu daje veću silu. Linearan profil nije ulazna pretpostavka, nego posljedica bilance i newtonskog modela; za nenewtonski fluid u istom sloju $\tau$ je i dalje stalan po visini, pa je stalan i gradijent brzine ako naprezanje ovisi samo o lokalnom gradijentu. Newtonski je model tvrdnja da je njihov omjer isti pri svim brzinama. U zapisu $\tau$ označuje komponentu smičnoga naprezanja s unaprijed odabranim pozitivnim smjerovima: promijene li se orijentacija normale ili smjer brzine, mijenja se i predznak te komponente, a $|\tau|$ je njezin iznos.
 :::
 
 ### Dinamička i kinematička viskoznost
@@ -82,12 +82,12 @@ $$ {#eq-reologija-dinamicka-i-kinematicka-viskoznost-02}
 
 ::: {.mf1-fizikalno-znacenje}
 <p class="mf1-box-label">Fizikalno značenje — Kinematička viskoznost kao difuzivnost</p>
-Kinematička viskoznost $\nu$ povezuje viskozni prijenos količine gibanja ($\mu$) s masenom inercijom ($\rho$), pa se može tumačiti kao **difuzivnost količine gibanja**. Upravo se $\nu$ pojavljuje u Reynoldsovu broju $Re=vL/\nu$. Dva nestlačiva newtonska fluida s jednakim $\nu$ imaju isti Reynoldsov broj pri istoj referentnoj brzini i duljini; isti bezdimenzijski uzorak strujanja očekuje se tek za geometrijski slične domene, jednake bezdimenzijske rubne uvjete i jednake ostale relevantne bezdimenzijske skupine.
+Kinematička viskoznost $\nu$ povezuje viskozni prijenos količine gibanja ($\mu$) s masenom inercijom ($\rho$), pa se može tumačiti kao **difuzivnost količine gibanja**. Ta se veličina pojavljuje u Reynoldsovu broju $Re=vL/\nu$. Dva nestlačiva newtonska fluida s jednakim $\nu$ imaju isti Reynoldsov broj pri istoj referentnoj brzini i duljini; isti bezdimenzijski uzorak strujanja očekuje se tek za geometrijski slična područja, jednake bezdimenzijske rubne uvjete i jednake ostale mjerodavne bezdimenzijske skupine.
 :::
 
 ::: {.mf1-cfd title="Računalna dinamika fluida"}
 
-**Hladno pokretanje rashladnog kruga.** Razdjelnik koji dobro radi nakon zagrijavanja može pri hladnom pokretanju pružati drukčiji otpor. Za usporedbu najprije simuliramo isti zadani protok pri dvjema temperaturama, uz pripadne gustoće i viskoznosti. CFD tada daje potrebnu razliku tlakova i podjelu protoka po kanalima. Relacija $\nu=\mu/\rho$ služi ispravnom unosu svojstava: jedinica koju program traži pokazuje unosi li se dinamička ili kinematička viskoznost. Provjera: za laminarno strujanje u jednom ravnom kanalu numerički se pad tlaka najprije uspoređuje s analitičkim Hagen–Poiseuilleovim rješenjem iz []{.mf1-chapter-ref target="u12"}; tek mreža koja ga reproducira smije se upotrijebiti za podjelu protoka po kanalima razdjelnika.
+**Hladno pokretanje rashladnog kruga.** Razdjelnik koji dobro radi nakon zagrijavanja može pri hladnom pokretanju pružati drukčiji otpor. Za usporedbu najprije simuliramo isti zadani protok pri dvjema temperaturama, uz pripadne gustoće i viskoznosti. CFD tada daje potrebnu razliku tlakova i podjelu protoka po kanalima. Relacija $\nu=\mu/\rho$ služi ispravnom unosu svojstava: jedinica koju program traži pokazuje unosi li se dinamička ili kinematička viskoznost. Radi provjere numerički se pad tlaka za laminarno strujanje u jednom ravnom kanalu najprije uspoređuje s analitičkim Hagen–Poiseuilleovim rješenjem iz []{.mf1-chapter-ref target="u12"}; tek mreža koja ga reproducira smije se upotrijebiti za podjelu protoka po kanalima razdjelnika.
 
 Veća viskoznost pri istom laminarnom protoku povećava potrebnu razliku tlakova. U stvarnom sustavu crpka ne mora održati taj protok: novi se protok određuje zajedno s karakteristikom crpke, kako je opisano u []{.mf1-chapter-ref target="u13"}. Ako se temperatura osjetno mijenja unutar uređaja, model se proširuje temperaturnim poljem i ovisnošću svojstava o temperaturi.
 :::
@@ -140,7 +140,7 @@ Procjena s naprezanjem sa srednjeg polumjera, $\tau(R/2)=1{,}13\ \text{kPa}$, na
 
 **Provjera i tumačenje**
 
-Dimenzije: $[\mu\omega R^4/\delta]=\mathrm{Pa\,s\cdot s^{-1}\cdot m^4/m=N\,m}$. Moment raste s četvrtom potencijom polumjera jer s $r$ rastu i naprezanje, i površina prstena, i krak. Zato vanjska polovica polumjera ($r>R/2$) nosi $15/16$ momenta, a srednji polumjer podcjenjuje rezultat dvostruko. Isti postupak integracije po prstenima vrijedi za stožaste i pločaste viskozimetre; za ležaj s nosivim tlakom u filmu trebao bi još model podmazivanja, koji ovaj račun ne sadrži.
+Dimenzije: $[\mu\omega R^4/\delta]=\mathrm{Pa\,s\cdot s^{-1}\cdot m^4/m=N\,m}$. Moment raste s četvrtom potencijom polumjera jer s $r$ rastu i naprezanje, i površina prstena, i krak. Zato vanjska polovica polumjera ($r>R/2$) nosi $15/16$ momenta, a procjena sa srednjim polumjerom daje dvostruko manji moment. Isti postupak integracije po prstenima vrijedi za stožaste i pločaste viskozimetre; za ležaj s nosivim tlakom u filmu potreban je još model podmazivanja, koji ovaj račun ne sadrži.
 :::
 
 ::: {.mf1-dublje}
@@ -171,9 +171,9 @@ Skalarni jednodimenzijski oblik $\tau = \mu\,dv/dy$ služi kao radni oblik u svi
 
 ::: {.mf1-cfd title="Računalna dinamika fluida"}
 
-**Uski kanal hladne ploče.** Smanjenjem razmaka među stijenkama tekućinu dovodimo bliže površini koju želimo hladiti, ali povećavamo gradijente brzine i potrebnu pogonsku snagu. CFD iz profila brzine i viskoznosti računa smično naprezanje; Newtonov zakon daje vezu između gibanja i trenja. Prianjanje određuje brzinu na stijenci, a dovoljan broj ćelija po širini razmaka omogućuje razlučivanje profila.
+**Uski kanal rashladne ploče.** Smanjenjem razmaka među stijenkama tekućinu dovodimo bliže površini koju želimo hladiti, ali povećavamo gradijente brzine i potrebnu pogonsku snagu. CFD iz profila brzine i viskoznosti računa smično naprezanje; Newtonov zakon daje vezu između gibanja i trenja. Prianjanje određuje brzinu na stijenci, a dovoljan broj ćelija po širini razmaka omogućuje razlučivanje profila.
 
-Ručni račun u primjeru [-@ex-u02-smicno-naprezanje-u-tankom-uljnom-sloju-t2] daje referentni test za takav CFD model: linearni profil proizlazi iz gibanja ploče bez gradijenta tlaka. U kanalu s nepomičnim stijenkama, u kojem strujanje pokreće razlika tlakova, profil je drukčiji. Usporedba geometrija zatim povezuje otpor s raspodjelom toka, dok ocjena hlađenja zahtijeva i toplinski račun.
+Ručni račun u primjeru [-@ex-u02-smicno-naprezanje-u-tankom-uljnom-sloju-t2] daje referentni test za takav CFD model: linearni profil proizlazi iz gibanja ploče bez gradijenta tlaka. U kanalu s nepomičnim stijenkama, u kojem strujanje pokreće razlika tlakova, profil je drukčiji. Usporedba geometrija zatim povezuje otpor s raspodjelom protoka, dok ocjena hlađenja zahtijeva i toplinski račun.
 :::
 
 ## Površinska napetost i kontaktni kut
@@ -182,12 +182,12 @@ Molekule na granici fluida i druge faze nemaju istu okolinu kao one u unutrašnj
 
 Površinska se napetost izražava u jedinicama $\text{N/m}$, kao sila po jedinici duljine kontaktne linije. Budući da vrijedi $\text{N/m}=\text{J/m}^2$, može se tumačiti i kao energija po jediničnoj površini. Za stvaranje nove površine fluida potreban je rad $\sigma\Delta A$. Pri zadanom volumenu sustav teži najmanjoj površini, pa kapljice u bestežinskom stanju i sapunasti mjehuri poprimaju sferni oblik.
 
-Kad je fluid u dodiru sa stijenkom, presudan postaje i kontaktni kut $\theta$. Predznak i iznos $\cos \theta$ odlučuju penje li se tekućina u tankoj kapilari ili se razina spušta.
+Kad je fluid u dodiru sa stijenkom, presudan postaje i kontaktni kut $\theta$. O predznaku i iznosu $\cos \theta$ ovisi penje li se tekućina u tankoj kapilari ili se razina spušta.
 
 ::: {.mf1-izvod}
 <p class="mf1-box-label">Matematički izvod — Youngova jednadžba i podrijetlo kontaktnog kuta</p>
 
-Vrijednost kontaktnog kuta $\theta$ nije proizvoljna, nego proizlazi iz ravnoteže triju površinskih napetosti na trofaznoj kontaktnoj liniji, na kojoj se susreću kruta stijenka, tekućina i para. Na tu liniju djeluju tri sile po jedinici duljine (indeksi slijede uobičajeni zapis u literaturi: $s$ krutina, $l$ tekućina, $v$ para):
+Vrijednost kontaktnog kuta $\theta$ proizlazi iz ravnoteže triju površinskih napetosti na trofaznoj kontaktnoj liniji, na kojoj se susreću kruta stijenka, tekućina i para. Na tu liniju djeluju tri sile po jedinici duljine (indeksi slijede uobičajeni zapis u literaturi: $s$ krutina, $l$ tekućina, $v$ para):
 
 - napetost između krutine i pare: $\sigma_{sv}$, koja vuče duž krute površine, od tekućine prema van;
 - napetost između krutine i tekućine: $\sigma_{sl}$, koja vuče duž krute površine prema tekućini;
@@ -205,9 +205,9 @@ $$
 \cos\theta = \frac{\sigma_{sv} - \sigma_{sl}}{\sigma_{lv}}.
 $$ {#eq-reologija-matematicki-izvod-youngova-jednadzba-i-podrijetl-02}
 
-Veličina $\sigma$ u izrazu za kapilarni uspon i u svim formulama koje slijede zapravo je $\sigma_{lv}$ — napetost između tekućine i pare. Ako tekućina kvasi krutinu (npr. voda na čistom staklu), vrijedi $\sigma_{sv} > \sigma_{sl}$, pa je $\cos\theta > 0$ i $\theta < 90^\circ$. Ako tekućina ne kvasi krutinu (npr. živa na staklu, voda na voštanoj površini), vrijedi $\sigma_{sv} < \sigma_{sl}$, pa je $\cos\theta < 0$ i $\theta > 90^\circ$.
+Veličina $\sigma$ u izrazu za kapilarni uspon i u svim formulama koje slijede jest $\sigma_{lv}$, napetost između tekućine i pare. Ako tekućina kvasi krutinu (npr. voda na čistom staklu), vrijedi $\sigma_{sv} > \sigma_{sl}$, pa je $\cos\theta > 0$ i $\theta < 90^\circ$. Ako tekućina ne kvasi krutinu (npr. živa na staklu, voda na voštanoj površini), vrijedi $\sigma_{sv} < \sigma_{sl}$, pa je $\cos\theta < 0$ i $\theta > 90^\circ$.
 
-Kvašenje i nekvašenje stoga nisu svojstvo same tekućine, nego **svojstvo para tekućina–krutina**. Ista voda u staklenoj kapilari kvasi ($\theta \approx 0$), a u teflonskoj ne kvasi ($\theta > 90^\circ$), pa kapilarni uspon prelazi u kapilarno spuštanje razine.
+Kvašenje i nekvašenje stoga nisu svojstvo same tekućine, nego **svojstvo para tekućina–krutina**. Ista voda kvasi stijenku staklene kapilare ($\theta \approx 0$), a stijenku teflonske ne kvasi ($\theta > 90^\circ$), pa kapilarni uspon prelazi u kapilarno spuštanje razine.
 :::
 
 ::: {.mf1-izvod}
@@ -254,7 +254,7 @@ Budući da je $h$ prema jednadžbi [-@eq-reologija-razrada-koraka-02] obrnuto ra
 
 ::: {.mf1-cfd title="Računalna dinamika fluida"}
 
-**Punjenje kanala i zarobljeni zrak.** Potpuno napunjen kanal i kanal koji se tek puni dva su različita CFD problema. Pri punjenju hladne ploče tekućina istiskuje zrak, pa pratimo granicu faza i omogućujemo izlazak zraka kroz odzračnik. Površinska napetost i kontaktni kut određuju oblik meniskusa i kvašenje stijenke. U uskim prolazima mogu utjecati na to kojim putem tekućina napreduje i ostaje li zračni džep.
+**Punjenje kanala i zarobljeni zrak.** Potpuno napunjen kanal i kanal koji se tek puni dva su različita CFD problema. Pri punjenju rashladne ploče tekućina istiskuje zrak, pa pratimo granicu faza i omogućujemo izlazak zraka kroz odzračnik. Površinska napetost i kontaktni kut određuju oblik meniskusa i kvašenje stijenke. U uskim prolazima mogu utjecati na to kojim putem tekućina napreduje i ostaje li zračni džep.
 
 **Zastani i promisli.** Model točno predviđa konačnu visinu u kapilari. Potvrđuje li to i točno vrijeme punjenja kanala?
 
@@ -319,7 +319,7 @@ $$
 \Delta p = \frac{4\sigma}{r} = \frac{8\sigma}{d}.
 $$ {#eq-reologija-matematicki-izvod-young-laplaceov-zakon-za-kaplj-06}
 
-Za općenitu zakrivljenu plohu s glavnim polumjerima zakrivljenosti $R_1$ i $R_2$, opći **Young–Laplaceov zakon** glasi
+Za općenitu zakrivljenu plohu s glavnim polumjerima zakrivljenosti $R_1$ i $R_2$ opći **Young–Laplaceov zakon** glasi
 
 $$
 \Delta p = \sigma\!\left(\frac{1}{R_1} + \frac{1}{R_2}\right),
@@ -433,7 +433,7 @@ $$ {#eq-reologija-rijeseni-primjer-kapilarni-uspon-etanola-u-stakl-01}
 
 **Provjera i tumačenje**
 
-Kako je $\theta < 90^\circ$, razina raste. Pri potpunom kvašenju ($\theta=0$) uspon bi bio $11{,}4\ \mathrm{mm}$; dobiveni $10{,}8\ \mathrm{mm}$ manji je upravo za faktor $\cos18^\circ\approx0{,}951$.
+Kako je $\theta < 90^\circ$, razina raste. Pri potpunom kvašenju ($\theta=0$) uspon bi bio $11{,}4\ \mathrm{mm}$; dobiveni $10{,}8\ \mathrm{mm}$ manji je za faktor $\cos18^\circ\approx0{,}951$.
 :::
 
 ::: {#ex-u02-kapilarni-mikrodozator-s-izlaznom-kapljicom-t3 .mf1-we}
@@ -486,7 +486,7 @@ $$ {#eq-reologija-2-tlakovni-skok-na-kapljici-02}
 
 **Provjera i tumačenje**
 
-Pri punjenju je meniskus konkavan, pa je tlak vode neposredno ispod njega niži od okolnoga za $4\sigma/d=360\ \mathrm{Pa}$, što je upravo hidrostatički tlak stupca $\rho gh_{kap}\approx360\ \mathrm{Pa}$. Formirana kapljica konveksna je, pa je tlak u njoj viši od okolnoga za $120\ \mathrm{Pa}$: ista međupovršina mijenja predznak tlačnog skoka kad promijeni smjer zakrivljenosti.
+Pri punjenju je meniskus konkavan, pa je tlak vode neposredno ispod njega niži od okolnoga za $4\sigma/d=360\ \mathrm{Pa}$, što je jednako hidrostatičkom tlaku stupca $\rho gh_{kap}\approx360\ \mathrm{Pa}$. Formirana kapljica konveksna je, pa je tlak u njoj viši od okolnoga za $120\ \mathrm{Pa}$: ista međupovršina mijenja predznak tlačnog skoka kad promijeni smjer zakrivljenosti.
 :::
 
 ::: {#ex-u02-hladni-start-i-radna-temperatura-koliko-kosta .mf1-we}
@@ -495,24 +495,24 @@ Pri punjenju je meniskus konkavan, pa je tlak vode neposredno ispod njega niži 
 
 **Tekst zadatka**
 
-Uljem podmazani koncentrični klizni ležaj vratila brodske pomoćne crpke ima promjer osovine $D = 50\ \text{mm}$, duljinu $L = 70\ \text{mm}$ i uljni procjep $\delta = 0{,}30\ \text{mm}$. Osovina se vrti brzinom $n = 2400\ \text{min}^{-1}$. Pri hladnom startu zimi ulje ima $T_1 = 10^\circ\text{C}$ i viskoznost $\mu_1 = 0{,}40\ \text{Pa s}$, a za zagrijano ulje uzmi $T_2 = 50^\circ\text{C}$ i $\mu_2 = 0{,}040\ \text{Pa s}$.
+Uljem podmazani koncentrični klizni ležaj vratila brodske pomoćne crpke ima promjer vratila $D = 50\ \text{mm}$, duljinu $L = 70\ \text{mm}$ i uljni procjep $\delta = 0{,}30\ \text{mm}$. Vratilo se vrti brzinom $n = 2400\ \text{min}^{-1}$. Pri hladnom pokretanju zimi ulje ima $T_1 = 10^\circ\text{C}$ i viskoznost $\mu_1 = 0{,}40\ \text{Pa s}$, a za zagrijano ulje uzmi $T_2 = 50^\circ\text{C}$ i $\mu_2 = 0{,}040\ \text{Pa s}$.
 
-U oba stanja primijeni Couetteov model s prianjanjem i linearnim profilom; koordinata $y$ raste od čahure prema osovini, a obodna brzina osovine je $u$. Geometrija i brzina vrtnje ostaju iste. Zanemari ekscentricitet, hidrodinamički klin, rubni tok i zagrijavanje smicanjem. Ovo je usporedba utjecaja zadane viskoznosti, a ne radna karta ležaja ni propisni proračun ležaja.
+U oba stanja primijeni Couetteov model s prianjanjem i linearnim profilom; koordinata $y$ raste od čahure prema vratilu, a obodna brzina vratila je $u$. Geometrija i brzina vrtnje ostaju iste. Zanemari ekscentricitet, hidrodinamički klin, rubno strujanje i zagrijavanje smicanjem. Ovo je usporedba utjecaja zadane viskoznosti, a ne radna karta ležaja ni propisni proračun ležaja.
 
 **Traži se**
 
-1. Odredi obodnu brzinu osovine $u$ i gradijent brzine u procjepu.
+1. Odredi obodnu brzinu vratila $u$ i gradijent brzine u procjepu.
 2. Odredi smično naprezanje pri objema temperaturama.
 3. Odredi zakretni moment trenja pri objema temperaturama.
 4. Odredi snagu koju pogon troši samo na svladavanje viskoznog trenja u ležaju pri objema temperaturama te omjer snaga pri nižoj i višoj temperaturi.
 
-![Isti klizni ležaj pri hladnom startu i zagrijanom ulju; ulje pruža otpor vrtnji osovine.](../assets/print/u02_fig_lezaj_temperatura.svg){#fig-u02-lezaj-temperatura fig-align="center" fig-alt="Dva razmotana uljna procjepa uz nepomičnu čahuru i osovinu koja se giba udesno, pri 10 °C i 50 °C, te poprečni presjek s promjerom osovine, smjerom vrtnje i momentom trenja."}
+![Isti klizni ležaj pri hladnom pokretanju i zagrijanom ulju; ulje pruža otpor vrtnji vratila.](../assets/print/u02_fig_lezaj_temperatura.svg){#fig-u02-lezaj-temperatura fig-align="center" fig-alt="Dva razmotana uljna procjepa uz nepomičnu čahuru i vratilo koje se giba udesno, pri 10 °C i 50 °C, te poprečni presjek s promjerom vratila, smjerom vrtnje i momentom trenja."}
 
-**Veza s proračunom.** Koordinata $y$ raste od nepomične čahure prema osovini, čija obodna brzina $u$ daje brzinu fluida uz nju. Procjep je uvećan radi čitljivosti, a vektori sila nisu u zajedničkom mjerilu.
+**Veza s proračunom.** Koordinata $y$ raste od nepomične čahure prema vratilu, čija obodna brzina $u$ daje brzinu fluida uz njega. Procjep je uvećan radi čitljivosti, a vektori sila nisu u zajedničkom mjerilu.
 
 **Rješenje**
 
-Obodna brzina osovine ne ovisi o temperaturi:
+Obodna brzina vratila ne ovisi o temperaturi:
 
 $$
 u = \frac{\pi D n}{60} = \frac{\pi \cdot 0{,}050 \cdot 2400}{60} \approx 6{,}28\ \text{m/s}
@@ -524,7 +524,7 @@ $$
 \frac{dv}{dy} \approx \frac{u}{\delta} = \frac{6{,}28}{0{,}30 \cdot 10^{-3}} \approx 2{,}09 \cdot 10^4\ \text{s}^{-1}
 $$ {#eq-reologija-rijeseni-primjer-hladni-start-i-radna-temperatur-02}
 
-Smično naprezanje pri hladnom startu ($T_1$):
+Smično naprezanje pri hladnom pokretanju ($T_1$):
 
 $$
 \tau_1 = \mu_1 \frac{u}{\delta} \approx 8{,}38 \cdot 10^3\ \text{Pa}
@@ -536,13 +536,13 @@ $$
 \tau_2 = \mu_2 \frac{u}{\delta} \approx 838\ \text{Pa}
 $$ {#eq-reologija-rijeseni-primjer-hladni-start-i-radna-temperatur-04}
 
-Oplakana površina osovine:
+Oplakana površina vratila:
 
 $$
 A = \pi D L = \pi \cdot 0{,}050 \cdot 0{,}070 \approx 1{,}10 \cdot 10^{-2}\ \text{m}^2
 $$ {#eq-reologija-rijeseni-primjer-hladni-start-i-radna-temperatur-05}
 
-Sila viskoznog trenja i zakretni moment pri hladnom startu:
+Sila viskoznog trenja i zakretni moment pri hladnom pokretanju:
 
 $$
 F_1 = \tau_1 A \approx 92{,}1\ \text{N}, \qquad M_1 = F_1 \cdot \frac{D}{2} \approx 2{,}30\ \text{N m}
@@ -570,7 +570,7 @@ $$
 P_2 = M_2 \omega \approx 57{,}9\ \text{W}
 $$ {#eq-reologija-rijeseni-primjer-hladni-start-i-radna-temperatur-10}
 
-Omjer snage pri hladnom startu i snage pri zagrijanom ulju:
+Omjer snage pri hladnom pokretanju i snage pri zagrijanom ulju:
 
 $$
 \frac{P_1}{P_2} = \frac{\mu_1}{\mu_2} = 10

@@ -78,7 +78,10 @@ def main():
     heater=polygon(ns[p+'heater'])
     assert all(a[0] < x < b[0] or True for x,_ in heater)
     assert min(y for _,y in heater) > span(fluid,146,False)[0] and max(y for _,y in heater) < span(fluid,146,False)[1]
-    print('PASS Z1: heater duct area ratio 0.30:0.24 and heater inside the fluid')
+    ln=lambda n:float(ns[n].get('x2'))-float(ns[n].get('x1'))
+    # Strelice ne smiju sugerirati jednake brzine ni A1v1 = A2v2 (omjer 1,25), a ni otkriti v2/v1.
+    assert ln(p+'v2')/ln(p+'v1') > 0.30/0.24 + 0.1
+    print('PASS Z1: heater duct area ratio 0.30:0.24, heater inside the fluid, v2 arrow longer than area ratio implies')
     p='u08vs_fix_z6_'
     f=ns[p+'fluid'];s=ns[p+'surface']
     floor=float(f.get('y'))+float(f.get('height'))

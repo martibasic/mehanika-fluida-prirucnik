@@ -1,5 +1,5 @@
 ---
-title: "Diferencijalni opis realnog toka"
+title: "Diferencijalni opis realnog strujanja"
 page-layout: article
 mf1-document-id: u12
 mf1-document-kind: chapter

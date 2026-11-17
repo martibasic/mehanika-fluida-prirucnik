@@ -108,13 +108,13 @@ def validate_notebook(path: Path) -> list[str]:
         if not re.search(pattern, text, re.IGNORECASE):
             issues.append(f"{path.name}: nedostaje faza „{label}”.")
     if not re.search(
-        r"nesigurn|konverg|osjetljiv|rezidual|pogrešk|vremensk|numerič",
+        r"nesigurn|konverg|osjetljiv|rezidual|ostat|pogrešk|vremensk|numerič",
         text,
         re.IGNORECASE,
     ):
         issues.append(
             f"{path.name}: nema analize pogreške, konvergencije, "
-            "osjetljivosti, reziduala ili nesigurnosti."
+            "osjetljivosti, ostatka ili nesigurnosti."
         )
     if assert_count < 2:
         issues.append(

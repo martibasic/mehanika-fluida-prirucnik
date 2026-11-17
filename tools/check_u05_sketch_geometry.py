@@ -78,6 +78,11 @@ def main():
             assert float(lid.get("y")) + float(lid.get("height")) < surface
             assert float(lid.get("x")) <= cx and float(lid.get("x")) + float(lid.get("width")) >= cx + radius
             assert any("nadtlak" in "".join(n.itertext()) for n in nodes[prefix+"geometry"].iter() if n.tag.endswith("text"))
+            # Opis skice tvrdi da su duljine F_H i F_V u omjeru iznosa.
+            fh_, fv_ = nodes[prefix+"FH"], nodes[prefix+"FV"]
+            l_h = float(fh_.get("x2")) - float(fh_.get("x1"))
+            l_v = float(fv_.get("y2")) - float(fv_.get("y1"))
+            close(l_v / l_h, abs(force["F_V"] / force["F_H"]), 0.01)
         fh, fv = nodes[prefix+"FH"], nodes[prefix+"FV"]
         yh = float(fh.get("y1")); xv = float(fv.get("x1"))
         close(float(fh.get("y2")), yh)
@@ -160,6 +165,11 @@ def main():
     z3 = task_flap_gate()
     y_drawn = (gy1 - float(nodes["u05vs_z3_surface"].get("y1"))) / scale
     assert abs(y_drawn - z3["y_open"]) > 0.3 and abs(y_drawn - 1.80) > 0.1, y_drawn
+    # Oba stanja iz zadatka imaju potpuno uronjenu ploču; čeona stijenka iznad gornjeg ruba.
+    assert y_drawn > 2.00 * math.sin(math.radians(60)), y_drawn
+    wall = nodes["u05vs_z3_breast-wall"]
+    close(float(wall.get("x")), gx2); close(float(wall.get("y")) + float(wall.get("height")), gy2)
+    assert float(wall.get("y")) < float(nodes["u05vs_z3_surface"].get("y1"))
     unknown_not_drawn(nodes, "u05vs_z3", "u05vs_z3_unknown")
     vectors = [n for n in nodes["u05vs_z3"].iter() if n.get("data-mf1-vector")]
     assert vectors and all(n.get("data-mf1-vector") == "pressure" for n in vectors)
@@ -171,9 +181,10 @@ def main():
     assert water.startswith("M48 ") and " Z" in water and f"L{gx1:g} {gy1:g}" in water
     check_arc(nodes["u05vs_z5_arc"], 207, 103, 70)
     check_normal(nodes["u05vs_z5_normal"], 207, 103, 70)
-    assert nodes["u05vs_z4_triangle"].get("d") == "M144.0 78 L218 190 H70 Z"
+    assert nodes["u05vs_z4_triangle"].get("d") == "M144.0 78 L194.4 190 H93.6 Z"
     # Z4: nacrtana širina (nepoznanica) nije u mjerilu b_max ni ponuđenih 1,20 m.
-    b_drawn = (218 - 70) / (190 - 78) * 1.50
+    b_drawn = (194.4 - 93.6) / (190 - 78) * 1.50
+    assert 0.6 < b_drawn / 1.20 < 1.4, b_drawn       # oblik blizu stvarnog b ≈ 0,8 H
     for b_ref in (task_triangle()["b_max"], 1.20):
         assert abs(b_drawn - b_ref) > 0.10, (b_drawn, b_ref)
     # Z5: duljina strelice T (iznos se traži) nije u mjerilu težine F_G.

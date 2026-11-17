@@ -178,3 +178,25 @@ Odluke vrijede za cijelu knjigu; autorica ih može naknadno promijeniti.
   `content/book.json`, bez prvog `##` koji ponavlja naslov. Dodatak A sadrži
   samo opće relacije; postupci pojedinih zadataka ostaju u poglavljima i
   smjernicama dodatka F.
+
+## Odluke o nazivlju (17. studenoga 2026.)
+
+Autorica je nakon jezične lekture odlučila; otvorena pitanja vodi
+[popis nazivlja](radno/recenzija-2026-11/NAZIVLJE.md).
+
+- **strujanje** za gibanje fluida (turbulentno, stacionarno, idealno strujanje);
+  **tok** samo za tok veličine kroz plohu (tok mase, količine gibanja, energije).
+  Naslovi: pog. 9 „Stlačivo idealno strujanje”, pog. 12 „Diferencijalni opis
+  realnog strujanja”, pog. 15 „Strujanje sa slobodnom površinom” (mirno i
+  silovito, jednoliko strujanje). Imena datoteka i ID-jevi ostaju.
+- **stlačiv / nestlačiv**, ne kompresibilan; **iskoristivost** za $\eta$, ne
+  učinkovitost.
+- CFD: **područje proračuna**, **ostatak**, **progušćivanje mreže**, **rješavač**;
+  pri prvom spomenu u poglavlju engleski izraz u zagradi (engl. *computational
+  domain*, *residual*, *mesh refinement*, *solver*).
+- **rashladna ploča**; **smično naprezanje** (tangencijalno samo jednom u
+  zagradi, pog. 1); **na strani sigurnosti**, ne konzervativno.
+- (referentni) **sustav**, ne okvir; **polumjer**, ne radijus (osim hidraulički
+  i metacentarski radijus); **hidraulički udar**; **prijenosna brzina**;
+  **snaga na vratilu**; **model turbulencije**; **zaustavna točka**;
+  **iskustveno pravilo**; **umnožak**; **pretlak**; **Venturijeva cijev**.

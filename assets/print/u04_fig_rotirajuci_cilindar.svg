@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 513 455" role="img" aria-labelledby="u04frc_title u04frc_desc" preserveAspectRatio="xMidYMid meet" style="display:block;width:100%;max-width:513px;height:auto;">
   <title id="u04frc_title">Poprečni presjek broda u kružnom zavoju: balastni tank s nagnutom slobodnom površinom i sondnim cijevima</title>
-  <desc id="u04frc_desc">Brod skreće oko središta zavoja koje je lijevo od presjeka; crtkana strelica a pokazuje centripetalno ubrzanje, a suprotna deblja puna strelica prividnu silu na vodu u okviru broda; obje su jednako duge jer prividna sila po jedinici mase ima iznos a. U okviru broda na vodu u poprečnom tanku djeluje gravitacija i prividna sila od središta, pa se površina podiže na vanjskoj (desnoj) strani. Mjerilo je 40 jedinica po metru: tank širok 9,0 m i visok 2,20 m, mirna razina 1,60 m, razine 1,503 m uz unutarnju i 1,697 m uz vanjsku stijenku. Sondne cijevi uz obje stijenke otvorene su iznad dna. Nagib površine nacrtan je u stvarnom omjeru a/g, bez uvećanja.</desc>
+  <desc id="u04frc_desc">Brod skreće oko središta zavoja koje je lijevo od presjeka; crtkana strelica a pokazuje centripetalno ubrzanje, a suprotna deblja puna strelica prividnu silu na vodu u sustavu broda; obje su jednako duge jer prividna sila po jedinici mase ima iznos a. U sustavu broda na vodu u poprečnom tanku djeluje gravitacija i prividna sila od središta, pa se površina podiže na vanjskoj (desnoj) strani. Mjerilo je 40 jedinica po metru: tank širok 9,0 m i visok 2,20 m, mirna razina 1,60 m, razine 1,503 m uz unutarnju i 1,697 m uz vanjsku stijenku. Sondne cijevi uz obje stijenke otvorene su iznad dna. Nagib površine nacrtan je u stvarnom omjeru a/g, bez uvećanja.</desc>
   <defs>
     <pattern id="u04frc_hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
       <rect width="7" height="7" fill="#d7dee3" />
@@ -52,7 +52,7 @@
       <text x="250" y="374" font-size="11" fill="#263746" text-anchor="middle">morska voda, <tspan font-style="italic">ρ</tspan><tspan baseline-shift="sub" font-size="0.7em">mv</tspan> = 1025 kg/m³</text>
       <text x="300" y="328" font-size="11" fill="#263746" text-anchor="middle">mirna razina <tspan font-style="italic">h</tspan><tspan baseline-shift="sub" font-size="0.7em">0</tspan></text>
       <text x="384" y="350" font-size="11" fill="#263746" text-anchor="middle"><tspan font-style="italic">θ</tspan></text>
-      <text x="400" y="76" font-size="11" fill="#263746" text-anchor="middle">prividna sila</text>
+      <text x="400" y="76" font-size="11" fill="#263746" text-anchor="middle">prividna sila na vodu</text>
       <line id="u04frc_apparent-arrow" x1="360" y1="90" x2="440" y2="90" stroke="#356b83" stroke-width="2.8" marker-end="url(#u04frc_vec)" data-mf1-vector="force" />
       <line x1="70" y1="412" x2="70" y2="446" stroke="#657781" stroke-width="0.7" />
       <line x1="430" y1="412" x2="430" y2="446" stroke="#657781" stroke-width="0.7" />

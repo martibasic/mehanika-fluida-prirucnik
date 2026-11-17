@@ -49,7 +49,7 @@
         <text x="257" y="121" font-size="11" fill="#263746" text-anchor="start" font-style="italic">H</text>
         <text x="148" y="204" font-size="11" fill="#263746" text-anchor="middle"><tspan font-style="italic">B</tspan> = 0,400 m; <tspan font-style="italic">H</tspan> = 0,200 m</text>
         <text x="148" y="226" font-size="11" fill="#263746" text-anchor="middle">zrak: <tspan font-style="italic">Q</tspan> = 0,640 m³/s, <tspan font-style="italic">ν</tspan> = 1,50 · 10⁻⁵ m²/s</text>
-        <text x="146" y="256" font-size="11" fill="#263746" text-anchor="middle">⊙ Tok prema promatraču.</text>
+        <text x="146" y="256" font-size="11" fill="#263746" text-anchor="middle">⊙ Strujanje prema promatraču.</text>
       </g>
     </g>
   </g>

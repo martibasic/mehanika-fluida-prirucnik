@@ -1,4 +1,4 @@
-Sažetak je podsjetnik: uz svaku relaciju navedeni su uvjet primjene i poglavlje u kojem se nalaze izvod, primjeri i granice modela. Prije uvrštavanja provjeri odgovaraju li pretpostavke tvojem zadatku. Jedna veličina ima jednu oznaku; rijetke iznimke koje vrijede samo u pojedinom poglavlju navedene su u tablici. Sažetak ne zamjenjuje postupak pojedinih zadataka: posebne konfiguracije izvode se iz općih relacija u poglavlju.
+Sažetak služi kao podsjetnik. Uz svaku relaciju navedeni su uvjet primjene i poglavlje u kojem se nalaze izvod, primjeri i granice modela. Prije uvrštavanja provjeri odgovaraju li pretpostavke tvojem zadatku. Jedna veličina ima jednu oznaku; rijetke iznimke koje vrijede samo u pojedinom poglavlju navedene su u tablici. Sažetak ne zamjenjuje postupak pojedinih zadataka: posebne konfiguracije izvode se iz općih relacija u poglavlju.
 
 ## Najčešće oznake
 
@@ -27,20 +27,20 @@ Sažetak je podsjetnik: uz svaku relaciju navedeni su uvjet primjene i poglavlje
 | $F_G=mg$; $F_U=\rho gV_{ist}$ | težina (točka $G$ je težište); uzgon | N |
 | $v$, $\vec v$, $v_i$ | brzina fluida (srednja presječna ili lokalna), vektor, komponente | m/s |
 | $u$; $c$, $w$ | brzina krute granice (lopatica, klip, ploča), obodna brzina; apsolutna i relativna brzina, $\vec c=\vec u+\vec w$ (pog. 10, 14); u pog. 15 $c=\sqrt{gy_h}$ brzina vala | m/s |
-| $v_s$, $v_m$, $v_p$, $v_A$, $v_j$, $v_d$; $U_e$, $U_\infty$, $u_\tau$ | brzina broda (indeks $s$ i kad je prototip brod; iznimka: u pog. 13 $v_s$ je brzina u usisnom presjeku crpke), modela, prototipa (općenito), napredovanja, mlaza, kroz disk; vanjska brzina, brzina neporemećenog toka i brzina trenja (pog. 12) | m/s |
+| $v_s$, $v_m$, $v_p$, $v_A$, $v_j$, $v_d$; $U_e$, $U_\infty$, $u_\tau$ | brzina broda (indeks $s$ i kad je prototip brod; iznimka: u pog. 13 $v_s$ je brzina u usisnom presjeku crpke), modela, prototipa (općenito), napredovanja, mlaza, kroz disk; vanjska brzina, brzina neporemećenog strujanja i brzina trenja (pog. 12) | m/s |
 | $Q$; $\dot m$; $m_{KV}$ | volumenski i maseni protok; masa u kontrolnom volumenu | m$^3$/s (L/s); kg/s; kg |
 | $\psi$ | udio otvorene površine rešetke (pog. 7) | - |
 | $\alpha$, $\beta$ | korekcijski faktor kinetičke energije (Coriolisov) i količine gibanja (Boussinesqov) (kutovi lopatica $\beta_1$, $\beta_2$ samo u pog. 14, mjereni od smjera $-u$) | - |
 | $\lambda$; $\lambda_L$; $\xi$; $\zeta=\lambda L/D+\sum\xi$; $k_s$ | Darcyjev koeficijent trenja; mjerilo duljina (pog. 11); lokalni koeficijent uz referentnu brzinu; ukupni koeficijent dionice; ekvivalentna hrapavost (relativna $k_s/D$) | -; m |
-| $C_d$, $C_{pr}$; $C_D$, $C_L$, $C_p$ | koeficijenti istjecanja (*discharge*) i preljeva; otpora (*drag*), uzgona i tlaka — ne miješati $C_d$ i $C_D$ | - |
+| $C_d$, $C_{pr}$; $C_D$, $C_L$, $C_p$ | koeficijenti istjecanja (engl. *discharge*) i preljeva; otpora (engl. *drag*), uzgona i tlaka — ne miješati $C_d$ i $C_D$ | - |
 | $C_F$, $C_R$, $C_T$; $C_{Th}$; $\chi$; $FM$ | koeficijenti otpora trenja, preostalog i ukupnog otpora (pog. 11); koeficijent opterećenja potiskom (pog. 14); koeficijent sustrujanja (pog. 14; $w$ je relativna brzina); faktor učinka rotora u visu, omjer idealne inducirane i potrebne snage na vratilu (pog. 14) | - |
 | $F_T$; $\vec R_{st\to f}$, $\vec F$; $M$; $I$ | potisak; sila stijenke na fluid (komponente $R_{st\to f,x}$, $R_{st\to f,y}$) i fluida na konstrukciju, $\vec F=-\vec R_{st\to f}$; moment (iznimka: u pog. 6 $M$ je metacentar); impulsna funkcija $pA+\dot mv$ | N; N m |
-| $P_h$, $P_{vr}$, $P_{el}$; $\eta$; $NPSH_a$, $NPSH_r$ | hidraulička, vratilna, električna snaga; učinkovitost; raspoloživa i potrebna kavitacijska rezerva | W; -; m |
+| $P_h$, $P_{vr}$, $P_{el}$; $\eta$; $NPSH_a$, $NPSH_r$ | hidraulička snaga, snaga na vratilu i električna snaga; iskoristivost; raspoloživa i potrebna kavitacijska rezerva | W; -; m |
 | $k$, $\varepsilon$, $\omega$; $I_t$; $\ell$; $m$ | turbulentna kinetička energija, njezina disipacija i specifična disipacija u modelima RANS (pog. 12; $\varepsilon$ samo disipacija); intenzitet turbulencije; duljinska skala; Falkner–Skanov eksponent $m=(x/U_e)dU_e/dx$ | m$^2$/s$^2$; m$^2$/s$^3$; s$^{-1}$; -; m; - |
 | $k$ (iznimke) | osim u modelima RANS: rang dimenzijske matrice u $\Pi$-teoremu i faktor oblika $(1+k)$ prema ITTC-u (pog. 11); koeficijent gubitka relativne brzine na lopatici, $w_2=kw_1$ (pog. 14); uvijek se uvodi uz definiciju | - |
 | $Re$, $Fr$, $Eu$, $Ma$, $We$, $Bo$, $St$, $\sigma_{kav}$ | definicije su u pog. 11; $Eu$ bez ½ (konvencija knjige), $Ma$ ne $M$ | - |
 | $\Phi$, $\Phi_1$ | nepoznata funkcija bezdimenzijskih grupa, npr. $C_D=\Phi(Re)$ (pog. 11; u pog. 13 $\Phi$ je disipacijska funkcija) | - |
-| $s(x)$; $s_E$, $s_\Delta$ | standardna nesigurnost veličine $x$ (ne $u(x)$: $u$ je brzina krute granice); standardna nesigurnost razlike (pog. 12, dodatak D) i reziduala bilance (pog. 15) | jedinica veličine $x$ |
+| $s(x)$; $s_E$, $s_\Delta$ | standardna nesigurnost veličine $x$ (ne $u(x)$: $u$ je brzina krute granice); standardna nesigurnost razlike (pog. 12, dodatak D) i ostatka (engl. *residual*) bilance (pog. 15) | jedinica veličine $x$ |
 | $\lambda_h$; $n_h$ | omjer koraka susjednih mreža; opaženi red konvergencije (pog. 12, dodatak D) | - |
 | $m_{pok}$ | koeficijent pokosa trapeznog kanala, vodoravno : okomito (pog. 15; $z$ ostaje visina dna) | - |
 | KV, KP; ul, iz | kontrolni volumen i ploha; indeksi ulaza i izlaza | - |
@@ -72,9 +72,9 @@ Sažetak je podsjetnik: uz svaku relaciju navedeni su uvjet primjene i poglavlje
 | $\Delta p=\rho(g+a_z)h$ | okomito ubrzanje, os $z$ prema gore; predznak $a_z$ određuje ubrzanje, ne brzina |
 | $p(r)-p(0)=\tfrac12\rho\omega^2r^2$; $h(r)=h_C+\omega^2r^2/(2g)$, $h_C=h_0-\omega^2R^2/(4g)$, $h_R=h_0+\omega^2R^2/(4g)$ | vrtnja krutog tijela; $h_C$ i $h_R$ visine površine u osi i uz stijenku: razina se u osi spušta, a uz rub diže za polovicu razlike; vrijedi do prelijevanja ili ogoljavanja |
 | $F=\rho gh_CA$ | sila na ravnu plohu; uz fluid s obiju strana mjerodavna je razlika tlakova |
-| $y_{CP}=y_C+I_G\sin\theta/(Ah_C)$, $h_{CP}=h_C+I_G\sin^2\theta/(Ah_C)$ | ploha nagnuta za $\theta$; okomita: $h_{CP}=h_C+I_G/(h_CA)$; centar tlaka ispod težišta kad tlak raste s dubinom; dodatni pretlak traži momentiranje cijele raspodjele |
+| $y_{CP}=y_C+I_G\sin\theta/(Ah_C)$, $h_{CP}=h_C+I_G\sin^2\theta/(Ah_C)$ | ploha nagnuta za $\theta$; okomita: $h_{CP}=h_C+I_G/(h_CA)$; centar tlaka ispod težišta kad tlak raste s dubinom; dodatni pretlak traži računanje momenta cijele raspodjele |
 | $I_G=bh^3/12$ (pravokutnik); $I_G=\pi d^4/64$ (krug); $I_G=bh^3/36$ (trokut) | drugi moment plohe oko težišne osi paralelne s vodoravnim rubom $b$; $h$ je visina plohe u njezinoj ravnini; težište trokuta je na $h/3$ od osnovice |
-| $h_{CP}=\sum F_ih_i/\sum F_i$ | momentna superpozicija; suprotni tlakovi s predznakom |
+| $h_{CP}=\sum F_ih_i/\sum F_i$ | zbrajanje momenata; suprotni tlakovi s predznakom |
 | $F_H=\rho gh_CA_{proj}$; $\lvert F_V\rvert=\rho gV^*$; $F_R=\sqrt{F_H^2+F_V^2}$ | zakrivljena ploha, $V^*$ pomoćni volumen; smjer $F_V$ iz normale i strane stvarnog fluida; rezultanta kroz jednu točku samo za kružni luk |
 | $F_U=\rho gV_{ist}$; $\Delta=\rho V_{ist}=m$; $f=H-T$ | Arhimed, homogen fluid; slobodno plivanje; nadvođe |
 | $GM=KB+BM-KG$, $BM=I_T/V_{ist}$ | početni stabilitet, mali kut |
@@ -94,21 +94,21 @@ Sažetak je podsjetnik: uz svaku relaciju navedeni su uvjet primjene i poglavlje
 | $\dfrac{p_1}{\rho g}+\alpha_1\dfrac{v_1^2}{2g}+z_1+H_p=\dfrac{p_2}{\rho g}+\alpha_2\dfrac{v_2^2}{2g}+z_2+H_t+h_g$, $\alpha=\dfrac{1}{A\bar v^3}\int_Av^3\,dA$ | energijska jednadžba KV (@eq-energijska-jednadzba-kv); $h_g\ge0$; razvijeni laminarni profil u kružnoj cijevi $\alpha=2$, turbulentni $\alpha\approx1$ |
 | energijska crta $H$; piezometarska crta $z+p/(\rho g)$ | razlikuju se za $\alpha v^2/(2g)$; piezometarska može rasti u difuzoru |
 | $v_0=\sqrt{2gH}$; $Q=C_dA_p\sqrt{2gH}$ | Torricelli, velik spremnik; stvarni otvor uz $C_d$ |
-| $v_2=v_1(D_1/D_2)^2$, $p_1-p_2=\tfrac12\rho(v_2^2-v_1^2)$ | Venturi bez gubitaka, vodoravna os; grlo je presjek 2, priključci na ulazu i u grlu |
+| $v_2=v_1(D_1/D_2)^2$, $p_1-p_2=\tfrac12\rho(v_2^2-v_1^2)$ | Venturijeva cijev bez gubitaka, vodoravna os; grlo je presjek 2, priključci na ulazu i u grlu |
 | $x=2\sqrt{h(H-h)}$ | vodoravni domet mlaza iz otvora na visini $h$ |
 | $p_0-p=\tfrac12\rho v^2$, $v=\sqrt{2(p_0-p)/\rho}$ | Pitotova cijev, nestlačivo; očitanje senzora prenesi na visinu otvora |
 
-## Pog. 9: Kompresibilni idealni tok
+## Pog. 9: Stlačivo idealno strujanje
 
 Kalorički savršen plin; apsolutni tlakovi i temperature; $\kappa$ je izentropski eksponent.
 
 | Formula | Uvjet primjene i napomena |
 | --- | --- |
 | $p=\rho RT$; $p/\rho^\kappa=\text{konst.}$ | jednadžba stanja idealnog plina s apsolutnim $p$ i $T$; izentropska promjena kalorički savršenog plina |
-| $a^2=(\partial p/\partial\rho)_s$, $a=\sqrt{\kappa RT}$; $Ma=v/a$ | mali izentropski poremećaj; $Ma<0{,}3$ samo je heuristika uz male promjene $T$ i $p$ |
+| $a^2=(\partial p/\partial\rho)_s$, $a=\sqrt{\kappa RT}$; $Ma=v/a$ | mali izentropski poremećaj; $Ma<0{,}3$ samo je iskustveno pravilo uz male promjene $T$ i $p$ |
 | $T_0/T=1+\tfrac{\kappa-1}{2}Ma^2$ | stacionarno, adijabatski, bez rada (@eq-t0-t) |
 | $p_0/p=[1+\tfrac{\kappa-1}{2}Ma^2]^{\kappa/(\kappa-1)}$, $\rho_0/\rho=[\dots]^{1/(\kappa-1)}$ | dodatno izentropski (@eq-stagnacijski-omjeri) |
-| $dA/A=(Ma^2-1)\,dv/v$ | kvazijednodimenzijski izentropski tok; nadzvučno ubrzanje traži divergentni dio (@eq-area-brzina) |
+| $dA/A=(Ma^2-1)\,dv/v$ | kvazijednodimenzijsko izentropsko strujanje; nadzvučno ubrzanje traži divergentni dio (@eq-area-brzina) |
 | $T^*/T_0=\tfrac{2}{\kappa+1}$, $p^*/p_0=[\tfrac{2}{\kappa+1}]^{\kappa/(\kappa-1)}$, $\rho^*/\rho_0=[\tfrac{2}{\kappa+1}]^{1/(\kappa-1)}$ | kritični omjeri, za zrak 0,833, 0,528, 0,634 (@eq-kriticni-omjeri); zagušenje nastupa kad je $p_b/p_0$ ispod kritičnog omjera |
 | $\dfrac{A}{A^*}=\dfrac{1}{Ma}\left[\dfrac{2}{\kappa+1}\left(1+\dfrac{\kappa-1}{2}Ma^2\right)\right]^{\frac{\kappa+1}{2(\kappa-1)}}$ | dva korijena; granu odabire protutlak (@eq-omjer-povrsina) |
 | $\dot m_{max}=A^*p_0\sqrt{\kappa/(RT_0)}\,[2/(\kappa+1)]^{\frac{\kappa+1}{2(\kappa-1)}}$ | zagušeni protok; za stvarni otvor $C_d\dot m_{max}$ (@eq-priguseni-protok) |
@@ -136,7 +136,7 @@ Kalorički savršen plin; apsolutni tlakovi i temperature; $\kappa$ je izentrops
 | $Re=\rho vL/\mu=vL/\nu$ | inercija/viskoznost za odabrane skale; nekružni presjek: $L=D_h$; prag režima ovisi o geometriji |
 | $Fr=v/\sqrt{gL}$ | omjer brzina; inercija/gravitacija $\propto Fr^2$ |
 | $Eu=\Delta p/(\rho v^2)$ | konvencija knjige bez ½; pri usporedbi provjeri literaturu |
-| $\sigma_{kav}=(p_{ref}-p_v)/(\tfrac12\rho v_{ref}^2)$; Venturi $\sigma_{kr}=1-(A_2/A_1)^2$ | navedi referentno mjesto; apsolutni tlak; za Venturi $p_{ref}=p_1$ (ulaz) i $v_{ref}=v_2$ (grlo), idealizirani prag $p_2=p_v$ u Bernoullijevu modelu |
+| $\sigma_{kav}=(p_{ref}-p_v)/(\tfrac12\rho v_{ref}^2)$; Venturijeva cijev $\sigma_{kr}=1-(A_2/A_1)^2$ | navedi referentno mjesto; apsolutni tlak; za Venturijevu cijev $p_{ref}=p_1$ (ulaz) i $v_{ref}=v_2$ (grlo), idealizirani prag $p_2=p_v$ u Bernoullijevu modelu |
 | $We=\rho v^2L/\sigma$; $Bo=\Delta\rho gL^2/\sigma$; $St=fL/v$; $Ma=v/a$ | prag raspada ovisi o omjerima gustoće i viskoznosti; kapilarna duljina $\sqrt{\sigma/(\Delta\rho g)}$; $St$ iz podataka ili modela |
 | $C_D=F_D/(\tfrac12\rho v^2A)$ | $A$ čeona površina; ne miješati s $C_d$ |
 | $v_m/v_p=\lambda_L^{-1/2}$, $Q_m/Q_p=\lambda_L^{-5/2}$, $F_m/F_p=(\rho_m/\rho_p)\lambda_L^{-3}$, $P_m/P_p=(\rho_m/\rho_p)\lambda_L^{-7/2}$ | Froudeova sličnost, $\lambda_L=L_p/L_m$; $\lambda_L^3$ za silu samo uz $Fr$ i istu gustoću |
@@ -144,20 +144,20 @@ Kalorički savršen plin; apsolutni tlakovi i temperature; $\kappa$ je izentrops
 
 Pri različitim mjerilima i istom $g$ Froudeova i Reynoldsova sličnost ne mogu se istodobno zadovoljiti s istim fluidom; bira se dominantni broj, a drugi se korigira.
 
-## Pog. 12: Diferencijalni opis realnog toka
+## Pog. 12: Diferencijalni opis realnog strujanja
 
 | Formula | Uvjet primjene i napomena |
 | --- | --- |
-| $D\vec v/Dt=\partial\vec v/\partial t+(\vec v\cdot\nabla)\vec v$ | lokalno + konvektivno ubrzanje; i u stacionarnom toku čestica može ubrzavati |
+| $D\vec v/Dt=\partial\vec v/\partial t+(\vec v\cdot\nabla)\vec v$ | lokalno + konvektivno ubrzanje; i u stacionarnom strujanju čestica može ubrzavati |
 | $\nabla\cdot\vec v=0$ | nestlačiv fluid konstantne gustoće |
 | $\tau_{ij}=\mu(\partial v_i/\partial x_j+\partial v_j/\partial x_i)$ | newtonski, nestlačiv |
 | $\rho D\vec v/Dt=-\nabla p+\mu\nabla^2\vec v+\rho\vec b$ | Navier–Stokes, konstantni $\rho$ i $\mu$; potrebni su početni i rubni uvjeti |
 | $t_\nu\sim H^2/\nu$ | red veličine, ne točno vrijeme uspostave profila |
-| $\dfrac{\mu}{r}\dfrac{d}{dr}\left(r\dfrac{dv}{dr}\right)=\dfrac{dp}{dx}$; procjep $0=-dp/dx+\mu\,d^2v/dy^2$ | razvijeni tok, prianjanje (@eq-poiseuille-ode) |
+| $\dfrac{\mu}{r}\dfrac{d}{dr}\left(r\dfrac{dv}{dr}\right)=\dfrac{dp}{dx}$; procjep $0=-dp/dx+\mu\,d^2v/dy^2$ | razvijeno strujanje, prianjanje (@eq-poiseuille-ode) |
 | $\Delta p=128\mu LQ/(\pi D^4)$, $v_{max}=2v$ | Hagen–Poiseuille: laminarno, razvijeno, kružna cijev; $\Delta p\propto Q$, $\lambda=64/Re$ |
 | $\delta_{99}\approx5x/\sqrt{Re_x}$, $C_{f,x}\approx0{,}664/\sqrt{Re_x}$ | Blasius: laminarno, glatka ploča, $m=0$ |
 | $\delta\approx0{,}37x/Re_x^{1/5}$ | turbulentni sloj, profil $1/7$ |
-| $dp_e/dx=-\rho U_e\,dU_e/dx$ | usporavanje vanjskog toka daje nepovoljan gradijent i moguće odvajanje |
+| $dp_e/dx=-\rho U_e\,dU_e/dx$ | usporavanje vanjskog strujanja daje nepovoljan gradijent i moguće odvajanje |
 | $I_t=v'_{rms}/\bar v$; $k=\tfrac32(I_t\bar v)^2$, $\omega=\sqrt k/(C_\mu^{1/4}\ell)$, $\varepsilon=C_\mu k\omega$ | ulazni uvjeti za RANS (@eq-anemometar-ulazni-uvjet-rans); $\ell$ je pretpostavka, $\omega$ se ne mjeri |
 
 ## Pog. 13: Gubitci, cjevovodi, crpke i mreže
@@ -165,14 +165,14 @@ Pri različitim mjerilima i istom $g$ Froudeova i Reynoldsova sličnost ne mogu 
 | Formula | Uvjet primjene i napomena |
 | --- | --- |
 | $Re=vD/\nu$ | najprije režim, zatim korelacija |
-| $\lambda=64/Re$ | samo razvijeni laminarni tok u kružnoj cijevi, orijentacijski $Re\lesssim2300$ |
+| $\lambda=64/Re$ | samo razvijeno laminarno strujanje u kružnoj cijevi, orijentacijski $Re\lesssim2300$ |
 | $1/\sqrt\lambda=-2\log_{10}[(k_s/D)/3{,}7+2{,}51/(Re\sqrt\lambda)]$ | Colebrook, turbulentno; iteracija ili Moodyjev dijagram |
 | $\lambda=0{,}25/[\log_{10}((k_s/D)/3{,}7+5{,}74/Re^{0{,}9})]^2$; $\lambda=0{,}3164\,Re^{-1/4}$ | Swamee–Jain, $5000<Re<10^8$ (@eq-swamee-jain); Blasius, glatka cijev, $4000<Re<10^5$ |
 | $\lambda=8\tau_{st}/(\rho v^2)$ | veza s naprezanjem na stijenci |
 | $h_l=\lambda(L/D)v^2/(2g)$; $h_{loc}=\xi v_{ref}^2/(2g)$ | Darcy–Weisbach; svaki $\xi$ uz svoju referentnu brzinu |
 | $h_g=h_l+\sum h_{loc}=\zeta v^2/(2g)$ | ista referentna brzina; pri promjeni $Q$ ili $D$ ponovno izračunaj $Re$ i $\lambda$ |
 | serijski $h_{g,tot}=\sum h_{g,i}$; paralelni $Q=\sum Q_i$, $h_{g,1}=h_{g,2}$ | jednaki protoci traže prigušenje manje otporne grane |
-| $\Delta Q=-\sum R_iQ_i\lvert Q_i\rvert/(2\sum R_i\lvert Q_i\rvert)$ | Hardy–Cross po petlji, protoci pozitivni u smjeru obilaska; iteriraj do tolerancije reziduala |
+| $\Delta Q=-\sum R_iQ_i\lvert Q_i\rvert/(2\sum R_i\lvert Q_i\rvert)$ | Hardy–Cross po petlji, protoci pozitivni u smjeru obilaska; iteriraj do tolerancije ostatka |
 | $H_p(Q)=H_s(Q)=\Delta z+\zeta v^2/(2g)$ | radna točka |
 | $Q\propto n$, $H\propto n^2$, $P\propto n^3$ | afinitetni zakoni iste crpke; $NPSH_r$ se ne prenosi nekritički |
 | $P_h=\rho gQH_p$, $P_{vr}=P_h/\eta_p$, $P_{el}=P_{vr}/\eta_m$ | razine snage se ne miješaju; godišnja energija iz $P_{el}$ |
@@ -185,20 +185,20 @@ Pri različitim mjerilima i istom $g$ Froudeova i Reynoldsova sličnost ne mogu 
 | $\vec c=\vec u+\vec w$ | trokut brzina; općenito vektorski |
 | $\dot m_{rel}=\rho Aw_n$, $F_x=\dot m_{rel}(c_{1x}-c_{2x})$, $P=F_xu$ | jedna pokretna lopatica; za kolo ulazi puni protok |
 | $P=\rho Ac_1u(c_1-c_{2x})$, $c_{2x}=u+(c_1-u)\cos\theta$ | Peltonovo kolo s mnogo lopatica, bez trenja na lopatici; $\theta=180^\circ-\beta_2$ kut skretanja, $\beta_2$ od smjera $-u$; maksimum pri $u=c_1/2$ |
-| $M=\dot m(r_2c_{2t}-r_1c_{1t})$, $H_{th}=(u_2c_{2t}-u_1c_{1t})/g$, $P=M\omega$ | Eulerova jednadžba; jednolike veličine po presjecima; svaki član sa svojim radijusom |
-| $C_{Th}=F_T/(\tfrac12\rho v_A^2A_d)$, $v_d=\tfrac{v_A}{2}(1+\sqrt{1+C_{Th}})$, $\eta_i=v_A/v_d=2/(1+\sqrt{1+C_{Th}})$ | aktuatorski disk; gornja granica učinkovitosti; vodomlazni pogon $\eta_i=2v_s/(v_s+v_j)$ |
+| $M=\dot m(r_2c_{2t}-r_1c_{1t})$, $H_{th}=(u_2c_{2t}-u_1c_{1t})/g$, $P=M\omega$ | Eulerova jednadžba; jednolike veličine po presjecima; svaki član sa svojim polumjerom |
+| $C_{Th}=F_T/(\tfrac12\rho v_A^2A_d)$, $v_d=\tfrac{v_A}{2}(1+\sqrt{1+C_{Th}})$, $\eta_i=v_A/v_d=2/(1+\sqrt{1+C_{Th}})$ | aktuatorski disk; gornja granica iskoristivosti; vodomlazni pogon $\eta_i=2v_s/(v_s+v_j)$ |
 | $v_A=(1-\chi)v_s$ | sustrujanje; uz odbitak potiska traži pokus s trupom |
 
-## Pog. 15: Otvoreni tokovi
+## Pog. 15: Strujanje sa slobodnom površinom
 
 | Formula | Uvjet primjene i napomena |
 | --- | --- |
-| $y_h=A/T$, $c=\sqrt{gy_h}$, $Fr=v/\sqrt{gy_h}$ | plitka voda; $Fr<1$ mirni, $Fr>1$ siloviti tok; ne $R_h$ ni $D_h$ |
+| $y_h=A/T$, $c=\sqrt{gy_h}$, $Fr=v/\sqrt{gy_h}$ | plitka voda; $Fr<1$ mirno, $Fr>1$ silovito strujanje; ne $R_h$ ni $D_h$ |
 | $E=y+\alpha v^2/(2g)=y+q^2/(2gy^2)$ | pravokutni kanal, blag nagib, hidrostatički tlak, $\alpha\approx1$ |
 | $y_c=(q^2/g)^{1/3}$, $E_{min}=3y_c/2$; općenito $Q^2T/(gA^3)=1$ | kritično stanje; na pragu $E_1-\Delta z\ge E_{min}$, potkritični dotok bira dublji korijen |
 | $Q=C_dba\sqrt{2gy_0}$; $Q\approx1{,}70\,C_{pr}bH^{3/2}$ | ustava (otvor visine $a$, uzvodna dubina $y_0$) i preljev širokog praga; empirijski koeficijenti |
-| $Q=AR_h^{2/3}S_f^{1/2}/n$, $y_n$ iz $S_f=S_0$ | Manning, uniformni tok; $n$ ovisi o stanju korita |
-| $y_2/y_1=\tfrac12[\sqrt{1+8Fr_1^2}-1]$; $I/(\rho gb)=y^2/2+q^2/(gy)$ | spregnute dubine: vodoravno dno, hidrostatički rubni presjeci, $\beta\approx1$, kratka dionica; rezidual bilance $\Delta_I=(I_2-I_1)/(\rho gb)$ |
+| $Q=AR_h^{2/3}S_f^{1/2}/n$, $y_n$ iz $S_f=S_0$ | Manning, jednoliko strujanje; $n$ ovisi o stanju korita |
+| $y_2/y_1=\tfrac12[\sqrt{1+8Fr_1^2}-1]$; $I/(\rho gb)=y^2/2+q^2/(gy)$ | spregnute dubine: vodoravno dno, hidrostatički rubni presjeci, $\beta\approx1$, kratka dionica; ostatak bilance $\Delta_I=(I_2-I_1)/(\rho gb)$ |
 | $\Delta E=(y_2-y_1)^3/(4y_1y_2)$ | gubitak mehaničke energije u skoku; Bernoullijeva jednadžba kroz skok ne vrijedi |
 
 ## Tipične zamjene jedinica i veličina koje treba zaustaviti odmah

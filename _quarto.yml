@@ -68,7 +68,7 @@ book:
         - chapters/u08_energijska_jednadzba_i_bernoulli.qmd
         - chapters/u09_kompresibilni_idealni_tok.qmd
         - chapters/u10_kolicina_i_moment_kolicine_gibanja.qmd
-    - part: Sličnost i realni tok
+    - part: Sličnost i realno strujanje
       chapters:
         - chapters/u11_dimenzijska_analiza_i_slicnost.qmd
         - chapters/u12_diferencijalni_opis_realnog_toka.qmd

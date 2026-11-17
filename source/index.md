@@ -10,7 +10,7 @@ Priručnik vodi od fizikalnog modela i bilance do analitičkog rješenja, mjeren
 ::: {.mf1-hero}
 Razumjeti fluid. Postaviti model. Provjeriti rezultat.
 
-Od tlaka i hidrostatike do cjevovoda, turbostrojeva i otvorenih tokova — kroz objašnjenja, skice i riješene primjere.
+Od tlaka i hidrostatike do cjevovoda, turbostrojeva i strujanja sa slobodnom površinom — kroz objašnjenja, skice i riješene primjere.
 :::
 ::::
 
