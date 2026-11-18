@@ -3,6 +3,13 @@
 Ovaj dokument prati sadržajne i tehničke promjene javnih izdanja. Potvrđene
 pogreške pojedinih izdanja dodatno se vode u [errati](docs/errata.md).
 
+## Novi motiv PDF naslovnice — 17. studenoga 2026.
+
+- Naslovnica PDF-a više ne koristi izrezak skice iz pog. 7. Uz lijevi rub diže
+  se tanki dim: laminarni stup zavijuga i kovrča se u Kelvin–Helmholtzove
+  vrtloge. Motiv generira
+  `tools/generate_cover_motifs.py` u `assets/cover/`; tekst naslovnice nije mijenjan.
+
 ## Novo ime repozitorija i mrežne adrese — 17. studenoga 2026.
 
 - Repozitorij `MF1_udzbenik` preimenovan je u `mehanika-fluida-prirucnik` jer je
