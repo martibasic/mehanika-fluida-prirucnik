@@ -3,6 +3,16 @@
 Ovaj dokument prati sadržajne i tehničke promjene javnih izdanja. Potvrđene
 pogreške pojedinih izdanja dodatno se vode u [errati](docs/errata.md).
 
+## Apstraktna naslovnica: vrtložna staza — 19. studenoga 2026.
+
+- Motiv Velebita i bure zamijenjen je čistim apstraktnim motivom na istom
+  mjestu: strujnice Kármánove vrtložne staze gledane iz sustava koji se giba
+  s vrtlozima. Dva niza vrtloga suprotne vrtnje u Kármánovu omjeru h/a = 0,281
+  tvore zatvorene strujnice oko vrtloga; jedna strujnica koja vijuga između
+  njih istaknuta je naglasnom bojom knjige. Svaka linija je izolinija točne
+  strujne funkcije. Motiv generira `tools/generate_cover_abstract.py`; tekst
+  naslovnice nije mijenjan.
+
 ## Velebit i bura na naslovnici — 18. studenoga 2026.
 
 - Dim uz lijevi rub zamijenjen je vodoravnim motivom ispod imena autorice:
