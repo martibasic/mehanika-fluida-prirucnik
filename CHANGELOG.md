@@ -3,6 +3,16 @@
 Ovaj dokument prati sadržajne i tehničke promjene javnih izdanja. Potvrđene
 pogreške pojedinih izdanja dodatno se vode u [errati](docs/errata.md).
 
+## Velebit i bura na naslovnici — 18. studenoga 2026.
+
+- Dim uz lijevi rub zamijenjen je vodoravnim motivom ispod imena autorice:
+  bura na Velebitu gledana sa Silbe, u četiri neprekinute linije. Zrak se uz
+  ličku stranu diže u oblačnu kapu; iza grebena tone, oblak nestaje, a ista
+  linija nastavlja kao bura niz strmu padinu i u zavjetrinske valove. Više
+  strujnice pokazuju glađe zavjetrinske valove. Na moru bura diže valove koji
+  rastu s privjetrištem, a najveći se lomi. Linije se ne sijeku ni ne
+  dodiruju; tekst naslovnice nije mijenjan.
+
 ## Novi motiv PDF naslovnice — 17. studenoga 2026.
 
 - Naslovnica PDF-a više ne koristi izrezak skice iz pog. 7. Uz lijevi rub diže
@@ -40,10 +50,10 @@ pogreške pojedinih izdanja dodatno se vode u [errati](docs/errata.md).
 ## Odluke recenzenta — 8. studenoga 2026.
 
 - **Tekst i brojevi**: pog. 2 klizni ležaj pomoćne crpke (hladni start); pog. 3 novi
-  odjeljak „Manometri i reference tlaka”, slika spojenih posuda uz izvod, $ho_{mv}=1025$
+  odjeljak „Manometri i reference tlaka”, slika spojenih posuda uz izvod, $\rho_{mv}=1025$
   u P3, rezerva 3 % u Z6; pog. 6 P4 i P5 na razini T3; pog. 7 Z1 sa zimskim zrakom;
   pog. 8 Venturijev pokus iza P5; pog. 10 reakcijska glava za ispiranje spremnika;
-  pog. 11 Z1 $B	imes H$; pog. 12 P4 s laminarnim $C_F$; pog. 14 bez ponovljenog okvira.
+  pog. 11 Z1 $B\times H$; pog. 12 P4 s laminarnim $C_F$; pog. 14 bez ponovljenog okvira.
 - **Nazivlje i prikaz**: „Eulerova turbinska jednadžba”; upućivanje na poglavlje u tekstu
   glasi „pog. N”.
 
